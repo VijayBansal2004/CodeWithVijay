@@ -1,0 +1,1116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>C++ Structures and Unions | CodeWithVijay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/prism/prism.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bodyColor textColorWhite">
+    <header>
+      <nav class="navbar bgcolor2 fixed-top">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand lightPurpleColor fw-bolder fs-2"
+            href="/index.html"
+            >&lt;/&gt;CodeWithVijay</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            style="background-color: #d8b4fe"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bgcolor2 text-white"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title lightPurpleColor fw-bolder"
+                id="offcanvasNavbarLabel"
+              >
+                &lt;/&gt;CodeWithVijay
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="background-color: #d8b4fe"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HTML
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlBasicTags.html"
+                        >Html Basic Tags</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/Inline&BlockElements.html"
+                        >Inline & Block Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlLists.html"
+                        >Html Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlTables.html"
+                        >Html Tables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlForms.html"
+                        >Html Forms</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/HeadElements.html"
+                        >Head Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlMedia.html"
+                        >Html Media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/MiscellaneousTags.html"
+                        >Miscellaneous Tags</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CSS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/cssIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSProperties.html"
+                        >CSS Properties</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSDesigning.html"
+                        >CSS Designing</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSAdvanceTopics.html"
+                        >CSS Advance Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA SCRIPT
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/jsIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptVariables.html"
+                        >Javascript Variables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptBasics.html"
+                        >Javascript Basics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptObjects.html"
+                        >Javascript Objects</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/DOM&BOM.html"
+                        >DOM & BOM</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/jsOOPs.html"
+                        >OOPs</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/html/C/cIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CDataTypesOperators&UserIO.html"
+                        >C Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFunctions.html"
+                        >C Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CPointers.html"
+                        >C Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CMemoryManagement.html"
+                        >C Memory Management</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CStructures&Unions.html"
+                        >C Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFileHandling.html"
+                        >C File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C++ PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/c++Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++DataTypesOperators&UserIO.html"
+                        >C++ Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++ConditionalStatements.html"
+                        >C++ Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++IterationStatements.html"
+                        >C++ Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++BreakContinue.html"
+                        >C++ Break/Continue</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Arrays.html"
+                        >C++ Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Pointers.html"
+                        >C++ Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Strings.html"
+                        >C++ Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Structures&Unions.html"
+                        >C++ Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Functions.html"
+                        >C++ Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++OPPs.html"
+                        >C++ OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++FileHandling.html"
+                        >C++ File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Templates&STL.html"
+                        >C++ Templates & STL</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/VariablesOperators&UserIO.html"
+                        >Variables, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/JavaMethods.html"
+                        >Java Methods</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/JavaOOPs.html"
+                        >Java OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PYTHON
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDataTypes&Operators.html"
+                        >Python Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonStrings.html"
+                        >Python Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLists.html"
+                        >Python Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonTuples.html"
+                        >Python Tuples</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonSets.html"
+                        >Python Sets</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDictionaries.html"
+                        >Python Dictionaries</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLoops.html"
+                        >Python Loops</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonFunctions.html"
+                        >Python Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonModules.html"
+                        >Python Modules</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonOOPs.html"
+                        >Python OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PHP
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/DataTypes&Operators.html"
+                        >Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Conditional&IterationStatements.html"
+                        >Conditional & Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPFunctions.html"
+                        >PHP Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPArrays.html"
+                        >PHP Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPOOPs.html"
+                        >PHP OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPSuperglobals.html"
+                        >PHP Superglobals</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPMySQL.html"
+                        >PHP MySQL</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPAdvancedTopics.html"
+                        >PHP Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    REACT JS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactTutorial.html"
+                        >React Tutorial</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactHooks.html"
+                        >React Hooks</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5 width80 minHeight90vh m-auto">
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/C++/C++Strings.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/C++/C++Functions.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Structures</h2>
+          <p>
+            Variables store only one piece of information and arrays of certain
+            data types store the information of the same data type. Variables
+            and arrays can handle a great variety of situations. But quite
+            often, we have to deal with the collection of dissimilar data types.
+            For dealing with cases where there is a requirement to store
+            dissimilar data types, C++ provides a data type called ‘structure’.
+            The structure is a user-defined data type that is available in C++.
+            Structures are used to combine different types of data types, just
+            like an array is used to combine the same type of data types.
+          </p>
+          <p>
+            Another way to store data of dissimilar data types would have been
+            constructing individual arrays, but that must be unorganized. It is
+            to keep in mind that structure elements too are always stored in
+            contiguous memory locations.
+          </p>
+        </div>
+        <div>
+          <h4>Features of Structs</h4>
+          <ol>
+            <li>
+              We can assign the values of a structure variable to another
+              structure variable of the same type using the assignment operator.
+            </li>
+            <li>
+              Structure can be nested within another structure which means
+              structures can have their members as structures themselves.
+            </li>
+            <li>
+              We can pass the structure variable to a function. We can pass the
+              individual structure elements or the entire structure variable
+              into the function as an argument. And functions can also return a
+              structure variable.
+            </li>
+            <li>
+              We can have a pointer pointing to a struct just like the way we
+              can have a pointer pointing to an int, or a pointer pointing to a
+              char variable.
+            </li>
+          </ol>
+        </div>
+        <div>
+          <h4>Creating a struct element</h4>
+          <p>
+            We use the struct keyword to define the struct.
+            <br />
+            The basic syntax for declaring a struct is,
+          </p>
+          <pre class="language-c"><code class="language-c">struct structure_name
+{
+    //structure_elements
+} structure_variable;</code></pre>
+          <p>
+            Here’s one example of how a struct is defined and used in main as a
+            user-defined data type.
+          </p>
+          <pre
+            class="language-c"
+          ><code class="language-c">#include &lt;iostream&gt;
+using namespace std;
+    
+struct employee
+{
+    /* data */
+    int eId;
+    char favChar;
+    int salary;
+};
+    
+int main()
+{
+    struct employee Vijay;
+    return 0;
+}</code></pre>
+        </div>
+        <div>
+          <h4>Accessing struct elements</h4>
+          <p>
+            To access any of the values of a structure's members, we use the dot
+            operator (.). This dot operator is coded between the structure
+            variable name and the structure member that we wish to access.
+            <br />
+            Before the dot operator, there must always be an already defined
+            structure variable and after the dot operator, there must always be
+            a valid structure element.
+          </p>
+          <p>Here’s one example demonstrating how we access struct elements.</p>
+          <pre
+            class="language-c"
+          ><code class="language-c">#include &lt;iostream&gt;
+using namespace std;
+    
+struct employee
+{
+    /* data */
+    int eId;
+    char favChar;
+    int salary;
+};
+    
+int main()
+{
+    struct employee Vijay;
+    Vijay.eId = 1;
+    Vijay.favChar = 'c';
+    Vijay.salary = 120000000;
+    cout &lt;&lt; "eID of Vijay is " &lt;&lt; Vijay.eId &lt;&lt; endl;
+    cout &lt;&lt; "favChar of Vijay is " &lt;&lt; Vijay.favChar &lt;&lt; endl;
+    cout &lt;&lt; "salary of Vijay is " &lt;&lt; Vijay.salary &lt;&lt; endl;
+    return 0;
+}</code></pre>
+          <p><b>Output:</b></p>
+          <pre class="language-c"><code class="language-c">eID of Vijay is 1
+favChar of Vijay is c
+salary of Vijay is 120000000</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>Unions</h2>
+          <p>
+            Just like Structures, the union is a user-defined data type. They
+            provide better memory management than structures. All the members in
+            the unions share the same memory location.
+          </p>
+          <p>
+            The union is a data type that allows different data belonging to
+            different data types to be stored in the same memory locations. One
+            of the advantages of using a union over structures is that it
+            provides an efficient way of reusing the memory location, as only
+            one of its members can be accessed at a time. A union is used in the
+            same way we declare and use a structure. The difference lies just in
+            the way memory is allocated to their members.
+          </p>
+        </div>
+        <div>
+          <h4>Creating a Union element</h4>
+          <p>
+            We use the union keyword to define the union.
+            <br />
+            The syntax for defining a union is,
+          </p>
+          <pre class="language-c"><code class="language-c">union union_name
+{
+    //union_elements
+} union_variable;</code></pre>
+          <p>
+            Here’s one example of how a union is defined and used in main as a
+            user-defined data type.
+          </p>
+          <pre
+            class="language-c"
+          ><code class="language-c">#include &lt;iostream&gt;
+using namespace std;
+    
+union money
+{
+    /* data */
+    int rice;
+    char car;
+    float pounds;
+};
+    
+int main()
+{
+    union money m1;
+}</code></pre>
+        </div>
+        <div>
+          <h4>Initialising and accessing union elements</h4>
+          <p>
+            Different from how we used to initialise a struct in one single
+            statement, union elements are initialised one at a time.
+            <br />
+            And also, one can access only one union element at a time. Altering
+            one union element disturbs the value stored in other union elements.
+          </p>
+          <pre
+            class="language-c"
+          ><code class="language-c">#include &lt;iostream&gt;
+using namespace std;
+    
+union money
+{
+    /* data */
+    int rice;
+    char car;
+    float pounds;
+};
+    
+int main()
+{
+    union money m1;
+    m1.rice = 34;
+    cout &lt;&lt; m1.rice;
+    return 0;
+}</code></pre>
+          <p><b>Output:</b></p>
+          <pre class="language-c"><code class="language-c">34</code></pre>
+          <p>
+            <b
+              >Note: We can only use 1 variable at a time otherwise the compiler
+              will give us a garbage value and the compiler chooses the data
+              type which has maximum memory for the allocation.</b
+            >
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>Enums</h2>
+          <p>
+            Enum or enumeration is a user-defined data type. Enums have named
+            constants that represent integral values. Enums are used to make the
+            program more readable and less complex. It lets us define a fixed
+            set of possible values and later define variables having one of
+            those values.
+          </p>
+        </div>
+        <div>
+          <h4>Creating an Enum element</h4>
+          <p>
+            We use the enum keyword to define the enum.
+            <br />
+            The syntax for defining a union is,
+          </p>
+          <pre class="language-c"><code class="language-c">enum enum_name
+{
+    element1,
+    element2,
+    element3
+};</code></pre>
+          <p>
+            Here’s one example of how a union is defined and used in main as a
+            user-defined data type.
+          </p>
+          <pre class="language-c"><code class="language-c">enum Meal
+{
+    breakfast,
+    lunch,
+    dinner
+};</code></pre>
+        </div>
+        <div>
+          <h4>Initialising and using enum elements</h4>
+          <p>
+            Since every enum element gets assigned a value to it, they could be
+            used to compare if a particular variable store the same value.
+          </p>
+          <pre
+            class="language-c"
+          ><code class="language-c">#include &lt;iostream&gt;
+using namespace std;
+    
+enum Meal
+{
+    breakfast,
+    lunch,
+    dinner
+};
+    
+int main()
+{
+    Meal m1 = dinner;
+    if (m1 == 2)
+    {
+        cout &lt;&lt; "The value of dinner is " &lt;&lt; dinner &lt;&lt; endl;
+    }
+}</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-c"
+          ><code class="language-c">The value of dinner is 2</code></pre>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/C++/C++Strings.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/C++/C++Functions.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+    </main>
+
+    <footer class="flex footer bgcolor2 mt-4">
+      <div class="footerLogo flex">
+        <img src="/img/logo.jpg" alt="" />
+        <p>Vijay Bansal</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Vijay Bansal</p>
+      </div>
+      <div class="media flex">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/profile.php?id=100041095243541"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/itz_vijay_bansal/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/vijay-bansal-319048249/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="github"
+          href="https://github.com/VijayBansal2004"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <i class="fa-brands whatsapp fa-whatsapp"></i>
+        <span style="font-size: small">+91 94172-12422</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2ff3e7c924.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/prism/prism.js"></script>
+  </body>
+</html>

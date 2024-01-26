@@ -1,0 +1,1533 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Miscellaneous Tags | CodeWithVijay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/prism/prism.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bodyColor textColorWhite">
+    <header>
+      <nav class="navbar bgcolor2 fixed-top">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand lightPurpleColor fw-bolder fs-2"
+            href="/index.html"
+            >&lt;/&gt;CodeWithVijay</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            style="background-color: #d8b4fe"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bgcolor2 text-white"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title lightPurpleColor fw-bolder"
+                id="offcanvasNavbarLabel"
+              >
+                &lt;/&gt;CodeWithVijay
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="background-color: #d8b4fe"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HTML
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlBasicTags.html"
+                        >Html Basic Tags</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/Inline&BlockElements.html"
+                        >Inline & Block Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlLists.html"
+                        >Html Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlTables.html"
+                        >Html Tables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlForms.html"
+                        >Html Forms</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/HeadElements.html"
+                        >Head Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlMedia.html"
+                        >Html Media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/MiscellaneousTags.html"
+                        >Miscellaneous Tags</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CSS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/cssIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSProperties.html"
+                        >CSS Properties</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSDesigning.html"
+                        >CSS Designing</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSAdvanceTopics.html"
+                        >CSS Advance Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA SCRIPT
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/jsIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptVariables.html"
+                        >Javascript Variables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptBasics.html"
+                        >Javascript Basics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptObjects.html"
+                        >Javascript Objects</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/DOM&BOM.html"
+                        >DOM & BOM</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/jsOOPs.html"
+                        >OOPs</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/html/C/cIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CDataTypesOperators&UserIO.html"
+                        >C Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFunctions.html"
+                        >C Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CPointers.html"
+                        >C Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CMemoryManagement.html"
+                        >C Memory Management</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CStructures&Unions.html"
+                        >C Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFileHandling.html"
+                        >C File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C++ PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/c++Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++DataTypesOperators&UserIO.html"
+                        >C++ Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++ConditionalStatements.html"
+                        >C++ Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++IterationStatements.html"
+                        >C++ Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++BreakContinue.html"
+                        >C++ Break/Continue</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Arrays.html"
+                        >C++ Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Pointers.html"
+                        >C++ Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Strings.html"
+                        >C++ Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Structures&Unions.html"
+                        >C++ Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Functions.html"
+                        >C++ Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++OPPs.html"
+                        >C++ OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++FileHandling.html"
+                        >C++ File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Templates&STL.html"
+                        >C++ Templates & STL</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/VariablesOperators&UserIO.html"
+                        >Variables, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/JavaMethods.html"
+                        >Java Methods</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/JavaOOPs.html"
+                        >Java OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PYTHON
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDataTypes&Operators.html"
+                        >Python Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonStrings.html"
+                        >Python Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLists.html"
+                        >Python Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonTuples.html"
+                        >Python Tuples</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonSets.html"
+                        >Python Sets</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDictionaries.html"
+                        >Python Dictionaries</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLoops.html"
+                        >Python Loops</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonFunctions.html"
+                        >Python Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonModules.html"
+                        >Python Modules</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonOOPs.html"
+                        >Python OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PHP
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/DataTypes&Operators.html"
+                        >Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Conditional&IterationStatements.html"
+                        >Conditional & Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPFunctions.html"
+                        >PHP Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPArrays.html"
+                        >PHP Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPOOPs.html"
+                        >PHP OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPSuperglobals.html"
+                        >PHP Superglobals</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPMySQL.html"
+                        >PHP MySQL</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPAdvancedTopics.html"
+                        >PHP Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    REACT JS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactTutorial.html"
+                        >React Tutorial</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactHooks.html"
+                        >React Hooks</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5 width80 minHeight90vh m-auto">
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/HTML/HtmlMedia.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary disabled" type="button">
+          <a href="">Next &gt;&gt;</a>
+        </button>
+      </div>
+      <div class="main">
+        <div>
+          <h2>HTML Code Tag</h2>
+          <p>
+            The HTML &lt;code&gt; tag is a powerful element for displaying code
+            snippets within a webpage. It preserves both spaces and line breaks,
+            making it ideal for showcasing code. In this blog post, we'll
+            explore how to use the &lt;code&gt; tag effectively, especially in
+            conjunction with Prism for code highlighting.
+          </p>
+        </div>
+        <div>
+          <h4>What is the &lt;code&gt; Tag?</h4>
+          <p>
+            The &lt;code&gt; tag is a semantic HTML tag that's used for
+            displaying code snippets. It can be used both inline and within a
+            block-level element like &lt;pre&gt;.
+          </p>
+        </div>
+        <div>
+          <h4>Why Use the &lt;code&gt; Tag?</h4>
+          <ul>
+            <li>
+              Semantic Meaning: Provides semantic value to the enclosed code.
+            </li>
+            <li>
+              Readability: This makes it easier for both browsers and developers
+              to understand that the text is code.
+            </li>
+            <li>
+              Styling: Easier to style and highlight with CSS or JavaScript
+              libraries like Prism.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Basic Usage</h4>
+          <p>
+            The most straightforward way to use the &lt;code&gt; tag is inline
+            for short code snippets:
+          </p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;code&gt;Your code here&lt;/code&gt;</code></pre>
+          <img src="/img/assits-25.png" alt="error" />
+        </div>
+        <div>
+          <h4>Using &lt;code&gt; with &lt;pre&gt;</h4>
+          <p>
+            For multiline code snippets, it's common to combine the &lt;code&gt;
+            tag with the &lt;pre&gt; tag:
+          </p>
+          <pre class="language-markup"><code class="language-markup">
+&lt;pre&gt;&lt;code&gt;Your multiline code here&lt;/code&gt;&lt;/pre&gt;</code></pre>
+        </div>
+        <div>
+          <h4>Conclusion</h4>
+          <p>
+            The HTML &lt;code&gt; tag is a simple yet powerful way to include
+            code snippets in your webpage.
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>HTML Semantic Tags</h2>
+          <p>
+            HTML5 introduced a range of semantic tags that provide meaning to
+            the structure of web content. This blog will guide you through the
+            importance and usage of these tags.
+          </p>
+        </div>
+        <div>
+          <h4>What are Semantic Tags?</h4>
+          <p>
+            Semantic tags add meaning to your HTML. They tell both the browser
+            and the developer what kind of content is being presented. <br />
+
+            Here are some of the key semantic tags you must know about:
+          </p>
+          <ol>
+            <li>
+              &lt;header&gt;: Used to represent the top section of a web page,
+              often containing headings, logos, and navigation.
+            </li>
+            <li>&lt;nav&gt;: Signifies a navigation menu on a web page.</li>
+            <li>
+              &lt;article&gt;: Indicates a self-contained piece of content, such
+              as a blog post or news article.
+            </li>
+            <li>
+              &lt;section&gt;: Represents a thematic grouping of content on a
+              web page.
+            </li>
+            <li>
+              &lt;aside&gt;: Typically used for sidebars or content that is
+              tangentially related to the main content.
+            </li>
+            <li>
+              &lt;footer&gt;: Represents the footer of a web page, usually
+              containing copyright information and contact details.
+            </li>
+            <li>
+              &lt;figure&gt; and &lt;figcaption&gt;: Used for embedding images,
+              diagrams, or charts, along with a caption.
+            </li>
+            <li>
+              &lt;main&gt;: Signifies the main content area of a web page.
+            </li>
+            <li>
+              &lt;time&gt;: Used to represent time-related information, like
+              dates and times.
+            </li>
+          </ol>
+          <img src="/img/assits-26.png" alt="error" />
+        </div>
+        <div>
+          <h4>Why Use Semantic Tags?</h4>
+          <p>
+            They enhance SEO, improve accessibility, and make your code easier
+            to read and maintain.
+          </p>
+        </div>
+        <div>
+          <h4>Commonly Used Semantic Tags</h4>
+          <p>Here are some commonly used semantic tags in HTML:</p>
+          <ul>
+            <li>header: Contains introductory content.</li>
+            <li>footer: Holds footer information.</li>
+            <li>article: Encapsulates a self-contained composition.</li>
+            <li>section: Represents a standalone section.</li>
+            <li>
+              aside: Contains content aside from the content it is placed in.
+            </li>
+            <li>nav: Holds navigation links.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Examples</h4>
+          <h5>Using the &lt;header&gt; tags and &lt;footer&gt; tags</h5>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;header&gt;
+  &lt;h1&gt;My Website&lt;/h1&gt;
+  &lt;nav&gt;
+      &lt;ul&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Home&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;About&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Services&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href="#"&gt;Contact&lt;/a&gt;&lt;/li&gt;
+      &lt;/ul&gt;
+  &lt;/nav&gt;
+&lt;/header&gt;
+&lt;footer&gt;
+    &lt;p&gt;Copyright 2023&lt;/p&gt;
+&lt;/footer&gt;</code></pre>
+          <h5>Using the &lt;article&gt; and &lt;section&gt; tags</h5>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;article&gt;
+  &lt;h2&gt;Article Title&lt;/h2&gt;
+  &lt;section&gt;
+    &lt;p&gt;Content here&lt;/p&gt;
+  &lt;/section&gt;
+&lt;/article&gt;</code></pre>
+          <h5>Using the &lt;aside&gt; and &lt;nav&gt; tags</h5>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;aside&gt;
+  &lt;p&gt;This is an aside content&lt;/p&gt;
+&lt;/aside&gt;
+&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;Home&lt;/li&gt;
+    &lt;li&gt;About&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</code></pre>
+          <h5>Using the &lt;figure&gt; and &lt;figcaption&gt; tags</h5>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;figure&gt;
+  &lt;img src="image.jpg" alt="An example image"&gt;
+  &lt;figcaption&gt;This is an example image.&lt;/figcaption&gt;
+&lt;/figure&gt;</code></pre>
+        </div>
+        <div>
+          <h4>Conclusion</h4>
+          <p>
+            Using HTML's semantic tags can greatly benefit both your website's
+            SEO and the maintainability of your code. They offer a way to
+            structure your HTML in a meaningful manner, making your website more
+            accessible and easier to understand.
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>HTML Canvas</h2>
+          <p>
+            The &lt;canvas&gt; element in HTML is a powerful feature for
+            rendering graphics and shapes directly within web pages. Though it's
+            often paired with JavaScript for dynamic rendering, the canvas
+            itself is an HTML element. In this blog, we'll explore what you can
+            do with the &lt;canvas&gt;element alone
+          </p>
+        </div>
+        <div>
+          <h4>What is Canvas?</h4>
+          <p>
+            The &lt;canvas&gt; element serves as a container for graphics, which
+            can be rendered via scripting. Essentially, it offers a drawing area
+            for visual content.
+          </p>
+        </div>
+        <div>
+          <h4>Why Use Canvas?</h4>
+          <p>
+            Here are some reasons why you might use the &lt;canvas&gt; element:
+          </p>
+          <ul>
+            <li>
+              Graphics: For drawing shapes, graphs, and other visual
+              representations.
+            </li>
+            <li>Dynamic Content: To dynamically update visual elements.</li>
+            <li>
+              Interactivity: Though this involves JavaScript, the canvas element
+              is the foundation for interactive graphical content.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Basic Syntax</h4>
+          <p>Here's how you can define a simple &lt;canvas&gt; element:</p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt</code></pre>
+        </div>
+        <div>
+          <h4>Attributes of Canvas</h4>
+          <p>
+            While the &lt;canvas&gt; element is simple, it does have a couple of
+            important attributes:
+          </p>
+          <ul>
+            <li>width: Specifies the width of the canvas.</li>
+            <li>height: Specifies the height of the canvas.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Styling with CSS</h4>
+          <p>
+            You can also style the &lt;canvas&gt; element with CSS. For example,
+            to add a border:
+          </p>
+          <pre class="language-css"><code class="language-css">canvas {
+    border: 1px solid black;
+}</code></pre>
+        </div>
+        <div>
+          <h4>Conclusion</h4>
+          <p>
+            The HTML &lt;canvas&gt; element serves as a robust foundation for
+            creating graphics and other visual elements on a web page. Even
+            without involving JavaScript, understanding the canvas element and
+            its basic attributes can be quite useful.
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>HTML Global Attributes</h2>
+          <p>
+            HTML Global Attributes play a crucial role in HTML development,
+            providing a consistent set of attributes that can be applied to any
+            HTML element. In this blog, we'll explore what these attributes are,
+            their descriptions, and how to use them effectively.
+          </p>
+        </div>
+        <div>
+          <h4>What Are HTML Global Attributes?</h4>
+          <p>
+            The global attributes are a set of attributes that can be used with
+            all HTML elements, making them incredibly versatile and essential
+            for dynamic HTML coding.
+          </p>
+        </div>
+        <div>
+          <h4>List of Common Global Attributes</h4>
+          <table
+            style="
+              border-collapse: collapse;
+              border-spacing: 11px;
+              border: 1px solid #000000;
+            "
+            border="1"
+          >
+            <thead>
+              <tr style="height: 19.5938px">
+                <th
+                  style="
+                    width: 21.1042%;
+                    height: 19.5938px;
+                    border-width: 1px;
+                    padding: 11px;
+                    border-color: rgb(0, 0, 0);
+                  "
+                >
+                  Attribute
+                </th>
+                <th
+                  style="
+                    width: 72.4582%;
+                    height: 19.5938px;
+                    border-width: 1px;
+                    padding: 11px;
+                    border-color: rgb(0, 0, 0);
+                  "
+                >
+                  Description
+                </th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="height: 39.1875px">
+                <td
+                  style="
+                    width: 21.1042%;
+                    height: 39.1875px;
+                    border-width: 1px;
+                    padding: 11px;
+                    border-color: rgb(0, 0, 0);
+                  "
+                >
+                  accesskey
+                </td>
+                <td
+                  style="
+                    width: 72.4582%;
+                    height: 39.1875px;
+                    border-width: 1px;
+                    padding: 11px;
+                    border-color: rgb(0, 0, 0);
+                  "
+                >
+                  Specifies a shortcut key to activate/focus an element
+                </td>
+              </tr>
+              <tr style="height: 19.5938px">
+                <td
+                  style="
+                    width: 21.1042%;
+                    height: 19.5938px;
+                    border-width: 1px;
+                    padding: 11px;
+                    border-color: rgb(0, 0, 0);
+                  "
+                >
+                  class
+                </td>
+                <td
+                  style="
+                    width: 72.4582%;
+                    height: 19.5938px;
+                    border-width: 1px;
+                    padding: 11px;
+                    border-color: rgb(0, 0, 0);
+                  "
+                >
+                  Specifies one or more classes for an element
+                </td>
+              </tr>
+              <tr style="height: 19.5938px">
+                <td
+                  style="
+                    width: 21.1042%;
+                    height: 19.5938px;
+                    border-width: 1px;
+                    padding: 11px;
+                    border-color: rgb(0, 0, 0);
+                  "
+                >
+                  contenteditable
+                </td>
+                <td
+                  style="
+                    width: 72.4582%;
+                    height: 19.5938px;
+                    border-width: 1px;
+                    padding: 11px;
+                    border-color: rgb(0, 0, 0);
+                  "
+                >
+                  Specifies whether the content is editable or not
+                </td>
+              </tr>
+              <!-- Add more rows as needed -->
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h3>Using Global Attributes</h3>
+          <p>
+            Now, let's look at some examples that illustrate the usage of some
+            of these global attributes.
+          </p>
+        </div>
+        <div>
+          <h4>Using the class Attribute</h4>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;div class="container"&gt;This is a container.&lt;/div&gt;</code></pre>
+        </div>
+
+        <div>
+          <h4>Using the id Attribute</h4>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;span id="unique"&gt;Unique Element&lt;/span&gt;</code></pre>
+        </div>
+
+        <div>
+          <h4>Using the data-* Attribute for Custom Data</h4>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;div data-user="123"&gt;Custom Data&lt;/div&gt;</code></pre>
+        </div>
+        <div>
+          <h4>Conclusion</h4>
+          <p>
+            HTML Global Attributes offer a powerful and consistent way to
+            control and manage HTML elements. Understanding these attributes can
+            significantly improve your HTML coding efficiency and the dynamism
+            of the web pages you create.
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>HTML Quotation Tag</h2>
+          <p>
+            The use of quotations is common in textual content. HTML provides
+            specific tags to handle this: &lt;blockquote&gt; for block
+            quotations and &lt;q&gt; for inline quotations. In this blog, we'll
+            explore these tags, their attributes, and how to style them.
+          </p>
+        </div>
+        <div>
+          <h4>What Are &lt;blockquote&gt; and &lt;q&gt; Tags?</h4>
+          <p>
+            The &lt;blockquote&gt; and &lt;q&gt; tags serve to define quotations
+            in HTML. While &lt;blockquote&gt; is used for longer, block-level
+            quotes, &lt;q&gt; is used for shorter, inline quotes.
+          </p>
+        </div>
+        <div>
+          <h4>Why Use These Tags?</h4>
+          <p>
+            They provide semantic meaning to your quotations, making it easier
+            for search engines to understand the context and relevance of the
+            content.
+          </p>
+        </div>
+        <div>
+          <h3>Basic Syntax</h3>
+          <h4>&lt;blockquote&gt; Tag</h4>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;blockquote cite="source-url"&gt;
+  Quotation text here.
+&lt;/blockquote&gt;</code></pre>
+        </div>
+        <div>
+          <h4>&lt;q&gt; Tag</h4>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;q cite="source-url"&gt;Quotation text here.&lt;/q&gt;</code></pre>
+        </div>
+        <div>
+          <h4>Attributes</h4>
+          <p>
+            Both &lt;blockquote&gt; and &lt;q&gt; tags support the cite
+            attribute:
+          </p>
+          <ul>
+            <li>cite: Specifies the URL of the quote's source.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Practical Examples</h3>
+          <h4>Using &lt;blockquote&gt; for Long Quotes</h4>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;blockquote cite="https://example.com"&gt;
+    This is a long quote from an external source. This quote can span multiple lines and paragraphs.
+&lt;/blockquote&gt;</code></pre>
+        </div>
+        <div>
+          <h4>Using &lt;q&gt; for Short, Inline Quotes</h4>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">The philosopher said, &lt;q cite="https://example.com"&gt;The unexamined life is not worth living.&lt;/q&gt;</code></pre>
+        </div>
+        <div>
+          <h4>Styling with CSS</h4>
+          <p>
+            You can style these tags using CSS to better match the aesthetics of
+            your website.
+          </p>
+        </div>
+        <div>
+          <h4>Conclusion</h4>
+          <p>
+            The &lt;blockquote&gt; and &lt;q&gt; tags are essential for
+            semantically marking up quotations in HTML. They provide both
+            readability and SEO benefits. Understanding how to use these tags
+            effectively can add more depth and clarity to your web content.
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>Obsolete HTML Tags</h2>
+          <p>
+            As HTML has evolved, some tags have been deprecated or become
+            obsolete. While modern browsers might still support them, their use
+            is discouraged in favor of CSS or more semantic HTML5 elements. In
+            this blog, we'll explore some of these obsolete tags and their
+            modern alternatives.
+          </p>
+        </div>
+        <div>
+          <h4>What Are Obsolete Tags?</h4>
+          <p>
+            Obsolete tags are HTML elements that are no longer recommended for
+            use. They may lack support in modern browsers and are likely to be
+            phased out entirely in future versions of HTML.
+          </p>
+        </div>
+        <div>
+          <h4>Why Avoid Obsolete Tags?</h4>
+          <ul>
+            <li>Compatibility Issues: Not supported by all modern browsers.</li>
+            <li>
+              Accessibility: This may not meet current web accessibility
+              standards.
+            </li>
+            <li>Maintenance: Makes future updates difficult.</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Examples of Obsolete Tags</h4>
+          <h5>The &lt;font&gt; Tag</h5>
+          <p>Used to specify text color, size, and font.</p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;font color="red" size="3" face="verdana"&gt;This is some text&lt;/font&gt;</code></pre>
+        </div>
+        <div>
+          <h5>The &lt;center&gt; Tag</h5>
+          <p>Used to center-align elements.</p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;center&gt;This text  will be centered&lt;/center&gt;</code></pre>
+        </div>
+        <div>
+          <h5>The &lt;u&gt; Tag</h5>
+          <p>Used to underline text.</p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;u&gt;This text will be underlined&lt;/u&gt;</code></pre>
+        </div>
+        <div>
+          <h4>Modern Alternatives</h4>
+          <p>
+            It's better to use CSS for styling and layout as it separates
+            content from presentation.
+          </p>
+        </div>
+        <div>
+          <h5>Replacing &lt;font&gt;</h5>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;span style="color:red; font-size:16px; font-family:verdana;"&gt;This is some text&lt;/span&gt;</code></pre>
+        </div>
+        <div>
+          <h5>Replacing &lt;center&gt;</h5>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;div style="text-align:center;"&gt;This text will be centered&lt;/div&gt;</code>
+          </pre>
+        </div>
+        <div>
+          <h5>Replacing &lt;u&gt;</h5>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;span style="text-decoration:underline;"&gt;This text will be underlined&lt;/span&gt;</code></pre>
+        </div>
+        <div>
+          <h4>Conclusion</h4>
+          <p>
+            Understanding obsolete HTML tags is not just a trip down memory
+            lane; it also emphasizes the importance of keeping up to date with
+            the latest web standards. Always opt for modern, semantic HTML and
+            CSS for styling to ensure your websites are future-proof.
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>Character Sets</h2>
+          <p>
+            Character sets are an essential concept in HTML, influencing how
+            textual content is displayed and interpreted by the browser. This
+            blog aims to elucidate what character sets are, why they matter, and
+            how to specify them in HTML.
+          </p>
+        </div>
+        <div>
+          <h4>What is a Character Set?</h4>
+          <p>
+            A character set is a set of symbols and characters that a computer
+            uses to represent text. In HTML, specifying the correct character
+            set ensures that text is displayed properly across different
+            browsers and platforms.
+          </p>
+        </div>
+        <div>
+          <h4>Why is it Important?</h4>
+          <p>Using the correct character set is crucial for:</p>
+          <ul>
+            <li>
+              Accurate Rendering: To ensure that browsers correctly display your
+              text.
+            </li>
+            <li>
+              Multi-language Support: To display text in various languages and
+              alphabets.
+            </li>
+            <li>
+              Data Integrity: To make sure the data sent and received remains
+              consistent.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Specifying Character Set in HTML</h4>
+          <p>
+            The character set is generally specified using the &lt;meta&gt; tag
+            within the &lt;head&gt; section of an HTML document
+          </p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;meta charset="UTF-8"&gt;</code></pre>
+        </div>
+        <div>
+          <h4>Common Character Sets</h4>
+          <p>Here are some commonly used character sets:</p>
+          <ul>
+            <li>
+              UTF-8: Universal Character Set, 8-bit. It can represent any
+              character in the Unicode standard.
+            </li>
+            <li>ISO-8859-1: Western Alphabet.</li>
+            <li>
+              ASCII: American Standard Code for Information Interchange&lt;
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Examples</h4>
+          <h5>Using UTF-8</h5>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;meta charset="UTF-8"&gt;</code></pre>
+        </div>
+        <div>
+          <h5>Using ISO-8859-1</h5>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1"&gt;</code></pre>
+        </div>
+        <div>
+          <h4>Conclusion</h4>
+          <p>
+            Understanding and specifying the correct character set is crucial
+            for creating web pages that render text accurately across different
+            platforms and languages. UTF-8 is the most commonly used and
+            recommended character set due to its wide applicability and support.
+          </p>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/HTML/HtmlMedia.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary disabled" type="button">
+          <a href="">Next &gt;&gt;</a>
+        </button>
+      </div>
+    </main>
+
+    <footer class="flex footer bgcolor2 mt-4">
+      <div class="footerLogo flex">
+        <img src="/img/logo.jpg" alt="" />
+        <p>Vijay Bansal</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Vijay Bansal</p>
+      </div>
+      <div class="media flex">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/profile.php?id=100041095243541"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/itz_vijay_bansal/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/vijay-bansal-319048249/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="github"
+          href="https://github.com/VijayBansal2004"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <i class="fa-brands whatsapp fa-whatsapp"></i>
+        <span style="font-size: small">+91 94172-12422</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2ff3e7c924.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/prism/prism.js"></script>
+  </body>
+</html>

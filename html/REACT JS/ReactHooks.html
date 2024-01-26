@@ -1,0 +1,1412 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>React Hooks | CodeWithVijay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/prism/prism.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bodyColor textColorWhite">
+    <header>
+      <nav class="navbar bgcolor2 fixed-top">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand lightPurpleColor fw-bolder fs-2"
+            href="/index.html"
+            >&lt;/&gt;CodeWithVijay</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            style="background-color: #d8b4fe"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bgcolor2 text-white"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title lightPurpleColor fw-bolder"
+                id="offcanvasNavbarLabel"
+              >
+                &lt;/&gt;CodeWithVijay
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="background-color: #d8b4fe"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HTML
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlBasicTags.html"
+                        >Html Basic Tags</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/Inline&BlockElements.html"
+                        >Inline & Block Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlLists.html"
+                        >Html Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlTables.html"
+                        >Html Tables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlForms.html"
+                        >Html Forms</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/HeadElements.html"
+                        >Head Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlMedia.html"
+                        >Html Media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/MiscellaneousTags.html"
+                        >Miscellaneous Tags</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CSS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/cssIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSProperties.html"
+                        >CSS Properties</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSDesigning.html"
+                        >CSS Designing</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSAdvanceTopics.html"
+                        >CSS Advance Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA SCRIPT
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/jsIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptVariables.html"
+                        >Javascript Variables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptBasics.html"
+                        >Javascript Basics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptObjects.html"
+                        >Javascript Objects</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/DOM&BOM.html"
+                        >DOM & BOM</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/jsOOPs.html"
+                        >OOPs</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/html/C/cIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CDataTypesOperators&UserIO.html"
+                        >C Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFunctions.html"
+                        >C Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CPointers.html"
+                        >C Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CMemoryManagement.html"
+                        >C Memory Management</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CStructures&Unions.html"
+                        >C Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFileHandling.html"
+                        >C File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C++ PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/c++Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++DataTypesOperators&UserIO.html"
+                        >C++ Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++ConditionalStatements.html"
+                        >C++ Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++IterationStatements.html"
+                        >C++ Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++BreakContinue.html"
+                        >C++ Break/Continue</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Arrays.html"
+                        >C++ Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Pointers.html"
+                        >C++ Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Strings.html"
+                        >C++ Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Structures&Unions.html"
+                        >C++ Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Functions.html"
+                        >C++ Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++OPPs.html"
+                        >C++ OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++FileHandling.html"
+                        >C++ File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Templates&STL.html"
+                        >C++ Templates & STL</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/VariablesOperators&UserIO.html"
+                        >Variables, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/JavaMethods.html"
+                        >Java Methods</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/JavaOOPs.html"
+                        >Java OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PYTHON
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDataTypes&Operators.html"
+                        >Python Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonStrings.html"
+                        >Python Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLists.html"
+                        >Python Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonTuples.html"
+                        >Python Tuples</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonSets.html"
+                        >Python Sets</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDictionaries.html"
+                        >Python Dictionaries</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLoops.html"
+                        >Python Loops</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonFunctions.html"
+                        >Python Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonModules.html"
+                        >Python Modules</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonOOPs.html"
+                        >Python OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PHP
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/DataTypes&Operators.html"
+                        >Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Conditional&IterationStatements.html"
+                        >Conditional & Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPFunctions.html"
+                        >PHP Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPArrays.html"
+                        >PHP Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPOOPs.html"
+                        >PHP OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPSuperglobals.html"
+                        >PHP Superglobals</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPMySQL.html"
+                        >PHP MySQL</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPAdvancedTopics.html"
+                        >PHP Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    REACT JS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactTutorial.html"
+                        >React Tutorial</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactHooks.html"
+                        >React Hooks</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5 width80 minHeight90vh m-auto">
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/REACT JS/ReactTutorial.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary disabled" type="button">
+          <a href="/">Next &gt;&gt;</a>
+        </button>
+      </div>
+      <div class="main">
+        <div>
+          <h2>What is a Hook?</h2>
+          <p>
+            Hooks were added to React in version 16.8. Hooks let you use state
+            and other React features without writing a class. <br />
+
+            Although states have largely replaced classes in React, there is no
+            plan of removing classes from React.
+          </p>
+          <p><b>Things you need to keep in mind while using hooks:</b></p>
+          <ul>
+            <li>You must import hook first</li>
+            <li>You must import it from react</li>
+            <li>
+              Hooks can only be called in React Function Components, meaning:
+            </li>
+          </ul>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">// import statements
+// Can't call here
+const Blogs = () =&gt; {
+    // Can call here
+    return &lt;h1&gt;Blogs&lt;/h1&gt;;
+};
+
+export default Blogs;</code></pre>
+        </div>
+        <div>
+          <ul>
+            <li>Hooks cannot be conditional</li>
+            <li>Hooks cannot work in React Class Components</li>
+            <li>
+              Hooks can only be called at the top level of a component, meaning
+              it can't be called from inside a block, i.e. {}. So, can't be
+              called inside if, loops or any block, example:
+            </li>
+          </ul>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">const Blogs = () =&gt; {
+    // Can call here
+    if (true){
+        // Can't call here
+    }
+    return &lt;h1&gt;Blogs&lt;/h1&gt;;
+};
+
+export default Blogs;</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>React useState Hook</h2>
+          <p>
+            useState is a Hook that lets you add React state to function
+            components.
+          </p>
+        </div>
+        <div>
+          <h4>Importing useState</h4>
+          <p>
+            To use useState, first we need to import useState and initialize it,
+            you can import it from react like this:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import { useState } from "react";</code></pre>
+        </div>
+        <div>
+          <h4>Initializing useState</h4>
+          <p>You can initialize state like this:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import { useState } from "react";
+
+const App = () =&lt; {
+    const [name, setName] = useState('')
+};</code></pre>
+          <p>
+            useState takes initial state as argument and gives a state and a
+            function(setName in this case) to update that state as we can't
+            directly change/update a state. Also, these state names are just
+            like variables, hence you can name them anything you like.
+          </p>
+        </div>
+        <div>
+          <h4>Reading a state</h4>
+          <p>
+            As mentioned earlier, it returns a state and a function to
+            change/update that state. Hence, everything is stored in name. We
+            can read states just like variables:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import { useState } from "react";
+
+const App = () =&lt; {
+    const [name, setName] = useState('')
+
+    return &gt;h1&lt;My name is {name}&gt;/h1&lt;
+};</code></pre>
+        </div>
+        <div>
+          <h4>Updating a state</h4>
+          <p>
+            To update state we use the function it returns to update state, in
+            this case: setName. State can be updated like this:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import { useState } from "react";
+
+const App = () =&gt; {
+    const [name, setName] = useState('')
+    setName('Lovish')
+
+    return &lt;h1&gt;My name is {name}&lt;/h1&gt;
+};</code></pre>
+        </div>
+        <div>
+          <h4>What can state hold?</h4>
+          <p>
+            Like normal variables, state can hold any datatype like strings,
+            numbers, booleans, arrays, objects, objects in arrays, arrays in
+            objects. For example:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import { useState } from "react";
+
+const App = () =&gt; {
+    const [data, setData] = useState({
+        name: 'Lovish',
+        age: 21
+    })
+
+    return &lt;h1&gt;My name is {data.name} and my age is {data.age}&lt;/h1&gt;
+};</code></pre>
+        </div>
+        <div>
+          <h4>Updating Objects and Arrays in State</h4>
+
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import { useState } from "react";
+
+const App = () =&gt; {
+  const [data, setData] = useState({
+    name: 'lovish',
+    age: 21
+  })
+
+  return &lt;&gt;
+    &lt;h1&gt;My name is {data.name} and my age is {data.age}&lt;/h1&gt;
+    &lt;button onClick={() =&gt; setData({ ...data, name: 'CWV' })}&gt;Click Me&lt;/button&gt;&lt;/&gt;
+};
+
+export default App;</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>React useEffect Hook</h2>
+          <p>
+            The useEffect Hook allows you to perform side effects in your
+            components.
+            <br />
+            useEffect accepts two arguments. The second one is optional.
+          </p>
+          <p><b>Runs on every render:</b></p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import { useState, useEffect } from "react";
+
+function Home() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() =&gt; {
+    setTimeout(() =&gt; {
+      setCount((count) =&gt; count + 1);
+    }, 1000);
+  });
+
+  return &lt;h1&gt;I have rendered {count} times!&lt;/h1&gt;;
+}
+
+export default Home;</code></pre>
+        </div>
+        <div>
+          <p><b>Runs on first render:</b></p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import { useState, useEffect } from "react";
+
+function Home() {
+  const [count, setCount] = useState(0);
+
+  useEffect(() =&gt; {
+    setTimeout(() =&gt; {
+      setCount((count) =&gt; count + 1);
+    }, 1000);
+  }, []);
+
+  return &lt;h1&gt;I have rendered {count} times!&lt;/h1&gt;;
+}
+
+export default Home;</code></pre>
+        </div>
+        <div>
+          <p><b>Runs when data changes:</b></p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import { useState, useEffect } from "react";
+
+function Home() {
+  const [count, setCount] = useState(0);
+  const [data, setData] = useState('');
+
+  const handleChange = (e) =&gt; {
+    setData(e.target.value)
+  }
+
+  useEffect(() =&gt; {
+    setCount((count) =&gt; count + 1);
+  }, [data]);
+
+  return (
+    &lt;&gt;
+      &lt;input onChange={handleChange} value={data} /&gt;
+      &lt;p&gt;{count}&lt;/p&gt;
+    &lt;/&gt;
+  );
+}
+
+export default Home;</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>React useContext</h2>
+          <p>
+            useState is a Hook that lets you add React state to function
+            components. useContext helps to manage states globally, i.e. between
+            components.
+          </p>
+        </div>
+        <div>
+          <h4>Problem</h4>
+          <p>
+            Suppose there is a button in &lt;Navbar /&gt; Component which
+            affects something in &lt;Home /&gt; Component. Problems: In this
+            case, state can't be held in &lt;Navbar /&gt; or &lt;Home /&gt;, it
+            will be in App.js
+          </p>
+          <p>
+            To access it, we have to pass it like a prop to the components, and
+            if the component is within 3-4 components, we have to pass it to
+            everyone as shown in image below:
+          </p>
+          <img src="/img/assits-37.png" alt="chart" />
+        </div>
+        <div>
+          <h4>Solution - Create Context</h4>
+          <p>
+            It's a hook so first we need to import it from react and initialize
+            it! To do this, write:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import { createContext } from "react";
+
+const StateContext = createContext()</code></pre>
+        </div>
+        <div>
+          <h4>Context Provider</h4>
+          <p>
+            Now we need to wrap the component tree that need the state Context
+            in a Provider. It's like the Provider will provide the state to
+            every component in that tree which is wrapped in Provider.
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">function App() {
+            const [state, setState] = useState('true');
+          
+  return (
+    &lt;StateContext.Provider value={state}&gt;
+      &lt;h1&gt;{`Hi! My state is ${state}!`}&lt;/h1&gt;
+      &lt;Home state={state} /&gt;
+    &lt;/StateContext.Provider&gt;
+  );
+}</code></pre>
+        </div>
+        <div>
+          <h4>useContext hook</h4>
+          <p>First we need to import it:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import { useState, createContext, useContext } from "react";</code></pre>
+          <p>To access useContext, you can do something like this:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">function Home() {
+  const state = useContext(StateContext);
+
+  return (
+    &lt;&gt;
+      &lt;h2&gt;{`Hii! My state is ${state}! `}&lt;/h2&gt;
+    &lt;/&gt;
+  );
+};</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>React useRef</h2>
+          <p>
+            useRef keeps the value stored between renders.
+            <br />
+            In this, value changed doesn't cause a re-render.
+            <br />
+            It can also be used to access a DOM element directly.
+          </p>
+        </div>
+        <div>
+          <h4>Doesn't cause re-render</h4>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import { useState, useRef } from "react";
+import ReactDOM from "react-dom/client";
+
+function App() {
+  const [stateValue, setStateValue] = useState("");
+  const refValue = useRef("");
+
+  return (
+    &lt;&gt;
+
+      &lt;h1&gt;Will cause a re-render:&lt;/h1&gt;
+      &lt;button onClick={()=&gt;{setStateValue(Math.random())}}&gt;state&lt;/button&gt; : {stateValue}
+      
+      &lt;h1&gt;Will change but won't cause a re-render:&lt;/h1&gt;
+      &lt;button onClick={()=&gt;{refValue.current=Math.random()}}&gt;ref&lt;/button&gt; : {refValue.current}
+
+    &lt;/&gt;
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(&lt;App /&gt;);</code></pre>
+          <p>
+            In this, if you click on state button, state will update and it will
+            re-render, whereas if you click on ref, nothing visible will happen,
+            i.e. ref will change but it won't re-render. To verify this, you can
+            again click on state, it will again update and re-render but this
+            time ref has some value stored, so that will display.
+          </p>
+        </div>
+        <div>
+          <h4>Accessing DOM elements with ref</h4>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import { useRef } from "react";
+import ReactDOM from "react-dom/client";
+
+function App() {
+  const inputElement = useRef();
+
+  const focusInput = () =&gt; {
+    inputElement.current.focus();
+  };
+
+  return (
+    &lt;&gt;
+      &lt;input type="text" ref={inputElement} /&gt;
+      &lt;button onClick={focusInput}&gt;Focus Input&lt;/button&gt;
+    &lt;/&gt;
+  );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(&lt;App /&gt;);</code></pre>
+          <p>
+            In this, we initialized a useRef. In jsx, we used an attribute
+            called ref to store reference, once we have reference then we can
+            use it anyway we want.
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>React useReducer</h2>
+          <p>
+            useReducer is similar to useState hook.
+            <br />
+
+            It lets you write your custom state logic.
+            <br />
+
+            It lets you pass dispatch down instead of callbacks resulting in
+            optimized performance for components that trigger deep updates.
+          </p>
+        </div>
+        <div>
+          <h4>When to use useReducer?</h4>
+          <p>
+            useReducer is usually preferable to useState when you have complex
+            state logic, changing more than 2-3 states in a function.
+          </p>
+        </div>
+        <div>
+          <h4>Syntax</h4>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">const [state, dispatch] = useReducer(reducer, initialState);</code></pre>
+          <p>
+            Here reducer is a function which contains your custom state logic
+            and initialState is as name suggests, it's initial state.
+            <br />
+            As you can see useReducer returns the current state and a dispatch
+            method.
+          </p>
+          <p>Here is an example:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import { useReducer } from "react";
+
+const initialData = {
+  lowercase: '',
+  uppercase: '',
+  spaces: ''
+}
+
+const reducer = (state, action) =&gt; {
+  switch (action.type) {
+    case 'LOWERCASE':
+      return {...state, [action.payload.name]: action.payload.value.toLowerCase()}
+    case 'UPPERCASE':
+      return {...state, [action.payload.name]: action.payload.value.toUpperCase()}
+    case 'SPACES':
+      return {...state, [action.payload.name]: action.payload.value.replaceAll(' ', '')}
+    default:
+      return state;
+  }
+};
+
+function App() {
+  const [data, dispatch] = useReducer(reducer, initialData);
+
+  const handleChange = (e) =&gt; {
+    dispatch({ type: e.target.name.toUpperCase(), payload: {name: e.target.name, value: e.target.value} });
+  };
+
+  return (
+    &lt;&gt;
+      &lt;form&gt;
+        &lt;input type="text" placeholder="Only Lowercase" name="lowercase" onChange={handleChange} value={data.lowercase} /&gt;&lt;br /&gt;
+        &lt;input type="text" placeholder="Only Uppercase" name="uppercase" onChange={handleChange} value={data.uppercase} /&gt;&lt;br /&gt;
+        &lt;input type="text" placeholder="No Spaces" name="spaces" onChange={handleChange} value={data.spaces} /&gt;
+      &lt;/form&gt;
+    &lt;/&gt;
+  );
+}
+
+export default App;</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>React useCallback</h2>
+          <p>
+            React useCallback Hook returns a memoized callback function.
+            <br />
+            It is done so that it does not need to be recalculated resulting in
+            improved performance.
+            <br />
+            If we don't use useCallback function would run on every render. This
+            helps us to memoize resource intensive functions so that they will
+            not automatically run on every render.
+            <br />
+            With useCallback Hook, memoized function only runs when any of its
+            dependencies update.
+          </p>
+        </div>
+        <div>
+          <h4>When to use useCallback?</h4>
+          <p>
+            You may think we can use memo and stop a component from re-rendering
+            but if there is a case where you are passing a function as prop to a
+            component, then it will re-render irrespective of memo. It is
+            because of something called "referential equality". In this every
+            time a component re-renders, its function gets recreated. Hence,
+            memo is working but because function is getting recreated, component
+            will re-render. To avoid this, we can use useCallback!
+          </p>
+          <p>Like this:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">const handleState = useCallback(() =&gt; {
+  setState({...state, type: 'CONFIRMED'});
+}, [state])</code></pre>
+          <p>
+            Like this we are memoizing the function and only letting it run when
+            the dependency state changes!
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h4>React useMemo</h4>
+          <p>
+            React useMemo Hook returns a memoized value.
+            <br />
+            It is similar to useCallback Hook. The main difference is useMemo
+            returns a memoized value and useCallback returns a memoized
+            function.
+            <br />
+            The useMemo Hook only runs when any of its dependencies update.
+            <br />
+            useMemo can improve performance big time.
+          </p>
+        </div>
+        <div>
+          <h4>When to use it?</h4>
+          <p>Like if you have an expensive function like this:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">const expensiveFunction = (num) =&gt; {
+  console.log("Calculating...");
+  for (let i = 0; i &lt; 1000000000; i++) {
+    num += 1;
+  }
+  return num;
+};</code></pre>
+          <p>
+            This function will run on every render resulting in slowing down of
+            everything. To prevent this, we can memoize it's result and return
+            it without calculating and only recalculate it when num changes.
+            <br />
+            For this we will make a state number because we have to give
+            changing factor as dependency. Hence, code would be:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import { useMemo, useState } from "react";
+
+const App = () =&gt; {
+  const [number, setNumber] = useState(0);
+  const calculation = useMemo(() =&gt; expensiveFunction(number), [number]);
+
+  return (
+    &lt;div&gt;
+      {calculation}
+    &lt;/div&gt;
+  );
+};
+
+const expensiveFunction = (num) =&gt; {
+  console.log("Calculating...");
+  for (let i = 0; i &lt; 1000000000; i++) {
+    num = num + i;
+  }
+  return num;
+};
+
+export default App;</code></pre>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/REACT JS/ReactTutorial.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary disabled" type="button">
+          <a href="/">Next &gt;&gt;</a>
+        </button>
+      </div>
+    </main>
+
+    <footer class="flex footer bgcolor2 mt-4">
+      <div class="footerLogo flex">
+        <img src="/img/logo.jpg" alt="" />
+        <p>Vijay Bansal</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Vijay Bansal</p>
+      </div>
+      <div class="media flex">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/profile.php?id=100041095243541"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/itz_vijay_bansal/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/vijay-bansal-319048249/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="github"
+          href="https://github.com/VijayBansal2004"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <i class="fa-brands whatsapp fa-whatsapp"></i>
+        <span style="font-size: small">+91 94172-12422</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2ff3e7c924.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/prism/prism.js"></script>
+  </body>
+</html>

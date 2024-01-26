@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Tables | CodeWithVijay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/prism/prism.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bodyColor textColorWhite">
+    <header>
+      <nav class="navbar bgcolor2 fixed-top">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand lightPurpleColor fw-bolder fs-2"
+            href="/index.html"
+            >&lt;/&gt;CodeWithVijay</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            style="background-color: #d8b4fe"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bgcolor2 text-white"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title lightPurpleColor fw-bolder"
+                id="offcanvasNavbarLabel"
+              >
+                &lt;/&gt;CodeWithVijay
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="background-color: #d8b4fe"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HTML
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlBasicTags.html"
+                        >Html Basic Tags</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/Inline&BlockElements.html"
+                        >Inline & Block Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlLists.html"
+                        >Html Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlTables.html"
+                        >Html Tables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlForms.html"
+                        >Html Forms</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/HeadElements.html"
+                        >Head Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlMedia.html"
+                        >Html Media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/MiscellaneousTags.html"
+                        >Miscellaneous Tags</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CSS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/cssIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSProperties.html"
+                        >CSS Properties</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSDesigning.html"
+                        >CSS Designing</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSAdvanceTopics.html"
+                        >CSS Advance Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA SCRIPT
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/jsIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptVariables.html"
+                        >Javascript Variables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptBasics.html"
+                        >Javascript Basics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptObjects.html"
+                        >Javascript Objects</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/DOM&BOM.html"
+                        >DOM & BOM</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/jsOOPs.html"
+                        >OOPs</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/html/C/cIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CDataTypesOperators&UserIO.html"
+                        >C Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFunctions.html"
+                        >C Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CPointers.html"
+                        >C Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CMemoryManagement.html"
+                        >C Memory Management</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CStructures&Unions.html"
+                        >C Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFileHandling.html"
+                        >C File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C++ PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/c++Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++DataTypesOperators&UserIO.html"
+                        >C++ Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++ConditionalStatements.html"
+                        >C++ Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++IterationStatements.html"
+                        >C++ Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++BreakContinue.html"
+                        >C++ Break/Continue</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Arrays.html"
+                        >C++ Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Pointers.html"
+                        >C++ Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Strings.html"
+                        >C++ Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Structures&Unions.html"
+                        >C++ Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Functions.html"
+                        >C++ Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++OPPs.html"
+                        >C++ OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++FileHandling.html"
+                        >C++ File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Templates&STL.html"
+                        >C++ Templates & STL</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/VariablesOperators&UserIO.html"
+                        >Variables, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/JavaMethods.html"
+                        >Java Methods</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/JavaOOPs.html"
+                        >Java OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PYTHON
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDataTypes&Operators.html"
+                        >Python Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonStrings.html"
+                        >Python Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLists.html"
+                        >Python Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonTuples.html"
+                        >Python Tuples</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonSets.html"
+                        >Python Sets</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDictionaries.html"
+                        >Python Dictionaries</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLoops.html"
+                        >Python Loops</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonFunctions.html"
+                        >Python Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonModules.html"
+                        >Python Modules</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonOOPs.html"
+                        >Python OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PHP
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/DataTypes&Operators.html"
+                        >Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Conditional&IterationStatements.html"
+                        >Conditional & Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPFunctions.html"
+                        >PHP Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPArrays.html"
+                        >PHP Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPOOPs.html"
+                        >PHP OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPSuperglobals.html"
+                        >PHP Superglobals</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPMySQL.html"
+                        >PHP MySQL</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPAdvancedTopics.html"
+                        >PHP Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    REACT JS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactTutorial.html"
+                        >React Tutorial</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactHooks.html"
+                        >React Hooks</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5 width80 minHeight90vh m-auto">
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/HTML/HtmlLists.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/HTML/HtmlForms.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+      <div class="main">
+        <div>
+          <h2>HTML Tables</h2>
+          <p>
+            HTML tables allow you to arrange data like text, images, and links
+            in rows and columns. You use the &lt;table&gt; tag to start and end
+            a table.
+          </p>
+        </div>
+        <div>
+          <h4>Syntax of HTML Table</h4>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;table&gt;
+    // table content
+&lt;/table&gt;</code></pre>
+        </div>
+        <div>
+          <h4>Key Elements of HTML Table</h4>
+          <ul>
+            <li>&lt;table&gt;: Defines the table itself.</li>
+            <li>&lt;tr&gt;: Used for table rows.</li>
+            <li>&lt;th&gt;: Used for table headings.</li>
+            <li>&lt;td&gt;: Used for table cells (data).</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Basic Table Structure</h4>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Vijay&lt;/td&gt;
+        &lt;td&gt;100&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt; </code></pre>
+        </div>
+        <div>
+          <h4>rowspan and colspan Attributes</h4>
+          <p>
+            Rowspan: If you want a table cell to span multiple rows, you can use
+            the rowspan attribute.
+          </p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;td rowspan="value"&gt;</code></pre>
+          <p>
+            Colspan: If you want a table cell to span multiple columns, you can
+            use the colspan attribute.
+          </p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;td colspan="value"&gt;</code></pre>
+        </div>
+        <div>
+          <h4>Visual Representation of Rowspan and Colspan</h4>
+          <img src="/img/assits-20.png" alt="colspan pic" />
+        </div>
+        <div>
+          <h4>Examples</h4>
+          <p>
+            Here are simple examples to demonstrate the use of rowspan and
+            colspan in HTML tables.
+          </p>
+        </div>
+        <div>
+          <h4>Example for Colspan:</h4>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;td colspan="2"&gt;Merged Columns&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Column 1&lt;/td&gt;
+        &lt;td&gt;Column 2&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+        </div>
+
+        <div>
+          <h4>Example for Rowspan:</h4>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;table border="1"&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Row 1, Column 1&lt;/td&gt;
+        &lt;td rowspan="2"&gt;Merged Rows&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Row 2, Column 1&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>More on Tables</h2>
+          <p>
+            Let's take a closer look at HTML tables and delve into some more
+            aspects of using tables in HTML.
+          </p>
+        </div>
+        <div>
+          <h4>Adding a Caption</h4>
+          <p>
+            To add a title to your table, you can use the &lt;caption&gt;
+            element. This element helps both in terms of SEO and accessibility.
+          </p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;table&gt;
+&lt;caption&gt;Student Details&lt;/caption&gt;
+    &lt;!-- Rest of the table here --&gt;
+&lt;/table&gt;</code></pre>
+        </div>
+        <div>
+          <h4>Adding a Caption</h4>
+          <p>
+            To add a title to your table, you can use the &lt;caption&gt;
+            element. This element helps both in terms of SEO and accessibility.
+          </p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;table&gt;
+&lt;caption&gt;Student Details&lt;/caption&gt;
+    &lt;!-- Rest of the table here --&gt;
+&lt;/table&gt;</code></pre>
+        </div>
+        <div>
+          <h4>Table Headers and Footers</h4>
+          <p>
+            Besides &lt;th&gt; for individual header cells, HTML tables allow
+            you to group header or footer content using &lt;thead&gt; and
+            &lt;tfoot&gt;.
+          </p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;table&gt;
+    &lt;thead&gt;
+        &lt;!--  header content --&gt;
+    &lt;/thead&gt;
+    &lt;tfoot&gt;
+        &lt;!-- footer content --&gt;
+    &lt;/tfoot&gt;
+    &lt;tbody&gt;
+        &lt;!-- body content --&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;</code></pre>
+        </div>
+        <div>
+          <h4>Column Groups</h4>
+          <p>
+            You can use the &lt;colgroup&gt; and &lt;col&gt; elements to apply
+            styles to an entire column in an HTML table.
+          </p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;table&gt;
+    &lt;colgroup&gt;
+        &lt;col style="background-color:yellow"&gt;
+    &lt;/colgroup&gt;
+    &lt;!-- rest of the table --&gt;
+&lt;/table&gt;</code></pre>
+        </div>
+        <div>
+          <h4>Accessibility in Tables</h4>
+          <p>
+            To make your tables more accessible, you can use the scope attribute
+            in &lt;th&gt; elements to specify if they are headers for columns,
+            rows, or groups of columns or rows.
+          </p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;th scope="col"&gt;Name&lt;/th&gt;
+&lt;th scope="col"&gt;Age&lt;/th&gt;</code></pre>
+        </div>
+        <div>
+          <h4>Sample HTML Table</h4>
+          <p>Here is an example HTML table with all the important elements:</p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;table border="1"&gt;
+    &lt;!-- Caption --&gt;
+    &lt;caption&gt;Employee Information&lt;/caption&gt;
+
+    &lt;!-- Table Header --&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;ID&lt;/th&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Position&lt;/th&gt;
+            &lt;th&gt;Salary&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;!-- Table Body --&gt;
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;Alice&lt;/td&gt;
+            &lt;td&gt;Developer&lt;/td&gt;
+            &lt;td&gt;$80,000&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;Bob&lt;/td&gt;
+            &lt;td&gt;Designer&lt;/td&gt;
+            &lt;td&gt;$70,000&lt;/td&gt;
+        &lt;/tr&gt;
+        &lt;tr&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;Carol&lt;/td&gt;
+            &lt;td&gt;Manager&lt;/td&gt;
+            &lt;td&gt;$90,000&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+
+    &lt;!-- Table Footer --&gt;
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;td colspan="3"&gt;Total Employees&lt;/td&gt;
+            &lt;td&gt;3&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+&lt;/table&gt;</code></pre>
+        </div>
+        <div>
+          <h4>Conclusion</h4>
+          <p>
+            We've covered some advanced topics related to HTML tables in this
+            blog. By using these features, you can create tables that are not
+            only visually appealing but also highly functional and accessible.
+            Stay tuned for more insights into HTML and web development!
+          </p>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/HTML/HtmlLists.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/HTML/HtmlForms.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+    </main>
+
+    <footer class="flex footer bgcolor2 mt-4">
+      <div class="footerLogo flex">
+        <img src="/img/logo.jpg" alt="" />
+        <p>Vijay Bansal</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Vijay Bansal</p>
+      </div>
+      <div class="media flex">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/profile.php?id=100041095243541"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/itz_vijay_bansal/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/vijay-bansal-319048249/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="github"
+          href="https://github.com/VijayBansal2004"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <i class="fa-brands whatsapp fa-whatsapp"></i>
+        <span style="font-size: small">+91 94172-12422</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2ff3e7c924.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/prism/prism.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1964 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>JAVA Variables Operators & User I/O | CodeWithVijay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/prism/prism.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bodyColor textColorWhite">
+    <header>
+      <nav class="navbar bgcolor2 fixed-top">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand lightPurpleColor fw-bolder fs-2"
+            href="/index.html"
+            >&lt;/&gt;CodeWithVijay</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            style="background-color: #d8b4fe"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bgcolor2 text-white"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title lightPurpleColor fw-bolder"
+                id="offcanvasNavbarLabel"
+              >
+                &lt;/&gt;CodeWithVijay
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="background-color: #d8b4fe"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HTML
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlBasicTags.html"
+                        >Html Basic Tags</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/Inline&BlockElements.html"
+                        >Inline & Block Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlLists.html"
+                        >Html Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlTables.html"
+                        >Html Tables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlForms.html"
+                        >Html Forms</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/HeadElements.html"
+                        >Head Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlMedia.html"
+                        >Html Media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/MiscellaneousTags.html"
+                        >Miscellaneous Tags</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CSS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/cssIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSProperties.html"
+                        >CSS Properties</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSDesigning.html"
+                        >CSS Designing</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSAdvanceTopics.html"
+                        >CSS Advance Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA SCRIPT
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/jsIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptVariables.html"
+                        >Javascript Variables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptBasics.html"
+                        >Javascript Basics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptObjects.html"
+                        >Javascript Objects</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/DOM&BOM.html"
+                        >DOM & BOM</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/jsOOPs.html"
+                        >OOPs</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/html/C/cIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CDataTypesOperators&UserIO.html"
+                        >C Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFunctions.html"
+                        >C Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CPointers.html"
+                        >C Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CMemoryManagement.html"
+                        >C Memory Management</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CStructures&Unions.html"
+                        >C Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFileHandling.html"
+                        >C File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C++ PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/c++Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++DataTypesOperators&UserIO.html"
+                        >C++ Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++ConditionalStatements.html"
+                        >C++ Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++IterationStatements.html"
+                        >C++ Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++BreakContinue.html"
+                        >C++ Break/Continue</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Arrays.html"
+                        >C++ Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Pointers.html"
+                        >C++ Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Strings.html"
+                        >C++ Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Structures&Unions.html"
+                        >C++ Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Functions.html"
+                        >C++ Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++OPPs.html"
+                        >C++ OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++FileHandling.html"
+                        >C++ File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Templates&STL.html"
+                        >C++ Templates & STL</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/VariablesOperators&UserIO.html"
+                        >Variables, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/JavaMethods.html"
+                        >Java Methods</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/JavaOOPs.html"
+                        >Java OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PYTHON
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDataTypes&Operators.html"
+                        >Python Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonStrings.html"
+                        >Python Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLists.html"
+                        >Python Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonTuples.html"
+                        >Python Tuples</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonSets.html"
+                        >Python Sets</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDictionaries.html"
+                        >Python Dictionaries</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLoops.html"
+                        >Python Loops</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonFunctions.html"
+                        >Python Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonModules.html"
+                        >Python Modules</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonOOPs.html"
+                        >Python OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PHP
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/DataTypes&Operators.html"
+                        >Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Conditional&IterationStatements.html"
+                        >Conditional & Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPFunctions.html"
+                        >PHP Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPArrays.html"
+                        >PHP Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPOOPs.html"
+                        >PHP OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPSuperglobals.html"
+                        >PHP Superglobals</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPMySQL.html"
+                        >PHP MySQL</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPAdvancedTopics.html"
+                        >PHP Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    REACT JS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactTutorial.html"
+                        >React Tutorial</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactHooks.html"
+                        >React Hooks</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5 width80 minHeight90vh m-auto">
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/JAVA/introduction.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/JAVA/ConditionalStatements.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Java Variables</h2>
+          <p>
+            Variables are containers that store information that can be
+            manipulated and referenced later by the programmer within the code.
+            Java variables have a data type associated with them which can tell
+            us about the size and layout of the variable’s memory.
+            <br />
+            <b> Syntax: </b>
+          </p>
+          <pre
+            class="language-java"
+          ><code class="language-java">datatype variable = value</code></pre>
+          <p>There are three types of variables in java:</p>
+          <ul>
+            <li>Local variable</li>
+            <li>Instance variable</li>
+            <li>Class/Static variable</li>
+          </ul>
+        </div>
+        <div>
+          <h4>A. Local Variables:</h4>
+          <p>
+            A variable that is declared inside the body of the method or
+            constructor is called a local variable. It is called so because the
+            extent of a local variable lies only within the method or
+            constructor within which it is created and other methods in the
+            class cannot access it.
+            <br />
+            Inside the method body, local variable is declared using the static
+            keyword.
+            <br />
+            Example:
+          </p>
+          <pre
+            class="language-java"
+          ><code class="language-java">public class variableType {
+    public void localVariable() {
+        String name = "Ben";
+        int marks = 95;
+        System.out.println(name + " Scored " + marks + "%.");
+    }
+
+    public static void main(String[] args) {
+        variableType vt = new variableType();
+        vt.localVariable();
+    }
+}</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-java"
+          ><code class="language-java">Ben Scored 95%.  </code></pre>
+          <p>
+            <b
+              >If it is accessed outside the method or constructor within which
+              it is creaed, then it give an error.
+            </b>
+            <br />Example:
+          </p>
+          <pre
+            class="language-java"
+          ><code class="language-java">public class variableType {
+    public void localVariable() {
+        String name = "Ben";
+        int marks = 95;
+    }
+    public void notLocalVariable() {
+        System.out.println(name + " Scored " + marks + "%.");
+    }
+
+    public static void main(String[] args) {
+        variableType vt = new variableType();
+        vt.notLocalVariable();
+    }
+}</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-java"
+          ><code class="language-java">name cannot be resolved to a variable
+marks cannot be resolved to a variable</code></pre>
+        </div>
+        <div>
+          <h4>B. Instance Variables:</h4>
+          <p>
+            An instance variable is declared inside the class but outside a
+            method or a constructor. It is similar to a static variable except
+            that it is declared without using the keyword static. These
+            variables are accessible by all methods or constructors that are
+            inside the class.
+            <br />
+            Example:
+          </p>
+          <pre
+            class="language-java"
+          ><code class="language-java">public class variableType {
+
+    public String name = "Ben";
+    public int marks = 95;
+
+    public void instanceVariable() {
+        System.out.println(name + " Scored " + marks + "%.");
+    }
+
+    public static void main(String[] args) {
+        variableType vt = new variableType();
+        vt.instanceVariable();
+    }
+}</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-java"
+          ><code class="language-java">Ben Scored 95%.</code></pre>
+        </div>
+        <div>
+          <h4>C. Class/Static Variables:</h4>
+          <p>
+            An static variable is declared inside the class but outside a method
+            or a constructor. It is similar to a instance variable except that
+            it is declared using the keyword static. These variables are
+            accessible by all methods or constructors that are inside the class.
+            <br />
+            Example:
+          </p>
+          <pre
+            class="language-java"
+          ><code class="language-java">public class variableType {
+
+    public static String name;
+    public static int marks;
+
+    public static void main(String[] args) {
+        name = "Ben";
+        marks = 95;
+        System.out.println(name + " Scored " + marks + "%.");
+    }
+}</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-java"
+          ><code class="language-java">Ben Scored 95%.</code></pre>
+          <p>
+            <b>If variable is not declared static the it gives an error.</b
+            >Example:
+          </p>
+          <pre
+            class="language-java"
+          ><code class="language-java">public class variableType {
+    public String name;
+    public int marks;
+
+    public static void main(String[] args) {
+        name = "Ben";
+        marks = 95;
+        System.out.println(name + " Scored " + marks + "%.");
+    }
+}</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-java"
+          ><code class="language-java">Cannot make a static refrence to a non-static field</code></pre>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Java Operators</h2>
+        </div>
+        <div>
+          <h3>
+            Java has different types of operators for different operations. They
+            are as follows:
+          </h3>
+          <h4>Arithmetic operators:</h4>
+          <p>
+            Arithmetic operators are used to perform arithmetic/mathematical
+            operations.
+          </p>
+          <table border="1" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <strong><span>Name</span></strong>
+                  </p>
+                </td>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <strong><span>Operator</span></strong>
+                  </p>
+                </td>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <strong><span>Example</span></strong>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <strong><span>Addition</span></strong>
+                  </p>
+                </td>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <span>+</span>
+                  </p>
+                </td>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <span>a+b</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <strong><span>Subtraction</span></strong>
+                  </p>
+                </td>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <span>-</span>
+                  </p>
+                </td>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <span>a-b</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <strong><span>Multiplication</span></strong>
+                  </p>
+                </td>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <span>*</span>
+                  </p>
+                </td>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <span>a*b</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <strong><span>Division</span></strong>
+                  </p>
+                </td>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <span>/</span>
+                  </p>
+                </td>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <span>a/b</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <strong><span>Modulus</span></strong>
+                  </p>
+                </td>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <span>%</span>
+                  </p>
+                </td>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <span>a%b</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <strong><span>Increment</span></strong>
+                  </p>
+                </td>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <span>++</span>
+                  </p>
+                </td>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <span>a++ or b++</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <strong><span>Decrement</span></strong>
+                  </p>
+                </td>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <span>--</span>
+                  </p>
+                </td>
+                <td valign="top" width="232">
+                  <p class="MsoNormal">
+                    <span>a-- or b--</span>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h4>Assignment operators:</h4>
+          <p>These operators are used to assign values to variables.</p>
+          <table border="1" width="667" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td valign="top" width="302">
+                  <p>
+                    <strong><span>Name</span></strong>
+                  </p>
+                </td>
+                <td valign="top" width="163">
+                  <p>
+                    <strong><span>Operator</span></strong>
+                  </p>
+                </td>
+                <td valign="top" width="202">
+                  <p>
+                    <strong><span>Evaluated As</span></strong>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" width="302">
+                  <p>
+                    <strong><span>Assignment</span></strong>
+                  </p>
+                </td>
+                <td valign="top" width="163">
+                  <p><span>=</span></p>
+                </td>
+                <td valign="top" width="202">
+                  <p><span>a=b</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" width="302">
+                  <p>
+                    <strong><span>Addition assignment</span></strong>
+                  </p>
+                </td>
+                <td valign="top" width="163">
+                  <p><span>+=</span></p>
+                </td>
+                <td valign="top" width="202">
+                  <p><span>a+=b or a=a+b</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" width="302">
+                  <p>
+                    <strong><span>Subtraction assignment</span></strong>
+                  </p>
+                </td>
+                <td valign="top" width="163">
+                  <p><span>-=</span></p>
+                </td>
+                <td valign="top" width="202">
+                  <p><span>a-=b or a=a-b</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" width="302">
+                  <p>
+                    <strong><span>Multiplication assignment</span></strong>
+                  </p>
+                </td>
+                <td valign="top" width="163">
+                  <p><span>*=</span></p>
+                </td>
+                <td valign="top" width="202">
+                  <p><span>a*=b or a=a*b</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" width="302">
+                  <p>
+                    <strong><span>Division assignment</span></strong>
+                  </p>
+                </td>
+                <td valign="top" width="163">
+                  <p><span>/=</span></p>
+                </td>
+                <td valign="top" width="202">
+                  <p><span>a//=b or a=a//b</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" width="302">
+                  <p>
+                    <strong><span>Modulus assignment</span></strong>
+                  </p>
+                </td>
+                <td valign="top" width="163">
+                  <p><span>%=</span></p>
+                </td>
+                <td valign="top" width="202">
+                  <p><span>a%=b or a=a%b</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" width="302">
+                  <p>
+                    <strong><span>Bitwise AND assignment</span></strong>
+                  </p>
+                </td>
+                <td valign="top" width="163">
+                  <p><span>&amp;=</span></p>
+                </td>
+                <td valign="top" width="202">
+                  <p><span>a&amp;=b or a=a&amp;b</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" width="302">
+                  <p>
+                    <strong
+                      ><span>Bitwise inclusive OR assignment</span></strong
+                    >
+                  </p>
+                </td>
+                <td valign="top" width="163">
+                  <p><span>|=</span></p>
+                </td>
+                <td valign="top" width="202">
+                  <p><span>a|=b or a=a|b</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" width="302">
+                  <p>
+                    <strong
+                      ><span>Bitwise exclusive OR assignment</span></strong
+                    >
+                  </p>
+                </td>
+                <td valign="top" width="163">
+                  <p><span>^=</span></p>
+                </td>
+                <td valign="top" width="202">
+                  <p><span>a^=b or a=a^b</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" width="302">
+                  <p>
+                    <strong><span>Right Shift assignment</span></strong>
+                  </p>
+                </td>
+                <td valign="top" width="163">
+                  <p><span>&gt;&gt;=</span></p>
+                </td>
+                <td valign="top" width="202">
+                  <p><span>a&gt;&gt;=b or a=a&gt;&gt;b</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top" width="302">
+                  <p>
+                    <strong><span>Left Shift assignment</span></strong>
+                  </p>
+                </td>
+                <td valign="top" width="163">
+                  <p><span>&lt;&lt;=</span></p>
+                </td>
+                <td valign="top" width="202">
+                  <p><span>a&lt;&lt;=b or a=a&lt;&lt;b</span></p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h4>Bitwise operators:</h4>
+          <p>Bitwise operators are used to deal with binary operations.</p>
+          <table border="1" width="693" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <strong><span>Name</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <strong><span>Operator</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <strong><span>Example</span></strong>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <strong><span>Bitwise AND</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <span>&amp;</span>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <span>a &amp; b</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <strong><span>Bitwise OR</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <span>|</span>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <span>a | b</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <strong><span>Bitwise NOT</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <span>~</span>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <span>~a</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <strong><span>Bitwise XOR</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <span>^</span>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <span>a ^ b</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <strong><span>Bitwise right shift</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <span>&gt;&gt;&nbsp;</span>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <span>a&gt;&gt;</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <strong><span>Bitwise left shift</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <span>&lt;&lt;&nbsp;</span>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <span>b&lt;&lt;</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <strong><span>Unsigned right shift</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <span>&gt;&gt;&gt;&nbsp;</span>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p class="MsoNormal">
+                    <span>a&gt;&gt;&gt;</span>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h4>Comparison operators:</h4>
+          <p>These operators are used to compare values.</p>
+          <table border="1" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td width="255" valign="top">
+                  <p class="MsoNormal">
+                    <strong><span>Name</span></strong>
+                  </p>
+                </td>
+                <td width="210" valign="top">
+                  <p class="MsoNormal">
+                    <strong><span>Operator</span></strong>
+                  </p>
+                </td>
+                <td width="232" valign="top">
+                  <p class="MsoNormal">
+                    <strong><span>Example</span></strong>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td width="255" valign="top">
+                  <p class="MsoNormal">
+                    <strong><span>Equal</span></strong>
+                  </p>
+                </td>
+                <td width="210" valign="top">
+                  <p class="MsoNormal">
+                    <span style="font-size: 16pt">==</span>
+                  </p>
+                </td>
+                <td width="232" valign="top">
+                  <p class="MsoNormal">
+                    <span style="font-size: 16pt">a==b</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td width="255" valign="top">
+                  <p class="MsoNormal">
+                    <strong><span>Not Equal</span></strong>
+                  </p>
+                </td>
+                <td width="210" valign="top">
+                  <p class="MsoNormal">
+                    <span style="font-size: 16pt">!=</span>
+                  </p>
+                </td>
+                <td width="232" valign="top">
+                  <p class="MsoNormal">
+                    <span style="font-size: 16pt">a!=b</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td width="255" valign="top">
+                  <p class="MsoNormal">
+                    <strong><span>Less Than</span></strong>
+                  </p>
+                </td>
+                <td width="210" valign="top">
+                  <p class="MsoNormal">
+                    <span style="font-size: 16pt">&lt;</span
+                    ><span style="font-size: 16pt">&nbsp;</span>
+                  </p>
+                </td>
+                <td width="232" valign="top">
+                  <p class="MsoNormal">
+                    <span style="font-size: 16pt">a&gt;b</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td width="255" valign="top">
+                  <p class="MsoNormal">
+                    <strong><span>Greater Than</span></strong>
+                  </p>
+                </td>
+                <td width="210" valign="top">
+                  <p class="MsoNormal">
+                    <span style="font-size: 16pt">&gt;&nbsp;</span>
+                  </p>
+                </td>
+                <td width="232" valign="top">
+                  <p class="MsoNormal">
+                    <span style="font-size: 16pt">a&lt;b</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td width="255" valign="top">
+                  <p class="MsoNormal">
+                    <strong><span>Less Than or Equal to</span></strong>
+                  </p>
+                </td>
+                <td width="210" valign="top">
+                  <p class="MsoNormal">
+                    <span style="font-size: 16pt">&lt;=</span>
+                  </p>
+                </td>
+                <td width="232" valign="top">
+                  <p class="MsoNormal">
+                    <span style="font-size: 16pt">a&gt;=b</span>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td width="255" valign="top">
+                  <p class="MsoNormal">
+                    <strong><span>Greater Than or Equal to</span></strong>
+                  </p>
+                </td>
+                <td width="210" valign="top">
+                  <p class="MsoNormal">
+                    <span style="font-size: 16pt">&gt;=</span>
+                  </p>
+                </td>
+                <td width="232" valign="top">
+                  <p class="MsoNormal">
+                    <span style="font-size: 16pt">a&lt;=b</span>
+                  </p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h4>Logical operators:</h4>
+          <p>These operators are used to deal with logical operations.</p>
+          <table border="1" width="693" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td valign="top">
+                  <p>
+                    <strong><span>Name</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p>
+                    <strong><span>Operator</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p>
+                    <strong><span>Example</span></strong>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <p>
+                    <strong><span>AND</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p><span>&amp;&amp;</span></p>
+                </td>
+                <td valign="top">
+                  <p><span>a &amp;&amp; b</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <p>
+                    <strong><span>OR</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p><span>||</span></p>
+                </td>
+                <td valign="top">
+                  <p><span>a || b</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <p>
+                    <strong><span>NOT</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p><span>!</span></p>
+                </td>
+                <td valign="top">
+                  <p><span>! (a=2 or b=3)</span></p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h4>
+            Other operators:
+            <br />
+            A. instanceof operator:
+          </h4>
+          <p>
+            This operator checks if an object is an instance of class.
+            <br />
+            Example:
+          </p>
+          <pre class="language-java"><code class="language-java">class Main {
+    public static void main(String[] args) {
+    
+        Integer number = 5;
+        boolean res;
+    
+        if (res = number instanceof Integer){
+            System.out.println("number is an object of Integer. Hence: " + res);
+        } else {
+            System.out.println("number is not an object of Integer.Hence: " + res);
+        }
+    }
+}</code></pre>
+          <p>Output:</p>
+          <pre
+            class="language-java"
+          ><code class="language-java">number is an object of Integer. Hence: true</code></pre>
+        </div>
+        <div>
+          <h4>B. Conditional operator:</h4>
+          <p>
+            It is used in a single line if-else statement.
+            <br />
+            Example:
+          </p>
+          <pre class="language-java"><code class="language-java">class Main {
+    public static void main(String[] args) {
+    
+        Integer number = 3;
+        String res;
+    
+        res = (number > 5) ? "number greater than five" : "number lesser than five";
+        System.out.println(res);
+    }
+}</code></pre>
+          <p>Output:</p>
+          <pre
+            class="language-java"
+          ><code class="language-java">number lesser than five</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>User Input/Output</h2>
+        </div>
+        <div>
+          <h4>Taking Input:</h4>
+          <p>
+            To use the Scanner class, we need to import the java.util.Scanner
+            package.
+          </p>
+          <pre
+            class="language-java"
+          ><code class="language-java">import java.util.Scanner;</code></pre>
+          <p>
+            Now the Scanner class has been imported. We create an object of the
+            Scanner class to use the methods within it.
+          </p>
+          <pre
+            class="language-java"
+          ><code class="language-java">Scanner sc = new Scanner(System.in)</code></pre>
+          <p>
+            The System.in is passed as a parameter and is used to take input.
+            <br />
+            Note: Your object can be named anything, there is no specific
+            convention to follow. But we normally name our object sc for easy
+            use and implementation.
+          </p>
+        </div>
+        <div>
+          <h3>
+            There are four ways to create an object of the scanner class. Let us
+            see how we can create Scanner objects:
+          </h3>
+          <h4>A. Reading keyboard input:</h4>
+          <pre
+            class="language-java"
+          ><code class="language-java">Scanner sc = new Scanner(System.in)</code></pre>
+        </div>
+        <div>
+          <h4>B. Reading String input:</h4>
+          <pre
+            class="language-java"
+          ><code class="language-java">Scanner sc = new Scanner(String str)</code></pre>
+        </div>
+        <div>
+          <h4>C. Reading input stream:</h4>
+          <pre
+            class="language-java"
+          ><code class="language-java">Scanner sc = new Scanner(InputStream input)</code></pre>
+        </div>
+        <div>
+          <h4>D. Reading File input:</h4>
+          <pre
+            class="language-java"
+          ><code class="language-java">Scanner sc = new Scanner(File file)</code></pre>
+        </div>
+        <div>
+          <h4>So how does a Scanner class work?</h4>
+          <p>
+            The scanner object reads the entered inputs and divides the string
+            into tokens. The tokens are usually divided based upon whitespaces
+            and newline.
+            <br />
+            Example:
+          </p>
+          <pre class="language-java"><code class="language-java">Susan
+19
+78.95
+O</code></pre>
+          <p>
+            The above input will be divided as “Susan”, “19”, “78.95” and “O”.
+            Then the Scanner object will iterate over each token and then it
+            will read each token depending upon the type of Scanner object
+            created.
+          </p>
+          <p>
+            Now, we have seen how Scanner object is created, different ways to
+            create it, how it reads input, and how it works. Let us see
+            different methods to take inputs.
+            <br />
+            Below are the methods that belong to the scanner class:
+          </p>
+          <table border="1" cellspacing="0" cellpadding="0">
+            <tbody>
+              <tr>
+                <td valign="top">
+                  <p>
+                    <strong><span lang="EN-US">Method</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p>
+                    <strong><span lang="EN-US">Description</span></strong>
+                  </p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <p>
+                    <strong><span lang="EN-US">nextLine()</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p><span lang="EN-US">Accepts string value</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <p>
+                    <strong><span lang="EN-US">next()</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p><span lang="EN-US">Accept string till whitespace</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <p>
+                    <strong><span lang="EN-US">nextInt()</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p><span lang="EN-US">Accepts int value</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <p>
+                    <strong><span lang="EN-US">nextFloat()</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p><span lang="EN-US">Accepts float value</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <p>
+                    <strong><span lang="EN-US">nextDouble()</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p><span lang="EN-US">Accepts double value</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <p>
+                    <strong><span lang="EN-US">nextLong()</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p><span lang="EN-US">Accepts long value</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <p>
+                    <strong><span lang="EN-US">nextShort()</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p><span lang="EN-US">Accepts short value</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <p>
+                    <strong><span lang="EN-US">nextBoolean()</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p><span lang="EN-US">Accepts Boolean value</span></p>
+                </td>
+              </tr>
+              <tr>
+                <td valign="top">
+                  <p>
+                    <strong><span lang="EN-US">nextByte()</span></strong>
+                  </p>
+                </td>
+                <td valign="top">
+                  <p><span lang="EN-US">Accepts Byte value</span></p>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+
+          <p><b>Example: </b></p>
+          <pre
+            class="language-java"
+          ><code class="language-java">import java.util.Scanner;
+
+public class ScannerExample {
+    public static void main(String[] args) {
+        
+        Scanner sc = new Scanner(System.in);
+    
+        System.out.println("Enter Name, RollNo, Marks, Grade");
+        
+        String name = sc.nextLine();		//used to read line
+        int RollNo = sc.nextInt();			//used to read int
+        double Marks = sc.nextDouble();		//used to read double
+        char Grade = sc.next().charAt(0);	//used to read till space
+    
+        System.out.println("Name: "+name);
+        System.out.println("Gender: "+RollNo);
+        System.out.println("Marks: "+Marks);
+        System.out.println("Grade: "+Grade);
+        
+        sc.close();
+    }
+}</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-java"
+          ><code class="language-java">Enter Name, RollNo, Marks, Grade
+Mohit
+19
+87.25
+A
+Name: Mohit
+Gender: 19
+Marks: 87.25
+Grade: A</code></pre>
+          <p>
+            <b
+              >Entering the wrong type of input, or just messing up with the
+              order of inputs in the above example will give an error.
+            </b>
+            <br />
+            For same example when we change the order of inputs it gives the
+            following output:
+          </p>
+          <pre
+            class="language-javac"
+          ><code class="language-java">Enter Name, RollNo, Marks, Grade
+Rajesh
+Joshi
+Exception in thread "main" java.util.InputMismatchException
+    at java.base/java.util.Scanner.throwFor(Scanner.java:939)
+    at java.base/java.util.Scanner.next(Scanner.java:1594)
+    at java.base/java.util.Scanner.nextInt(Scanner.java:2258)
+    at java.base/java.util.Scanner.nextInt(Scanner.java:2212)
+    at javaFiles/FileHandling.ScannerExample.main(ScannerExample.java:14)
+    </code></pre>
+          <p>Here we get an InputMismatchException.</p>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/JAVA/introduction.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/JAVA/ConditionalStatements.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+    </main>
+
+    <footer class="flex footer bgcolor2 mt-4">
+      <div class="footerLogo flex">
+        <img src="/img/logo.jpg" alt="" />
+        <p>Vijay Bansal</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Vijay Bansal</p>
+      </div>
+      <div class="media flex">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/profile.php?id=100041095243541"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/itz_vijay_bansal/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/vijay-bansal-319048249/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="github"
+          href="https://github.com/VijayBansal2004"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <i class="fa-brands whatsapp fa-whatsapp"></i>
+        <span style="font-size: small">+91 94172-12422</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2ff3e7c924.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/prism/prism.js"></script>
+  </body>
+</html>

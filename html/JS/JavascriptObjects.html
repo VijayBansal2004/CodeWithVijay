@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Javascript Objects | CodeWithVijay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/prism/prism.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bodyColor textColorWhite">
+    <header>
+      <nav class="navbar bgcolor2 fixed-top">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand lightPurpleColor fw-bolder fs-2"
+            href="/index.html"
+            >&lt;/&gt;CodeWithVijay</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            style="background-color: #d8b4fe"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bgcolor2 text-white"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title lightPurpleColor fw-bolder"
+                id="offcanvasNavbarLabel"
+              >
+                &lt;/&gt;CodeWithVijay
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="background-color: #d8b4fe"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HTML
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlBasicTags.html"
+                        >Html Basic Tags</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/Inline&BlockElements.html"
+                        >Inline & Block Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlLists.html"
+                        >Html Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlTables.html"
+                        >Html Tables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlForms.html"
+                        >Html Forms</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/HeadElements.html"
+                        >Head Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlMedia.html"
+                        >Html Media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/MiscellaneousTags.html"
+                        >Miscellaneous Tags</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CSS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/cssIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSProperties.html"
+                        >CSS Properties</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSDesigning.html"
+                        >CSS Designing</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSAdvanceTopics.html"
+                        >CSS Advance Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA SCRIPT
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/jsIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptVariables.html"
+                        >Javascript Variables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptBasics.html"
+                        >Javascript Basics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptObjects.html"
+                        >Javascript Objects</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/DOM&BOM.html"
+                        >DOM & BOM</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/jsOOPs.html"
+                        >OOPs</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/html/C/cIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CDataTypesOperators&UserIO.html"
+                        >C Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFunctions.html"
+                        >C Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CPointers.html"
+                        >C Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CMemoryManagement.html"
+                        >C Memory Management</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CStructures&Unions.html"
+                        >C Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFileHandling.html"
+                        >C File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C++ PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/c++Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++DataTypesOperators&UserIO.html"
+                        >C++ Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++ConditionalStatements.html"
+                        >C++ Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++IterationStatements.html"
+                        >C++ Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++BreakContinue.html"
+                        >C++ Break/Continue</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Arrays.html"
+                        >C++ Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Pointers.html"
+                        >C++ Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Strings.html"
+                        >C++ Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Structures&Unions.html"
+                        >C++ Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Functions.html"
+                        >C++ Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++OPPs.html"
+                        >C++ OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++FileHandling.html"
+                        >C++ File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Templates&STL.html"
+                        >C++ Templates & STL</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/VariablesOperators&UserIO.html"
+                        >Variables, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/JavaMethods.html"
+                        >Java Methods</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/JavaOOPs.html"
+                        >Java OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PYTHON
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDataTypes&Operators.html"
+                        >Python Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonStrings.html"
+                        >Python Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLists.html"
+                        >Python Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonTuples.html"
+                        >Python Tuples</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonSets.html"
+                        >Python Sets</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDictionaries.html"
+                        >Python Dictionaries</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLoops.html"
+                        >Python Loops</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonFunctions.html"
+                        >Python Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonModules.html"
+                        >Python Modules</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonOOPs.html"
+                        >Python OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PHP
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/DataTypes&Operators.html"
+                        >Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Conditional&IterationStatements.html"
+                        >Conditional & Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPFunctions.html"
+                        >PHP Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPArrays.html"
+                        >PHP Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPOOPs.html"
+                        >PHP OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPSuperglobals.html"
+                        >PHP Superglobals</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPMySQL.html"
+                        >PHP MySQL</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPAdvancedTopics.html"
+                        >PHP Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    REACT JS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactTutorial.html"
+                        >React Tutorial</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactHooks.html"
+                        >React Hooks</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5 width80 minHeight90vh m-auto">
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/JS/JavascriptBasics.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/JS/DOM&BOM.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Strings</h2>
+          <p>
+            One of the most important aspects of JavaScript is its ability to
+            manipulate strings, which are sequences of characters. In this blog
+            post, we will explore the basics of JavaScript strings and the
+            various string methods that can be used to manipulate them. <br />
+
+            A string in JavaScript is a sequence of characters enclosed in
+            either single or double quotes. For example, the following are valid
+            strings in JavaScript:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">"Hello World"
+'Hello World'
+</code></pre>
+        </div>
+        <div>
+          <p>
+            'Hello World' JavaScript provides a number of built-in methods for
+            manipulating strings. Some of the most commonly used string methods
+            are: <br />
+
+            length - This method returns the number of characters in a string.
+            For example, the following code will return 11:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var str = "Hello World";
+        console.log(str.length);            
+    </code></pre>
+        </div>
+        <div>
+          <p>
+            concat - This method is used to concatenate (combine) two or more
+            strings. For example, the following code will return "Hello World":
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var str1 = "Hello";
+        var str2 = " World";
+        console.log(str1.concat(str2));         
+    </code></pre>
+        </div>
+        <div>
+          <p>
+            indexOf - This method is used to find the index of a specific
+            character or substring in a string. For example, the following code
+            will return 6:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var str = "Hello World";
+        console.log(str.indexOf("W"));                     
+    </code></pre>
+        </div>
+        <div>
+          <p>
+            slice - This method is used to extract a portion of a string. For
+            example, the following code will return "World":
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var str = "Hello World";
+            console.log(str.slice(6));                     
+        </code></pre>
+        </div>
+        <div>
+          <p>
+            replace - This method is used to replace a specific character or
+            substring in a string. For example, the following code will return
+            "Hello Universe":
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var str = "Hello World";
+            console.log(str.replace("World", "Universe"));                                
+        </code></pre>
+        </div>
+        <div>
+          <p>
+            toUpperCase and toLowerCase - These methods are used to convert a
+            string to uppercase or lowercase letters. For example, the following
+            code will return "HELLO WORLD" and "hello world" respectively:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var str = "Hello World";
+            console.log(str.toUpperCase());
+            console.log(str.toLowerCase());                                            
+        </code></pre>
+        </div>
+        <div>
+          <p>
+            These are just a few of the many string methods available in
+            JavaScript. By understanding the basics of strings and the various
+            methods that can be used to manipulate them, you can create more
+            dynamic and interactive web pages. So, start experimenting with
+            different string methods and see what you can create!
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>Arrays and Array Methods</h2>
+          <p>
+            One of the most important data structures in JavaScript is the
+            array, which is a collection of elements. In this blog post, we will
+            explore the basics of JavaScript arrays and the various array
+            methods that can be used to manipulate them. <br />
+
+            An array in JavaScript is a collection of elements enclosed in
+            square brackets. Elements can be of any data type, including
+            numbers, strings, and other arrays. For example, the following is a
+            valid array in JavaScript:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var myArray = [1, "Hello", [2, 3]];
+</code></pre>
+          <p>
+            JavaScript provides a number of built-in methods for manipulating
+            arrays. Some of the most commonly used array methods are:
+          </p>
+        </div>
+        <div>
+          <p>
+            length - This method returns the number of elements in an array. For
+            example, the following code will return 3:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var myArray = [1, "Hello", [2, 3]];
+console.log(myArray.length);                     
+    </code></pre>
+        </div>
+        <div>
+          <p>
+            push - This method is used to add an element to the end of an array.
+            For example, the following code will add the element "World" to the
+            end of the array:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var myArray = [1, "Hello", [2, 3]];
+myArray.push("World");
+console.log(myArray); // [1, "Hello", [2, 3], "World"]                    
+    </code></pre>
+        </div>
+        <div>
+          <p>
+            pop - This method is used to remove the last element of an array.
+            For example, the following code will remove the last element
+            ("World") from the array:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var myArray = [1, "Hello", [2, 3], "World"];
+myArray.pop();
+console.log(myArray); // [1, "Hello", [2, 3]]                           
+    </code></pre>
+        </div>
+        <div>
+          <p>
+            shift - This method is used to remove the first element of an array.
+            For example, the following code will remove the first element (1)
+            from the array:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var myArray = [1, "Hello", [2, 3]];
+myArray.shift();
+console.log(myArray); // ["Hello", [2, 3]]                                
+        </code></pre>
+        </div>
+        <div>
+          <p>
+            unshift - This method is used to add an element to the beginning of
+            an array. For example, the following code will add the element 0 to
+            the beginning of the array:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var myArray = [1, "Hello", [2, 3]];
+myArray.unshift(0);
+console.log(myArray); // [0, 1, "Hello", [2, 3]]                                            
+        </code></pre>
+        </div>
+        <div>
+          <p>
+            slice - This method is used to extract a portion of an array. For
+            example, the following code will extract the elements from index 1
+            to 2 (exclusive):
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var myArray = [1, "Hello", [2, 3]];
+console.log(myArray.slice(1, 2)); // ["Hello"]                                                      
+        </code></pre>
+        </div>
+        <div>
+          <p>
+            splice - This method is used to add or remove elements from an
+            array. For example, the following code will remove the element at
+            index 1 and add the elements "Hello World" and [4, 5] at index 1:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var myArray = [1, "Hello", [2, 3]];
+myArray.splice(1, 1, "Hello World", [4, 5]);
+console.                                                                      
+            </code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>Loops with Arrays</h2>
+          <p>
+            One of the most important data structures in JavaScript is the
+            array, which is a collection of elements. When working with arrays,
+            it is often necessary to iterate through each element in the array,
+            which is where loops come in. In this blog post, we will explore how
+            to use loops with arrays in JavaScript. <br />
+
+            JavaScript provides several ways to iterate through an array,
+            including the for loop, forEach method, and for...of loop. <br />
+
+            for loop - This is the most basic way to iterate through an array.
+            The for loop uses a counter variable that is incremented on each
+            iteration. For example, the following code will print out each
+            element in the array:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var myArray = [1, 2, 3, 4, 5];
+for (var i = 0; i < myArray.length; i++) {
+    console.log(myArray[i]);
+}            
+</code></pre>
+        </div>
+        <div>
+          <p>
+            forEach method - This method is a more concise way to iterate
+            through an array. The forEach method takes a callback function as
+            its argument, which is called on each element in the array. For
+            example, the following code will print out each element in the
+            array:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var myArray = [1, 2, 3, 4, 5];
+myArray.forEach(function(element) {
+    console.log(element);
+});                               
+    </code></pre>
+        </div>
+        <div>
+          <p>
+            for...of loop - This is a more recent addition to JavaScript, and it
+            is the most concise way to iterate through an array. It allows you
+            to iterate through the elements of an array without having to access
+            the index, and it works with any iterable object, not just arrays.
+            For example, the following code will print out each element in the
+            array:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var myArray = [1, 2, 3, 4, 5];
+for (var element of myArray) {
+    console.log(element);
+}                                
+    </code></pre>
+        </div>
+        <div>
+          <p>
+            It is important to note that when you are iterating through an array
+            using a for loop and you plan to change the array during iteration
+            you should use a for loop with a separate counter variable.
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Map, Filter and Reduce</h2>
+          <p>
+            One of the most important data structures in JavaScript is the
+            array, which is a collection of elements. When working with arrays,
+            it is often necessary to manipulate the elements in various ways,
+            which is where the built-in methods map, filter, and reduce come in.
+            In this blog post, we will explore how to use these methods to
+            manipulate arrays in JavaScript.
+          </p>
+          <p>
+            Map - The map method is used to create a new array with the result
+            of a callback function called on each element in the original array.
+            The callback function takes one argument, the current element, and
+            returns the new value for that element. For example, the following
+            code will return an array of each element multiplied by 2:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var myArray = [1, 2, 3, 4, 5];
+var multipliedArray = myArray.map(function(element) {
+    return element * 2;
+});
+console.log(multipliedArray); // [2, 4, 6, 8, 10]               
+</code></pre>
+        </div>
+        <div>
+          <p>
+            Filter - The filter method is used to filter an array based on a
+            certain condition. The filter method takes a callback function as
+            its argument, which is called on each element in the array. If the
+            function returns true, the element is included in the new filtered
+            array. For example, the following code will return an array of all
+            even numbers in the original array:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var myArray = [1, 2, 3, 4, 5];
+var evenNumbers = myArray.filter(function(element) {
+    return element % 2 === 0;
+});
+console.log(evenNumbers); // [2, 4]                                          
+    </code></pre>
+        </div>
+        <div>
+          <p>
+            Reduce - The reduce method is used to reduce an array to a single
+            value. The reduce method takes a callback function as its argument,
+            which is called on each element in the array. The callback function
+            takes two arguments, the accumulator and the current element, and
+            returns the new value for the accumulator. For example, the
+            following code will return the sum of all elements in the array:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var myArray = [1, 2, 3, 4, 5];
+var sum = myArray.reduce(function(acc, cur) {
+    return acc + cur;
+}, 0);
+console.log(sum); // 15                        
+    </code></pre>
+        </div>
+        <div>
+          <p>
+            It's important to note that these methods work on the original array
+            and doesn't change it, it returns a new array. <br />
+
+            Combining these three methods can be powerful, for example, you can
+            filter an array, then map the filtered array, and finally reduce the
+            mapped array. <br />
+
+            In conclusion, understanding and utilizing the map, filter, and
+            reduce methods in JavaScript can greatly improve your ability to
+            manipulate arrays and perform complex operations on them. These
+            methods are not only more concise but also more efficient than
+            traditional loops and make your code more readable.
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Date</h2>
+          <p>
+            JavaScript's Date object allows you to work with dates and times in
+            your scripts. It can be used to get the current date and time, or to
+            manipulate and format dates and times in various ways.
+          </p>
+          <p>
+            Creating a new Date object is simple. You can either create a new
+            date object with the current date and time by calling new Date()
+            with no arguments, or you can create a date object with a specific
+            date and time by passing in a string or numerical values. <br />
+
+            Here's an example of how you can use the Date object to get the
+            current date and time:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var currentDate = new Date();
+console.log(currentDate);
+</code></pre>
+          <p>Output: Thu Jan 14 2021 15:15:38 GMT+0530 (India Standard Time)</p>
+        </div>
+        <div>
+          <p>
+            You can also manipulate the date and time using the various methods
+            available on the Date object. For example, you can use the setDate()
+            method to set the day of the month, and the setFullYear() method to
+            set the year.
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var date = new Date();
+date.setDate(15);
+date.setFullYear(2022);
+console.log(date);                                                     
+    </code></pre>
+          <p>Output: Sat Jan 15 2022 15:15:38 GMT+0530 (India Standard Time)</p>
+        </div>
+        <div>
+          <p>
+            You can also format the date and time using the toLocaleString()
+            method, which allows you to specify the format and time zone.
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var date = new Date();
+console.log(date.toLocaleString());
+console.log(date.toLocaleString('en-US', {timeZone: 'UTC'}));                                    
+    </code></pre>
+
+          <p>Output: 1/14/2021, 3:45:38 PM 1/14/2021, 10:15:38 AM</p>
+        </div>
+        <div>
+          <p>
+            In this way, you can use the Date object in JavaScript to work with
+            dates and times in your scripts, and to format and manipulate dates
+            and times in various ways.
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Math</h2>
+          <p>
+            The JavaScript Math object is a built-in object that provides a
+            variety of mathematical functions and constants. It can be used to
+            perform mathematical operations such as trigonometry, logarithms,
+            and random number generation.
+          </p>
+          <p>
+            One of the most commonly used functions in the Math object is the
+            Math.random() function, which generates a random number between 0
+            (inclusive) and 1 (exclusive). This function can be used to generate
+            random numbers for various purposes such as games, simulations, and
+            other applications.
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">console.log(Math.random());
+// Output: a random number between 0 and 1 (e.g. 0.3456)            
+</code></pre>
+        </div>
+        <div>
+          <p>
+            You can also use the Math.floor() function to round a number down to
+            the nearest integer.
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">console.log(Math.floor(3.8));
+// Output: 3                                                             
+    </code></pre>
+        </div>
+        <div>
+          <p>
+            The Math.ceil() function rounds a number up to the nearest integer.
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">console.log(Math.ceil(3.2));
+// Output: 4                                              
+    </code></pre>
+        </div>
+        <div>
+          <p>
+            Another useful function of Math object is Math.max() and Math.min()
+            which are used to find the maximum and minimum values in a set of
+            numbers respectively.
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">console.log(Math.max(3,5,7,9));
+// Output: 9
+console.log(Math.min(3,5,7,9));
+// Output: 3                                               
+    </code></pre>
+        </div>
+
+        <div>
+          <p>
+            Math object also provides the most commonly used mathematical
+            constants such as Math.PI for the value of pi, Math.E for the value
+            of the mathematical constant e.
+          </p>
+
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">console.log(Math.PI);
+// Output: 3.141592653589793
+console.log(Math.E);
+// Output: 2.718281828459045                                                   
+    </code></pre>
+        </div>
+        <div>
+          <p>
+            In this way, you can use the Math object in JavaScript to perform
+            mathematical operations, generate random numbers, and access
+            mathematical constants. It is a powerful tool that can be used to
+            add more functionality to your JavaScript programs and make them
+            more interactive and dynamic.
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>Number</h2>
+          <p>
+            The JavaScript Number object is a built-in object that provides a
+            number of properties and methods for working with numeric values.
+            The Number object can be used to convert a value to a number,
+            perform mathematical operations, and format numbers for display.
+          </p>
+          <p>
+            One of the most commonly used methods of the Number object is the
+            Number() function, which can be used to convert a value to a number.
+            This function can be used to convert strings, booleans, and other
+            types of values to numbers.
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">console.log(Number("3.14"));
+// Output: 3.14
+console.log(Number(true));
+// Output: 1                       
+</code></pre>
+        </div>
+        <div>
+          <p>
+            You can also use the parseInt() and parseFloat() methods to convert
+            strings to integers and floating-point numbers, respectively.
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">console.log(parseInt("3"));
+// Output: 3
+console.log(parseFloat("3.14"));
+// Output: 3.14                                                     
+    </code></pre>
+        </div>
+        <div>
+          <p>
+            The Number object also provides several properties that can be used
+            to access the maximum and minimum values that can be represented by
+            a number in JavaScript. These properties are Number.MAX_VALUE and
+            Number.MIN_VALUE.
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">console.log(Number.MAX_VALUE);
+// Output: 1.7976931348623157e+308
+console.log(Number.MIN_VALUE);
+// Output: 5e-324                                                          
+    </code></pre>
+        </div>
+        <div>
+          <p>
+            Another useful property of the Number object is
+            Number.POSITIVE_INFINITY and Number.NEGATIVE_INFINITY which
+            represents the positive and negative infinity respectively.
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">console.log(1 / 0);
+// Output: Infinity
+console.log(-1 / 0);
+// Output: -Infinity                                                   
+    </code></pre>
+        </div>
+        <div>
+          <p>
+            The Number object also provides several methods for formatting
+            numbers for display, such as the toFixed() method, which can be used
+            to format a number with a specific number of decimal places.
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">console.log((3.1415926535897932384626433832795).toFixed(2));
+// Output: "3.14"                                                            
+    </code></pre>
+        </div>
+
+        <div>
+          <p>
+            In this way, you can use the Number object in JavaScript to convert
+            values to numbers, perform mathematical operations, and format
+            numbers for display. It is a powerful tool that can be used to add
+            more functionality to your JavaScript programs and make them more
+            interactive and dynamic.
+          </p>
+
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">console.log(Math.PI);
+// Output: 3.141592653589793
+console.log(Math.E);
+// Output: 2.718281828459045                                                   
+    </code></pre>
+        </div>
+        <div>
+          <p>
+            In this way, you can use the Math object in JavaScript to perform
+            mathematical operations, generate random numbers, and access
+            mathematical constants. It is a powerful tool that can be used to
+            add more functionality to your JavaScript programs and make them
+            more interactive and dynamic.
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Boolean</h2>
+          <p>
+            The JavaScript Boolean object is a built-in object that provides a
+            way to work with Boolean (true/false) values in your scripts. The
+            Boolean object can be used to create Boolean values and perform
+            logical operations, such as and, or, and not.
+          </p>
+          <p>
+            A boolean value can be created by using the Boolean() function or by
+            assigning a value of true or false to a variable.
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var isTrue = Boolean(1);
+console.log(isTrue); // Output: true
+var isFalse = Boolean(0);
+console.log(isFalse); // Output: false                               
+</code></pre>
+        </div>
+        <div>
+          <p>
+            You can also use the logical && operator to check if both
+            expressions are true and the || operator to check if at least one of
+            the expressions is true.
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var x = true;
+var y = false;
+console.log(x && y); // Output: false
+console.log(x || y); // Output: true                                                               
+    </code></pre>
+        </div>
+        <div>
+          <p>You can also use the ! operator to invert a boolean value.</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">console.log(!x); // Output: false
+console.log(!y); // Output: true                                                                      
+    </code></pre>
+        </div>
+        <div>
+          <p>
+            The Boolean object also provides a valueOf() method that returns the
+            primitive value of the Boolean object
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">var b = new Boolean(true);
+console.log(b.valueOf()); // Output: true                                                              
+    </code></pre>
+        </div>
+
+        <div>
+          <p>
+            In this way, you can use the Boolean object in JavaScript to work
+            with Boolean values, perform logical operations, and invert Boolean
+            values. It is a fundamental part of programming and helps to control
+            the flow of the program.
+          </p>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/JS/JavascriptBasics.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/JS/DOM&BOM.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+    </main>
+
+    <footer class="flex footer bgcolor2 mt-4">
+      <div class="footerLogo flex">
+        <img src="/img/logo.jpg" alt="" />
+        <p>Vijay Bansal</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Vijay Bansal</p>
+      </div>
+      <div class="media flex">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/profile.php?id=100041095243541"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/itz_vijay_bansal/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/vijay-bansal-319048249/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="github"
+          href="https://github.com/VijayBansal2004"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <i class="fa-brands whatsapp fa-whatsapp"></i>
+        <span style="font-size: small">+91 94172-12422</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2ff3e7c924.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/prism/prism.js"></script>
+  </body>
+</html>

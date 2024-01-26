@@ -1,0 +1,1476 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HTML Introduction | CodeWithVijay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/prism/prism.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bodyColor textColorWhite">
+    <header>
+      <nav class="navbar bgcolor2 fixed-top">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand lightPurpleColor fw-bolder fs-2"
+            href="/index.html"
+            >&lt;/&gt;CodeWithVijay</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            style="background-color: #d8b4fe"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bgcolor2 text-white"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title lightPurpleColor fw-bolder"
+                id="offcanvasNavbarLabel"
+              >
+                &lt;/&gt;CodeWithVijay
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="background-color: #d8b4fe"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HTML
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlBasicTags.html"
+                        >Html Basic Tags</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/Inline&BlockElements.html"
+                        >Inline & Block Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlLists.html"
+                        >Html Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlTables.html"
+                        >Html Tables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlForms.html"
+                        >Html Forms</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/HeadElements.html"
+                        >Head Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlMedia.html"
+                        >Html Media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/MiscellaneousTags.html"
+                        >Miscellaneous Tags</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CSS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/cssIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSProperties.html"
+                        >CSS Properties</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSDesigning.html"
+                        >CSS Designing</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSAdvanceTopics.html"
+                        >CSS Advance Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA SCRIPT
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/jsIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptVariables.html"
+                        >Javascript Variables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptBasics.html"
+                        >Javascript Basics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptObjects.html"
+                        >Javascript Objects</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/DOM&BOM.html"
+                        >DOM & BOM</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/jsOOPs.html"
+                        >OOPs</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/html/C/cIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CDataTypesOperators&UserIO.html"
+                        >C Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFunctions.html"
+                        >C Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CPointers.html"
+                        >C Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CMemoryManagement.html"
+                        >C Memory Management</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CStructures&Unions.html"
+                        >C Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFileHandling.html"
+                        >C File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C++ PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/c++Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++DataTypesOperators&UserIO.html"
+                        >C++ Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++ConditionalStatements.html"
+                        >C++ Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++IterationStatements.html"
+                        >C++ Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++BreakContinue.html"
+                        >C++ Break/Continue</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Arrays.html"
+                        >C++ Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Pointers.html"
+                        >C++ Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Strings.html"
+                        >C++ Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Structures&Unions.html"
+                        >C++ Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Functions.html"
+                        >C++ Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++OPPs.html"
+                        >C++ OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++FileHandling.html"
+                        >C++ File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Templates&STL.html"
+                        >C++ Templates & STL</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/VariablesOperators&UserIO.html"
+                        >Variables, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/JavaMethods.html"
+                        >Java Methods</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/JavaOOPs.html"
+                        >Java OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PYTHON
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDataTypes&Operators.html"
+                        >Python Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonStrings.html"
+                        >Python Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLists.html"
+                        >Python Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonTuples.html"
+                        >Python Tuples</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonSets.html"
+                        >Python Sets</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDictionaries.html"
+                        >Python Dictionaries</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLoops.html"
+                        >Python Loops</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonFunctions.html"
+                        >Python Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonModules.html"
+                        >Python Modules</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonOOPs.html"
+                        >Python OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PHP
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/DataTypes&Operators.html"
+                        >Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Conditional&IterationStatements.html"
+                        >Conditional & Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPFunctions.html"
+                        >PHP Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPArrays.html"
+                        >PHP Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPOOPs.html"
+                        >PHP OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPSuperglobals.html"
+                        >PHP Superglobals</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPMySQL.html"
+                        >PHP MySQL</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPAdvancedTopics.html"
+                        >PHP Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    REACT JS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactTutorial.html"
+                        >React Tutorial</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactHooks.html"
+                        >React Hooks</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5 width80 minHeight90vh m-auto">  
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2 disabled" type="button">
+          <a href="">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/HTML/htmlBasicTags.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+
+      <div class="main" id="HTML-Introduction">
+        <div>
+        <h2>HTML Introduction</h2>
+        <p>
+          Today, I'm writing this tutorial to create a resource that will help
+          you learn HTML in less than 30 days. Here's a recommended timeline for
+          learning HTML, based on your educational background:
+          You may be wondering why I'm discussing these timelines. It's
+          important for me to set expectations before you start your journey of
+          learning html with me. My name is Vijay. I'm writing this comprehensive HTML tutorial
+          for all of you. Let's jump right into HTML!
+        </p>
+          <ul>
+            <li>High School students and younger: Around 25 days</li>
+            <li>Those beyond High School: Around 20 days</li>
+            <li>College students and above: Around 10-20 days</li>
+          </ul>
+      </div>
+
+      <div>
+        <h4>What is HTML?</h4>
+        <p>
+          HTML (HyperText Markup Language) was created by Tim Berners-Lee in 1991 as a standard for creating web pages. It's a markup language used to structure content on the web, defining elements like headings, paragraphs, links, and images. HTML forms the backbone of web content. In layman's terms, HTML is like the skeleton of a website. It's a set of instructions that tells a web browser how to display text, images, videos, and other elements on a webpage. Think of it as the building blocks that create the structure and look of a website, similar to how bricks and mortar are used to build a house.
+          You may be wondering why I'm discussing these timelines. It's
+          important for me to set expectations before you start your journey of
+          learning html with me. My name is Vijay. I'm writing this comprehensive HTML tutorial
+          for all of you. Let's jump right into HTML!
+        </p>
+          <ul>
+            <li>
+              HTML is the language of the web, used to create websites.
+            </li>
+            <li>
+              HTML defines the barebone structure or layout of web pages that we see on the Internet.
+            </li>
+            <li>
+              HTML consists of a set of tags contained within an HTML document, and the associated files typically have either a ".html" or ".htm" extension.
+            </li>
+            <li>
+              There are several versions of HTML, with HTML5 being the most recent version.
+            </li>
+          </ul>
+      </div>
+      
+      <div>
+        <h4>Features of HTML</h4>
+        <p>
+        </p>
+          <ul>
+            <li>
+              It is platform-independent. For example, Chrome displays the same pages identically across different operating systems such as Mac, Linux, and Windows.
+            </li>
+            <li>
+              Images, videos, and audio can be added to a web page (For example - YouTube shows videos on their website)
+            </li>
+            <li>
+              HTML is a markup language and not a programming language.
+            </li>
+            <li>
+              It can be integrated with other languages like CSS, JavaScript, etc. to show interactive (or dynamic) web pages
+            </li>
+          </ul>
+      
+      
+      <div>
+        <h4>Why the Term HyperText & Markup Language?</h4>
+        <p>
+          The term 'Hypertext Markup Language' is composed of two main words: 'hypertext' and 'markup language.' 'Hypertext' refers to the linking of text with other documents, while 'markup language' denotes a language that utilizes a specific set of tags.
+
+          Thus, HTML is the practice of displaying text, graphics, audio, video etc. in a certain way using special tags.
+
+          Note: Tags are meaningful texts enclosed in angle braces, like '&lt;...&gt;'. For example, the '&lt;head&gt;' tag. Each tag has a unique meaning and significance in building an HTML page, and it can influence the web page in various ways.
+        </p>
+      </div>
+    </div> 
+    </div>
+
+      <div class="main" id="HTML-Working">
+        <div>
+
+          <h2>HTML Working</h2>
+          <p>
+            You must have heard of frontend and backend. Frontend refers to the visible part of a website or app that users interact with, like the tables, images, and buttons. It's built using languages like HTML, CSS, and JavaScript. The backend, on the other hand, handles behind-the-scenes operations like storing and processing data when users interact with the frontend. It uses languages like Python, Ruby, and Java. In essence, frontend is what users see, while backend manages the functionality.
+          </p>
+          
+        </div>
+
+      <div>
+        <h4>How do websites work?</h4>
+        <p>
+          When we want to access any information on the internet, we search for it using a web browser. The web browser retrieves the content from web servers, where it is stored in the form of HTML documents.
+          An HTML document is created by writing code with specific tags in a code editor of your choice. The document is then saved with the '.html' extension. Once saved, the browser interprets the HTML document, reads it, and renders the web page.
+          The text editor has the HTML code of a website. This website can now be viewed in a beautifully rendered format using a computer program known as a web browser.
+        </p>
+      </div>
+
+      
+      
+      <div>
+        <h4>What is a Web Browser?</h4>
+        <p>
+          A web browser is a program that understands HTML tags and renders them in a human-readable format that is easily viewable by people visiting the website. Developers write code in HTML because it's a straightforward way to instruct the web browser on what to display. In the next section, I'll show you how to set up VS Code for writing your own HTML code and rendering it in a web browser.
+        </p>
+      </div>
+      
+      <div>
+        <h4>What is an HTML Document?</h4>
+        <p>
+          An HTML document is a text document saved with the '.html' or '.htm' extension, containing text and specific tags enclosed in '&lt; &gt;'. These tags provide the necessary instructions for configuring the web page. The tags themselves are standardized and fixed. The structure of an HTML document will be explained later in this HTML tutorial.
+        </p>
+      </div>
+      
+      <div>
+        <h4>What is a Rendered Page:</h4>
+        <p>
+          The rendered page is the output screen of our HTML Document which is the page displayed on the browser.  
+        </p>
+      </div>
+      
+      
+      <div>
+        <h4>How does a browser work?</h4>
+        <p>
+          A web browser plays a crucial role in parsing and rendering HTML code to the client. A web browser is a complex program that performs many tasks behind the scenes. Here's a summary of how it works:
+          Dont worry about how browser exactly works just yet. Rather focus on learning HTML. In the next tuotrial we will install VS Code and some extensions for writing our HTML code.
+
+          <ul>
+            <li>
+              A browser is an application that reads HTML documents and displays them as web pages. Browsers can't access the content directly from where it's stored; this is where servers come into play.
+
+            </li>
+            <li>
+              A server acts as an intermediary, listening to browser requests and fulfilling them by delivering the HTML document to the browser.
+
+            </li>
+            <li>
+              Web browsers perform two main tasks: parsing and rendering.
+
+            </li>
+            <li>
+              During the parsing stage, the browser receives raw bytes, which are converted into characters. These characters are then converted into tokens, which in turn are transformed into nodes. These nodes are organized into a tree-like data structure known as the DOM (Document Object Model). 
+
+            </li>
+            <li>
+              Once the DOM tree is constructed, the browser moves on to the rendering stage. At this point, each node in the DOM tree is rendered and displayed on the screen.
+
+            </li>
+          </ul>
+
+        </p>
+      </div>
+    </div>
+      
+      <div class="main" id="HTML-Execution">
+        <div>
+
+          <h2>HTML Execution</h2>
+          <h4>Your Journey to Creating Your First Website Begins Here!</h4>
+          <p>Let's mark this as an important milestone: the creation of your first website! And what's a better way to start than with the traditional "Hello, World!"?</p>
+        </div>
+      
+
+      <div>
+        <h4>Why "Hello, World!"?</h4>
+        <p>
+          In the programming world, "Hello, World!" is more than just a phrase. It's a tradition, an emotion, a simple program that teaches you the syntax and gets you started. And guess what? HTML is no different!
+          Our first website will display the text 'Hello World'
+        </p>
+      </div>
+
+      <div>
+        <h4>Let's Get Started: Setting Up Your VS Code</h4>
+        <p>
+          If you haven't already set up your environment, let's begin by opening Visual Studio Code (VS Code).
+        </p>
+        <img src="/img/assits-1.png" alt="file image">
+      </div>
+
+      <div>
+        <h4>Pasting the Code</h4>
+        <p>
+          Now that your file is ready, copy the following code and paste it into your "index.html" file.
+         <pre class="language-markup"> <code class="language-markup">&lt;!DOCTYPE html&gt;
+ &lt;html lang="en"&gt;
+ &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document&lt;&Backslash;title&gt;
+ &lt;&Backslash;head&gt;
+ &lt;&Backslash;body&gt;
+    Hello World
+ &lt;&Backslash;body&gt;
+ &lt;&Backslash;html&gt;</code></pre>        
+        </p>
+      </div>
+
+      <div>
+        <h4>Going Live using the "live server" extension</h4>
+        <p>
+          To see your webpage in action, locate the "Go Live" icon at the bottom-right corner of your VS Code window and click it. If you don't see this icon, you probably haven't installed the Live Server extension, which we discussed in a previous tutorial.
+        </p>
+        <img src="/img/assits-2.png" alt="file image">
+      </div>
+
+      <div>
+        <h4>Your First Website is Live!</h4>
+        <p>
+          Congratulations! If you've followed along, you should now see your very first website displaying the classic "Hello, World!" message.
+        </p>
+        <img src="/img/assits-3.png" alt="file image">
+      </div>
+
+      <div>
+        <h4>Live Preview Extension</h4>
+        <p>
+          Another useful extension for working with HTML in VS Code is 'HTML Preview.' To install it, simply click on the extensions icon in VS Code and type 'HTML Preview' in the search bar. Install it!
+        </p>
+        <img src="/img/assits-4.png" alt="file image">
+        <p>
+          Now, you will see a button within VS Code. Clicking on this button will allow you to preview your HTML right within the editor.
+        </p>
+        <img src="/img/assits-5.png" alt="file image">
+
+        <p>
+          Once you click the button, you'll see a live preview of your HTML directly within VS Code.
+
+
+        </p>
+        <img src="/img/assits-6.png" alt="file image">
+        <p>You don't even need a browser to render plain HTML. This live preview feature in VS Code is perfect for this HTML tutorial, allowing you to build and preview your entire HTML website without ever leaving the editor.</p>
+
+      </div>
+      </div>
+
+      <div class="main" id="HTML-Tags">
+        <div>
+
+          <h2>HTML Tags</h2>
+          <p>
+            If you want to build a beautiful website, tags are essential elements that help you achieve that.
+            An HTML tag acts as a container for content or other HTML tags. Tags are words enclosed within &lt; and &gt; angle brackets.
+            They serve as keywords that instruct the web browser on how to format and display the content.
+          </p>
+        </div>
+      
+
+      <div>
+        <h4>Commonly used tags in HTML</h4>
+        <p>
+          Here are some commonly used tags in HTML. These are the only tags used 70% of the time
+        </p>
+      </div>
+
+      <div>
+        <h4>Document Structure Tags</h4>
+        <p>
+          <ul>
+            <li>
+              &lt;!DOCTYPE html&gt;: Specifies the document type.
+            </li>
+            <li>
+              &lt;html&gt;: Encloses the entire HTML document.
+              </li>
+              <li>
+                &lt;head&gt;: Contains meta-information and links to scripts and stylesheets.
+                </li>
+                <li>
+              &lt;body&gt;: Contains the content of the web page.
+            </li>
+          </ul>
+        </p>
+      </div>
+
+      <div>
+        <h4>Metadata Tags</h4>
+        <p>
+          <ul>
+            <li>
+              &lt;title&gt;: Sets the title of the web page.
+            </li>
+            <li>
+              &lt;meta&gt;: Provides metadata such as character set, author, and viewport settings.
+              </li>
+              <li>
+                &lt;link&gt;: Links external resources like stylesheets.
+                </li>
+          </ul>
+          </div>
+
+      <div>
+        <h4>Text Formatting Tags</h4>
+        <p>
+          <ul>
+            <li> &lt;p&gt;: Paragraph.</li>
+            <li>&lt;h1&gt;, &lt;h2&gt;, &lt;h3&gt;, &lt;h4&gt;, &lt;h5&gt;, &lt;h6&gt;: Headings.</li>
+            <li> &lt;strong&gt;: Strong emphasis (typically bold).</li>
+            <li> &lt;em&gt;: Emphasis (typically italic).</li>
+            <li> &lt;br&gt;: Line break.</li>
+            <li>&lt;hr&gt;: Horizontal rule.</li>
+                   
+          </ul>
+        </p>
+      </div>
+
+      <div>
+        <h4>List Tags</h4>
+        <p>
+          <ul>
+            <li> &lt;ul&gt;: Unordered list.</li>
+            <li> &lt;ol&gt;: Ordered list.</li>
+            <li>&lt;li&gt;: List item.</li>   
+          </ul>
+        </p>
+      </div>
+
+      <div>
+        <h4>Hyperlink and Media Tags</h4>
+        <p>
+          <ul>
+            <li> &lt;a&gt;: Anchor (used for links).</li>
+            <li>&lt;img&gt;: Image.</li>
+            <li> &lt;audio&gt;: Audio content.</li>
+            <li>&lt;video&gt;: Video content.</li>    
+          </ul>
+        </p>
+      </div>
+
+      <div>
+        <h4>Form Tags</h4>
+        <p>
+          <ul>
+            <li> &lt;form&gt;: Form.</li>
+            <li> &lt;input&gt;: Input field.</li>
+            <li> &lt;textarea&gt;: Text area.</li>
+            <li> &lt;button&gt;: Button.</li>
+            <li> &lt;select&gt;: Dropdown list.</li>
+            <li> &lt;option&gt;: Options within a &lt;select&gt; or &lt;datalist&gt;.</li>
+          </ul>
+        </p>
+      </div>
+
+      <div>
+        <h4>Table Tags</h4>
+        <p>
+          <ul>
+            <li>&lt;table&gt;: Table.</li>
+            <li> &lt;tr&gt;: Table row.</li>
+            <li> &lt;td&gt;: Table data cell.</li>
+            <li> &lt;th&gt;: Table header cell.</li>
+            <li>&lt;thead&gt;: Table header group.</li>
+            <li> &lt;tbody&gt;: Table body group.</li>
+            <li>&lt;tfoot&gt;: Table footer group.</li>
+          </ul>
+        </p>
+      </div>
+
+      <div>
+        <h4>Semantic Tags</h4>
+        <p>
+          <ul>
+            <li> &lt;header&gt;: Header section.</li>
+            <li>&lt;footer&gt;: Footer section.</li>
+            <li>&lt;article&gt;: Article.</li>
+            <li>&lt;section&gt;: Section.</li>
+            <li> &lt;nav&gt;: Navigation.</li>
+            <li>&lt;aside&gt;: Sidebar content.</li>
+          </ul>
+        </p>
+      </div>
+
+      <div>
+        <h4>Paired and Unpaired HTML Tags</h4>
+        <p>
+          Well, that was a really long list. Don't worry we will study these in detail. In HTML, tags can be broadly categorized into two types:
+        </p>
+      </div>
+      
+      <div>
+        <h4>1. Paired Tags (Container Tags)</h4>
+        <p>
+          These are tags that come in pairs, consisting of an opening tag and a corresponding closing tag. The content goes between these two tags.
+          <ul>
+            <li> Opening Tag: The opening tag starts with &lt; and ends with &gt;. For example, &lt;p&gt;.</li>
+            <li>Closing Tag: The closing tag also starts with &lt; but includes a forward slash / before the tag name, and ends with &gt;. For example, &lt;/p&gt;.</li>
+          </ul>
+        </p>
+        <h5>Examples</h5>
+        <ul>
+          <li>Paragraphs: &lt;p&gt;This is a paragraph.&lt;/p&gt;
+          </li>
+          <li>Headings: &lt;h1&gt;This is a heading.&lt;/h1&gt;</li>
+        </ul>
+      </div>
+      
+      <div>
+        <h4>2. Unpaired Tags (Self-Closing Tags or Stand-Alone Tags)</h4>
+        <p>
+          These are tags that don't require a closing tag. They are self-contained, encapsulating all the information within a single tag.
+          <ul>
+            <li> Self-Closing Tag: A self-closing tag starts with &lt; and ends with /&gt; (though the / is optional in HTML5). For example, &lt;img /&gt; or &lt;br&gt;.
+              Note: Later if you happen to use react or a framework like Next.js, you will have to close the tag like this &lt;br/&gt; &lt;hr/&gt;. So it is better to cultivate the habit!</li>
+            </ul>
+          </p>
+          <h5>Examples</h5>
+          <ul>
+            <li>Line Break: &lt;br/&gt; </li>
+            <li>Horizontal Rule: &lt;hr/&gt; </li>
+            <li> Image: &lt;img
+              src="image.jpg" alt="An example image"/&gt;</li>
+            </ul>
+          </div>
+          
+          <div>
+            <h4>Pictorial Representation of Tags</h4>
+            <p>
+              The image below offers a visual representation of how tags are structured in HTML. As you can see, an element can contain other elements, which may also contain additional elements, forming a tree-like structure. This hierarchy can include self-closing tags as well as nested tags, as illustrated in the picture
+            </p>
+            <img src="/img/assits-7.png" alt="pic">
+          </div>
+        </div>
+
+          <div class="main" id="HTML-Elementes">
+            <div>
+
+              <h2>HTML Elements</h2>
+              <p>Beginners often get confused between HTML elements, nested elements, and tags. Let's clarify the difference by understanding each one step-by-step.</p>
+              
+            </div>
+
+          <div>
+            <h4>What is an HTML Element?</h4>
+            <p>An HTML element is a complete set that consists of a start tag (or opening tag), content, and an end tag (or closing tag).
+              HTML Element = Start Tag + Content + End Tag
+              For example:</p>
+<pre class="language-markup"><code class="language-markup"> &lt;h1&gt;This is our first heading&lt;/h1&gt;</code></pre> 
+            <p>In this example, &lt;h1&gt; is the start tag, "This is our first heading" is the content, and &lt;/h1&gt; is the end tag. Together, they form an HTML element.</p>
+          </div>
+
+          <div>
+            <h4>What is a Nested HTML Element?</h4>
+            <p>A nested HTML element is an HTML structure where one element is placed inside another element.
+
+              The enclosing element is often referred to as the "parent," while the enclosed element is called the "child."
+              
+              Nested HTML Element = One HTML Element Inside Another HTML Element
+              
+              For example:</p>
+<pre class="language-markup"><code class="language-markup">&lt;h1&gt;&lt;b&gt;This is our first heading&lt;/b&gt;&lt;/h1&gt;</code></pre> 
+            <p>In this example, the &lt;b&gt; element (child) is nested inside the &lt;h1&gt; element (parent).</p>
+          </div>
+
+          <div>
+            <h4>What is an Empty HTML Element?</h4>
+            <p>An empty HTML element is one that does not have a closing tag or content. These elements are also known as "void elements" or "self-closing elements."
+
+              Empty HTML Element = Tags with No Content
+              
+              For example:</p>
+<pre class="language-markup"><code class="language-markup">&lt;/br&gt;</code></pre> 
+            <p>This is a break tag, which has no content and no closing tag. It's used to insert a line break within text or other inline elements. The &lt;hr /&gt; tag, used for horizontal rules, is another example of an empty or void element.</p>
+          </div>
+
+          <div>
+            <h4>HTML Tags vs. Elements</h4>
+            <h4>HTML Tags</h4>
+            <p>HTML tags are the markers that define the start and end of an element. They are wrapped in angle brackets, like &lt;p&gt; and &lt;/p&gt;.</p>
+            <h4>HTML Elements</h4>
+            <p>An HTML element includes an opening tag, content, and a closing tag, forming a complete set. For example, &lt;p&gt;This is a paragraph.&lt;/p&gt;.
+            </p>
+            <h4>Key Takeaways</h4>
+            <ul>
+              <li> Tags set boundaries; elements include tags plus content.</li>
+              <li>Tags come in pairs (most of the time), whereas elements may include nested elements.</li>
+              <li>Self-closing or void elements like &lt;br /&gt; are still considered elements, even though they don't have a closing tag or content.</li>
+              <li>Elements can be "parent" or "child" when nested, but tags cannot.</li>
+            </ul>
+          </div>
+        </div>
+
+          <div class="main" id="HTML-Attributes">
+            <div>
+
+              <h2>HTML Attributes</h2>
+              <p>HTML attributes are used to define the characteristics of an HTML element. They are placed within the element's opening tag and consist of two parts: the name and the value.
+              </p>
+              <ul>
+                <li> Name: Specifies the property for that element.</li>
+                <li>Value: Sets the value of that property for the element.</li>
+              </ul>
+              
+            </div>
+
+          
+          <div>
+            <h4>Types of HTML Attributes</h4>
+            <p>There are three main types of HTML attributes:
+              </p>
+              <ul>
+                <li>Core Attributes: These are basic attributes that can be applied to most HTML elements. Examples include id, class, and style.
+                </li>
+                <li>Internationalization Attributes: These attributes help adapt the document to different languages and regions. Examples include lang and dir.</li>
+                <li>Generic Attributes: These attributes provide additional information about the element but don't necessarily affect its appearance or behavior</li>
+              </ul>
+              <p>
+                Examples include data-* attributes for storing custom data private to the page or application.
+Core attributes are some of the most widely used attributes in HTML. There are four main types:
+              </p>
+              <ul>
+                <li>id</li>
+                <li>class</li>
+                <li>title</li>
+                <li>style</li>
+              </ul>
+          </div>
+
+          <div>
+            <h4>ID Attribute</h4>
+            <p>The ID attribute is used to assign a unique identifier to an HTML element. Each element with an ID has its own unique identity, similar to how each individual has a unique identity. Multiple elements cannot have the same ID.
+              Example:</p>
+              <pre class="language-markup"><code class="language-markup">&lt;p id="html"&gt;This is an HTML tutorial&lt;/p&gt;
+&lt;p id="python"&gt;This is a Python tutorial&lt;/p&gt;</code></pre>
+              <p>In this example, the ID attribute helps to distinguish between two paragraphs by having different values: "html" and "python".</p>
+          </div>
+
+          <div>
+            <h4>Class Attribute</h4>
+            <p>The class attribute is used to associate an HTML element with a particular class, typically for styling or JavaScript manipulation. Unlike the ID attribute, the class attribute is not unique, and multiple elements can share the same class.</p>
+          </div>
+
+          <div>
+            <h4>Title Attribute</h4>
+            <p>The title attribute provides additional information about an element and is often displayed as a tooltip when the mouse hovers over it.
+
+              Example:</p>
+              <pre class="language-markup"><code class="language-markup">&lt;h4 title="hello, motto"&gt;Title attribute&lt;/h4&gt;</code></pre>
+          </div>
+
+          <div>
+            <h4>Style Attribute</h4>
+            <p>The style attribute allows for inline styling of HTML elements. It is used in conjunction with CSS properties to directly style individual elements within the HTML code.</p>
+          </div>
+          
+          <div>
+            <h4>Case Sensitivity</h4>
+            <p>The HTML standard is flexible about the case of attribute names, allowing them to be written in either uppercase or lowercase, such as "title" or "TITLE." However, for best practices and compatibility with stricter document types like XHTML, the W3C recommends using lowercase attributes.</p>
+          </div>
+          </div>
+
+          <div class="main" id="HTML-Comments">
+            <div>
+
+            
+            <h2>HTML Comments</h2>
+            <p>Comments in HTML are like little notes you leave in your code for yourself or other people. These notes help make the code easier to understand but don't show up on the actual website. The web browser just skips over them!</p>
+            <h4>Key Points About HTML Comments</h4>
+            <ul>
+              <li> Comments are ignored by web browsers.</li>
+              <li>They aid in code readability and documentation.</li>
+              <li>HTML comments are denoted by <!-- content -->.</li>
+              <li>The shortcut key for commenting out code is Ctrl + /.</li>
+              <li>HTML supports both single-line and multi-line comments.</li>
+            </ul>
+            <h4>Types of Comments in HTML</h4>
+            <p>HTML primarily supports two types of comments:</p>
+            <h4>Single-line Comments</h4>
+            <p>Single-line comments are contained within one line. They are useful for short annotations.
+
+              Example:</p>
+              <pre class="language-markup"><code class="language-markup">&lt;!-- This is a single-line comment --&gt;</code></pre>
+
+                <h4>Multi-line Comments</h4>
+            <p>Multi-line comments span across multiple lines, making them ideal for detailed explanations or temporarily disabling blocks of code.
+
+              Example:</p>
+              <pre class="language-markup"><code class="language-markup">&lt;!-- This is a multi-line comment.
+  It spans multiple lines.--&gt;</code></pre>
+</div>
+          </div>
+
+          <div class="main" id="HTML-Id-Classes">
+            <h2>HTML Id & Classes</h2>
+            <p>HTML offers multiple ways to select and style elements. Two of the most commonly used selectors are IDs and Classes. This blog explores what they are, how to use them, and their differences.</p>
+
+            <h4>What is an ID?</h4>
+            <p>An ID is an attribute, a unique identifier assigned to only one HTML element within a page. It is often used for unique styling and JavaScript manipulations.</p>
+            <pre class="language-markup"><code class="language-markup">&lt;div id="myUniqueID"&gt;This is a div with an ID.&lt;/div&gt;</code></pre>
+
+            <h4>What are Classes?</h4>
+            <p>The class attribute lets you give the same name to multiple HTML elements. That way, you can easily change their look or behavior all at once. Classes are not unique and can be assigned to multiple elements. They are generally used for applying the same styles or behaviors to a group of elements.</p>
+            <pre class="language-markup"><code class="language-markup">&lt;div class="myClass"&gt;This is a div with a class.&lt;/div&gt;
+&lt;p class="myClass"&gt;This is a paragraph with the same class.&lt;/p&gt;</code></pre>
+
+            <h4>The Style Tag</h4>
+            <p>The style tag in HTML is used to include embedded CSS (Cascading Style Sheets) within an HTML document. It is commonly placed within the &lt;head&gt; section of the HTML file, although it can technically be used in the &lt;body&gt; as well. The style tag allows you to define the look and feel of various HTML elements on the page, including their colors, sizes, margins, and other visual styles.
+
+              Here's a simple example:</p>
+<pre class="language-markup"><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;style&gt;
+    /* CSS rules go here */
+    p {
+      color: blue;
+      font-size: 18px;
+    }
+    .highlight {
+      background-color: yellow;
+    }
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;p&gt;This is a blue paragraph.&lt;/p&gt;
+  &lt;p class="highlight"&gt;This paragraph has a yellow background.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+              <p>In this example, we have targetted the second paragraph by its class name in CSS. The style tag is used to add CSS right into HTML. We will learn about CSS and selectors later in the CSS tutorial</p>
+
+              <h4>Using IDs and Classes in CSS</h4>
+              <p>In CSS, elements with IDs are selected using a hash (#) symbol before the ID, and elements with classes are selected using a dot (.) before the class name.</p>
+              <pre class="language-css"><code class="language-css">/* CSS for ID */
+#myUniqueID {
+  background-color: yellow;
+}
+
+/* CSS for Class */
+.myClass {
+  font-size: 18px;
+}</code></pre>
+              <h4>Differences Between IDs and Classes</h4>
+              <ul>
+                <li>Uniqueness: IDs are unique, and classes can be reused.
+                  </li>
+                <li>JavaScript: IDs are often used for JavaScript operations.
+                  </li>
+                <li>Styling: Both can be used for styling, but IDs have higher specificity.</li>
+              </ul>
+              <h4>Conclusion</h4>
+              <p>Understanding the difference between IDs and Classes is crucial for effective web development. While IDs are for unique elements, classes are for grouping elements.</p>
+          </div>
+
+
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2 disabled" type="button">
+          <a href="">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/HTML/htmlBasicTags.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+    </main>
+
+    <footer class="flex footer bgcolor2 mt-4">
+      <div class="footerLogo flex">
+        <img src="/img/logo.jpg" alt="" />
+        <p>Vijay Bansal</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Vijay Bansal</p>
+      </div>
+      <div class="media flex">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/profile.php?id=100041095243541"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/itz_vijay_bansal/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/vijay-bansal-319048249/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="github"
+          href="https://github.com/VijayBansal2004"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <i class="fa-brands whatsapp fa-whatsapp"></i>
+        <span style="font-size: small">+91 94172-12422</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2ff3e7c924.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/prism/prism.js"></script>
+  </body>
+</html>

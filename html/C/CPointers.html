@@ -1,0 +1,1318 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>C Pointers | CodeWithVijay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/prism/prism.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bodyColor textColorWhite">
+    <header>
+      <nav class="navbar bgcolor2 fixed-top">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand lightPurpleColor fw-bolder fs-2"
+            href="/index.html"
+            >&lt;/&gt;CodeWithVijay</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            style="background-color: #d8b4fe"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bgcolor2 text-white"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title lightPurpleColor fw-bolder"
+                id="offcanvasNavbarLabel"
+              >
+                &lt;/&gt;CodeWithVijay
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="background-color: #d8b4fe"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HTML
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlBasicTags.html"
+                        >Html Basic Tags</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/Inline&BlockElements.html"
+                        >Inline & Block Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlLists.html"
+                        >Html Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlTables.html"
+                        >Html Tables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlForms.html"
+                        >Html Forms</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/HeadElements.html"
+                        >Head Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlMedia.html"
+                        >Html Media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/MiscellaneousTags.html"
+                        >Miscellaneous Tags</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CSS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/cssIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSProperties.html"
+                        >CSS Properties</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSDesigning.html"
+                        >CSS Designing</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSAdvanceTopics.html"
+                        >CSS Advance Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA SCRIPT
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/jsIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptVariables.html"
+                        >Javascript Variables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptBasics.html"
+                        >Javascript Basics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptObjects.html"
+                        >Javascript Objects</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/DOM&BOM.html"
+                        >DOM & BOM</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/jsOOPs.html"
+                        >OOPs</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/html/C/cIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CDataTypesOperators&UserIO.html"
+                        >C Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFunctions.html"
+                        >C Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CPointers.html"
+                        >C Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CMemoryManagement.html"
+                        >C Memory Management</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CStructures&Unions.html"
+                        >C Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFileHandling.html"
+                        >C File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C++ PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/c++Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++DataTypesOperators&UserIO.html"
+                        >C++ Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++ConditionalStatements.html"
+                        >C++ Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++IterationStatements.html"
+                        >C++ Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++BreakContinue.html"
+                        >C++ Break/Continue</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Arrays.html"
+                        >C++ Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Pointers.html"
+                        >C++ Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Strings.html"
+                        >C++ Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Structures&Unions.html"
+                        >C++ Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Functions.html"
+                        >C++ Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++OPPs.html"
+                        >C++ OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++FileHandling.html"
+                        >C++ File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Templates&STL.html"
+                        >C++ Templates & STL</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/VariablesOperators&UserIO.html"
+                        >Variables, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/JavaMethods.html"
+                        >Java Methods</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/JavaOOPs.html"
+                        >Java OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PYTHON
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDataTypes&Operators.html"
+                        >Python Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonStrings.html"
+                        >Python Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLists.html"
+                        >Python Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonTuples.html"
+                        >Python Tuples</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonSets.html"
+                        >Python Sets</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDictionaries.html"
+                        >Python Dictionaries</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLoops.html"
+                        >Python Loops</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonFunctions.html"
+                        >Python Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonModules.html"
+                        >Python Modules</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonOOPs.html"
+                        >Python OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PHP
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/DataTypes&Operators.html"
+                        >Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Conditional&IterationStatements.html"
+                        >Conditional & Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPFunctions.html"
+                        >PHP Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPArrays.html"
+                        >PHP Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPOOPs.html"
+                        >PHP OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPSuperglobals.html"
+                        >PHP Superglobals</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPMySQL.html"
+                        >PHP MySQL</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPAdvancedTopics.html"
+                        >PHP Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    REACT JS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactTutorial.html"
+                        >React Tutorial</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactHooks.html"
+                        >React Hooks</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5 width80 minHeight90vh m-auto">
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/C/CFunctions.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/C/CMemoryManagement.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+      <div class="main">
+        <div>
+          <h2>C Pointers</h2>
+          <p>When we initialise an array, we usually come to know about the,</p>
+          <ul>
+            <li>
+              Memory block which is the space a variable gets in RAM. We can
+              think of that space as a block.
+            </li>
+            <li>
+              Name of the memory block which is the variable’s name itself.
+            </li>
+            <li>
+              Content of that block that is the value stored in that variable.
+            </li>
+            <li>
+              Address of the memory block assigned to the variable which is a
+              unique address that allows us to access that variable.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>What is a Pointer?</h4>
+          <ul>
+            <li>
+              Pointer is a variable that contains the address of another
+              variable. It means, it is a variable that points to any other
+              variable.
+            </li>
+            <li>
+              Although this is itself a variable, this contains the address or
+              memory address of any other variable.
+            </li>
+            <li>
+              It can be of type int, char, array, function, or even any other
+              pointer.
+            </li>
+            <li>Its size depends on the architecture.</li>
+            <li>
+              Pointers in C Language can be declared using *(asterisk symbol).
+            </li>
+          </ul>
+          <p>
+            So, pointers are nothing but variables that store addresses of other
+            variables, and by using pointers, we can access other variables too
+            and can even manipulate them.
+          </p>
+        </div>
+        <div>
+          <h4>Applications of Pointers</h4>
+          <ul>
+            <li>
+              Pointers are used to dynamically allocate or deallocate memory
+              using methods such as malloc(), realloc(), calloc(), and free().
+            </li>
+            <li>
+              Pointers are used to point to several containers such as arrays,
+              or structs, and also for passing addresses of containers to
+              functions.
+            </li>
+            <li>Return multiple values from a function</li>
+            <li>
+              Rather than passing a copy of a container to a function, we can
+              simply pass its pointer.
+            </li>
+            <li>This helps reduce the memory usage of the program.</li>
+            <li>Pointer reduces the code and improves the performance.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>Operations on Pointers</h2>
+        </div>
+        <div>
+          <h4>Address of Operator (&):</h4>
+          <ul>
+            <li>It is a unary operator.</li>
+            <li>Operand must be the name of an already defined variable.</li>
+            <li>& operator gives the address number of the variable.</li>
+            <li>& is also known as the “Referencing Operator”.</li>
+          </ul>
+          <p>
+            <b
+              >Here’s one example to demonstrate the use of the address of the
+              operator.</b
+            >
+          </p>
+          <pre
+            class="language-c"
+          ><code class="language-c">#include &lt;stdio.h&gt;
+ 
+int main()
+{
+    int a = 100;
+    printf("%d\n", a);
+    printf("Address of variable a is %d", &a);
+    return 0;
+}</code></pre>
+          <p>Output</p>
+          <pre class="language-c"><code class="language-c">100
+    Address of variable a is 6422220</code></pre>
+        </div>
+        <div>
+          <h4>Indirection Operator (*) :</h4>
+          <ul>
+            <li>* is indirection operator.</li>
+            <li>It is also known as the “Dereferencing Operator”.</li>
+            <li>It is also a unary operator.</li>
+            <li>It takes an address as an argument.</li>
+            <li>
+              * returns the content/container whose address is its argument.
+            </li>
+          </ul>
+          <p>
+            <b
+              >Here’s one example to demonstrate the use of the indirection
+              operator.</b
+            >
+          </p>
+          <pre
+            class="language-c"
+          ><code class="language-c">#include &lt;stdio.h&gt;
+    
+int main()
+{
+    int a = 100;
+    printf("Value of variable a stored at address %d is %d.", &a, *(&a));
+    return 0;
+}</code></pre>
+          <p>Output</p>
+          <pre
+            class="language-c"
+          ><code class="language-c">Value of variable a stored at address 6422220 is 100.</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>C VOID Pointer</h2>
+          <p>
+            After a brief discussion about pointers, it’s time to start with a
+            very important type of pointers, void pointers and their
+            functionalities. We already know that a void function has no return
+            type i.e., functions that are not returning anything are given the
+            type void. Now, in the case of pointers that are given the datatype
+            of a void, they can be typecasted into any other data type according
+            to the necessity. And that aids that we do not have to decide on a
+            data type for the pointer initially.
+
+            <br />
+
+            Void pointers can also be addressed as general-purpose pointer
+            variables.
+
+            <br />
+
+            Let’s see a few examples that will demonstrate the functionalities
+            of a void pointer.
+          </p>
+          <p><b>Example:</b></p>
+          <pre class="language-c"><code class="language-c">int var = 1;
+void *voidPointer = &amp;var;</code></pre>
+          <p>
+            Here, the data type of the void pointer gets typecasted into int as
+            we have stored the address of an integer value in it.
+          </p>
+          <pre class="language-c"><code class="language-c">    char x = 'a';
+    void *voidPointer = &amp;x;</code></pre>
+          <p>
+            In this example, the void pointer’s data type gets typecasted to
+            char as we have stored the address of a character value in it.
+          </p>
+          <p>
+            Type casting a void pointer must also remind you of the way we used
+            to type cast a void pointer returned by the functions malloc() and
+            calloc() while for dynamic memory allocation. There also, the heap
+            returns a void pointer to the memory requested. And we could type
+            cast it to any other data type and that is where a void pointer
+            comes handy.
+          </p>
+        </div>
+        <div>
+          <h4>Two important features of a VOID pointer are:</h4>
+          <p>
+            Void pointers cannot be dereferenced.
+            <br />
+            This can be demonstrated with the help of an example.
+          </p>
+          <pre class="language-c"><code class="language-c">int a = 10;
+void *voidPointer;
+voidPointer = &amp;a;
+printf("%d", *voidPointer);</code></pre>
+          <p>Output:</p>
+          <pre
+            class="language-c"
+          ><code class="language-c">Compiler Error!</code></pre>
+        </div>
+        <div>
+          <p>
+            This program will throw a compile-time error, as we can not
+            dereference a void pointer, meaning that we would compulsorily have
+            to typecast the pointer every time it is being used. Here’s how it
+            should be done.
+          </p>
+          <pre class="language-c"><code class="language-c">int a = 10;
+void *voidPointer;
+voidPointer = &amp;a;
+printf("%d", *(int *)voidPointer);</code></pre>
+          <p>Output:</p>
+          <pre class="language-c"><code class="language-c">10</code></pre>
+          <p>
+            The compiler will not throw any error and will directly output the
+            result because we are using the type along with the pointer.
+
+            <br />
+
+            Pointer arithmetics cannot be used with void pointers since it is
+            not holding any address to be able to increment or decrement its
+            value.
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>C NULL Pointer</h2>
+        </div>
+        <div>
+          <p dir="ltr">
+            A pointer that is not assigned any value or memory address but NULL
+            is known as a NULL pointer. A NULL pointer does not point to any
+            object, variable, or function. NULL pointers are often used to
+            initialize a pointer variable, where we wish to represent that the
+            pointer variable isn’t currently assigned to any valid memory
+            address yet.
+          </p>
+          <p dir="ltr">
+            <strong>This is how we define a NULL pointer,</strong>
+          </p>
+          <pre
+            class="language-c"
+          ><code class="language-c">int *ptr = NULL;</code></pre>
+          <p dir="ltr">
+            A NULL pointer generally points to a NULL or 0th memory location, so
+            in simple words, no memory is allocated to a NULL pointer.
+          </p>
+        </div>
+        <div>
+          <h4 dir="ltr" role="presentation">Dereferencing a NULL pointer</h4>
+          <p dir="ltr">
+            The dereferencing behavior of a NULL pointer is very much similar to
+            that of a void pointer. A NULL pointer itself is a kind of a VOID
+            pointer and hence, we have to typecast it into any data type the way
+            we do to a void pointer before dereferencing. Failing to do so
+            results in an error at compile time.
+          </p>
+        </div>
+        <div>
+          <h4 dir="ltr" role="presentation">
+            NULL pointer vs. Uninitialized pointer
+          </h4>
+          <p dir="ltr">
+            NULL pointers and uninitialised pointers are different, as a Null
+            pointer does not occupy any memory location. That means, it points
+            to nowhere but to a zeroth location. In contrast, an uninitialized
+            pointer means that the pointer occupies a garbage value address. The
+            garbage value address is still a real memory location and hence not
+            a NULL value. So to be on the safe side, NULL pointers are
+            preferred.
+          </p>
+        </div>
+        <div>
+          <h4 dir="ltr" role="presentation">NULL pointer vs. Void pointer</h4>
+          <p dir="ltr">
+            NULL pointers and void pointers very much sound similar just because
+            oif their nomenclatures, but they are very different as a NULL
+            pointer is a pointer with a NULL value address, and a void pointer
+            is a pointer of void data type. Their significances are contrasting.
+          </p>
+          <p dir="ltr">
+            <strong>An example of a NULL pointer is as follows,</strong>
+          </p>
+          <pre
+            class="language-c"
+          ><code class="language-c">int *ptr = NULL;</code></pre>
+          <p dir="ltr">
+            Here, an integer pointer variable is declared with a value NULL,
+            which means it is not pointing to any memory location.&nbsp;
+          </p>
+          <p dir="ltr">
+            <strong>An example of a VOID pointer is as follows,</strong>
+          </p>
+          <pre
+            class="language-c"
+          ><code class="language-c">void *ptr;</code></pre>
+          <p dir="ltr">
+            Now, this is a void pointer. This pointer will typecast itself to
+            any other data type as per the datatype of the value stored in
+            it.&nbsp;
+          </p>
+        </div>
+        <div>
+          <h4 dir="ltr" role="presentation">Advantages of a NULL pointer</h4>
+          <ol>
+            <li dir="ltr" role="presentation">
+              We can initialize a pointer variable without allocating any
+              specific memory location to it.
+            </li>
+            <li dir="ltr" role="presentation">
+              We can use it to check whether a pointer is legitimate or not. We
+              can check that by making the pointer a NULL pointer, after which
+              it cannot be dereferenced.&nbsp;
+            </li>
+            <li dir="ltr" role="presentation">
+              A NULL pointer is used for comparison with other pointers to check
+              whether that other pointer itself is pointing to some memory
+              address or not.&nbsp;
+            </li>
+            <li dir="ltr" role="presentation">
+              We use it for error handling in the case of C programming.
+            </li>
+            <li dir="ltr" role="presentation">
+              We can pass a NULL pointer at places where we do not want to pass
+              a pointer with a valid memory address.
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>Dangling Pointer</h2>
+        </div>
+        <div>
+          <p dir="ltr">
+            Dangling pointers are pointers that are pointing to a memory
+            location that has been already freed or deleted.
+            <br />
+            Dangling pointers often come into existence during object
+            destruction. It happens when an object with an incoming reference is
+            deleted or de-allocated, without modifying the value of the pointer.
+            The pointer still points to the memory location of the deallocated
+            memory.
+            <br />
+            The system may itself reallocate the previously deleted memory and
+            several unpredicted results may occur as the memory may now contain
+            different data.
+          </p>
+        </div>
+        <div>
+          <h4 dir="ltr">
+            Dangling pointers are caused by the following factors:
+          </h4>
+          <h4 dir="ltr" role="presentation">
+            De-allocating or free variable memory
+          </h4>
+          <p dir="ltr">
+            When memory is deallocated, the pointer keeps pointing to freed
+            space. An example to demonstrate how that happens is:
+          </p>
+          <pre
+            class="language-c"
+          ><code class="language-c">#include &lt;stdio.h&gt;
+int main()
+{
+    int a = 80;
+    int *ptr = (int *)malloc(sizeof(int));
+    ptr = &amp;a;
+    free(ptr);
+    return 0;
+}</code></pre>
+          <p dir="ltr">
+            The above code demonstrates how a variable pointer *ptr and an
+            integer variable a containing a value 80 was created. The pointer
+            variable *ptr is created with the help of the malloc() function. As
+            we know that malloc() function returns the void, so we use int * for
+            type conversion to convert void pointer into int pointer.
+          </p>
+        </div>
+        <div>
+          <h4 dir="ltr" role="presentation">Function Call</h4>
+          <p dir="ltr">
+            Now, we will see how the pointer becomes dangling with the function
+            call.
+          </p>
+          <pre
+            class="language-c"
+          ><code class="language-c">#include &lt;stdio.h&gt;
+int *myvalue()
+{
+    int a = 10;
+    return &amp;a;
+}
+
+int main()
+{
+    int *ptr = myvalue();
+    printf("%d", *ptr);
+    return 0;
+}</code></pre>
+          <p dir="ltr">Output:</p>
+          <pre
+            class="language-c"
+          ><code class="language-c">Segmentation Fault!</code></pre>
+          <p dir="ltr">
+            In the above code, First, we create the main() function in which we
+            have declared ptr pointer, which contains the return value of the
+            func() function. When the function func() is called, the program
+            control moves to the context of the int *func(). Then, the function
+            func() returns the address of the integer variable a. <br />
+            This is where the program control comes back to the main() function
+            and the integer variable a becomes unavaialbale for the rest of the
+            program execution. And the pointer ptr becomes dangling as it points
+            to a memory location that has been freed or deleted from the stack.
+            Hence, the program results in a segmentation fault.
+            <br />
+            Had this code been updated, and the integer variable been declared
+            globally which is static and as we know, any static variable stores
+            in global memory, the output would have been 10.
+          </p>
+        </div>
+        <div>
+          <h4 dir="ltr" role="presentation">
+            How to avoid the Dangling pointer errors
+          </h4>
+          <p dir="ltr">
+            The dangling pointer introduces nasty bugs into our programs, and
+            these bugs often result in security holes. By merely initializing
+            the pointer value to the NULL, these errors following the creation
+            of dangling pointer can be avoided. After that, the pointer will no
+            longer point to the freed memory location. While the reason behind
+            assigning the NULL value to the pointer was to have the pointer not
+            to point to any random or previously assigned memory location.
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>Wild Pointer</h2>
+          <p>
+            Uninitialized pointers are known as wild pointers because they point
+            to some arbitrary memory location while they are not assigned to any
+            other memory location. This may even cause a program to crash or
+            behave unpredictably at times.
+          </p>
+          <p><b>For Example:</b></p>
+          <pre
+            class="language-c"
+          ><code class="language-c">int *ptr;</code></pre>
+          <p>
+            Here, a pointer named ptr is created but was not given any value.
+            This makes the pointer ptr, a wild pointer
+          </p>
+          <p>
+            Declaring a pointer and not initialising it has its own
+            disadvantages. One such disadvantage is that it will store any
+            garbage value in it. A random location in memory will be held in it
+            arbitrarily. This random allocation often becomes tough for a
+            programmer to debug causing a lot of problems in the execution of
+            the program.
+          </p>
+          <p>
+            <b> A. Avoiding problems due to WILD pointers </b>
+            Dereferencing a wild pointer becomes problematic at times, and to
+            avoid the them, we often prefer to convert a void pointer to a NULL
+            pointer. By doing so, our pointer will not point to any garbage
+            memory location, rather it will point to a NULL location. We can
+            convert a wild pointer to a NULL pointer by merely putting it equal
+            to NULL.
+          </p>
+          <p>
+            <b> B. Dereferencing </b>
+
+            We cannot dereference a wild pointer as we are not sure about the
+            data in the memory it is pointing towards. In addition to causing a
+            lot of bugs, dereferencing a wild pointer can also cause the program
+            to crash.
+          </p>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/C/CFunctions.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/C/CMemoryManagement.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+    </main>
+
+    <footer class="flex footer bgcolor2 mt-4">
+      <div class="footerLogo flex">
+        <img src="/img/logo.jpg" alt="" />
+        <p>Vijay Bansal</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Vijay Bansal</p>
+      </div>
+      <div class="media flex">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/profile.php?id=100041095243541"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/itz_vijay_bansal/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/vijay-bansal-319048249/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="github"
+          href="https://github.com/VijayBansal2004"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <i class="fa-brands whatsapp fa-whatsapp"></i>
+        <span style="font-size: small">+91 94172-12422</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2ff3e7c924.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/prism/prism.js"></script>
+  </body>
+</html>

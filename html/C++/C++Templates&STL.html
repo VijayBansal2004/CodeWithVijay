@@ -1,0 +1,1990 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>C++ Templates & STL | CodeWithVijay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/prism/prism.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bodyColor textColorWhite">
+    <header>
+      <nav class="navbar bgcolor2 fixed-top">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand lightPurpleColor fw-bolder fs-2"
+            href="/index.html"
+            >&lt;/&gt;CodeWithVijay</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            style="background-color: #d8b4fe"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bgcolor2 text-white"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title lightPurpleColor fw-bolder"
+                id="offcanvasNavbarLabel"
+              >
+                &lt;/&gt;CodeWithVijay
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="background-color: #d8b4fe"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HTML
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlBasicTags.html"
+                        >Html Basic Tags</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/Inline&BlockElements.html"
+                        >Inline & Block Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlLists.html"
+                        >Html Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlTables.html"
+                        >Html Tables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlForms.html"
+                        >Html Forms</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/HeadElements.html"
+                        >Head Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlMedia.html"
+                        >Html Media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/MiscellaneousTags.html"
+                        >Miscellaneous Tags</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CSS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/cssIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSProperties.html"
+                        >CSS Properties</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSDesigning.html"
+                        >CSS Designing</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSAdvanceTopics.html"
+                        >CSS Advance Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA SCRIPT
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/jsIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptVariables.html"
+                        >Javascript Variables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptBasics.html"
+                        >Javascript Basics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptObjects.html"
+                        >Javascript Objects</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/DOM&BOM.html"
+                        >DOM & BOM</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/jsOOPs.html"
+                        >OOPs</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/html/C/cIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CDataTypesOperators&UserIO.html"
+                        >C Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFunctions.html"
+                        >C Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CPointers.html"
+                        >C Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CMemoryManagement.html"
+                        >C Memory Management</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CStructures&Unions.html"
+                        >C Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFileHandling.html"
+                        >C File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C++ PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/c++Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++DataTypesOperators&UserIO.html"
+                        >C++ Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++ConditionalStatements.html"
+                        >C++ Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++IterationStatements.html"
+                        >C++ Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++BreakContinue.html"
+                        >C++ Break/Continue</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Arrays.html"
+                        >C++ Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Pointers.html"
+                        >C++ Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Strings.html"
+                        >C++ Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Structures&Unions.html"
+                        >C++ Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Functions.html"
+                        >C++ Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++OPPs.html"
+                        >C++ OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++FileHandling.html"
+                        >C++ File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Templates&STL.html"
+                        >C++ Templates & STL</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/VariablesOperators&UserIO.html"
+                        >Variables, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/JavaMethods.html"
+                        >Java Methods</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/JavaOOPs.html"
+                        >Java OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PYTHON
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDataTypes&Operators.html"
+                        >Python Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonStrings.html"
+                        >Python Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLists.html"
+                        >Python Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonTuples.html"
+                        >Python Tuples</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonSets.html"
+                        >Python Sets</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDictionaries.html"
+                        >Python Dictionaries</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLoops.html"
+                        >Python Loops</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonFunctions.html"
+                        >Python Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonModules.html"
+                        >Python Modules</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonOOPs.html"
+                        >Python OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PHP
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/DataTypes&Operators.html"
+                        >Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Conditional&IterationStatements.html"
+                        >Conditional & Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPFunctions.html"
+                        >PHP Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPArrays.html"
+                        >PHP Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPOOPs.html"
+                        >PHP OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPSuperglobals.html"
+                        >PHP Superglobals</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPMySQL.html"
+                        >PHP MySQL</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPAdvancedTopics.html"
+                        >PHP Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    REACT JS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactTutorial.html"
+                        >React Tutorial</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactHooks.html"
+                        >React Hooks</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5 width80 minHeight90vh m-auto">
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/C++/C++FileHandling.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary disabled" type="button">
+          <a href="/">Next &gt;&gt;</a>
+        </button>
+      </div>
+      <div class="main">
+        <div>
+          <h2>C++ Templates</h2>
+        </div>
+        <div>
+          <h4>What are templates?</h4>
+          <p>
+            A template is believed to escalate the potential of C++ several fold
+            by giving it the ability to define data types as parameters making
+            it useful to reduce repetitions of the same declaration of classes
+            for different data types.
+          </p>
+          <p>
+            Declaring classes for every other data type doesn't completely
+            utilize the potential of C++. It is very analogous to when we said
+            classes are the templates for objects, here templates themselves are
+            the templates of the classes. That is, what classes are for objects,
+            templates are for classes.
+          </p>
+        </div>
+        <div>
+          <h4>Why do we use templates?</h4>
+          <p>
+            To understand the reason behind using templates, we will have to
+            understand the effort behind declaring classes for different data
+            types. Suppose we want to have a structure for each of the three
+            data types, int, float, and char. Then we’ll obviously write the
+            whole thing again and again making it awfully difficult. This is
+            where the savior comes, the templates. It helps to parametrize the
+            data type and then, declare it once in the source code suffice. Very
+            similar to what we do in functions. It is because of this, also
+            called, parameterized classes.
+          </p>
+        </div>
+        <div>
+          <h4>Syntax of a template</h4>
+          <p>
+            Consider a class containing two elements, an integer pointer, and an
+            integer variable size. This class acts like an array of integers
+            with a given length size. We often name them a vector.
+          </p>
+          <pre class="language-cpp"><code class="language-cpp">class vector
+{
+    int *arr;
+    int size;
+};</code></pre>
+          <p>
+            But, if we need another array of some other data type, we will have
+            to redefine another class for the same. To avoid that repetition of
+            logic, templates help. Here’s how we do subtle changes in the same
+            definition of the class for an integer array to make it generic for
+            any other data type as well.
+          </p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">template &lt;class T&gt;
+class vector
+{
+    T *arr;
+    int size;
+};</code></pre>
+          <p>
+            Here, we declared a template of class and passed a variable T as its
+            parameter. Then, we defined the class of vector and keep the data
+            type of *arr as T only. Now, the array becomes of the type we supply
+            in the template as T.
+          </p>
+          <p>
+            So, the same vector can now be used as an integer array as well as a
+            float or character array.
+          </p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+    
+template &lt;class T&gt;
+class vector
+{
+    T *arr;
+    int size;
+};
+    
+int main()
+{
+    vector&lt;int&gt; v1();
+    vector&lt;float&gt; v2();
+}</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>C++ Class Templates</h2>
+          <p>
+            Class templates are one application of templates. Class templates
+            could be used according to the requirements of the programmer.
+            Templates are nothing but shortened generic declarations of similar
+            entities. They are expanded at the compile time.
+          </p>
+          <p>
+            Examples of some of the in-built class templates are,
+            <br />
+            Vector, Set, Linked List etc.
+          </p>
+          <p>
+            Class templates are helpful for classes that are independent of the
+            data type. And like any other function, there could be more than one
+            parameter to a template. On the basis of the number of parameters of
+            a template, they could be single parameters as well as multiple
+            parameters.
+          </p>
+        </div>
+        <div>
+          <ol>
+            <li>
+              <h4>Single parameter</h4>
+              <p>Syntax for declaring a single parametrized template is,</p>
+              <pre
+                class="language-cpp"
+              ><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+    
+template &lt;class T&gt;
+class nameOfClass
+{
+    //body
+};
+    
+int main()
+{
+    //body of main
+}</code></pre>
+              <p>
+                The example of the vector easily demonstrates how templates are
+                used with a single parameter.
+              </p>
+              <pre
+                class="language-cpp"
+              ><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+    
+template &lt;class T&gt;
+class vector
+{
+    T *arr;
+    int size;
+};
+    
+int main()
+{
+    vector&lt;int&gt; v1();
+    vector&lt;float&gt; v2();
+}</code></pre>
+            </li>
+            <li>
+              <h4>Multiple Parameter</h4>
+              <p>Syntax for declaring a multiple parametrized template is,</p>
+              <pre
+                class="language-cpp"
+              ><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+    
+template &lt;class T1, class T2&gt;
+class nameOfClass
+{
+    //body
+};
+    
+int main()
+{
+    //body of main
+}</code></pre>
+              <p>
+                The difference lies only in the number of parameters we declare
+                inside the template. Consider an example that demonstrates the
+                use of multiple parameters in a class template.
+              </p>
+              <pre
+                class="language-cpp"
+              ><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+    
+template &lt;class T1, class T2&gt;
+    
+class myClass
+{
+public:
+    T1 data1;
+    T2 data2;
+    myClass(T1 a, T2 b)
+    {
+        data1 = a;
+        data2 = b;
+    }
+    void display()
+    {
+        cout &lt;&lt; this-&gt;data1 &lt;&lt; " " &lt;&lt; this-&gt;data2;
+    }
+};
+    
+int main()
+{
+    myClass&lt;char, int&gt; obj('C', 1);
+    obj.display();
+}</code></pre>
+              <p><b>Output:</b></p>
+              <pre
+                class="language-cpp"
+              ><code class="language-cpp">C 1</code></pre>
+              <p>
+                Now, we defined an object obj in myClass to hold a character and
+                an integer data. It could be anything else since both the
+                parameters have been generalized using the template.
+              </p>
+            </li>
+            <li>
+              <h4>Default Parameter</h4>
+              <p>
+                C++ Templates have this additional ability to have default
+                parameters. Its ability to have default specifications about the
+                data type, when it receives no arguments from the main is a
+                powerful attribute.
+                <br />
+
+                The syntax for making a parameter have a default datatype,
+              </p>
+              <pre
+                class="language-cpp"
+              ><code class="language-cpp">template &lt;class T1 = datatype_1, class T2 = datatype_2&gt;</code></pre>
+              <p>
+                Now, even if the programmer does not specify the type of the
+                data, objects created using this template will automatically
+                make it, of the form &lt;datatype_1, datatype_2&gt;. <br />
+                Consider an example demonstrating the application of the default
+                parameters,
+              </p>
+              <pre
+                class="language-cpp"
+              ><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+    
+template &lt;class T1 = int, class T2 = float, class T3 = char&gt;
+class myClass
+{
+public:
+    T1 data1;
+    T2 data2;
+    T3 data3;
+    
+    myClass(T1 a, T2 b, T3 c)
+    {
+        data1 = a;
+        data2 = b;
+        data3 = c;
+    }
+    void display()
+    {
+        cout &lt;&lt; "The value of a is " &lt;&lt; data1 &lt;&lt; endl;
+        cout &lt;&lt; "The value of b is " &lt;&lt; data2 &lt;&lt; endl;
+        cout &lt;&lt; "The value of c is " &lt;&lt; data3 &lt;&lt; endl;
+    }
+};
+    
+int main()
+{
+    myClass&lt;&gt; obj1(1, 4.3, 'C');
+    obj1.display();
+}</code></pre>
+              <p><b>Output:</b></p>
+              <pre
+                class="language-cpp"
+              ><code class="language-cpp">The value of a is 1
+The value of b is 4.3
+The value of c is C</code></pre>
+              <p>
+                The template has default defined its parameters as an integer, a
+                float, and a character. Now, if the programmer wishes to change
+                the data types, it must be exclusively mentioned and the object
+                must be defined as it was done in earlier examples.
+              </p>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>C++ Function Templates</h2>
+          <p>
+            Function templates are another application of templates. Class
+            templates were used to program generic classes. Similarly, function
+            templates are used to define generic functions to be able to use a
+            function independent of its data types for different data type
+            combinations.
+          </p>
+          <p>
+            Example of some of the in-built function templates are, sort(),
+            max(), min() etc.
+          </p>
+          <p>
+            <b>The syntax for constructing a function template is,</b>
+          </p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">template &lt;class T1, class T2&gt;
+data_type function_name(T1 a, T2 b)
+{
+    //function body
+}</code></pre>
+          <p>
+            An example of a somewhat data type independent function might be a
+            function to find the average of two numerical values. Now, this
+            function might expect any of the data type combinations between an
+            integer, a float, or a double value. So, here is how we build a
+            function so that it is generalized for finding the average of two
+            numerical values.
+          </p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">#include &lt;iostream&gt;
+using namespace std;
+    
+template &lt;class T1, class T2&gt;
+float findAverage(T1 a, T2 b)
+{
+    float avg = (a + b) / 2.0;
+    return avg;
+}
+    
+int main()
+{
+    float avg = findAverage(5.1, 2);
+    cout &lt;&lt; avg &lt;&lt; endl;
+}</code></pre>
+          <p><b>Output :</b></p>
+          <pre class="language-cpp"><code class="language-cpp">3.55</code></pre>
+          <p>
+            Both class templates and function templates help reduce the size of
+            the program and make it more readable.
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>C++ STL</h2>
+        </div>
+        <div>
+          <h4>What is Standard Template Library?</h4>
+          <p>
+            Competitive programming is a part of various environments, be it job
+            interviews, coding contests, and all, and if you’re in one of those
+            environments, you’ll be given limited time to code your program. So,
+            suppose you want in your program, a resizable array, sort an array
+            or any other data structure. or search for some element in your
+            container. You will always try to code a function that will execute
+            the above-mentioned things, and end up losing a great amount of
+            time. But here is when you will use STL.
+          </p>
+          <p>
+            An STL is a library of generic functions and classes which saves you
+            time and energy which you would have spent constructing for your
+            use. This helps you reuse these well-tested classes and functions an
+            umpteenth number of times according to your own convenience. To put
+            this simply, STL is used because it is not a good idea to reinvent
+            something which is already built and can be used to innovate things
+            further. Suppose you go to a company that builds cars, they will not
+            ask you to start from scratch, but to start from where it is left.
+            This is the basic idea behind using STL.
+          </p>
+        </div>
+        <div>
+          <h4>What are the components of STL?</h4>
+          <ul>
+            <li>
+              <h5>Containers</h5>
+              <p>
+                Container is an object that stores data. We have different
+                containers having their own benefits. These are the implemented
+                class templates for our use, which can be used just by including
+                this library. You can even customize these template classes.
+              </p>
+            </li>
+            <li>
+              <h5>Algorithm</h5>
+              <p>
+                Algorithms are sets of instructions that manipulate the input
+                data to arrive at some desired result. In STL, we have already
+                written algorithms, for example, to sort some data structure, or
+                search some element in an array. These algorithms use function
+                templates.
+              </p>
+            </li>
+            <li>
+              <h5>Iterators</h5>
+              <p>
+                Iterators are objects which refer to an element in a container.
+                And we handle them very much similar to a pointer. Their basic
+                job is to connect algorithms to the container and play a vital
+                role in the manipulation of the data.
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>C++ Containers</h2>
+          <p>
+            As discussed earlier, containers are objects that store information
+            and they are nothing but class templates with specific
+            functionalities. Containers themselves are of three types:
+          </p>
+        </div>
+        <div>
+          <h4>Sequence Containers</h4>
+          <p>
+            A sequence container stores that data in a linear fashion. Sequence
+            containers include Vector, List, Dequeue, etc. These are some of the
+            most used sequence containers.
+          </p>
+        </div>
+        <div>
+          <h4>Associative Containers</h4>
+          <p>
+            An associative container is designed in such a way that enhances the
+            accessing of some element in that container. It is very much used
+            when the user wants to fastly reach some element. Some of these
+            containers are, Set, Multiset, Map, Multimap etc. They store their
+            data in a tree-like structure.
+          </p>
+        </div>
+        <div>
+          <h4>Derived Containers</h4>
+          <p>
+            As the name suggests, these containers are derived from either the
+            sequence or the associative containers. They often provide you with
+            some better methods to deal with your data. They deal with real life
+            modeling. Some examples of derived containers are Stack, Queue,
+            Priority Queue, etc.
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>C++ Vectors</h2>
+        </div>
+        <div>
+          <ol>
+            <li>
+              <h4>What are vectors?</h4>
+              <p>
+                Vectors are sequence containers that fall under the category of
+                class templates. They are used to store information in a linear
+                fashion. Elements of a single data type can be stored in a
+                vector. In a vector, we can access elements faster in comparison
+                to arrays. Although, insertion and deletion at some random
+                position, except at the end is comparatively slower. And
+                inserting any element at the end happens faster.
+              </p>
+            </li>
+            <li>
+              <h4>Using a vector in our programs</h4>
+              <p>
+                To be able to use vectors in our code, the header file
+                &lt;vector&gt; must be included. And the syntax to define a
+                vector is
+              </p>
+              <pre
+                class="language-cpp"
+              ><code class="language-cpp">vector&lt;data_type&gt; vector_name;</code></pre>
+              <p>
+                The data_type could be replaced by any data type. One benefit of
+                using vectors is that we can insert as many elements as we want
+                in a vector, without having to put some size parameter as we do
+                in an array.
+              </p>
+              <p>
+                Vectors provide certain methods to be used to access and utilize
+                the elements of a vector, the first one being, the push_back
+                method. To access all the methods and member functions in
+                detail, one can visit this site,
+                <a href="https://www.cplusplus.com/reference/vector/vector/"
+                  >std::vector - C++ Reference</a
+                >
+              </p>
+            </li>
+
+            <li>
+              <h4>Initialising a vector</h4>
+              <p>A vector could be initialized in different ways:</p>
+              <ul>
+                <li>
+                  <p>
+                    In the first method, a vector could be initialized with all
+                    the elements inserted in the vector at the time it is
+                    defined.
+                  </p>
+                  <pre
+                    class="language-cpp"
+                  ><code class="language-cpp">vector&lt;int&gt; v = {1, 2, 3, 4};</code></pre>
+                </li>
+                <li>
+                  <p>
+                    Another method to initialize a vector is where we pass two
+                    parameters along with its definition where the first
+                    parameter defines the size of the vector and the second
+                    parameter is the uniform value it will have at all its
+                    positions.
+                  </p>
+                  <pre
+                    class="language-cpp"
+                  ><code class="language-cpp">vector&lt;int&gt; v(4, 10);</code></pre>
+                  <p>Here, v is of size 4 with value 10 at all positions.</p>
+                </li>
+              </ul>
+            </li>
+            <li>
+              <h4>Inserting elements in a vector</h4>
+              <p>
+                We can insert elements in a vector in different ways. The most
+                economical way to insert an element in a vector is when we
+                insert it at the rear end using the push_back method. The
+                push_back() function gets the elements to be inserted as a
+                parameter and the element gets pushed at the back.
+              </p>
+              <pre
+                class="language-cpp"
+              ><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+    
+void display(vector&lt;int&gt; v)
+{
+    cout &lt;&lt; "The elements are: ";
+    for (auto it : v)
+    {
+        cout &lt;&lt; it &lt;&lt; " ";
+    }
+    cout &lt;&lt; endl;
+}
+    
+int main()
+{
+    vector&lt;int&gt; v = {1, 2, 3, 4};
+    display(v);
+    v.push_back(5); //5 is inserted at the back
+    display(v);
+}</code></pre>
+              <p><b>Output:</b></p>
+              <pre
+                class="language-cpp"
+              ><code class="language-cpp">The elements are: 1 2 3 4 
+The elements are: 1 2 3 4 5</code></pre>
+              <p>
+                Another method to insert an element allows us to insert at any
+                random position. Here, we use the insert() method. The syntax
+                for using the insert method is
+              </p>
+
+              <pre
+                class="language-cpp"
+              ><code class="language-cpp">vector_name.insert(iterator, element);</code></pre>
+              <p>
+                Here, the iterator is the pointer to that position where the
+                element gets inserted. An example that demonstrates the use of
+                the insert() method is
+              </p>
+              <pre
+                class="language-cpp"
+              ><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+    
+void display(vector&lt;int&gt; v)
+{
+    cout &lt;&lt; "The elements are: ";
+    for (auto it : v)
+    {
+        cout &lt;&lt; it &lt;&lt; " ";
+    }
+    cout &lt;&lt; endl;
+}
+    
+int main()
+{
+    vector&lt;int&gt; v = {1, 2, 3, 4};
+    display(v);
+    v.insert(v.begin(), 5); 
+    display(v);
+}</code></pre>
+              <p><b>Output:</b></p>
+              <pre
+                class="language-cpp"
+              ><code class="language-cpp">The elements are: 1 2 3 4 
+The elements are: 5 1 2 3 4</code></pre>
+              <p>
+                Here, we used the begin() method which returned an iterator to
+                the first position of the vector. We can manipulate it
+                accordingly to point at the desired position by general
+                arithmetic operations.
+              </p>
+            </li>
+            <li>
+              <h4>Accessing/Changing elements in a vector</h4>
+              <p>
+                Changing any element at any position is similar to accessing
+                them. Any element at any specified position could be accessed
+                using its index number as it was done for arrays.
+              </p>
+              <pre
+                class="language-cpp"
+              ><code class="language-cpp">vector&lt;int&gt; v = {1, 2, 3, 4};
+cout &lt;&lt; "Element at index 0 is " &lt;&lt; v[0] &lt;&lt; endl;</code></pre>
+              <p><b>Output:</b></p>
+              <pre
+                class="language-cpp"
+              ><code class="language-cpp">Element at index 0 is 1</code></pre>
+              <p>
+                Another method that gets added for vectors is the at() method
+                which accepts the index number as its parameter and returns the
+                element at that position.
+              </p>
+              <pre
+                class="language-cpp"
+              ><code class="language-cpp">vector&lt;int&gt; v = {1, 2, 3, 4};
+        cout &lt;&lt; "Element at index 2 is " &lt;&lt; v.at(2) &lt;&lt; endl;</code></pre>
+              <p><b>Output:</b></p>
+              <pre
+                class="language-cpp"
+              ><code class="language-cpp">Element at index 2 is 3</code></pre>
+            </li>
+            <li>
+              <h4>Removing elements from a vector</h4>
+              <p>
+                We can remove elements from a vector in different ways. The most
+                economical way to remove an element from a vector is when we
+                remove it from the rear end using the pop_back method. The
+                pop_back() function needs nothing as a parameter and the element
+                gets popped from the back.
+              </p>
+              <pre
+                class="language-cpp"
+              ><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+    
+void display(vector&lt;int&gt; v)
+{
+    cout &lt;&lt; "The elements are: ";
+    for (auto it : v)
+    {
+        cout &lt;&lt; it &lt;&lt; " ";
+    }
+    cout &lt;&lt; endl;
+}
+    
+int main()
+{
+    vector&lt;int&gt; v = {1, 2, 3, 4};
+    display(v);
+    v.pop_back(); //4 gets popped from the back
+    display(v);
+}</code></pre>
+              <p><b>Output:</b></p>
+              <pre
+                class="language-cpp"
+              ><code class="language-cpp">The elements are: 1 2 3 4 
+The elements are: 1 2 3</code></pre>
+              <p>
+                Another method to remove an element allows us to remove it from
+                any random position. Here, we use the erase() method. The syntax
+                for using the erase method is
+              </p>
+              <pre
+                class="language-cpp"
+              ><code class="language-cpp">vector_name.erase(iterator);</code></pre>
+              <p>
+                Here, the iterator is the pointer to that position where the
+                element gets popped from. An example that demonstrates the use
+                of the erase() method is
+              </p>
+              <pre
+                class="language-cpp"
+              ><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;vector&gt;
+using namespace std;
+    
+void display(vector&lt;int&gt; v)
+{
+    cout &lt;&lt; "The elements are: ";
+    for (auto it : v)
+    {
+        cout &lt;&lt; it &lt;&lt; " ";
+    }
+    cout &lt;&lt; endl;
+}
+    
+int main()
+{
+    vector&lt;int&gt; v = {1, 2, 3, 4};
+    display(v);
+    v.erase(v.begin()); 
+    display(v);
+}</code></pre>
+              <p><b>Output:</b></p>
+              <pre
+                class="language-cpp"
+              ><code class="language-cpp">The elements are: 1 2 3 4 
+The elements are: 2 3 4</code></pre>
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>C++ Lists</h2>
+        </div>
+        <div>
+          <h4>A. What are lists?</h4>
+          <p>
+            Lists are sequence containers that fall under the category of class
+            templates. They are also used to store information in a linear
+            fashion. Only elements of a single data type can be stored in a
+            list. In a list, we have faster insertion and deletion of elements
+            as compared to other containers such as arrays and vectors.
+            Although, accessing elements at some random position, is
+            comparatively slower.
+          </p>
+        </div>
+        <div>
+          <h4>B. What makes inserting in and deleting from a list faster?</h4>
+          <p>
+            An array stores the elements in a contiguous manner in which
+            inserting some element calls for a shift of other elements, which is
+            time taking. But in a list, we can simply change the address the
+            pointer is pointing to.
+          </p>
+        </div>
+        <div>
+          <h4>C. Using a list in our programs</h4>
+          <p>
+            To be able to use lists in our code, the header file &lt;list&gt;
+            must be included. And the syntax to define a list is
+          </p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">list&lt;data_type&gt; list_name;</code></pre>
+          <p>
+            The data_type could be replaced by any data type. One benefit of
+            using lists is that lists support a bidirectional and provide an
+            efficient way for insertion and deletion operations.
+          </p>
+          <p>
+            Lists provide certain methods to be used to access and utilize the
+            elements of a list, the first one being, the push_back method. To
+            access all the methods and member functions in detail, one can visit
+            this site,
+            <a href="https://cplusplus.com/reference/list/list/">std::list</a>
+          </p>
+        </div>
+        <div>
+          <h4>D. Initialising a list</h4>
+          <p>
+            A list could be initialized in a very similar way we used to
+            initialize a vector.: A list could be initialized with all the
+            elements inserted in the list at the time it is defined.
+          </p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">list&lt;int&gt; l = {1, 2, 3, 4};</code></pre>
+          <p>
+            OR it could be even be initialised with elements to be inserted as a
+            parameter.
+          </p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">list&lt;int&gt; l{1, 2, 3, 4};</code></pre>
+        </div>
+        <div>
+          <h4>E. Inserting elements in a list</h4>
+          <p>
+            We can insert elements in a list in different ways. The insertion of
+            any element in a list takes constant time, making it faster than
+            insertion in vectors or arrays. Insertion in a list could be done
+            using the push_back() and the push_front() methods. The push_back()
+            function gets the elements to be inserted as a parameter and the
+            element gets pushed at the back. In contrast, the push_front()
+            function gets the elements to be inserted as a parameter and the
+            element gets pushed at the front.
+          </p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;list&gt;
+using namespace std;
+    
+void display(list&lt;int&gt; l)
+{
+    cout &lt;&lt; "The elements are: ";
+    for (auto it : l)
+    {
+        cout &lt;&lt; it &lt;&lt; " ";
+    }
+    cout &lt;&lt; endl;
+}
+    
+int main()
+{
+    list&lt;int&gt; l = {1, 2, 3, 4};
+    display(l);
+    l.push_back(5);
+    display(l);
+    l.push_front(0);
+    display(l);
+}</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">The elements are: 1 2 3 4 
+The elements are: 1 2 3 4 5
+The elements are: 0 1 2 3 4 5</code></pre>
+          <p>
+            Another method to insert an element allows us to insert at any
+            random position. Here, we use the insert() method. The syntax for
+            using the insert method is
+          </p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">list_name.insert(iterator, element);</code></pre>
+          <p>
+            Here, the iterator is the pointer to that position where the element
+            gets inserted. An example that demonstrates the use of the insert()
+            method is
+          </p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">list&lt;int&gt; l = {1, 2, 3, 4};
+display(l);
+auto it = l.begin();
+it++;
+it++;
+l.insert(it, 5); //5 is inserted at the third position
+display(l);</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">The elements are: 1 2 3 4 
+The elements are: 1 2 5 3 4</code></pre>
+        </div>
+        <div>
+          <h4>F. Accessing/Changing elements in a list</h4>
+          <p>
+            Changing or accessing any element in a list is a costlier process in
+            terms of time. Any element at any specified position could not be
+            simply accessed using its index number or anything that we could be
+            done for arrays or vectors.
+          </p>
+          <p>
+            We have to use the iterators to manually traverse through the list
+            to reach a specific element or position and then dereference the
+            iterator to retrieve the value at that position.
+          </p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">list&lt;int&gt; l = {1, 2, 3, 4};
+list&lt;int&lt;::iterator it = l.begin();
+it++;
+it++;
+cout &lt;&lt; "Element at index 2 is " &lt;&lt; *it &lt;&lt; endl;</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">Element at index 2 is 3 </code></pre>
+        </div>
+        <div>
+          <h4>G. Removing elements from a list</h4>
+          <p>
+            We can remove elements from a list in different ways. The removal of
+            any element in a list takes constant time, making it faster than
+            removal in vectors or arrays. Removal in a list could be done using
+            the pop_back() and the pop_front() methods. The pop_back() function
+            needs nothing as a parameter and the element gets popped from the
+            back while the pop_front() function pops the element from the front.
+          </p>
+
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;list&gt;
+using namespace std;
+    
+void display(list&lt;int&gt; l)
+{
+    cout &lt;&lt; "The elements are: ";
+    for (auto it : l)
+    {
+        cout &lt;&lt; it &lt;&lt; " ";
+    }
+    cout &lt;&lt; endl;
+}
+    
+int main()
+{
+    list&lt;int&gt; l = {1, 2, 3, 4};
+    display(l);
+    l.pop_back();
+    display(l);
+    l.pop_front();
+    display(l);
+}</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">The elements are: 1 2 3 4 
+The elements are: 1 2 3 
+The elements are: 2 3 </code></pre>
+          <p>
+            Another method to remove an element allows us to remove it from any
+            random position. Here, we use the erase() method. The syntax for
+            using the erase method is
+          </p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">list_name.erase(iterator);</code></pre>
+          <p>
+            Here, the iterator is the pointer to that position where the element
+            gets erased from. An example that demonstrates the use of the
+            erase() method is
+          </p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">list&lt;int&gt; l = {1, 2, 3, 4};
+            display(l);
+            auto it = l.begin();
+            it++;
+            it++;
+            l.erase(it); //element at index 2 gets erased
+            display(l);</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">The elements are: 1 2 3 4 
+The elements are: 1 2 4</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>C++ Maps</h2>
+        </div>
+        <div>
+          <h4>A. What are maps?</h4>
+          <p>
+            A map in C++ STL is an associative container that stores key-value
+            pairs. To elaborate, a map stores a key of some data type and its
+            corresponding values of some data type. All keys in a map are of a
+            single data type and all values in a map are of a single data type.
+            A map always sorts these key-value pairs by the key elements in
+            ascending order.
+          </p>
+        </div>
+        <div>
+          <h4>B. Using a map in our programs</h4>
+          <p>
+            To be able to use maps in our code, the header file &lt;map&gt; must
+            be included. And the syntax to define a map is
+          </p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">map&lt;data_type_of_key, data_type_of_value&gt; map_name;</code></pre>
+          <p>
+            The data_type could be replaced by any data type and they could be
+            different for both key and value.
+          </p>
+          <p>
+            Maps provide certain methods to be used to access and utilize the
+            elements of a map. A few of them are discussed. To access all the
+            methods and member functions in detail, one can visit this site,
+            <a href="https://cplusplus.com/reference/map/map/">std::map</a>
+          </p>
+        </div>
+        <div>
+          <h4>C. Initialising a map</h4>
+          <p>
+            A map could be initialized in a similar way we used to initialize a
+            vector or a list. It is just that it would be pairs of elements and
+            not just single elements while we initialize a map. A map could be
+            initialized with all the key-value pairs inserted in the map at the
+            time it is defined.
+          </p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">map&lt;string, int&gt; m = {{“Vijay”, 2}, {“Rohan”, 4}};</code></pre>
+        </div>
+        <div>
+          <h4>D. Inserting elements in a map</h4>
+          <p>
+            We can insert elements in a map in different ways. The insertion of
+            any element in a map takes logarithmic time, making it faster than
+            insertion in vectors or arrays but still slower than lists.
+          </p>
+          <p>
+            Insertion in a map could be done using the index operators [ ]. The
+            key is put inside the operator and the value is assigned to it. This
+            key-value pair then gets inserted into the map.
+          </p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">#include &lt;iostream&gt;
+#include &lt;map&gt;
+using namespace std;
+  
+void display(map&lt;string, int&gt; m)
+{
+    cout &lt;&lt; "The elements are: " &lt;&lt; endl;
+    for (auto it : m)
+    {
+        cout &lt;&lt; it.first &lt;&lt; " -&gt; " &lt;&lt; it.second &lt;&lt; endl;
+    }
+    cout &lt;&lt; endl;
+}
+  
+int main()
+{
+    map&lt;string, int&gt; m = {{"Vijay", 2}, {"Rohan", 4}};
+    display(m);
+    m["Coder"] = 3;
+    display(m);
+}</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">The elements are: 
+Vijay -> 2
+Rohan -> 4
+
+The elements are:
+Coder -> 3
+Vijay -> 2
+Rohan -> 4</code></pre>
+          <p>
+            Another method to insert an element is using the insert() method and
+            this allows us to insert as many key-value pairs as we want. The
+            syntax for using the insert method is
+          </p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">map_name.insert({key-value pair});</code></pre>
+          <p>An example that demonstrates the use of the insert() method is</p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">map&lt;string, int&gt; m = {{"Vijay", 2}, {"Rohan", 4}};
+display(m);
+m.insert({{"Coder", 3}, {"Rahul", 5}});
+display(m);</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">The elements are: 
+Vijay -> 2
+Rohan -> 4
+
+The elements are:
+Coder -> 3
+Vijay -> 2
+Rahul -> 5
+Rohan -> 4</code></pre>
+        </div>
+        <div>
+          <h4>E. Accessing/Changing elements in a map</h4>
+          <p>
+            Changing or accessing any element in a map is very easy. We just
+            have to use the same key we inserted the value with.
+          </p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">map&lt;string, int&gt; m = {{"Vijay", 2}, {"Rohan", 4}};
+display(m);
+m["Vijay"] = 1;
+display(m);</code></pre>
+          <p>
+            <b>Output:</b>
+          </p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">The elements are: 
+Vijay -> 2
+Rohan -> 4
+
+The elements are:
+Vijay -> 1
+Rohan -> 4</code></pre>
+        </div>
+        <div>
+          <h4>F. Removing elements from a map</h4>
+          <p>
+            We can remove elements from a map in different ways. The removal of
+            any element in a map takes logarithmic time, making it faster than
+            removal in vectors or arrays but slower than lists.
+          </p>
+          <p>
+            Removal of elements from a map could be done using the erase()
+            method. The erase() method takes both the keys or an iterator to
+            delete elements. The syntax for using the erase method is
+          </p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">map_name.erase(iterator);
+//OR
+map_name.erase(key);</code></pre>
+          <p>
+            Here, the iterator is the pointer to that position where the element
+            gets erased from and the key is the key of that key-value pair that
+            needs to be removed.
+          </p>
+          <p>
+            An example that demonstrates the use of the erase() method using a
+            key is
+          </p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">map&lt;string, int&gt; m = {{"Vijay", 2}, {"Rohan", 4}};
+display(m);
+m.erase("Vijay");
+display(m);</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">The elements are: 
+Vijay -> 2
+Rohan -> 4
+
+The elements are:
+Rohan -> 4</code></pre>
+          <p>
+            An example that demonstrates the use of the erase() method using a
+            pointer is
+          </p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">map&lt;string, int&gt; m = {{"Vijay", 2}, {"Rohan", 4}};
+display(m);
+m.erase(m.begin()); //deletes the first element
+display(m);</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-cpp"
+          ><code class="language-cpp">The elements are: 
+Vijay -> 2
+Rohan -> 4
+
+The elements are:
+Rohan -> 4</code></pre>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/C++/C++FileHandling.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary disabled" type="button">
+          <a href="/">Next &gt;&gt;</a>
+        </button>
+      </div>
+    </main>
+
+    <footer class="flex footer bgcolor2 mt-4">
+      <div class="footerLogo flex">
+        <img src="/img/logo.jpg" alt="" />
+        <p>Vijay Bansal</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Vijay Bansal</p>
+      </div>
+      <div class="media flex">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/profile.php?id=100041095243541"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/itz_vijay_bansal/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/vijay-bansal-319048249/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="github"
+          href="https://github.com/VijayBansal2004"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <i class="fa-brands whatsapp fa-whatsapp"></i>
+        <span style="font-size: small">+91 94172-12422</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2ff3e7c924.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/prism/prism.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1590 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PHP OOPs | CodeWithVijay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/prism/prism.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bodyColor textColorWhite">
+    <header>
+      <nav class="navbar bgcolor2 fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand lightPurpleColor fw-bolder fs-2"
+            href="/index.html"
+            >&lt;/&gt;CodeWithVijay</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            style="background-color: #d8b4fe"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bgcolor2 text-white"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title lightPurpleColor fw-bolder"
+                id="offcanvasNavbarLabel"
+              >
+                &lt;/&gt;CodeWithVijay
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="background-color: #d8b4fe"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HTML
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlBasicTags.html"
+                        >Html Basic Tags</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/Inline&BlockElements.html"
+                        >Inline & Block Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlLists.html"
+                        >Html Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlTables.html"
+                        >Html Tables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlForms.html"
+                        >Html Forms</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/HeadElements.html"
+                        >Head Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlMedia.html"
+                        >Html Media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/MiscellaneousTags.html"
+                        >Miscellaneous Tags</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CSS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/cssIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSProperties.html"
+                        >CSS Properties</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSDesigning.html"
+                        >CSS Designing</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSAdvanceTopics.html"
+                        >CSS Advance Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA SCRIPT
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/jsIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptVariables.html"
+                        >Javascript Variables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptBasics.html"
+                        >Javascript Basics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptObjects.html"
+                        >Javascript Objects</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/DOM&BOM.html"
+                        >DOM & BOM</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/jsOOPs.html"
+                        >OOPs</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/html/C/cIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CDataTypesOperators&UserIO.html"
+                        >C Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFunctions.html"
+                        >C Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CPointers.html"
+                        >C Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CMemoryManagement.html"
+                        >C Memory Management</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CStructures&Unions.html"
+                        >C Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFileHandling.html"
+                        >C File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C++ PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/c++Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++DataTypesOperators&UserIO.html"
+                        >C++ Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++ConditionalStatements.html"
+                        >C++ Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++IterationStatements.html"
+                        >C++ Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++BreakContinue.html"
+                        >C++ Break/Continue</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Arrays.html"
+                        >C++ Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Pointers.html"
+                        >C++ Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Strings.html"
+                        >C++ Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Structures&Unions.html"
+                        >C++ Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Functions.html"
+                        >C++ Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++OPPs.html"
+                        >C++ OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++FileHandling.html"
+                        >C++ File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Templates&STL.html"
+                        >C++ Templates & STL</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/VariablesOperators&UserIO.html"
+                        >Variables, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/JavaMethods.html"
+                        >Java Methods</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/JavaOOPs.html"
+                        >Java OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PYTHON
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDataTypes&Operators.html"
+                        >Python Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonStrings.html"
+                        >Python Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLists.html"
+                        >Python Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonTuples.html"
+                        >Python Tuples</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonSets.html"
+                        >Python Sets</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDictionaries.html"
+                        >Python Dictionaries</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLoops.html"
+                        >Python Loops</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonFunctions.html"
+                        >Python Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonModules.html"
+                        >Python Modules</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonOOPs.html"
+                        >Python OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PHP
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/DataTypes&Operators.html"
+                        >Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Conditional&IterationStatements.html"
+                        >Conditional & Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPFunctions.html"
+                        >PHP Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPArrays.html"
+                        >PHP Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPOOPs.html"
+                        >PHP OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPSuperglobals.html"
+                        >PHP Superglobals</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPMySQL.html"
+                        >PHP MySQL</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPAdvancedTopics.html"
+                        >PHP Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    REACT JS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactTutorial.html"
+                        >React Tutorial</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactHooks.html"
+                        >React Hooks</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5 width80 minHeight90vh m-auto">
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/PHP/PHPArrays.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/PHP/PHPSuperglobals.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Introduction to OOPS</h2>
+          <p>OOP stands for Object-Oriented Programming.</p>
+          <p>
+            Object-oriented programming is a core of PHP Programming, which is
+            used for designing a program using classes and objects that contain
+            both data and functions.
+          </p>
+        </div>
+        <div>
+          <h4>Disadvantages of OOPS</h4>
+          <ol>
+            <li>
+              OOPS cannot be applied everywhere as it is not a universal
+              language.
+            </li>
+            <li>
+              Need to have a good understanding of classes and objects to apply
+              OOPS.
+            </li>
+            <li>It takes a lot of effort to create.</li>
+            <li>It is slower than other programs.</li>
+            <li>
+              OOPS programs are large in size when compared to normal programs.
+            </li>
+          </ol>
+        </div>
+        <div>
+          <h4>Advantages of OOPS</h4>
+          <ol>
+            <li>Programs are faster to execute.</li>
+            <li>Better code reusability.</li>
+            <li>Easy to understand code structure.</li>
+            <li>
+              Very easy to partition the work in a project based on objects.
+            </li>
+            <li>
+              Easy to make fully reusable programs with less code and less
+              development time.
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>Classes</h2>
+          <p>
+            Classes are the blueprint of objects. Classes hold their own data
+            members and member functions, which can be accessed and used by
+            creating an instance of that class. In PHP class is defined using
+            the class keyword, followed by the name of classes and curly braces
+            ({}).
+          </p>
+          <p><b>Example:</b></p>
+          <pre class="language-php"><code class="language-php">&lt;?php
+class class_name {
+    // code goes here...
+}
+?&gt;</code></pre>
+        </div>
+        <div>
+          <h2>Creating a Class in PHP</h2>
+          <p>
+            We will create a class Employee where we will have two properties
+            and two methods for setting and getting the property.
+          </p>
+          <p><b>Example:</b></p>
+          <pre class="language-php"><code class="language-php">&lt;?php
+class Employee {
+    // Properties
+    public $name;
+    public $surname;
+
+    // Methods
+    function set_name($name) {
+    $this->name = $name;
+    }
+    function get_name() {
+    return $this->name;
+    }
+}
+?&gt;</code></pre>
+          <p>
+            <b
+              >Note: The $this keyword refers to the current object, and is only
+              available inside methods.</b
+            >
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Objects</h2>
+          <p>
+            Object is an instance of class. An Object is a self-contained
+            component which consists of methods and properties to make a
+            particular type of data useful. We can create multiple objects from
+            a class and each object will have all the properties and methods
+            defined in the class, but they will have different property values.
+            To declare an object in PHP we use the new keyword.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-php"
+          ><code class="language-php">$object_name = new ClassName();</code></pre>
+        </div>
+        <div>
+          <h4>Creating an Object in PHP</h4>
+          <p>We will create two objects in the following example.</p>
+          <p><b>Example:</b></p>
+          <pre class="language-php"><code class="language-php">&lt;?php
+            class Employee {
+              // Properties
+              public $name;
+              public $surname;
+            
+              // Methods
+              function set_name($name) {
+                $this->name = $name;
+              }
+              function get_name() {
+                return $this->name;
+              }
+            }
+            
+            $emp1 = new Employee();
+            $emp2= new Employee();
+            $emp1->set_name('Harry');
+            $emp2->set_name('Shayan');
+            
+            echo $emp1->get_name();
+            echo "&lt;br&gt;";
+            echo $emp2->get_name();
+            ?&gt;</code></pre>
+          <p>
+            <b>Output:</b>
+          </p>
+          <pre class="language-php"><code class="language-php">Harry
+Shayan</code></pre>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Inheritance</h2>
+          <p>
+            When a class is defined by inheriting the existing function of a
+            parent class then it is called inheritance. Here child class will
+            inherit all or a few member functions and variables of a parent
+            class. We can define an inherited class by using the extends
+            keyword. <br />
+
+            Inheritance has three types Single, Multiple and Multilevel
+            Inheritance but PHP only supports single inheritance, where only one
+            class can be derived from a single parent class.
+          </p>
+          <p><b>Example:</b></p>
+          <pre class="language-php"><code class="language-php">&lt;?php  
+class exm {  
+    public function func1()  
+    {  
+        echo "example of inheritance  ";  
+    }     
+}  
+class exm1 extends exm {  
+    public function func2()  
+    {  
+        echo "in php";  
+    }     
+}  
+$obj= new exm1();  
+$obj->func1();  
+$obj->func2();  
+?&gt;</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-php"
+          ><code class="language-php">example of inheritance in php</code></pre>
+        </div>
+        <div>
+          <h4>Final Keyword</h4>
+          <p>
+            The final keyword can be used to prevent method overriding or to
+            prevent class inheritance.
+          </p>
+          <p><b>Example:</b></p>
+          <pre class="language-php"><code class="language-php">&lt;?php
+final class Employee {
+    // some code
+}
+// This will result in error as the final keyword is used
+class human extends Employee {
+    // some code
+}
+?&gt;</code></pre>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Constructors and Destructors</h2>
+        </div>
+        <div>
+          <h4>Constructor</h4>
+          <p>
+            In PHP, a constructor allows you to initialize an object's
+            properties upon the creation of the object. The constructor function
+            starts with two underscores (__) and if we create a __construct()
+            function, then PHP will automatically call this function when we
+            create an object from a class.
+          </p>
+          <p><b>Example: </b></p>
+          <pre class="language-php"><code class="language-php">&lt;?php
+class Employee {
+    public $name;
+    public $surname;
+
+    function __construct($name) {
+    $this->name = $name;
+    }
+    function get_name() {
+    return $this->name;
+    }
+}
+$emp1= new Employee("Lovish");
+echo $emp1->get_name();
+?&gt;</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-php"
+          ><code class="language-php">Lovish</code></pre>
+        </div>
+        <div>
+          <h4>Destructor</h4>
+          <p>
+            Destructor is a special member function which is exactly the reverse
+            of the constructor method. When it is called an instance of the
+            class is deleted from the memory. The Destructor function starts
+            with two underscores (__) and if we create a __destruct() function,
+            then PHP will automatically call this function at the end of the
+            script.
+          </p>
+          <p><b>Example: </b></p>
+          <pre class="language-php"><code class="language-php">&lt;?php
+class Employee {
+    public $name;
+
+    function __construct($name) {
+    $this->name = $name;
+    }
+    function __destruct() {
+    echo "Employee name is {$this->name}.";
+    }
+}
+
+$emp1= new Employee("Izhaan");
+?&gt;</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-php"
+          ><code class="language-php">Employee name is Izhaan.</code></pre>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Access Modifiers</h2>
+          <p>
+            In the PHP programming language, every property and method of a
+            class can have access modifiers which control their accessibility in
+            the entire program. <br />
+
+            There are three access modifiers in PHP:
+          </p>
+          <ul>
+            <li>Public</li>
+            <li>Protected</li>
+            <li>Private</li>
+          </ul>
+          <p>
+            Below is a table for a better understanding of the access modifiers
+          </p>
+          <table
+            style="
+              border-collapse: collapse;
+              width: 100%;
+              border-width: 1px;
+              border-color: #ecf0f1;
+            "
+            border="1"
+          >
+            <colgroup>
+              <col style="width: 25%" />
+              <col style="width: 25%" />
+              <col style="width: 25%" />
+              <col style="width: 25%" />
+            </colgroup>
+            <tbody>
+              <tr>
+                <th style="border-width: 1px; border-color: rgb(236, 240, 241)">
+                  Class Member Access Specifier
+                </th>
+                <th style="border-width: 1px; border-color: rgb(236, 240, 241)">
+                  Access from own class
+                </th>
+                <th style="border-width: 1px; border-color: rgb(236, 240, 241)">
+                  Accessible from derived class
+                </th>
+                <th style="border-width: 1px; border-color: rgb(236, 240, 241)">
+                  Accessible by Object
+                </th>
+              </tr>
+              <tr>
+                <th style="border-width: 1px; border-color: rgb(236, 240, 241)">
+                  Private
+                </th>
+                <th style="border-width: 1px; border-color: rgb(236, 240, 241)">
+                  Yes
+                </th>
+                <th style="border-width: 1px; border-color: rgb(236, 240, 241)">
+                  No
+                </th>
+                <th style="border-width: 1px; border-color: rgb(236, 240, 241)">
+                  No
+                </th>
+              </tr>
+              <tr>
+                <th style="border-width: 1px; border-color: rgb(236, 240, 241)">
+                  Protected
+                </th>
+                <th style="border-width: 1px; border-color: rgb(236, 240, 241)">
+                  Yes
+                </th>
+                <th style="border-width: 1px; border-color: rgb(236, 240, 241)">
+                  Yes
+                </th>
+                <th style="border-width: 1px; border-color: rgb(236, 240, 241)">
+                  No
+                </th>
+              </tr>
+              <tr>
+                <th style="border-width: 1px; border-color: rgb(236, 240, 241)">
+                  Public
+                </th>
+                <th style="border-width: 1px; border-color: rgb(236, 240, 241)">
+                  Yes
+                </th>
+                <th style="border-width: 1px; border-color: rgb(236, 240, 241)">
+                  Yes
+                </th>
+                <th style="border-width: 1px; border-color: rgb(236, 240, 241)">
+                  Yes
+                </th>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <div>
+          <h4>Public</h4>
+          <p>
+            Public property or method can be accessed by any code whether that
+            code is inside or outside of that class. If a property or method is
+            declared public, then it can be accessed anywhere from the code.
+          </p>
+          <p><b>Example: </b></p>
+          <pre class="language-php"><code class="language-php">&lt;?php
+class Employee{
+    public $name;
+}
+
+$emp1= new Employee();
+$emp1->name = 'Harry'; 
+?&gt;</code></pre>
+        </div>
+        <div>
+          <h4>Protected</h4>
+          <p>
+            Protected property or method can only be accessed within the class
+            and by the classes derived from that class.
+          </p>
+          <p><b>Example: </b></p>
+          <pre class="language-php"><code class="language-php">&lt;?php
+class ParentClass {
+    protected $parentMsg = "protected parent attribute&lt;br&gt;";
+    protected function parentDisplay() {
+        echo "protected parent method&lt;br&gt;";
+        echo $this->parentMsg;
+    }
+}
+class ChildClass extends ParentClass {
+    protected $childMsg = "Protected Child attribute.&lt;br&gt;";
+    public function childDisplay() {
+        echo "Public Child method to display protected parent members:&lt;br&gt;";
+        $this->parentDisplay();
+    }
+}
+$child = new ChildClass();
+$child->childDisplay();
+?&gt;</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-php"
+          ><code class="language-php">Public Child method to display protected parent members:
+protected parent method
+protected parent attribute</code></pre>
+        </div>
+        <div>
+          <h4>Private</h4>
+          <p>
+            The Private property or method can only be accessed within the
+            class. If it is called outside of the class, then it will throw an
+            error.
+          </p>
+          <p><b>Example: </b></p>
+          <pre class="language-php"><code class="language-php">&lt;?php
+class Employee {
+    public $salary;
+
+    private function set_salary($n) { // a private function
+    $this->salary= $n;
+    }
+}
+
+$emp1= new Employee();
+$emp1->set_salary('300'); //It will throw error as It can not Access the Private Function
+?&gt;</code></pre>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Interface</h2>
+          <p>
+            Interfaces permit users to programmatically define the public
+            methods that a class should implement without bothering about the
+            implementation complexities and details of any particular method.
+            Interfaces make it easy to use different classes in the same way.
+            When one or more classes use the same interface, it is referred to
+            as "polymorphism" in PHP. <br />
+
+            Interfaces are declared with interface keyword.
+          </p>
+          <p><b>Example:</b></p>
+          <pre class="language-php"><code class="language-php">&lt;?php
+interface InterfaceName {
+    public function Method1();
+    public function Method2($name, $surname);
+    public function Method3() : string;
+}
+?&gt;</code></pre>
+        </div>
+        <div>
+          <h4>Implementing Interface</h4>
+          <p>
+            To implement an interface on a class, we need to use implements
+            keyword.
+          </p>
+          <p><b>Example:</b></p>
+          <pre class="language-php"><code class="language-php">&lt;?php
+interface Human {
+    public function makeSound();
+}
+
+class Programmer implements Human{
+    public function makeSound() {
+    echo "Hello World";
+    }
+}
+
+$human = new Programmer();
+$human->makeSound();
+?&gt;</code></pre>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Abstract Classes</h2>
+          <p>
+            Abstract classes and methods are when the parent class has a named
+            method but the child class needs to complete the task. <br />
+
+            An abstract class is a class that contains at least one abstract
+            method. Abstract methods are methods that are declared in your code
+            but not implemented. <br />
+
+            We can define an Abstract class or method with the abstract keyword.
+          </p>
+          <p><b>Example:</b></p>
+          <pre class="language-php"><code class="language-php">&lt;?php
+abstract class ParentClass {
+    abstract public function Method1();
+    abstract public function Method2($name);
+    abstract public functionMethod3() : string;
+}
+?&gt;</code></pre>
+          <p>
+            When inheriting from an abstract class, methods in subclasses must
+            be defined with the same name and with the same or less restrictive
+            access modifiers. So if an abstract method is defined as protected,
+            the subclass's method must be either protected or defined as public,
+            but not private. Also, the required arguments must be of the same
+            type and number. However, subclasses can specify additional optional
+            arguments. <br />
+
+            So, when a child class is inherited from an abstract class, we have
+            the following rules:
+          </p>
+          <ul>
+            <li>The child class method must be defined with the same name.</li>
+            <li>
+              The child class method must be defined with the same or a less
+              restrictive access modifier
+            </li>
+            <li>
+              The number of required arguments must be the same. However, the
+              child class may have optional arguments in addition
+            </li>
+          </ul>
+          <p><b>Example:</b></p>
+          <pre class="language-php"><code class="language-php">&lt;?php
+// Parent class
+abstract class Bike {
+    public $name;
+    public function __construct($name) {
+    $this->name = $name;
+    }
+    abstract public function intro() : string; 
+}
+
+// Child classes
+class Yamaha extends Bike {
+    public function intro() : string {
+    return "I'm a $this->name!"; 
+    }
+}
+
+class splendor extends Bike {
+    public function intro() : string {
+    return "I'm a $this->name!"; 
+    }
+}
+
+class Vespa extends Bike {
+    public function intro() : string {
+    return "I'm a $this->name!"; 
+    }
+}
+
+// Create objects from the child classes
+$yamaha = new yamaha("Yamaha");
+echo $yamaha->intro();
+echo "<br>";
+
+$splendor = new splendor("Splendor");
+echo $splendor->intro();
+echo "<br>";
+
+$vespa = new vespa("Vespa");
+echo $vespa->intro();
+?&gt;</code></pre>
+          <p><b>Output:</b></p>
+          <pre class="language-php"><code class="language-php">I'm a Yamaha!
+I'm a Splendor!
+I'm a Vespa!</code></pre>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Class Constants</h2>
+          <p>
+            Constants are like variables except that once they are defined, they
+            cannot be changed. If we need to define some constant data within a
+            class, we need to use class constants. Class constants are
+            case-sensitive and they can be declared inside a class with the
+            const keyword. We can also access a constant outside of a class by
+            using the class_name followed by :: operator with constant name.
+          </p>
+          <p><b>Example:</b></p>
+          <pre class="language-php"><code class="language-php">&lt;?php
+class Namaste {
+    const GREETING_MSG= "Namaskaram Dosto!!";
+}
+
+echo Namaste::GREETING_MSG;
+?&gt;</code></pre>
+          <p>
+            We can also use the self keyword to access the constant inside the
+            class.
+          </p>
+          <p><b>Example:</b></p>
+
+          <pre class="language-php"><code class="language-php">&lt;?php
+class HelloWorld {
+    const New_Message = "Did I leave the Stove on?";
+    public function ByeWorld() {
+    echo self::New_Message;
+    }
+}
+
+$helloworld= new HelloWorld();
+$helloworld->ByeWorld();
+?&gt;</code></pre>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Traits</h2>
+          <p>
+            PHP language only supports single-level inheritance where a child
+            class can inherit only from one single parent. If we need to inherit
+            multiple behaviours from a class, then we can use Traits to solve
+            this.
+          </p>
+          <p>
+            Traits are used to declare methods that can be used in multiple
+            classes which can have any access modifier (public, private,
+            protected). Traits can also have normal methods and abstract methods
+            that can be used in multiple classes.
+          </p>
+          <p>
+            Traits are declared with the trait class and to use a train in a
+            class we need to use the use keyword.
+          </p>
+          <p><b>Example:</b></p>
+          <pre class="language-php"><code class="language-php">&lt;?php
+trait message1 {
+public function msg1() {
+    echo "give me cheeseburgers ";
+    }
+}
+
+class Welcome {
+    use message1;
+}
+
+$obj = new Welcome();
+$obj->msg1();
+?&gt;</code></pre>
+
+          <p><b>Example:</b></p>
+
+          <pre
+            class="language-php"
+          ><code class="language-php">give me cheeseburgers</code></pre>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Static Methods</h2>
+          <p>
+            In certain cases where we need to access methods and properties in
+            terms of class rather than an object, the static methods come for
+            help. Any method declared as static can be accessed without creating
+            an object.
+          </p>
+          <p>Static methods are declared with the static keyword.</p>
+          <p><b>Example:</b></p>
+          <pre class="language-php"><code class="language-php">&lt;?php
+class ClassName {
+    public static function staticMethod() {
+    echo "Hello World!";
+    }
+}
+?&gt;</code></pre>
+          <p>
+            To access a static method we need to use the class name followed by
+            a double colon (::), and the method name.
+          </p>
+          <p><b>Example:</b></p>
+
+          <pre class="language-php"><code class="language-php">&lt;?php
+            class greeting {
+              public static function welcome() {
+                echo "Hello Bhai!";
+              }
+            }
+            
+            // Call static method
+            greeting::welcome();
+            ?&gt;</code></pre>
+          <p>
+            A static method can be accessed from a method in the same class
+            using the self keyword followed by a double colon (::), and the
+            method name.
+          </p>
+          <p><b>Example:</b></p>
+
+          <pre class="language-php"><code class="language-php">&lt;?php
+class greeting {
+    public static function welcome() {
+    echo "Hello Bro!";
+    }
+    public function __construct() {
+    self::welcome();
+    }
+}
+new greeting();
+?&gt;</code></pre>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Static Properties</h2>
+          <p>
+            Static properties can be accessed directly without creating an
+            instance of a class. Static properties can be declared by using the
+            static keyword. <br />
+
+            To access a static property we need to write the class name followed
+            by a double colon (::), and the property name.
+          </p>
+          <p><b>Example:</b></p>
+          <pre class="language-php"><code class="language-php">&lt;?php
+class pi {
+    public static $value = 3.14;
+}
+// Getting static property
+echo pi::$value;
+?&gt;</code></pre>
+          <p>
+            A static method can be accessed from a method in the same class
+            using the self keyword followed by a double colon (::), and the
+            method name.
+          </p>
+          <p><b>Example:</b></p>
+
+          <pre class="language-php"><code class="language-php">&lt;?php
+class pi {
+    public static $value=3.14159;
+    public function staticValue() {
+    return self::$value;
+    }
+}
+
+$pi = new pi();
+echo $pi->staticValue();
+?&gt;</code></pre>
+          <p>
+            If we need to call a static property from a child class, we can use
+            the parent keyword inside the child class.
+          </p>
+          <p><b>Example:</b></p>
+
+          <pre class="language-php"><code class="language-php">&lt;?php
+class pi {
+    public static $value=3.14;
+}
+class x extends pi {
+    public function xStatic() {
+    return parent::$value;
+    }
+}
+// Get value of static property directly via child class
+echo x::$value;
+&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/PHP/PHPArrays.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/PHP/PHPSuperglobals.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+    </main>
+
+    <footer class="flex footer bgcolor2 mt-4">
+      <div class="footerLogo flex">
+        <img src="/img/logo.jpg" alt="" />
+        <p>Vijay Bansal</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Vijay Bansal</p>
+      </div>
+      <div class="media flex">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/profile.php?id=100041095243541"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/itz_vijay_bansal/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/vijay-bansal-319048249/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="github"
+          href="https://github.com/VijayBansal2004"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <i class="fa-brands whatsapp fa-whatsapp"></i>
+        <span style="font-size: small">+91 94172-12422</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2ff3e7c924.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/prism/prism.js"></script>
+  </body>
+</html>

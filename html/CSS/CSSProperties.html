@@ -1,0 +1,4037 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS Properties | CodeWithVijay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/prism/prism.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bodyColor textColorWhite">
+    <header>
+      <nav class="navbar bgcolor2 fixed-top">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand lightPurpleColor fw-bolder fs-2"
+            href="/index.html"
+            >&lt;/&gt;CodeWithVijay</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            style="background-color: #d8b4fe"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bgcolor2 text-white"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title lightPurpleColor fw-bolder"
+                id="offcanvasNavbarLabel"
+              >
+                &lt;/&gt;CodeWithVijay
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="background-color: #d8b4fe"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HTML
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlBasicTags.html"
+                        >Html Basic Tags</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/Inline&BlockElements.html"
+                        >Inline & Block Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlLists.html"
+                        >Html Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlTables.html"
+                        >Html Tables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlForms.html"
+                        >Html Forms</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/HeadElements.html"
+                        >Head Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlMedia.html"
+                        >Html Media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/MiscellaneousTags.html"
+                        >Miscellaneous Tags</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CSS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/cssIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSProperties.html"
+                        >CSS Properties</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSDesigning.html"
+                        >CSS Designing</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSAdvanceTopics.html"
+                        >CSS Advance Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA SCRIPT
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/jsIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptVariables.html"
+                        >Javascript Variables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptBasics.html"
+                        >Javascript Basics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptObjects.html"
+                        >Javascript Objects</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/DOM&BOM.html"
+                        >DOM & BOM</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/jsOOPs.html"
+                        >OOPs</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/html/C/cIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CDataTypesOperators&UserIO.html"
+                        >C Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFunctions.html"
+                        >C Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CPointers.html"
+                        >C Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CMemoryManagement.html"
+                        >C Memory Management</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CStructures&Unions.html"
+                        >C Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFileHandling.html"
+                        >C File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C++ PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/c++Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++DataTypesOperators&UserIO.html"
+                        >C++ Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++ConditionalStatements.html"
+                        >C++ Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++IterationStatements.html"
+                        >C++ Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++BreakContinue.html"
+                        >C++ Break/Continue</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Arrays.html"
+                        >C++ Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Pointers.html"
+                        >C++ Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Strings.html"
+                        >C++ Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Structures&Unions.html"
+                        >C++ Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Functions.html"
+                        >C++ Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++OPPs.html"
+                        >C++ OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++FileHandling.html"
+                        >C++ File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Templates&STL.html"
+                        >C++ Templates & STL</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/VariablesOperators&UserIO.html"
+                        >Variables, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/JavaMethods.html"
+                        >Java Methods</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/JavaOOPs.html"
+                        >Java OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PYTHON
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDataTypes&Operators.html"
+                        >Python Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonStrings.html"
+                        >Python Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLists.html"
+                        >Python Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonTuples.html"
+                        >Python Tuples</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonSets.html"
+                        >Python Sets</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDictionaries.html"
+                        >Python Dictionaries</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLoops.html"
+                        >Python Loops</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonFunctions.html"
+                        >Python Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonModules.html"
+                        >Python Modules</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonOOPs.html"
+                        >Python OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PHP
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/DataTypes&Operators.html"
+                        >Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Conditional&IterationStatements.html"
+                        >Conditional & Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPFunctions.html"
+                        >PHP Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPArrays.html"
+                        >PHP Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPOOPs.html"
+                        >PHP OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPSuperglobals.html"
+                        >PHP Superglobals</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPMySQL.html"
+                        >PHP MySQL</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPAdvancedTopics.html"
+                        >PHP Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    REACT JS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactTutorial.html"
+                        >React Tutorial</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactHooks.html"
+                        >React Hooks</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5 width80 minHeight90vh m-auto">
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/css/cssIntroduction.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/CSS/CSSDesigning.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Colors</h2>
+          <p>
+            The color property of CSS helps to set the color of the HTML
+            element(s). This helps to set the foreground color of text, text
+            decorations, and borders.
+          </p>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">/* Syntax
+selector {
+    color: value
+} 
+*/
+selector {
+    /* colorname can be any colour, such as red, blue, yellow, purple, green, etc. */
+    color: colorname
+}</code></pre>
+          <p>Note: In CSS we use color, not colour.</p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;head&gt;
+    &lt;style&gt;
+        p{
+            color: purple;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;p&gt;Hello World&lt;/p&gt;
+    &lt;p&gt;CodeWithHarry&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+          <p><b>Output: </b></p>
+          <img src="/img/assits-84.png" alt="img" />
+          <p>
+            There are many ways to set the property-value of color, with some of
+            the most common listed below.
+          </p>
+        </div>
+        <div>
+          <h4>Hexadecimal notation:</h4>
+          <p>
+            The hex code consists of a hash(#) symbol followed by six
+            characters. These six characters are arranged into a set of three
+            pairs (RR, GG, and BB).
+            <br />
+            Each character pair defines the intensity level of the colour, where
+            R stands for red, G stands for green, and B stands for blue.
+            <br />
+            The intensity value lies between 00 (no intensity) and ff (maximum
+            intensity).
+            <br />
+            Breaking the Character Set (RRGGBB):
+          </p>
+          <ul>
+            <li>
+              RR: RR defines the intensity of color red, ranging from 00 (no
+              red) to FF (maximum red).
+            </li>
+            <li>
+              GG: GG defines the intensity of color Green, with values from 00
+              (no green) to FF (full green).
+            </li>
+            <li>
+              BB: GG defines the intensity of color Blue, varying from 00 (no
+              blue) to FF (full blue).
+            </li>
+          </ul>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">seletor {
+    color: #RRGGBB;
+}</code></pre>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;head&gt;
+    &lt;style&gt;
+        h1 {
+            color: #FF0000;
+            /*Pure Red*/
+        }
+        h2 {
+            color: #00FF00;
+            /* Pure Green */
+        }
+        h3 {
+            color: #0000FF;
+            /* Pure Blue */
+        }
+        h4 {
+            color: #b700ff;
+            /* Custom Color */
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;CodeWithHarry&lt;/h1&gt;
+    &lt;h2&gt;A Developer&lt;/h2&gt;
+    &lt;h3&gt;Founder CodeWithHarry.com&lt;/h3&gt;
+    &lt;h4&gt;Hello World&lt;/h4&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <p><b>Output: </b></p>
+          <img src="/img/assits-85.png" alt="img" />
+        </div>
+        <div>
+          <h4>RGB</h4>
+          <p>
+            RGB stands for “Red, Green, Blue,” and it defines the colour value
+            by taking three (red, green, blue) arguments.
+            <br />
+            Each argument value lies between 0 and 255.
+          </p>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">selector{
+    color: rgb(red, green, blue);
+}</code></pre>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;head&gt;
+    &lt;style&gt;
+        h1 {
+            color: rgb(0, 0, 0);
+            /* red:0, green:0, blue:0 */
+        }
+
+        h2 {
+            color: rgb(255, 255, 255);
+            /* red:255, green:255, blue:255 */
+        }
+
+        h3 {
+            color: rgb(30, 150, 220);
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;CodeWithHarry&lt;/h1&gt;
+    &lt;h2&gt;A Developer&lt;/h2&gt;
+    &lt;h3&gt;CodeWithHarry.com founder&lt;/h3&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+          <p><b>Output: </b></p>
+          <img src="/img/assits-86.png" alt="img" />
+        </div>
+        <div>
+          <h4>RGBA</h4>
+          <p>
+            Similar to RGB, in RGBA, a stands for alpha value, which defines the
+            opacity of the color. The alpha value lies between 0 and 1.
+          </p>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">selector{
+    color: rgb(red, green, blue, opacity);
+}</code></pre>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;head&gt;
+    &lt;style&gt;
+        h1 {
+            color: rgba(0, 0, 0, 0.8);
+            /* red:0, green:0, blue:0, Alpha: 0.8 = 80% */
+        }
+
+        h2 {
+            color: rgb(255, 255, 255, 0.6);
+            /* red:255, green:255, blue:255 */
+        }
+
+        h3 {
+            color: rgba(30 150 220 / 60% );
+            /* red:30, green:150, blue:200, alpha:60% */
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;CodeWithHarry&lt;/h1&gt;
+    &lt;h2&gt;A Developer&lt;/h2&gt;
+    &lt;h3&gt;CodeWithHarry.com founder&lt;/h3&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+          <p><b>Output: </b></p>
+          <img src="/img/assits-87.png" alt="img" />
+        </div>
+        <div>
+          <h4>HSL</h4>
+          <p>
+            HSL stands for hue, saturation, and lightness. This is another way
+            to set colour properties.
+            <br />
+            Breaking each keyword:
+          </p>
+        </div>
+        <div>
+          <h4>Hue(h)</h4>
+          <ul>
+            <li>
+              Hue represents the type of color. It is measured in degrees, and
+              its value lies from 0 to 360.
+            </li>
+            <li>
+              0 degree represents black, 120 degree is for green, and 360 degree
+              is for blue.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Saturation (S):</h4>
+          <ul>
+            <li>
+              Saturation controls the intensity or purity of the color. It is
+              measured in percentage, and its value lies between 0% and 100%.
+            </li>
+            <li>
+              0% saturation is no color (grayscale), and 100% saturation is the
+              most intense colour.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Lightness (L):</h4>
+          <ul>
+            <li>
+              Lightness determines how light or dark the colour is. It is
+              measured in percentage, and its value lies between 0% and 100%.
+            </li>
+            <li>
+              0% lightness represents pure black, 50% lightness represents
+              normal colour, and 100% lightness is pure white.
+            </li>
+          </ul>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">selector{
+    color: hsl(hue, saturation, lightness);
+}</code></pre>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;head&gt;
+    &lt;style&gt;
+        h1 {
+            color: hsl(235, 100%, 50%);
+        }
+        p {
+            color: hsl(0, 0%, 0%);
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;CodeWithHarry&lt;/h1&gt;
+    &lt;p&gt;A Developer&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+          <p><b>Output: </b></p>
+          <img src="/img/assits-88.png" alt="img" />
+        </div>
+        <div>
+          <h4>HSLA</h4>
+          <p>
+            HSLA is similar to HSL; here, A stands for alpha value, which is
+            used to set the opacity. Alpha values lie between 0 and 1.
+          </p>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">selector{
+    color: hsla(hue, saturation, lightness, alpha);
+}</code></pre>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;head&gt;
+    &lt;style&gt;
+        h1 {
+            color: hsla(235, 100%, 50%, 0.7);
+        }
+        p {
+            color: hsl(0, 0%, 0%, 0.4);
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;CodeWithHarry&lt;/h1&gt;
+    &lt;p&gt;A Developer&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+          <p><b>Output: </b></p>
+          <img src="/img/assits-89.png" alt="img" />
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Backgrounds</h2>
+          <p>
+            The CSS background property helps set the background style,
+            property, and effects of the element.
+            <br />
+            There are various background properties, such as:
+          </p>
+        </div>
+        <div>
+          <h4>Background color</h4>
+          <p>
+            The background color property sets the background colour of HTML
+            tags such as div, section, p, etc.
+          </p>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">selector{
+      background-color: color;
+}</code></pre>
+          <p>
+            <b
+              >Note: Color can be hex, rdb, hsl, etc. To learn more about
+              colors, follow the CSS Colour Tutorial.
+            </b>
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        div{
+            background-color: yellow;
+        }
+        h1{
+            background-color: #FF0000;
+        }
+        p{
+            background-color: orange;
+        }
+        span{
+            background-color: purple;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;h1&gt;CodeWithHarry&lt;/h1&gt;
+        &lt;p&gt;Developer and founder of &lt;span&gt;CodeWithHarry.com&lt;/span&gt;&lt;/p&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <p><b>Output:</b></p>
+          <img src="/img/assits-90.png" alt="img" />
+        </div>
+        <div>
+          <h4>Background Image</h4>
+          <p>
+            The Background Image property sets an image as a background by
+            providing the image URL within the url() function.
+          </p>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">selector{
+    background-image: url('image-url');
+}</code></pre>
+
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;style&gt;
+    div{
+        background-image: url('harrybhai.png');
+    }
+&lt;/style&gt;</code></pre>
+          <p><b>Output:</b></p>
+          <img src="/img/assits-91.png" alt="img" />
+          <p>
+            The image is repeated many times because CSS repeats the image on
+            both the x and y axes, to avoid leaving empty spaces due to the
+            image dimensions. To solve this issue, use the background property
+            repeat
+          </p>
+        </div>
+        <div>
+          <h4>Background repeat</h4>
+          <p>Background repeat helps to control how the image will repeat.</p>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">selector{
+  background-repeat: repeat-x || repeat-y || repeat || no-repeat;
+}</code></pre>
+          <p>
+            background-repeat can be set to repeat, no-repeat, repeat-x
+            (horizontal), or repeat-y (vertical).
+          </p>
+        </div>
+        <div>
+          <h4>repeat-x</h4>
+          <p>
+            repeat the image in the x direction or horizontally repeat the
+            image.
+          </p>
+          <p><b>Syntex:</b></p>
+          <pre class="language-css"><code class="language-css">selector{
+  background-repeat: repeat-x;
+}</code></pre>
+          <p><b>Example:</b></p>
+          <img src="/img/assits-92.png" alt="img" />
+        </div>
+        <div>
+          <h4>repeat-y</h4>
+          <p>
+            repeat the image in the y direction or vertically repeat the image.
+          </p>
+          <p><b>Syntex:</b></p>
+          <pre class="language-css"><code class="language-css">selector{
+  background-repeat: repeat-y;
+}</code></pre>
+          <p><b>Example:</b></p>
+          <img src="/img/assits-93.png" alt="img" />
+        </div>
+        <div>
+          <h4>repeat</h4>
+          <p>
+            The background image is repeated in both the x and y directions.
+            This is the default.
+          </p>
+          <p><b>Syntex:</b></p>
+          <pre class="language-css"><code class="language-css">selector{
+  background-repeat: repeat;
+}</code></pre>
+          <p><b>Example:</b></p>
+          <img src="/img/assits-94.png" alt="img" />
+        </div>
+        <div>
+          <h4>no-repeat</h4>
+          <p>
+            The background image is not repeated in any direction. Only one
+            image will be on the screen.
+          </p>
+          <p><b>Syntex:</b></p>
+          <pre class="language-css"><code class="language-css">selector{
+  background-repeat: no-repeat;
+}</code></pre>
+          <p><b>Example:</b></p>
+          <img src="/img/assits-95.png" alt="img" />
+        </div>
+        <div>
+          <h4>Background Size</h4>
+          <p>
+            The Background Size property sets custom sizes for the background
+            image.
+          </p>
+          <p><b>Syntex:</b></p>
+          <pre class="language-css"><code class="language-css">selector{
+    background-size: propery-value;
+}</code></pre>
+          <p><b>Example:</b></p>
+          <p>Property-value can be any of the following:</p>
+        </div>
+        <div>
+          <h4>cover:</h4>
+          <p>
+            The image fits the whole screen according to the dimensions; the
+            background area will be completely covered by the image while
+            maintaining its aspect ratio.
+          </p>
+          <p><b>Syntex:</b></p>
+          <pre class="language-css"><code class="language-css">div{
+    background-image: url("./harrybhai.png");
+    background-size: cover;
+}</code></pre>
+          <p><b>Example:</b></p>
+          <img src="/img/assits-96.png" alt="img" />
+        </div>
+        <div>
+          <h4>contain:</h4>
+          <p>
+            Scales the image to fit within the background area entirely while
+            maintaining its aspect ratio.
+          </p>
+          <p><b>Syntex:</b></p>
+          <pre class="language-css"><code class="language-css">div{
+    background-image: url("./harrybhai.png");
+    background-size: contain;
+}</code></pre>
+          <p><b>Example:</b></p>
+          <img src="/img/assits-97.png" alt="img" />
+        </div>
+        <div>
+          <h4>auto:</h4>
+          <p>
+            The image will be displayed in its original size. This is the
+            default
+          </p>
+          <p><b>Syntex:</b></p>
+          <pre class="language-css"><code class="language-css">div{
+    background-image: url("./harrybhai.png");
+    background-size: auto;
+}</code></pre>
+        </div>
+        <div>
+          <h4>Distinct width and height:</h4>
+          <p>
+            We can manually set the width and height of the background image.
+          </p>
+          <p><b>Syntex:</b></p>
+          <pre class="language-css"><code class="language-css">div{
+    background-image: url("./harrybhai.png");
+    background-size: 100% 100%;
+}</code></pre>
+          <p><b>Note: The width and height are used in percentage(%); </b></p>
+          <p><b>Example:</b></p>
+          <img src="/img/assits-98.png" alt="img" />
+        </div>
+        <div>
+          <h4>Background Position:</h4>
+          <p>
+            This property sets the starting position of the background image
+            within the container (parent div). By default, the position is top
+            left.
+          </p>
+          <p><b>Syntex:</b></p>
+          <pre class="language-css"><code class="language-css">selector{
+    background-position: property-value;
+}</code></pre>
+          <p><b>Note: The width and height are used in percentage(%); </b></p>
+          <p>
+            Property value can be top, bottom, left, right, or center. We use
+            combinations of positions such as top left, top right, bottom left,
+            bottom right, centre, etc.
+          </p>
+          <p><b>Example:</b></p>
+          <pre class="language-css"><code class="language-css">div{
+  background-image: url("./harrybhai.png");
+  background-repeat: no-repeat;
+  background-position: top right;
+}</code></pre>
+          <img src="/img/assits-99.png" alt="img" />
+        </div>
+        <div>
+          <h4>Background Attachment:</h4>
+          <p>
+            The background-attachment property determines whether the background
+            image scrolls with the content.
+          </p>
+          <p><b>Syntex:</b></p>
+          <pre class="language-css"><code class="language-css">div{
+    background-attachment: fixed || scroll;
+}</code></pre>
+          <p>
+            <b
+              >Use fixed for a fixed background, or scroll for a scrolling
+              background.</b
+            >
+          </p>
+        </div>
+        <div>
+          <h4>Shorthands:</h4>
+          <p>
+            All the background properties would look something like this in a
+            single line.
+          </p>
+          <p><b>Syntex:</b></p>
+          <pre class="language-css"><code class="language-css">selector{
+    background: [background-color] [background-attachment] [background-image] [background-repeat] [background-position];
+}</code></pre>
+          <p><b>Example:</b></p>
+          <pre class="language-css"><code class="language-css">div{
+    background: purple fixed url("./harrybhai.png") no-repeat right top;
+}</code></pre>
+          <img src="/img/assits-100.png" alt="img" />
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Borders</h2>
+          <p>
+            CSS borders help define the visual boundaries of HTML elements. It
+            can be text, div, p, h1, etc.
+            <br />
+            The following are the different properties of a CSS border:
+          </p>
+        </div>
+        <div>
+          <h4>Border Style</h4>
+          <p>
+            Border styles define the style of the border.
+            <br />
+            There are various types of border styles; consider the code snippet:
+          </p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        .none {
+            border-style: none;
+        }
+        .hidden {
+            border-style: hidden;
+        }
+        .dotted {
+            border-style: dotted;
+        }
+        .dashed {
+            border-style: dashed;
+        }
+        .solid {
+            border-style: solid;
+        }
+        .double {
+            border-style: double;
+        }
+        .groove {
+            border-style: groove;
+        }
+        .ridge {
+            border-style: ridge;
+        }
+        .inset {
+            border-style: inset;
+        }
+        .outset {
+            border-style: outset;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p class="none"&gt;no border&lt;/p&gt;
+    &lt;p class="hidden"&gt;Hidden Border&lt;/p&gt;
+    &lt;p class="dotted"&gt;Dotted Border&lt;/p&gt;
+    &lt;p class="dashed"&gt;Dashed Border&lt;/p&gt;
+    &lt;p class="solid"&gt;Solid border&lt;/p&gt;
+    &lt;p class="double"&gt;Double Border&lt;/p&gt;
+    &lt;p class="groove"&gt;Groove border&lt;/p&gt;
+    &lt;p class="ridge"&gt;ridge border&lt;/p&gt;
+    &lt;p class="inset"&gt;inset border&lt;/p&gt;
+    &lt;p class="outset"&gt;Outset Border&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-150.png" alt="img" />
+        </div>
+        <div>
+          <h4>Border Color</h4>
+          <p>
+            The border color property sets the colour of the border. We can use
+            colourname, hex, rgb, or hsl to set the color.
+            <br />
+            If you are not familiar with CSS colours, then follow the CSS Color
+            Tutorial.
+            <br />
+            Consider the code snippet:
+          </p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        .dotted {
+            border-style: dotted;
+            color: purple;
+        }
+        .dashed {
+            border-style: dashed;
+            border-color: #FF0000;
+        }
+        .solid {
+            border-style: solid;
+            border-color: rgb(100, 233, 12);
+        }
+        .double {
+            border-style: double;
+            border-color: hsl(10, 50, 30);
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p class="dotted"&gt;Dotted Border&lt;/p&gt;
+    &lt;p class="dashed"&gt;Dashed Border&lt;/p&gt;
+    &lt;p class="solid"&gt;Solid border&lt;/p&gt;
+    &lt;p class="double"&gt;Double Border&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-151.png" alt="img" />
+        </div>
+        <div>
+          <h4>Border Width</h4>
+          <p>
+            Specifies the width of the border. Sets the width of the border in
+            pixels(px), or there are values like medium, thin, and thick to set
+            the border width.
+            <br />
+            Consider the code snippet:
+          </p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;style&gt;
+        .solid1 {
+            border-width: 5px;
+
+            border-style: solid;
+            border-color: red;
+        }
+        .solid2 {
+            border-width: thin; /* thin || medium || thick */
+
+            border-style: solid;
+            border-color: #FF0000;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p class="solid1"&gt;Solid border 1&lt;/p&gt;
+    &lt;p class="solid2"&gt;Solid border 2&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-152.png" alt="img" />
+        </div>
+        <div>
+          <h4>Border Radius</h4>
+          <p>
+            Border radius helps create rounded borders for elements like buttons
+            or images.
+          </p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        .solid1 {
+            border-radius: 20px;
+
+            border-style: solid;
+            border-color: red;
+        }
+        .solid2 {
+            border-radius: 25%;
+
+            border-style: solid;
+            border-color: #FF0000;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;p class="solid1"&gt;Solid border 1&lt;/p&gt;
+    &lt;p class="solid2"&gt;Solid&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-153.png" alt="img" />
+          <p>
+            We can also set border-radius to each individual edge (specific
+            corners), such as top left, bottom right, top right, and bottom
+            left.
+          </p>
+        </div>
+        <div>
+          <h4>Set the border of individual corners</h4>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">selector {
+    border-radius: 10px 5px 15px 35px ;
+    /* border-radius: top-left top-right bottom-right bottom-left ; */
+
+}</code></pre>
+          <p><b>or </b></p>
+          <pre class="language-css"><code class="language-css">selector {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 35px;
+}</code></pre>
+        </div>
+        <div>
+          <h4>Border Collapse</h4>
+          <p>
+            While working with tables, border-collapse helps to control how
+            table borders interact with each other. There are two properties of
+            border-collapse.
+          </p>
+        </div>
+        <div>
+          <h4>Collapse</h4>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">selector {
+    border-collapse: collapse;
+}</code></pre>
+          <img src="/img/assits-154.png" alt="img" />
+        </div>
+        <div>
+          <h4>Separate</h4>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">selector {
+    border-collapse: separate;
+}</code></pre>
+          <img src="/img/assits-155.png" alt="img" />
+        </div>
+        <div>
+          <h4>Border Spacing</h4>
+          <p>
+            While working with tables, border-spacing helps define the space
+            between the borders of adjacent table cells.
+          </p>
+          <pre class="language-css"><code class="language-css">selector {
+    border-spacing: 5px;
+}</code></pre>
+          <img src="/img/assits-156.png" alt="img" />
+        </div>
+        <div>
+          <h4>Shorthand</h4>
+          <p>
+            Border shorthand takes three properties: width, style, and color.
+          </p>
+          <pre class="language-css"><code class="language-css">select{
+    border: width style color;
+}</code></pre>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        p {
+            border: 2px solid red;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;Hello world, I'm CodeWithHarry&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-157.png" alt="img" />
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>CSS Images</h2>
+          <p>
+            Images are an essential part of the website. Images help enhance the
+            website's look.
+            <br />
+            Syntax to use for the CSS image:
+          </p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;img src="img_location" alt="alt_text"&gt;
+          </code></pre>
+          <p>There are two attributes:</p>
+          <ul>
+            <li>src: The path of the image.</li>
+            <li>
+              alt: Alternate text for the image, if the image is not displayed
+              due to any issue.
+            </li>
+          </ul>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;CWH&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;img src="./cwh.png" alt="cwh"&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-158.png" alt="img" />
+          <p>
+            There are various properties of a CSS image, which are as follows:
+          </p>
+        </div>
+        <div>
+          <h4>Image width and height</h4>
+          <p>
+            There are two ways to specify the width and height of the image.
+          </p>
+        </div>
+        <div>
+          <h4>Inline</h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;CWH&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;img src="./cwh.png" height="300" width="400" alt="cwh"&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-159.png" alt="img" />
+          <p>Here, the width and height are in pixels (px).</p>
+        </div>
+        <div>
+          <h4>Internal/External CSS</h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;CWH&lt;/title&gt;
+    &lt;style&gt;
+        img{
+            width: 600px;
+            height: 400px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;img src="./cwh.png" alt="cwh"&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-160.png" alt="img" />
+          <p>
+            Note: We can use pixels (px), percentages (%), or any other unit to
+            specify the width and height of the image.
+          </p>
+        </div>
+        <div>
+          <h4>Image Border Radius</h4>
+          <p>Image border-radius helps create rounded corners for the image.</p>
+          <p><b>Syntex:</b></p>
+          <pre class="language-css"><code class="language-css">selector{
+    border-radius: units;
+}</code></pre>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;CWH&lt;/title&gt;
+    &lt;style&gt;
+        img{
+            border-radius: 25px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;img src="./cwh.png" alt="cwh"&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-161.png" alt="img" />
+          <p>
+            Note: We can use pixels (px), percentages (%), or any other unit to
+            specify the width and height of the image.
+          </p>
+        </div>
+        <div>
+          <h4>Image Responsiveness</h4>
+          <p>
+            Responsive images help to give a clear view of the image at
+            different sizes of the screen.
+          </p>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">selector{
+    max-width: units;
+    height: auto;
+}</code></pre>
+          <p>
+            height: auto helps to achieve the responsive layout of the image.
+            <br />
+            To play around with a responsive layout, follow the steps:
+          </p>
+          <ol>
+            <li>right-click and click on inspect.</li>
+            <li>
+              Click on the toggle device toolbar (laptop mobile icon) or (ctrl +
+              Shift + M).
+            </li>
+            <li>Change the dimensions and play around.</li>
+          </ol>
+          <p>There are other ways to make the image responsive, such as:</p>
+        </div>
+        <div>
+          <h4>fit-content</h4>
+          <p>
+            The fit content specifies the size of that element, which should be
+            determined by its content.
+          </p>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">selector{
+  width: fit-content;
+}</code></pre>
+          <p>We can also set the maximum width of the element.</p>
+          <pre class="language-css"><code class="language-css">selector{
+  width: fit-content(200px);
+}</code></pre>
+          <p>
+            Here, the element's width will be as wide as its content, up to a
+            maximum of 200 pixels.
+          </p>
+        </div>
+        <div>
+          <h4>max-content</h4>
+          <p>
+            The max-content property makes the element as wide as its content
+            but not wider than the screen.
+          </p>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">selector{
+    width: max-content;
+}</code></pre>
+        </div>
+        <div>
+          <h4>min-content</h4>
+          <p>
+            The min-content property makes the element's width shrink to the
+            minimum required to display its content.
+          </p>
+          <pre class="language-css"><code class="language-css">selector{
+    width: min-content;
+}</code></pre>
+        </div>
+        <div>
+          <h4>Image Opacity</h4>
+
+          <p>
+            Image opacity controls the transparency of the image. The property
+            value ranges from 0 to 1.
+          </p>
+          <p><b>Syntax:</b></p>
+          <pre class="language-css"><code class="language-css">img{
+  opacity: unit;
+}</code></pre>
+          <img src="/img/assits-162.png" alt="img" />
+        </div>
+        <div>
+          <h4>Image Filter</h4>
+          <p>
+            The CSS image filter allows you to apply various visual effects to
+            the image.
+          </p>
+          <p><b>Syntax:</b></p>
+          <pre class="language-css"><code class="language-css">img{
+    filter: property-value;
+}</code></pre>
+          <p>Here, property value can be, any of the following:</p>
+        </div>
+        <div>
+          <h4>Grayscale</h4>
+          <p>
+            Grayscale converts an image to grayscale, i.e., black and white. It
+            sort of adds an overlay of grey color to the image.
+          </p>
+          <p><b>Syntax:</b></p>
+          <pre class="language-css"><code class="language-css"> img{
+    filter: grayscale(100%);
+}</code></pre>
+          <img src="/img/assits-163.png" alt="img" />
+          <p>
+            Note: The grayscale value ranges between 0 and 100 per cent. 0,
+            which is the default image, and 100%, which is fully black and
+            white.
+          </p>
+        </div>
+        <div>
+          <h4>Blur</h4>
+          <p>Blur applies a blur effect to the image.</p>
+          <p><b>Example:</b></p>
+          <pre class="language-css"><code class="language-css">img{
+  filter: blur(5px);
+}</code></pre>
+          <img src="/img/assits-164.png" alt="img" />
+          <p>Note: The blur value is specified in pixels(px)</p>
+        </div>
+        <div>
+          <h4>Brightness</h4>
+          <p>
+            The brightness property value helps in adjusting the brightness of
+            the image.
+          </p>
+          <pre class="language-css"><code class="language-css">img{
+  filter: brightness(180%);
+}</code></pre>
+          <img src="/img/assits-165.png" alt="img" />
+          <p>
+            Note: The brightness level is specified in percentage. 0 being the
+            black image, as brightness will be 0%, and as the value increases,
+            brightness content increases.
+          </p>
+        </div>
+        <div>
+          <h4>Contrast</h4>
+          <p>The contrast helps in adjusting the contrast of the image.</p>
+          <pre class="language-css"><code class="language-css">img{
+    filter: contrast(10%);
+}</code></pre>
+          <img src="/img/assits-166.png" alt="img" />
+          <p>Note: The contrast level is specified in percentage.</p>
+        </div>
+        <div>
+          <h4>Invert:</h4>
+          <p>Invert is used to invert the colours of the image.</p>
+          <pre class="language-css"><code class="language-css">img{
+    filter: invert(10%);
+}</code></pre>
+          <img src="/img/assits-167.png" alt="img" />
+          <p>Note: The invert value is specified in percentage.</p>
+        </div>
+        <div>
+          <h4>Saturate:</h4>
+          <p>Saturate helps to adjust the saturation level of colours.</p>
+          <pre class="language-css"><code class="language-css">img{
+    filter: saturate(100%);
+}</code></pre>
+          <img src="/img/assits-168.png" alt="img" />
+          <p>Note: The saturation value is specified in percentages.</p>
+        </div>
+        <div>
+          <h4>Hue-rotate :</h4>
+          <p>The hue rotates the colours of the image.</p>
+          <pre class="language-css"><code class="language-css">img{
+    filter: hue-rotate(90deg);
+}</code></pre>
+          <p>
+            Note: The hue-rotate value is specified in degrees (deg). Positive
+            hue rotation will increase the hue value, while negative hue will
+            decrease the hue value.
+          </p>
+          <img src="/img/assits-169.png" alt="img" />
+          <p>Note: The saturation value is specified in percentages.</p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Video Embedding</h2>
+          <p>
+            CSS helps to customize the visual effects of video. If you are not
+            familiar with videos, follow the HTML Video tutorial.
+          </p>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;body&gt;
+    &lt;video controls&gt;
+        &lt;source src="./Sigma Web Development Course.mp4" type="video/mp4"&gt; Your browser does not support the video tag.
+    &lt;/video&gt;
+&lt;/body&gt;</code></pre>
+          <p><b>style.css</b></p>
+          <pre class="language-css"><code class="language-css">video {
+    width: 500px;
+    height: 200px;
+}</code></pre>
+          <p><b>Output: </b></p>
+          <img src="/img/assits-170.png" alt="img" />
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Fonts</h2>
+          <p>
+            Fonts play a crucial role in making your page visually appealing.
+            Fonts decide how texts will look on the screen; depending on the
+            website, different kinds of fonts are used.
+            <br />
+            Let’s look at the major font attributes.
+          </p>
+        </div>
+        <div>
+          <h4>Font Color</h4>
+          <p>Font color defines the colour of the text or typography.</p>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">selector{
+    color: red;
+}</code></pre>
+          <p>
+            For an in-depth explanation of colours, follow the CSS Color
+            Tutorial.
+          </p>
+        </div>
+        <div>
+          <h4>Font size</h4>
+          <p>
+            The font size property sets the size of the fonts.
+            <br />
+            It has some predefined sizes, such as small, medium, large, larger,
+            etc.
+            <br />
+            The most commonly used units for font size are px (pixels), em
+            (ems), rem (root ems), and percentage (%).
+            <br />
+            Quick notes:
+          </p>
+          <ul>
+            <li>
+              px: px is the absolute unit. This is useful for setting precise
+              sizes.
+            </li>
+            <li>
+              em: em is the relative unit, based on the font size of the parent
+              element. If the element's font size is 1.5 em, that means the
+              element will be 1.5 times the size of the parent.
+            </li>
+            <li>
+              rem: rem is the relative unit, based on the font size of the root
+              element, i.e., &lt;html&gt;.
+            </li>
+          </ul>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        #p1 {
+            font-size: small;
+        }
+        #p2 {
+            font-size: medium;
+        }
+        #p3 {
+            font-size: large;
+        }
+        #p4 {
+            font-size: larger;
+        }
+        #p5 {
+            font-size: 25px;
+        }
+        #p6 {
+            font-size: 2em;
+        }
+        #p7 {
+            font-size: 2rem;
+        }
+        #p8 {
+            font-size: 50%;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p id="p1"&gt;font-size: small&lt;/p&gt;
+    &lt;p id="p2"&gt;font-size: medium&lt;/p&gt;
+    &lt;p id="p3"&gt;font-size: largr&lt;/p&gt;
+    &lt;p id="p4"&gt;font-size: larger&lt;/p&gt;
+    &lt;p id="p5"&gt;font-size: 25px&lt;/p&gt;
+    &lt;p id="p6"&gt;font-size: 2em&lt;/p&gt;
+    &lt;p id="p7"&gt;font-size: 2rem&lt;/p&gt;
+    &lt;p id="p8"&gt;font-size: 50%&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-171.png" alt="img" />
+        </div>
+        <div>
+          <h4>CSS Font Style</h4>
+          <p>
+            The font style property sets the style of the font.
+            <br />
+            There are three types of font styles: italic, normal, and oblique.
+            <br />
+            Quick notes:
+          </p>
+          <ul>
+            <li>italic: Italic texts are slightly to the right.</li>
+            <li>normal: Default text style.</li>
+            <li>Oblique: Oblique is similar to italic but has less bend</li>
+          </ul>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;style&gt;
+        #p1 {
+            font-style: italic;
+        }
+        #p2 {
+            font-style: normal;
+        }
+        #p3 {
+            font-style: oblique;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p id="p1"&gt;font-style: italic&lt;/p&gt;
+    &lt;p id="p2"&gt;font-style: normal&lt;/p&gt;
+    &lt;p id="p3"&gt;font-style: oblique&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-172.png" alt="img" />
+        </div>
+        <div>
+          <h4>CSS Font Variant</h4>
+          <p>
+            The CSS font variant property helps to toggle with the variations of
+            the text.
+            <br />
+            There are two common values for the font-variant property.
+          </p>
+          <ul>
+            <li>normal: The default value.</li>
+            <li>
+              small-caps: This value renders the text in small capital letters.
+            </li>
+          </ul>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        #p1 {
+            font-variant: normal;
+        }
+        #p2 {
+            font-variant: small-caps;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p id="p1"&gt;font-variant: normal;&lt;/p&gt;
+    &lt;p id="p2"&gt;font-variant: small-caps;&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-173.png" alt="img" />
+        </div>
+        <div>
+          <h4>CSS Font Weight</h4>
+          <p>
+            The font-weight property controls the thickness or boldness of the
+            text.
+            <br />
+            The values range from 100 (thin) to 900 (ultra-bold) and also have
+            some predefined values such as lighter, bold, and bolder.
+          </p>
+
+          <p><b>Example: </b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        #p1 {
+            font-weight: 100;
+        }
+        #p2 {
+            font-weight: 200;
+        }
+        #p3 {
+            font-weight: 300;
+        }
+        #p4 {
+            font-weight: 400;
+        }
+        #p5 {
+            font-weight: 500;
+        }
+        #p6 {
+            font-weight: 600;
+        }
+        #p7 {
+            font-weight: 700;
+        }
+        #p8 {
+            font-weight: 800;
+        }
+        #p9 {
+            font-weight: 900;
+        }
+        #p10 {
+            font-weight: lighter;
+        }
+        #p11 {
+            font-weight: bold;
+        }
+        #p12 {
+            font-weight: bolder;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p id="p1"&gt;font-weight: 100&lt;/p&gt;
+    &lt;p id="p2"&gt;font-weight: 200&lt;/p&gt;
+    &lt;p id="p3"&gt;font-weight: 300&lt;/p&gt;
+    &lt;p id="p4"&gt;font-weight: 400&lt;/p&gt;
+    &lt;p id="p5"&gt;font-weight: 500&lt;/p&gt;
+    &lt;p id="p6"&gt;font-weight: 600&lt;/p&gt;
+    &lt;p id="p7"&gt;font-weight: 700&lt;/p&gt;
+    &lt;p id="p8"&gt;font-weight: 800&lt;/p&gt;
+    &lt;p id="p9"&gt;font-weight: 900&lt;/p&gt;
+    &lt;p id="p10"&gt;font-size: lighter&lt;/p&gt;
+    &lt;p id="p11"&gt;font-size: bold&lt;/p&gt;
+    &lt;p id="p12"&gt;font-size: bolder&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-174.png" alt="img" />
+        </div>
+        <div>
+          <h4>Font Family</h4>
+          <p>
+            The font family property specifies the font stack. This is used to
+            set the preferred font for the text content.
+            <br />
+            We can define multiple font family names separated by commas based
+            on priority.
+          </p>
+          <p><b>Syntex:</b></p>
+          <pre class="language-css"><code class="language-css">selector{
+  font-family: font1, font2, font3;
+}</code></pre>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        h1{
+            font-family: 'Courier New', Courier, monospace;
+        }
+        h2{
+            font-family: 'Times New Roman', Times, serif;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;CodeWithHarry&lt;/h1&gt;
+    &lt;h2&gt;Hello World&lt;/h2&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-175.png" alt="img" />
+        </div>
+        <div>
+          <h4>Generic Font family</h4>
+          <p>
+            There are five generic font family names that serve as fallback
+            options when specific fonts are not available:
+          </p>
+          <ol>
+            <li>serif: generic serif fonts (like Times New Roman).</li>
+            <li>
+              sans-serif: generic sans-serif fonts (like Arial or Helvetica).
+            </li>
+            <li>monospace: generic monospaced fonts (like Courier New).</li>
+            <li>cursive: generic cursive fonts (for handwritten styles).</li>
+            <li>fantasy: generic fantasy fonts (for decorative styles).</li>
+          </ol>
+          <p>
+            Tip: It is recommended to end the font family with any of these
+            generic font family names.
+          </p>
+        </div>
+        <div>
+          <h4>Custom fonts</h4>
+          <p>
+            We can also use custom fonts for our websites; here, we will be
+            using Google Fonts.
+          </p>
+          <p>Follow the steps:</p>
+          <ol>
+            <li>Go to https://fonts.google.com/</li>
+            <li>Select your preferred font.</li>
+            <li>Choose the fonts based on font weight.</li>
+            <li>
+              Copy the import link and paste it on the top of the stylesheet.
+            </li>
+            <li>
+              Copy the font family and paste it wherever you want to use it.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Text Styling</h2>
+          <p>
+            In this tutorial, we will cover some of the important text styling
+            properties:
+          </p>
+        </div>
+        <div>
+          <h4>Text Decoration</h4>
+          <p>
+            The text-decoration property adds various types of text decorations.
+          </p>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">selector {
+    text-decoration: value;
+}</code></pre>
+          <p>There are four values for text-decoration:</p>
+          <ul>
+            <li>overline: adds a line above the text</li>
+            <li>underline: adds a line below the text</li>
+            <li>line-through: Adds a line to the text.</li>
+            <li>none: To remove decoration.</li>
+          </ul>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        #p1 {text-decoration: overline;}
+        #p2 {text-decoration: underline;}
+        #p3 {text-decoration: line-through;}
+        #p4 {text-decoration: overline underline;}
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p id="p1"&gt;text-decoration: overline&lt;/p&gt;
+    &lt;p id="p2"&gt;text-decoration: undrline&lt;/p&gt;
+    &lt;p id="p3"&gt;text-decoration: line-through&lt;/p&gt;
+    &lt;p id="p4"&gt;text-decoration: overline underline&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-176.png" alt="img" />
+        </div>
+        <div>
+          <h4>Text Alignment</h4>
+          <p>
+            The text alignment property is used to align the text within the
+            container. Container can be a div, section, etc.
+          </p>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">selector{
+    text-align: value;
+}</code></pre>
+          <p>There are four values for text alignment:</p>
+          <ul>
+            <li>left: align the text to the left.</li>
+            <li>centre: align the text to the centre.</li>
+            <li>right: align the text to the right.</li>
+            <li>
+              justify: spread the text evenly between the left and right
+              margins.
+            </li>
+          </ul>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        #p1 {text-align: left;}
+        #p2 {text-align: right;}
+        #p3 {text-align: end;}
+        #p4 {text-align: justify;}
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p id="p1"&gt;text-align: left&lt;/p&gt;
+    &lt;p id="p2"&gt;text-align: right&lt;/p&gt;
+    &lt;p id="p3"&gt;text-align: end&lt;/p&gt;
+    &lt;p id="p4"&gt;text-align: justify&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-177.png" alt="img" />
+        </div>
+        <div>
+          <h4>Text Transformation</h4>
+          <p>It transforms the text case.</p>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">selector {
+    text-transform: value;
+}</code></pre>
+          <p>There are four values for text-transform:</p>
+          <ul>
+            <li>
+              uppercase: Transform text to uppercase (all capital letters).
+            </li>
+            <li>lowercase: transform text to lowercase (all small letters).</li>
+            <li>capitalise: capitalise the first character from each word.</li>
+            <li>none: To remove text transformation</li>
+          </ul>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        #p1 {text-transform: uppercase;}
+        #p2 {text-transform: lowercase;}
+        #p3 {text-transform: capitalize;}
+        #p4 {text-transform: none;}
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p id="p1"&gt;text-transform: uppercase&lt;/p&gt;
+    &lt;p id="p2"&gt;text-transform: lowercase&lt;/p&gt;
+    &lt;p id="p3"&gt;text-transform: capitalize&lt;/p&gt;
+    &lt;p id="p4"&gt;text-transform: none&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-178.png" alt="img" />
+        </div>
+        <div>
+          <h4>Letter Spacing</h4>
+          <p>
+            The letter-spacing property allows to specify the spacing between
+            each character in the text.
+            <br />
+            The property values can be in pixels (px), em, rem, percentage (%),
+            etc.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        h1{
+            letter-spacing: 5px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;CodeWithHarry&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-179.png" alt="img" />
+        </div>
+        <div>
+          <h4>Line Height</h4>
+          <p>
+            The line-height property controls the spacing between the two lines
+            of text.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        h1{
+            line-height: 3.5;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;CodeWithHarry&lt;/h1&gt;
+    &lt;h1&gt;Developer and CodeWithHarry.com founder&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <p>
+            The value of 3.5 means that the space between lines will be 3.5
+            times the height of the font size.
+          </p>
+          <img src="/img/assits-180.png" alt="img" />
+        </div>
+        <div>
+          <h4>Text Shadow</h4>
+          <p>The text-shadow property adds a shadow to the text.</p>
+          <p><b>Syntax:</b></p>
+          <pre class="language-css"><code class="language-css">selector{
+    text-shadow:  Horizontal offset, vertical offset, blur radius, color;
+}</code></pre>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        h1{
+            text-shadow: 2px 3px 4px red;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;CodeWithHarry&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <p>
+            The value of 3.5 means that the space between lines will be 3.5
+            times the height of the font size.
+          </p>
+          <img src="/img/assits-180.png" alt="img" />
+        </div>
+        <div>
+          <h4>Text Overflow</h4>
+          <p>
+            The text-overflow property handles text that overflows its
+            container.
+            <br />
+            There are two values we can use with text-overflow:
+          </p>
+          <ul>
+            <li>ellipsis: Truncates overflowing text with an ellipsis.</li>
+            <li>clip: clips the text without any visual indication.</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Box Model</h2>
+          <p>
+            The CSS Box model defines how elements are rendered and how their
+            dimensions are calculated.
+            <br />
+            It describes the structure of an element as a rectangular box that
+            has content, padding, a border, and a margin.
+            <br />
+            The box model consists of four main components, which are
+          </p>
+        </div>
+        <div>
+          <h4>1. Content</h4>
+          <ul>
+            <li>
+              The innermost component of the box model is the actual content of
+              the element. It can be text, image, video, etc.
+            </li>
+            <li>
+              The content area is defined by the width and height properties.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>2. Padding</h4>
+          <ul>
+            <li>
+              The space between the actual content and the border of the element
+              is the padding.
+            </li>
+            <li>
+              The padding area is defined by the property padding. For more
+              details, follow the CSS Padding tutorial.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>3. Border</h4>
+          <ul>
+            <li>
+              The border surrounds the content and padding and gives the visual
+              border of the element.
+            </li>
+            <li>
+              The border properties can be controlled using the border keyword.
+              For more details, follow the CSS Borders tutorial.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>4. Margin</h4>
+          <ul>
+            <li>
+              The margin is the space outside the element that separates it from
+              other elements in the layout.
+            </li>
+            <li>
+              The margin of the element is controlled by the margin property.
+              For more details, follow the CSS Margin tutorial.
+            </li>
+          </ul>
+          <p>The CSS Box model can be visually represented as:</p>
+          <img src="/img/assits-182.png" alt="img" />
+        </div>
+        <div>
+          <h4>Calculating the total dimension of the element</h4>
+          <p>
+            The total width and height of the element is calculated with the
+            formula:
+            <br />
+            Total Width = Width + Left Padding + Right Padding + Left Border +
+            Right Border + Left Margin + Right Margin
+            <br />
+            Total Height = Height + Top Padding + Bottom Padding + Top Border +
+            Bottom Border + Top Margin + Bottom Margin
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;head&gt;
+    &lt;style&gt;
+        p{
+            width: 200px;
+            height: 300px;
+            padding: 15px;
+            border: 10px solid red;
+            margin: 5px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p&gt;CodeWithHarry&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <p>
+            Here, the total height and width will be represented as
+            <br />
+            Total Width = 200px (width) + 15px (left padding) + 15px (right
+            padding) + 10px (left border) + 10px (right border) + 5px (left
+            margin) + 5px (right margin) = 260px.
+            <br />
+            Total Height = 300px (Height) + 15px (Top Padding) + 15px (Bottom
+            Padding) + 10px (Top Border) + 10px (Bottom Border) + 5px (Top
+            Margin) + 5px (Bottom Margin) = 360px
+          </p>
+        </div>
+        <div>
+          <h4>Playaround:</h4>
+
+          <p>To view the dimension of any element follow the steps or video:</p>
+          <ol>
+            <li>Right-click and click on Inspect.</li>
+            <li>Click on the arrow key in the top left corner.</li>
+            <li>Select the element</li>
+            <li>Unhide the computed styles sidebar.</li>
+            <li>Toggle the properties.</li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>CSS Padding</h2>
+          <p>
+            Padding is the space between the HTML content and the border. It
+            gives internal spacing and helps to enhance the website.
+            <br />
+            Consider the image:
+          </p>
+          <img src="/img/assits-183.png" alt="img " />
+          <p>
+            Here, the space between the content "CodeWithHarry" and the border
+            is the padding.
+          </p>
+          <p><b>Syntax:</b></p>
+          <pre class="language-css"><code class="language-css">selector{
+    padding: value;
+}</code></pre>
+          <p>Padding value can be used in any of the following methods:</p>
+          <p><b>Method 1 :</b></p>
+          <pre class="language-css"><code class="language-css">selector{
+    padding: value;
+}</code></pre>
+          <p>
+            Here, the padding value will apply equal padding to all sides (top,
+            right, left, and bottom).
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        #p1{
+            border: 2px solid purple;
+        }
+        #p2 {
+            padding: 12px;
+
+            border: 2px solid red;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p id="p1"&gt;CodeWithHarry (without padding)&lt;/p&gt;
+    &lt;p id="p2"&gt;CodeWithHarry (with padding)&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-184.png" alt="img" />
+          <p>
+            Note: Values can be specified in different units, such as pixels
+            (px), em, rem, percentage (%), auto, etc.
+            <br />
+            If you are not familiar with borders, you can also check out the CSS
+            borders tutorial.
+          </p>
+          <p><b>Method 2 : </b></p>
+          <pre class="language-css"><code class="language-css">selector{
+    padding: value1 value2;
+}</code></pre>
+          <p>
+            Here, value 1 is the veritcal padding(y-axis) and value 2 is the
+            horizontal padding (x-axis).
+          </p>
+
+          <p><b>Example: </b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        #p1{
+            border: 2px solid purple;
+        }
+        #p2 {
+            padding: 20px 50px;
+            border: 2px solid red;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p id="p1"&gt;CodeWithHarry (without padding)&lt;/p&gt;
+    &lt;p id="p2"&gt;CodeWithHarry (with padding)&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-185.png" alt="img" />
+          <p><b>Method 3 : </b></p>
+
+          <pre class="language-css"><code class="language-css">selector{
+    padding: value1 value2 value2 value4;
+}</code></pre>
+          <p>
+            In this method, each value represents the padding of individual
+            sides (top, right, bottom, left).
+          </p>
+          <ul>
+            <li>top: value1</li>
+            <li>right: value2</li>
+            <li>bottom: value3</li>
+            <li>left: value4</li>
+          </ul>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        #p1{
+            border: 2px solid purple;
+        }
+        #p2 {
+            padding: 15px 30px 25px 50px;
+            border: 2px solid red;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p id="p1"&gt;CodeWithHarry (without padding)&lt;/p&gt;
+    &lt;p id="p2"&gt;CodeWithHarry (with padding)&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-186.png" alt="img" />
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>CSS Margin</h2>
+          <p>
+            The margin is the space outside the HTML element. It gives external
+            spacing and differentiates two or more elements.
+            <br />
+            Consider the image:
+          </p>
+          <img src="/img/assits-187.png" alt="img" />
+          <p>Here, the space outside the border is the margin.</p>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">selector{
+    margin: value;
+}</code></pre>
+          <p>The margin value can be used in any of the following methods:</p>
+          <p>
+            <b> Method 1 </b>
+          </p>
+          <pre class="language-css"><code class="language-css">selector{
+    margin: value;
+}</code></pre>
+          <p>
+            Here, the margin value will apply an equal margin to all sides (top,
+            right, left, and bottom).
+          </p>
+          <p>
+            <b>Example: </b>
+          </p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        #p1{
+            border: 2px solid purple;
+        }
+        #p2 {
+            margin: 12px;
+
+            border: 2px solid red;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p id="p1"&gt;CodeWithHarry (without margin)&lt;/p&gt;
+    &lt;p id="p2"&gt;CodeWithHarry (with margin)&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <p>
+            Note: Values can be specified in different units, such as pixels
+            (px), em, rem, percentage (%), auto, etc.
+          </p>
+          <img src="/img/assits-188.png" alt="img" />
+
+          <p>
+            <b> Method 2 </b>
+          </p>
+          <pre class="language-css"><code class="language-css">selector{
+    margin: value1 value2;
+}</code></pre>
+          <p>
+            Here, value 1 is the vertical margin (y-axis), and value 2 is the
+            horizontal margin (x-axis).
+          </p>
+          <p>
+            <b>Example: </b>
+          </p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        #p1{
+            border: 2px solid purple;
+        }
+        #p2 {
+            margin: 20px 50px;
+            border: 2px solid red;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p id="p1"&gt;CodeWithHarry (without margin)&lt;/p&gt;
+    &lt;p id="p2"&gt;CodeWithHarry (with margin)&lt;/p&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+
+          <img src="/img/assits-189.png" alt="img" />
+          <p>
+            <b> Method 3 </b>
+          </p>
+          <pre class="language-css"><code class="language-css">selector{
+    margin: value1 value2 value2 value4;
+}</code></pre>
+          <p>
+            In this method, each value represents the margin of individual sides
+            (top, right, bottom, left).
+          </p>
+          <ul>
+            <li>top: value1</li>
+            <li>right: value2</li>
+            <li>bottom: value3</li>
+            <li>left: value4</li>
+          </ul>
+          <p>
+            <b>Example: </b>
+          </p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        #p1{
+            border: 2px solid purple;
+        }
+        #p2 {
+            margin: 15px 30px 25px 50px;
+            border: 2px solid red;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p id="p1"&gt;CodeWithHarry (without margin)&lt;/p&gt;
+    &lt;p id="p2"&gt;CodeWithHarry (with margin)&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+
+          <img src="/img/assits-190.png" alt="img" />
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>CSS Hover</h2>
+          <p>
+            CSS hover is used to enhance the user experience. We can change the
+            appearance or the behaviour of the HTML element(s) when the user
+            hovers over it.
+          </p>
+          <p><b>Syntax:</b></p>
+          <pre class="language-css"><code class="language-css">selector:hover{
+    /* CSS rule(s) */;
+}</code></pre>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        #p1{
+            color: yellow;
+        }
+        #p1:hover{
+            color: red;
+        }
+
+        #p2 {
+            border: 2px solid red;
+        }
+        #p2:hover{
+            border: 5px solid purple;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p id="p1"&gt;CodeWithHarry&lt;/p&gt;
+    &lt;p id="p2"&gt;Developer and Founder of CodeWithHarry.com&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <p><b>Output:</b></p>
+          <video autoplay="autoplay" loop="loop" muted="" controls="controls">
+            <source src="/img/assits-191.mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Cursors</h2>
+          <p>
+            This property is generally used with the hover property. We can add
+            how the mouse cursor responds when we hover it on the element to
+            make the element stand out.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;CSS Hover & Cursor&lt;/title&gt;
+    &lt;style&gt;
+        h1 {
+            font-size: 20px;
+            color: royalblue;
+        }
+        
+        div {
+            background-color: violet;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;h1&gt;CSS tutorials with CodeWithHarry&lt;/h1&gt;
+    &lt;div style="cursor:pointer"&gt;Pointer&lt;/div&gt;
+    &lt;div style="cursor:alias"&gt;alias Value&lt;/div&gt;
+    &lt;div style="cursor:auto"&gt;auto Value&lt;/div&gt;
+    &lt;div style="cursor:all-scroll"&gt;all-scroll value&lt;/div&gt;
+    &lt;div style="cursor:col-resize"&gt;col-resize value&lt;/div&gt;
+    &lt;div style="cursor:crosshair"&gt;Crosshair&lt;/div&gt;
+    &lt;div style="cursor:default"&gt;Default value&lt;/div&gt;
+    &lt;div style="cursor:copy"&gt;copy value&lt;/div&gt;
+    &lt;div style="cursor:move"&gt;Move&lt;/div&gt;
+    &lt;div style="cursor:e-resize"&gt;e-resize&lt;/div&gt;
+    &lt;div style="cursor:ew-resize"&gt;ew-resize&lt;/div&gt;
+    &lt;div style="cursor:ne-resize"&gt;ne-resize&lt;/div&gt;
+    &lt;div style="cursor:nw-resize"&gt;nw-resize&lt;/div&gt;
+    &lt;div style="cursor:n-resize"&gt;n-resize&lt;/div&gt;
+    &lt;div style="cursor:se-resize"&gt;se-resize&lt;/div&gt;
+    &lt;div style="cursor:sw-resize"&gt;sw-resize&lt;/div&gt;
+    &lt;div style="cursor:w-resize"&gt;w-resize&lt;/div&gt;
+    &lt;div style="cursor:s-resize"&gt;s-resize&lt;/div&gt;
+    &lt;div style="cursor:wait"&gt;wait&lt;/div&gt;
+    &lt;div style="cursor:text"&gt;text&lt;/div&gt;
+    &lt;div style="cursor:help"&gt;help&lt;/div&gt;
+    &lt;div style="cursor:progress"&gt;Progress&lt;/div&gt;
+    &lt;div style="cursor:no-drop"&gt;no-drop&lt;/div&gt;
+    &lt;div style="cursor:not-allowed"&gt;not-allowed&lt;/div&gt;
+    &lt;div style="cursor:vertical-text"&gt;vertical-text&lt;/div&gt;
+    &lt;div style="cursor:zoom-in"&gt;Zoom-in&lt;/div&gt;
+    &lt;div style="cursor:zoom-out"&gt;Zoom-out&lt;/div&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+          <p>
+            Try running this code in your editor; you’ll see outputs for each
+            case. The names of the properties are self-explanatory to tell you
+            what output you would be getting.
+          </p>
+          <p><b>Output: </b></p>
+          <video autoplay="autoplay" loop="loop" muted="" controls="controls">
+            <source src="/img/assits-191.mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div>
+          <h4>Custom Cursor</h4>
+          <p>With all the predefined cursors, we can create our own cursor.</p>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">.selector {
+    cursor: url('custom-cursor.png'), auto;
+}</code></pre>
+          <p>
+            The auto keyword ensures that the browser falls back to the default
+            cursor when the custom cursor fails to load.
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>CSS List Styles</h2>
+          <p>
+            Lists are a common element in web design used to prevent content
+            from being un-organized. CSS allows you to style lists to match the
+            design aesthetic and improve the readability of the web page.
+            <br />
+            Following are the various techniques for styling HTML lists.
+          </p>
+        </div>
+        <div>
+          <h4>Unordered list styling</h4>
+          <p>
+            To style unordered lists (bulleted lists), we can change the list
+            item marker.
+          </p>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">ul {
+    list-style-type: value;
+}</code></pre>
+          <p>The value can be</p>
+          <ul>
+            <li>disc: (default) - Filled circle marker</li>
+            <li>circle: hollow circle marker</li>
+            <li>square: a filled square marker</li>
+            <li>None: No marker (remove bullets)</li>
+          </ul>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;head&gt;
+    &lt;style&gt;
+        .ul1 {
+            list-style-type: disc;
+        }
+        .ul2 {
+            list-style-type: circle;
+        }
+        .ul3 {
+            list-style-type: square;
+        }
+        .ul4 {
+            list-style-type: none;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;ul class="ul1"&gt;
+        &lt;li&gt;Hello world&lt;/li&gt;
+        &lt;li&gt;This is ul1&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class="ul2"&gt;
+        &lt;li&gt;Hello world&lt;/li&gt;
+        &lt;li&gt;This is ul2&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class="ul3"&gt;
+        &lt;li&gt;Hello world&lt;/li&gt;
+        &lt;li&gt;This is ul3&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class="ul4"&gt;
+        &lt;li&gt;Hello world&lt;/li&gt;
+        &lt;li&gt;This is ul4&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-193.png" alt="img" />
+        </div>
+        <div>
+          <h4>Ordered Lists Styling</h4>
+          <p>
+            For ordered lists (numbered lists), we can cusromize the list item
+            numbering.
+          </p>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">ol {
+    list-style-type: value;
+}</code></pre>
+
+          <p>The value can be any of the following:</p>
+          <ol>
+            <li>decimal: (default) - Decimal numbers (1, 2, 3, etc.)</li>
+            <li>
+              decimal-leading-zero: Decimal numbers with leading zeros (01, 02,
+              03, etc.)
+            </li>
+            <li>lower-roman: lowercase Roman numbers (i, ii, iii,...)</li>
+            <li>upper-roman: uppercase Roman numbers (I, II, III,...)</li>
+            <li>lower-alpha: lowercase alphabetical letters (a, b, c, etc.)</li>
+            <li>upper-alpha: uppercase alphabetical letters (A, B, C, etc.)</li>
+          </ol>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="langauge-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;title&gt;CWH&lt;/title&gt;
+    &lt;style&gt;
+        .ul1 {
+            list-style-type: decimal;
+        }
+        .ul2 {
+            list-style-type: decimal-leading-zero;
+        }
+        .ul3 {
+            list-style-type: lower-roman;
+        }
+        .ul4 {
+            list-style-type: upper-roman;
+        }
+        .ul5 {
+            list-style-type: lower-alpha;
+        }
+        .ul6 {
+            list-style-type: upper-alpha;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;ul class="ul1"&gt;
+        &lt;li&gt;CodeWithHarry&lt;/li&gt;
+        &lt;li&gt;This is style decimal&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class="ul2"&gt;
+        &lt;li&gt;CodeWithHarry&lt;/li&gt;
+        &lt;li&gt;This is style list-style-type&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class="ul3"&gt;
+        &lt;li&gt;CodeWithHarry&lt;/li&gt;
+        &lt;li&gt;This is lstyle lower-roman&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class="ul4"&gt;
+        &lt;li&gt;CodeWithHarry&lt;/li&gt;
+        &lt;li&gt;This is style upper-roman&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class="ul5"&gt;
+        &lt;li&gt;CodeWithHarry&lt;/li&gt;
+        &lt;li&gt;This is lower-alpha&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class="ul6"&gt;
+        &lt;li&gt;CodeWithHarry&lt;/li&gt;
+        &lt;li&gt;This is upper-alpha&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-194.png" alt="img" />
+        </div>
+        <div>
+          <h4>List-style position</h4>
+          <p>
+            The 'list-style-position' property determines where the list markers
+            (bullets or numbers) are placed in relation to the content.
+            <br />
+            It has two values:
+          </p>
+          <ul>
+            <li>
+              inside: (default) List markers are inside the content's box. This
+              is the default behaviour.
+            </li>
+            <li>
+              outside: List markers are outside the content's box, typically to
+              the left of the content, creating a hanging indent effect.
+            </li>
+          </ul>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        .ul1 {
+            list-style-position: inside;
+        }
+        .ul2 {
+            list-style-position: outside;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;ul class="ul1"&gt;
+        &lt;li&gt;CodeWithHarry&lt;/li&gt;
+        &lt;li&gt;list style position : inside&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class="ul2"&gt;
+        &lt;li&gt;CodeWithHarry&lt;/li&gt;
+        &lt;li&gt;list style position : outside&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-195.png" alt="img" />
+        </div>
+        <div>
+          <h4>Removing the default list styles</h4>
+          <p>
+            To remove default list styles (bullets or numbers), set the
+            'list-style' property to 'none'.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="langauge-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        .ul1 {
+            list-style: circle;
+        }
+        .ul2 {
+            list-style: none;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;ul class="ul1"&gt;
+        &lt;li&gt;CodeWithHarry&lt;/li&gt;
+        &lt;li&gt;Developer&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class="ul2"&gt;
+        &lt;li&gt;CodeWithHarry&lt;/li&gt;
+        &lt;li&gt;list style :none&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+        <div>
+          <h4>Custom List Style</h4>
+          <p>
+            To set a custom list style, set the 'list-style-type' to your new
+            required custom style.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="langauge-markup"
+          ><code class="language-markup">&lt;html lang="en"&gt;
+&lt;head&gt;
+    &lt;style&gt;
+        .ul1 {
+            list-style-type: "😍";
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;ul class="ul1"&gt;
+        &lt;li&gt;CodeWithHarry&lt;/li&gt;
+        &lt;li&gt;Developer&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-196.png" alt="img" />
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Links</h2>
+          <p>
+            To style the way your HTML links look on the website you can use
+            this property.
+          </p>
+          <p><b>Example:</b></p>
+          <img src="/img/assits-197.webp" alt="img" />
+          <p><b>Output: :</b></p>
+          <img src="/img/assits-198.webp" alt="img" />
+          <p>
+            On hovering over this code, you could see the colour changing to
+            “hotpink”. As the target is “_blank” the link would be opened in a
+            new tab.
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Combinators</h2>
+          <p>
+            It explains the relation between multiple or single selector. There
+            are four major combinators that we would be looking at here.
+          </p>
+        </div>
+        <div>
+          <h4>Descendant Selector</h4>
+
+          <p>
+            It selects all the elements to present inside another specified HTML
+            element.
+          </p>
+          <p><b>Example:</b></p>
+          <img src="/img/assits-199.webp" alt="img" />
+          <p><b>Output:</b></p>
+          <img src="/img/assits-200.webp" alt="img" />
+          <p>
+            As you can see, div had 4 paragraphs and so, CSS rules were applied
+            on all of them.
+          </p>
+        </div>
+        <div>
+          <h4>Child Selector</h4>
+
+          <p>
+            It selects only the first generation descendants of a specified
+            element.
+          </p>
+          <p><b>Example:</b></p>
+          <pre class="language-css"><code class="language-css">div>p {
+  color: wheat;
+  background-color: rebeccapurple;
+}</code></pre>
+          <p>
+            Just using this child selector in the same code the output changes
+            to this:
+          </p>
+          <img src="/img/assits-201.webp" alt="img" />
+
+          <p>
+            It happened because paragraph 3 is nested in the &lt;section&gt; tag
+            and therefore is 2nd generation to the &lt;div&gt; selector and thus
+            wasn’t selected.
+          </p>
+        </div>
+        <div>
+          <h4>Adjacent Sibling Selector</h4>
+
+          <p>
+            As the name suggests this selector only selects the adjacent element
+            to the specified element.
+          </p>
+          <p><b>Example:</b></p>
+          <pre class="language-css"><code class="language-css">div+p {
+    color: wheat;
+    background-color: rebeccapurple;
+}</code></pre>
+          <p>
+            Now, the &lt;p&gt; tag right after &lt;div&gt; ends, would be
+            selected. So, the output would look like this:
+          </p>
+          <img src="/img/assits-202.webp" alt="img" />
+        </div>
+        <div>
+          <h4>General Sibling Selector:</h4>
+
+          <p>
+            Unlike the adjacent selector, this one going to select all the
+            &lt;p&gt; tags present after &lt;div&gt;.
+          </p>
+          <p><b>Example:</b></p>
+          <pre class="language-css"><code class="language-css">div~p {
+    color: wheat;
+    background-color: rebeccapurple;
+}</code></pre>
+          <p>
+            <b>Output:</b>
+          </p>
+          <img src="/img/assits-203.webp" alt="img" />
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Pseudo-classes</h2>
+          <p>
+            This is a class describing particular state of a selected HTML
+            element. Some important pseudo-classes are Hover, Visited, Active,
+            Link, etc.
+          </p>
+          <p><b>Syntex: </b></p>
+          <pre
+            class="language-css"
+          ><code class="language-css">selector: pseudo-class{
+    property: value;
+}</code></pre>
+          <p>
+            <b
+              >Refer this to know their functionality in depth: CSS hover, CSS
+              links.</b
+            >
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Buttons</h2>
+          <p>
+            Buttons can be styled in CSS to match the theme of our website.
+            Various ways of styling it is given below.
+          </p>
+          <p><b>Example:</b></p>
+          <img src="/img/assits-204.webp" alt="img" />
+          <p><b>Output: </b></p>
+          <img src="/img/assits-205.webp" alt="img" />
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Overflow</h2>
+          <p>
+            Sometimes the content shown is too large to be visible in a single
+            line or division of the website. So, to avoid loss of that
+            information we can use overflow property.
+          </p>
+        </div>
+        <div>
+          <h4>Overflow Visible</h4>
+          <p>
+            This makes the whole text visible irrespective of the container
+            size.
+          </p>
+          <p><b>Example:</b></p>
+          <img src="/img/assits-206.webp" alt="img" />
+          <p><b>Output :</b></p>
+          <img src="/img/assits-207.webp" alt="img" />
+        </div>
+        <div>
+          <h4>Overflow Hidden</h4>
+          <p>It hides the content which doesn’t fit the box.</p>
+          <p><b>Example:</b></p>
+          <pre class="language-css"><code class="language-css">div {
+    background-color: rebeccapurple;
+    width: 200px;
+    height: 60px;
+    border: 2px solid;
+    overflow: hidden;
+}</code></pre>
+          <p><b>Output:</b></p>
+          <img src="/img/assits-208.webp" alt="img" />
+        </div>
+        <div>
+          <h4>Overflow Scroll</h4>
+          <p>
+            It adds an automatic scroller in the container so for the seeing the
+            content it can be scrolled without affecting the container
+            dimensions.
+          </p>
+          <p><b>Example:</b></p>
+          <pre class="language-css"><code class="language-css">div {
+            background-color: rebeccapurple;
+            width: 200px;
+            height: 60px;
+            border: 2px solid;
+            overflow: scroll;
+          }</code></pre>
+          <p><b> Output: </b></p>
+          <img src="/img/assits-209.webp" alt="img" />
+        </div>
+        <div>
+          <h4>Overflow Auto</h4>
+          <p>
+            It is quite similar to scroll but the scroller is only added when
+            the content starts getting out of the container. Mostly this option
+            is used to avoid unnecessary scroll bars if the content already is
+            within the content dimensions.
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Float</h2>
+          <p>
+            Just like how “wrap through” works in MS Word, the float property
+            allows the balance between text and the image shown beside it.
+          </p>
+          <p><b>Example:</b></p>
+          <img src="/img/assits-210.webp" alt="img" />
+          <p>This is how your image looks without float property.</p>
+          <img src="/img/assits-211.webp" alt="img" />
+          <p>
+            When we add, “float: right;”, the style of the website changes
+            drastically.
+          </p>
+          <img src="/img/assits-212.webp" alt="img" />
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS !important</h2>
+          <p>
+            As we know CSS follows a style sheet sequence to decide the order of
+            rules to be applied on the website, and inline CSS overrides all the
+            rules of the internal and external stylesheet.
+          </p>
+          <p>
+            But if we want a particular rule to be prioritised at all costs in
+            the stylesheet we can use !important tag with it.
+          </p>
+          <p><b>Syntax: </b></p>
+          <pre
+            class="language-css"
+          ><code class="language-css">{property:value !important;}</code></pre>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Maths Functions</h2>
+          <p>
+            Maths functions helps us in fighting dimensions of elements or
+            screen autonomously and thus helps in the responsiveness of a
+            website.
+          </p>
+        </div>
+        <div>
+          <h4>Calc() Function</h4>
+          <p>Calculates the value generally width of a particular property.</p>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-css"
+          ><code class="language-css">width: calc(100%-20px);</code></pre>
+          <p>
+            This function will automatically subtract 20px from whatever is the
+            100% width of that container on the website. This way you can space
+            your elements well without hassles.
+          </p>
+        </div>
+        <div>
+          <h4>Max & Min Function</h4>
+          <p>
+            This function takes two parameters and gives the result out of one
+            accordingly.
+          </p>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-css"
+          ><code class="language-css">width: max(50px, 50%);</code></pre>
+          <p>
+            Out of these two whichever would be greater, would be assigned as a
+            value to the width; vice versa happens for the minimum function.
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Size</h2>
+          <p>
+            We’ve seen various units in CSS so far used for many different
+            purposes; we did hit and trial to find the correct dimensions of
+            that unit for our website.
+          </p>
+          <p>But now let’s understand how units work in CSS.</p>
+        </div>
+        <div>
+          <h4>Absolute Units.</h4>
+          <ol>
+            <li>cm - centimetres (1 cm = 37.8 px)</li>
+            <li>mm - millimetres</li>
+            <li>in - inches (1 in = 96 px = 2.54cm)</li>
+            <li>pt - points (1pt = 1/72th of 1 in)</li>
+            <li>pc - picas (1pc = 1/6th of 1 in)</li>
+            <li>px - pixel (1px = 1/96th of 1 in)</li>
+          </ol>
+          <p>Generally we only use pixels to set dimensions of an element.</p>
+        </div>
+        <div>
+          <h4>Relative Units</h4>
+          <ol>
+            <li>
+              em - Relative to the font size of the parent element. Eg: 5em
+              means the size would be 5 times the current font size.
+            </li>
+            <li>ex - Relative to X height of the existing font</li>
+            <li>ch - Relative to the width/ radius of the character “0”.</li>
+            <li>rem - Relative to the font size of the root element.</li>
+            <li>
+              vw - Relative to 1% of the width of the viewport. (Viewport is the
+              area of the website visible to the user.)
+            </li>
+            <li>vh - Relative to 1% of the height of the viewport</li>
+            <li>% - Relative to the parent element’s size.</li>
+          </ol>
+          <p>Apart from this some of the other metrics used in CSS are-</p>
+          <ol>
+            <li>Opacity: Ranges from 0 to 1</li>
+            <li>RGB & RGBA values: 0 to 255</li>
+            <li>HSL & HSLA values: 0 to 360</li>
+          </ol>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Positioning</h2>
+          <p>
+            The CSS positions allow you to precisely control the placement of an
+            element on the web page.
+            <br />
+            It helps to determine how elements are placed inside the container
+            element and how they interact with the other elements on the page.
+            <br />
+            There are various types of position property values, such as:
+          </p>
+        </div>
+        <div>
+          <h4>Static(Default)</h4>
+          <p>
+            The elements are positioned according to the normal flow of the
+            document.
+          </p>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">selector {
+    position: static;
+}</code></pre>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;head&gt;
+    &lt;style&gt;
+        img {
+            position: static;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;p id="p1"&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+    &lt;p id="p2"&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+    &lt;img src="./logo.png" alt="logo"&gt;
+    &lt;p id="p3"&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+    &lt;p id="p4"&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-213.png" alt="img" />
+        </div>
+        <div>
+          <h4>Relative</h4>
+          <p>
+            Elements are positioned relative to the normal position in the
+            document.
+            <br />
+            You can use the top, right, bottom, and left properties to move the
+            element from its original position.
+          </p>
+          <p><b>Syntax: </b></p>
+          <pre class="language-css"><code class="language-css">selector {
+    position: relative;
+}</code></pre>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;head&gt;
+    &lt;style&gt;
+        img {
+            position: relative;
+            left: 100px;
+            top: 50px
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;p id="p1"&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+    &lt;p id="p2"&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+    &lt;img src="./logo.png" alt="logo"&gt;
+    &lt;p id="p3"&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+    &lt;p id="p4"&gt;Lorem ipsum dolor sit amet.&lt;/p&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-214.png" alt="img" />
+          <p>
+            Here you can see that the image is repositioned from its original
+            place, and the gap is not filled by another element.
+          </p>
+        </div>
+        <div>
+          <h4>Absolute</h4>
+          <p>
+            Elements are positioned relative to the closest positioned ancestor
+            (parent), which means we need to have a parent element with a
+            positioning other than 'static'.
+            <br />
+            Note: An absolutely positioned element is removed from the normal
+            flow.
+          </p>
+          <p><b>Example: </b></p>
+
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;head&gt;
+    &lt;style&gt;
+        #about{
+            position: relative;
+        }
+        .logo{
+            position: absolute;
+            right: 10px;
+            top: 10px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;CodeWithHarry&lt;/h1&gt;
+    &lt;div class="about"&gt;
+        &lt;p&gt;Developer&lt;/p&gt;
+        &lt;p&gt;founder of CodeWithHarry&lt;/p&gt;
+        &lt;img class="logo" src="./logo.png" alt="logo"&gt;
+    &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-215.png" alt="img" />
+          <p><b>Explanation:</b></p>
+          <img src="/img/assits-216.png" alt="img" />
+          <p>
+            Here, as we have set position relative to the body and absolute to
+            the about section, the about section position can be manipulated
+            with the left of top, left, right, and bottom.
+          </p>
+        </div>
+        <div>
+          <h4>Fixed</h4>
+
+          <p>
+            Elements are positioned relative to the viewport (screen) and do not
+            move when the page is scrolled.
+            <br />
+            This is useful for creating elements like fixed headers or footers.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;head&gt;
+    &lt;style&gt;
+        h1{
+            position: fixed;
+            top: 10px;
+            right: 20px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;CodeWithHarry&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+          <img src="/img/assits-217.png" alt="img" />
+          <p>Here, the image position will be fixed.</p>
+        </div>
+        <div>
+          <h4>Float</h4>
+          <p>
+            The float property is used to shift an element to the left or right
+            within its containing element. For more details, follow CSS Float.
+          </p>
+        </div>
+        <div>
+          <h4>Sticky</h4>
+          <p>
+            Position sticky is a hybrid between 'relative' and 'fixed'.
+            <br />
+            It allows an element to become "stuck" to the top or bottom of its
+            container when scrolling, but it behaves like relative positioning
+            within the container until it reaches a specified offset.
+          </p>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;head&gt;
+    &lt;style&gt;
+        h1{
+            position: sticky;
+            top: 10px;
+            right: 20px;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+    &lt;h1&gt;CodeWithHarry&lt;/h1&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Z-index</h2>
+          <p>
+            When there are multiple overlapping elements, the z-index helps in
+            deciding the order of their visibility. The element having the
+            highest value of z-index is shown first, followed by the other
+            elements.
+          </p>
+
+          <p><b>Example:</b></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+
+&lt;head&gt;
+    &lt;title&gt;CSS Z Index&lt;/title&gt;
+    &lt;style&gt;
+        .container {
+            position: relative;
+        }
+        
+        .box1-box {
+            position: relative;
+            z-index: 1;
+            border: 2px solid black;
+            height: 100px;
+            margin: 40px;
+            background-color: aqua;
+        }
+        
+        .box2-box {
+            position: absolute;
+            z-index: 3;
+            background-color: rosybrown;
+            height: 60px;
+            width: 70%;
+            left: 250px;
+            top: 50px;
+            border: 2px solid;
+        }
+        
+        .box3-box {
+            position: absolute;
+            color: wheat;
+            z-index: 2;
+            background-color: rebeccapurple;
+            width: 45%;
+            left: 270px;
+            top: 15px;
+            height: 100px;
+            border: 2px solid;
+        }
+    &lt;/style&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+
+    &lt;h1&gt;CSS z-index&lt;/h1&gt;
+
+    &lt;div class="container"&gt;
+        &lt;div class="box1-box"&gt;Box 1 (z-index: 1)&lt;/div&gt;
+        &lt;div class="box2-box"&gt;Box 2 (z-index: 3)&lt;/div&gt;
+        &lt;div class="box3-box"&gt;Box 3 (z-index: 2)&lt;/div&gt;
+    &lt;/div&gt;
+
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+          <p><b>Output: </b></p>
+          <img src="/img/assits-218.webp" alt="img" />
+          <p>
+            When z-index isn’t used, the element defined in the last is shown on
+            the topmost. Therefore Box 3 would’ve been visible to us.
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Forms</h2>
+          <p>
+            Using CSS you can make any ordinary element look amazing. Here’s a
+            preview of a small form that I created just using HTML.
+          </p>
+
+          <img src="/img/assits-219.webp" alt="img" />
+          <p>The code for it is as follows:</p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+
+&lt;head&gt;
+    &lt;title&gt;Contact Form&lt;/title&gt;
+    &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+
+&lt;body&gt;
+    &lt;div&gt;
+        &lt;h1&gt;Contact Form&lt;/h1&gt;
+        &lt;p id="Subheading"&gt;Please fill all the text in the fields.&lt;/p&gt;
+    &lt;/div&gt;
+    &lt;form action=""&gt;
+
+        &lt;p class="name"&gt;
+            Your Name:&lt;br&gt;
+            &lt;input type="text" placeholder="Your Full Name"&gt;
+        &lt;/p&gt;
+        &lt;p class="email"&gt; Your Email:&lt;br&gt;
+            &lt;input type="email" name="email" id="" placeholder="Enter your Email"&gt;
+        &lt;/p&gt;
+        &lt;p class="number"&gt;
+            Your mobile number:&lt;br&gt;
+            &lt;input type="text" placeholder="Enter your mobile number"&gt;
+        &lt;/p&gt;
+        &lt;p class="message"&gt;
+            Your message to us:&lt;br&gt;
+            &lt;textarea name="message" id="" cols="50" rows="5" placeholder="Enter your query here"&gt;&lt;/textarea&gt;
+        &lt;/p&gt;
+        &lt;p&gt;Select how you want updates:&lt;br&gt;
+            &lt;select name="Select" id=""&gt;
+            &lt;option value="Choose"&gt;--Please choose one option--&lt;/option&gt;
+            &lt;option value="op1"&gt;Message&lt;/option&gt;
+            &lt;option value="op2"&gt;Call&lt;/option&gt;
+            &lt;option value="op3"&gt;Email&lt;/option&gt;
+        &lt;/select&gt;
+        &lt;/p&gt;
+        &lt;input type="submit" value="Submit"&gt; &lt;input type="reset" value="Reset"&gt;
+    &lt;/form&gt;
+&lt;/body&gt;
+
+&lt;/html&gt;</code></pre>
+          <p>
+            Now, I’ve linked a stylesheet here. Let’s write some CSS rules in
+            it.
+          </p>
+          <pre class="language-css"><code class="language-css">body {
+  padding: 0px 300px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  text-decoration: solid;
+  font-weight: 900;
+}
+
+div {
+  padding: 5px 5px;
+  background-color: rgb(164, 206, 147);
+  width: auto;
+  color: white;
+  line-height: 10%;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+form {
+  background-color: rgb(238, 239, 235);
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 0px 80px 5px;
+  font-size: large;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 75%;
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+}
+
+input[type="submit"] {
+  background-color: rgb(164, 206, 147);
+  font-size: larger;
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  width: 75%;
+}
+
+input[type="reset"] {
+  background-color: red;
+  font-size: larger;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(0, 176, 76);
+}
+
+input[type="reset"]:hover {
+  background-color: rgb(191, 0, 0);
+}</code></pre>
+          <p>
+            This stylesheet covers almost all the rules we’ve seen so far. The
+            output would now change to this.
+          </p>
+          <img src="/img/assits-220.webp" alt="img" />
+          <p>
+            Try creating your version of this form by trying out other CSS
+            properties as well.
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Navigation Bar</h2>
+          <p>
+            For a better command of CSS, and to understand how Navbars work,
+            let’s try creating the navbar of this website itself.
+          </p>
+          <img src="/img/assits-221.webp" alt="img" />
+          <p>
+            First, we will create an &lt;nav&gt; element in HTML and then add
+            the attributes to it. Later the CSS would be applied.
+          </p>
+          <img src="/img/assits-222.webp" alt="img" />
+          <p><b>Output:</b></p>
+          <img src="/img/assits-223.webp" alt="img" />
+          <p>
+            Now let’s add CSS to change this navbar according to our desired
+            output.
+          </p>
+          <img src="/img/assits-224.webp" alt="img" />
+          <p>
+            Note: .Icon is the class that I added later in the first &lt;a&gt;
+            tag to provide it with different styling than the other elements.
+
+            <br />
+            The output of this code would be identical to what we had as our
+            reference.
+          </p>
+
+          <img src="/img/assits-225.webp" alt="img" />
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/css/cssIntroduction.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/CSS/CSSDesigning.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+    </main>
+
+    <footer class="flex footer bgcolor2 mt-4">
+      <div class="footerLogo flex">
+        <img src="/img/logo.jpg" alt="" />
+        <p>Vijay Bansal</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Vijay Bansal</p>
+      </div>
+      <div class="media flex">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/profile.php?id=100041095243541"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/itz_vijay_bansal/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/vijay-bansal-319048249/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="github"
+          href="https://github.com/VijayBansal2004"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <i class="fa-brands whatsapp fa-whatsapp"></i>
+        <span style="font-size: small">+91 94172-12422</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2ff3e7c924.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/prism/prism.js"></script>
+  </body>
+</html>

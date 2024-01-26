@@ -1,0 +1,1583 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PHP DataTypes | CodeWithVijay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/prism/prism.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bodyColor textColorWhite">
+    <header>
+      <nav class="navbar bgcolor2 fixed-top" data-bs-theme="dark">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand lightPurpleColor fw-bolder fs-2"
+            href="/index.html"
+            >&lt;/&gt;CodeWithVijay</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            style="background-color: #d8b4fe"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bgcolor2 text-white"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title lightPurpleColor fw-bolder"
+                id="offcanvasNavbarLabel"
+              >
+                &lt;/&gt;CodeWithVijay
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="background-color: #d8b4fe"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HTML
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlBasicTags.html"
+                        >Html Basic Tags</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/Inline&BlockElements.html"
+                        >Inline & Block Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlLists.html"
+                        >Html Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlTables.html"
+                        >Html Tables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlForms.html"
+                        >Html Forms</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/HeadElements.html"
+                        >Head Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlMedia.html"
+                        >Html Media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/MiscellaneousTags.html"
+                        >Miscellaneous Tags</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CSS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/cssIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSProperties.html"
+                        >CSS Properties</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSDesigning.html"
+                        >CSS Designing</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSAdvanceTopics.html"
+                        >CSS Advance Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA SCRIPT
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/jsIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptVariables.html"
+                        >Javascript Variables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptBasics.html"
+                        >Javascript Basics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptObjects.html"
+                        >Javascript Objects</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/DOM&BOM.html"
+                        >DOM & BOM</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/jsOOPs.html"
+                        >OOPs</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/html/C/cIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CDataTypesOperators&UserIO.html"
+                        >C Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFunctions.html"
+                        >C Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CPointers.html"
+                        >C Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CMemoryManagement.html"
+                        >C Memory Management</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CStructures&Unions.html"
+                        >C Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFileHandling.html"
+                        >C File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C++ PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/c++Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++DataTypesOperators&UserIO.html"
+                        >C++ Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++ConditionalStatements.html"
+                        >C++ Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++IterationStatements.html"
+                        >C++ Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++BreakContinue.html"
+                        >C++ Break/Continue</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Arrays.html"
+                        >C++ Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Pointers.html"
+                        >C++ Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Strings.html"
+                        >C++ Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Structures&Unions.html"
+                        >C++ Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Functions.html"
+                        >C++ Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++OPPs.html"
+                        >C++ OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++FileHandling.html"
+                        >C++ File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Templates&STL.html"
+                        >C++ Templates & STL</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/VariablesOperators&UserIO.html"
+                        >Variables, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/JavaMethods.html"
+                        >Java Methods</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/JavaOOPs.html"
+                        >Java OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PYTHON
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDataTypes&Operators.html"
+                        >Python Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonStrings.html"
+                        >Python Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLists.html"
+                        >Python Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonTuples.html"
+                        >Python Tuples</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonSets.html"
+                        >Python Sets</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDictionaries.html"
+                        >Python Dictionaries</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLoops.html"
+                        >Python Loops</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonFunctions.html"
+                        >Python Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonModules.html"
+                        >Python Modules</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonOOPs.html"
+                        >Python OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PHP
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/DataTypes&Operators.html"
+                        >Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Conditional&IterationStatements.html"
+                        >Conditional & Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPFunctions.html"
+                        >PHP Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPArrays.html"
+                        >PHP Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPOOPs.html"
+                        >PHP OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPSuperglobals.html"
+                        >PHP Superglobals</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPMySQL.html"
+                        >PHP MySQL</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPAdvancedTopics.html"
+                        >PHP Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    REACT JS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactTutorial.html"
+                        >React Tutorial</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactHooks.html"
+                        >React Hooks</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5 width80 minHeight90vh m-auto">
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/PHP/Introduction.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/PHP/Conditional&IterationStatements.html"
+            >Next &gt;&gt;</a
+          >
+        </button>
+      </div>
+      <div class="main">
+        <div>
+          <h2>PHP DataTypes</h2>
+          <p>
+            Data type specifies the type of value a variable requires to do
+            various operations without causing an error. By default, PHP
+            provides the following built-in data types:
+          </p>
+          <ul>
+            <li>String</li>
+            <li>Integer</li>
+            <li>Float</li>
+            <li>Boolean</li>
+            <li>Array</li>
+            <li>NULL</li>
+          </ul>
+        </div>
+        <div>
+          <h4>1. String</h4>
+          <p>
+            A string is a sequence of characters that holds letters and numbers.
+            It can be anything written inside single or double quotes. <br />
+
+            <b> For Example: </b>
+          </p>
+          <pre class="language-php"><code class="language-php">&lt;?php
+$x = "Hello world!";
+echo $x;
+?&gt;</code></pre>
+        </div>
+        <div>
+          <h4>2. Integer</h4>
+          <p>
+            An integer is a non-decimal number typically ranging between
+            -2,147,483,648 and 2,147,483,647. <br />
+
+            <b> For Example: </b>
+          </p>
+          <pre class="language-php"><code class="language-php">&lt;?php
+$x = 55;
+var_dump($x);
+?&gt;</code></pre>
+        </div>
+        <div>
+          <h4>3. Float</h4>
+          <p>
+            A float is a number with a decimal point. It can be an exponential
+            number or a fraction. <br />
+
+            <b> For Example: </b>
+          </p>
+          <pre class="language-php"><code class="language-php">&lt;?php
+$x = 52.55;
+var_dump($x);
+?&gt;</code></pre>
+        </div>
+        <div>
+          <h4>4. Boolean</h4>
+          <p>
+            A Boolean represents two values: True or False. <br />
+
+            <b> For Example: </b>
+          </p>
+          <pre class="language-php"><code class="language-php">&lt;?php
+$x = true;
+$y = false;
+?&gt;</code></pre>
+        </div>
+        <div>
+          <h4>5. Array</h4>
+          <p>
+            Array is a collection of similar data elements stored in a single
+            variable. <br />
+
+            <b> For Example: </b>
+          </p>
+          <pre class="language-php"><code class="language-php">&lt;?php
+$x =array("Rohan", "Lovish", "Vijay");
+var_dump($x);
+?&gt;</code></pre>
+        </div>
+        <div>
+          <h4>6. NULL</h4>
+          <p>
+            Null is a special data type with only one value which is NULL. In
+            PHP, if a variable is created without passing a value, it will
+            automatically assign itself a value of NULL.<br />
+
+            <b> For Example: </b>
+          </p>
+          <pre class="language-php"><code class="language-php">&lt;?php
+$x =null;
+?&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>PHP Operators</h2>
+          <p>
+            PHP has different types of operators for different operations. They
+            are as follows:
+          </p>
+        </div>
+        <div>
+          <h4>1. Arithmetic Operators</h4>
+          <p>Arithmetic operators are used to perform arithmetic operations.</p>
+          <div dir="ltr" align="left">
+            <table border="1">
+              <colgroup>
+                <col style="width: 43.837%" />
+                <col style="width: 28.1809%" />
+                <col style="width: 27.7895%" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td>
+                    <p dir="ltr"><strong>Name</strong></p>
+                  </td>
+                  <td>
+                    <p dir="ltr"><strong>Operator</strong></p>
+                  </td>
+                  <td>
+                    <p dir="ltr"><strong>Example</strong></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Addition</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">+</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x+$y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Subtraction</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">-</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x-$y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Multiplication</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">*</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x*$y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Division</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">/</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x/$y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Modulus</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">%</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x%$y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Exponentiation</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">**</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x**$y</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <h4>2. Assignment Operators</h4>
+          <p>These operators are used to assign values to variables.</p>
+          <div dir="ltr" align="left">
+            <table border="1">
+              <colgroup>
+                <col style="width: 34.9315%" />
+                <col style="width: 65.0685%" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td>
+                    <p dir="ltr"><strong>Name</strong></p>
+                  </td>
+                  <td>
+                    <p dir="ltr"><strong>Evaluated as</strong></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">=</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">a=b</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">+=</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">a=a+b</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">-=</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">a=a-b</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">*=</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">a=a*b</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">/=</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">a=a/b</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">%=</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">a=a%b</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <h4>3. Comparison Operators</h4>
+          <p>These operators are used to compare two values.</p>
+          <div dir="ltr" align="left">
+            <table border="1">
+              <colgroup>
+                <col style="width: 52.7687%" />
+                <col style="width: 22.4756%" />
+                <col style="width: 24.7557%" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td>
+                    <p dir="ltr"><strong>Name</strong></p>
+                  </td>
+                  <td>
+                    <p dir="ltr"><strong>Operator</strong></p>
+                  </td>
+                  <td>
+                    <p dir="ltr"><strong>Example</strong></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Equal</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">==</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x==$y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Identical</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">===</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x===$y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Not equal</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">!=</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x!=$y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Not equal</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">&lt;&gt;</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x&lt;&gt;$y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Not Identical</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">!===</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x!===$y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Greater than</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">&gt;</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x&gt;$y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Less than</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">&lt;</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x&lt;$y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Greater than or equal to</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">&gt;=</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x &gt;= $y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Less than or equal to</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">&lt;=</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x &lt;= $y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Spaceship</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">&lt;=&gt;</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x &lt;=&gt; $y</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <h4>4. PHP Increment/ Decrement Operators</h4>
+          <p>
+            These operators are used to increment/ decrement variable’s value.
+          </p>
+          <div dir="ltr" align="left">
+            <table border="1">
+              <colgroup>
+                <col style="width: 62.0879%" />
+                <col style="width: 37.9121%" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td>
+                    <p dir="ltr"><strong>Name</strong></p>
+                  </td>
+                  <td>
+                    <p dir="ltr"><strong>Operator</strong></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Pre-Increment</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">++$x</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Post-Increment</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x++</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Pre-decrement</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">–$x</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Post-decrement</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x- -</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <h4>5. PHP Logical Operators</h4>
+          <p>
+            These are the logical operators that combine conditional statements.
+          </p>
+          <div dir="ltr" align="left">
+            <table border="1">
+              <colgroup>
+                <col style="width: 26.1538%" />
+                <col style="width: 35.3846%" />
+                <col style="width: 38.4615%" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td>
+                    <p dir="ltr"><strong>Name</strong></p>
+                  </td>
+                  <td>
+                    <p dir="ltr"><strong>Operator</strong></p>
+                  </td>
+                  <td>
+                    <p dir="ltr"><strong>Example</strong></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">And</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">and</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x and $y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Or</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">or</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x or $y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Xor</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">xor</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x xor $y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">And</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">&amp;&amp;</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x &amp;&amp; $y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Or</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">||</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x || $y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Not</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">!</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">!&amp;x</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <h4>6. PHP String Operators</h4>
+          <p>PHP has these two operators designed for strings.</p>
+          <div dir="ltr" align="left">
+            <table border="1">
+              <colgroup>
+                <col style="width: 49.5868%" />
+                <col style="width: 20.1102%" />
+                <col style="width: 30.303%" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td>
+                    <p dir="ltr"><strong>Name</strong></p>
+                  </td>
+                  <td>
+                    <p dir="ltr"><strong>Operator</strong></p>
+                  </td>
+                  <td>
+                    <p dir="ltr"><strong>Example</strong></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Concatenation</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">.&nbsp;</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$text1 . $text2</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Concatenation Assignment</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">.=</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$text1 .= $text2</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <h4>7. PHP Array Operators</h4>
+          <p>These Operators are used to compare arrays.</p>
+          <div dir="ltr" align="left">
+            <table border="1">
+              <colgroup>
+                <col style="width: 43.767%" />
+                <col style="width: 26.6514%" />
+                <col style="width: 29.341%" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td>
+                    <p dir="ltr"><strong>Name</strong></p>
+                  </td>
+                  <td>
+                    <p dir="ltr"><strong>Operator</strong></p>
+                  </td>
+                  <td>
+                    <p dir="ltr"><strong>Example</strong></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Union</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">+&nbsp;</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x + $y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Equality</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">==</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x = $y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Identity</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">===</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x === $y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Inequality</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">!=</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x != $y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Inequality</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">&lt;&gt;</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x &lt;&gt; $y</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">!== Non-Identity</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">!==</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x !== $y</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <h4>8. PHP Conditional Operators</h4>
+          <p>
+            These operators assign values to operands based on the outcome of a
+            certain condition.
+          </p>
+          <div dir="ltr" align="left">
+            <table border="1">
+              <colgroup>
+                <col style="width: 32.3615%" />
+                <col style="width: 20.1166%" />
+                <col style="width: 47.5219%" />
+              </colgroup>
+              <tbody>
+                <tr>
+                  <td>
+                    <p dir="ltr"><strong>Name</strong></p>
+                  </td>
+                  <td>
+                    <p dir="ltr"><strong>Operator</strong></p>
+                  </td>
+                  <td>
+                    <p dir="ltr"><strong>Example</strong></p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Ternary</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">?:</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x = exp1 ? exp2 : exp3</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <p dir="ltr">Null Coalescing</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">??</p>
+                  </td>
+                  <td>
+                    <p dir="ltr">$x = exp1 ?? exp2</p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/PHP/Introduction.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/PHP/Conditional&IterationStatements.html"
+            >Next &gt;&gt;</a
+          >
+        </button>
+      </div>
+    </main>
+
+    <footer class="flex footer bgcolor2 mt-4">
+      <div class="footerLogo flex">
+        <img src="/img/logo.jpg" alt="" />
+        <p>Vijay Bansal</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Vijay Bansal</p>
+      </div>
+      <div class="media flex">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/profile.php?id=100041095243541"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/itz_vijay_bansal/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/vijay-bansal-319048249/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="github"
+          href="https://github.com/VijayBansal2004"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <i class="fa-brands whatsapp fa-whatsapp"></i>
+        <span style="font-size: small">+91 94172-12422</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2ff3e7c924.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/prism/prism.js"></script>
+  </body>
+</html>

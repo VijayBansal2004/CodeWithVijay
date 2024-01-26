@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>C++ Introduction | CodeWithVijay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/prism/prism.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bodyColor textColorWhite">
+    <header>
+      <nav class="navbar bgcolor2 fixed-top">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand lightPurpleColor fw-bolder fs-2"
+            href="/index.html"
+            >&lt;/&gt;CodeWithVijay</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            style="background-color: #d8b4fe"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bgcolor2 text-white"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title lightPurpleColor fw-bolder"
+                id="offcanvasNavbarLabel"
+              >
+                &lt;/&gt;CodeWithVijay
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="background-color: #d8b4fe"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HTML
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlBasicTags.html"
+                        >Html Basic Tags</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/Inline&BlockElements.html"
+                        >Inline & Block Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlLists.html"
+                        >Html Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlTables.html"
+                        >Html Tables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlForms.html"
+                        >Html Forms</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/HeadElements.html"
+                        >Head Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlMedia.html"
+                        >Html Media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/MiscellaneousTags.html"
+                        >Miscellaneous Tags</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CSS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/cssIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSProperties.html"
+                        >CSS Properties</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSDesigning.html"
+                        >CSS Designing</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSAdvanceTopics.html"
+                        >CSS Advance Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA SCRIPT
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/jsIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptVariables.html"
+                        >Javascript Variables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptBasics.html"
+                        >Javascript Basics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptObjects.html"
+                        >Javascript Objects</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/DOM&BOM.html"
+                        >DOM & BOM</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/jsOOPs.html"
+                        >OOPs</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/html/C/cIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CDataTypesOperators&UserIO.html"
+                        >C Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFunctions.html"
+                        >C Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CPointers.html"
+                        >C Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CMemoryManagement.html"
+                        >C Memory Management</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CStructures&Unions.html"
+                        >C Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFileHandling.html"
+                        >C File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C++ PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/c++Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++DataTypesOperators&UserIO.html"
+                        >C++ Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++ConditionalStatements.html"
+                        >C++ Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++IterationStatements.html"
+                        >C++ Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++BreakContinue.html"
+                        >C++ Break/Continue</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Arrays.html"
+                        >C++ Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Pointers.html"
+                        >C++ Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Strings.html"
+                        >C++ Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Structures&Unions.html"
+                        >C++ Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Functions.html"
+                        >C++ Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++OPPs.html"
+                        >C++ OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++FileHandling.html"
+                        >C++ File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Templates&STL.html"
+                        >C++ Templates & STL</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/VariablesOperators&UserIO.html"
+                        >Variables, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/JavaMethods.html"
+                        >Java Methods</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/JavaOOPs.html"
+                        >Java OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PYTHON
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDataTypes&Operators.html"
+                        >Python Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonStrings.html"
+                        >Python Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLists.html"
+                        >Python Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonTuples.html"
+                        >Python Tuples</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonSets.html"
+                        >Python Sets</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDictionaries.html"
+                        >Python Dictionaries</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLoops.html"
+                        >Python Loops</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonFunctions.html"
+                        >Python Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonModules.html"
+                        >Python Modules</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonOOPs.html"
+                        >Python OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PHP
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/DataTypes&Operators.html"
+                        >Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Conditional&IterationStatements.html"
+                        >Conditional & Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPFunctions.html"
+                        >PHP Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPArrays.html"
+                        >PHP Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPOOPs.html"
+                        >PHP OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPSuperglobals.html"
+                        >PHP Superglobals</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPMySQL.html"
+                        >PHP MySQL</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPAdvancedTopics.html"
+                        >PHP Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    REACT JS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactTutorial.html"
+                        >React Tutorial</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactHooks.html"
+                        >React Hooks</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5 width80 minHeight90vh m-auto">
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2 disabled" type="button">
+          <a href="/">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/C++/C++DataTypesOperators&UserIO.html"
+            >Next &gt;&gt;</a
+          >
+        </button>
+      </div>
+      <div class="main">
+        <div>
+          <h2>C++ Overview</h2>
+        </div>
+        <div>
+          <h4>What is C++?</h4>
+          <ul>
+            <li>
+              C++ was developed by Bjarne Stroustrup, as an extension to the C
+              language.
+            </li>
+            <li>
+              Despite being an 80s creation, C++ has been a popular programming
+              language throughout these years.
+            </li>
+            <li>
+              C++ is a cross-platform language that can be used to create
+              high-performance applications and software systems.
+            </li>
+            <li>
+              C++ is very close to the hardware making it comparatively easy for
+              programmers to give the instructions directly to the system
+              without any intermediary giving programmers a high level of
+              control over system resources and memory.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Why should we learn C++/ Features of C++?</h4>
+          <ul>
+            <li>
+              C++ is one of the world's most popular programming languages.
+            </li>
+            <li>
+              In today's operating systems, GUIs, and embedded systems, C++ is
+              widely used.
+            </li>
+            <li>
+              It is one of the most popular programming languages for its
+              object-orientedness. C++ is an object-oriented programming
+              language that gives a clear structure to programs and allows code
+              to be reused, lowering development costs.
+            </li>
+            <li>
+              With C++, you can develop applications or heavy games that can run
+              on different platforms.
+            </li>
+            <li>
+              As C++ is close to other programming languages such as C# and
+              Java, which makes it easy for programmers to switch to C++ or vice
+              versa while it is actually very easy to learn.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>How is it different from C?</h4>
+          <ul>
+            <li>
+              The syntax of C++ is almost identical to that of C, as C++ was
+              developed as an extension of C.
+            </li>
+            <li>
+              In contrast to C, C++ supports classes and objects, while C does
+              not.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>Getting Started with C++</h2>
+        </div>
+        <div>
+          <h4>Requirements before you start</h4>
+          <ul>
+            <li>To start using C++, you need two things:</li>
+            <li>
+              A text editor, like Notepad, or an IDE, like VSCode to act as a
+              platform for you to write C++ code
+            </li>
+            <li>
+              A compiler, like GCC to translate the C++ code you have written
+              which is a high-level language into a low-level language that the
+              computer will understand.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>What is an IDE?</h4>
+          <ul>
+            <li>IDE stands for Integrated Development Environment.</li>
+            <li>
+              It is nothing more than an enhanced version of a text editor that
+              helps you write more efficient and nicer code.
+            </li>
+            <li>
+              It helps to differentiate different parts of your codes with
+              different colors and notifies you if you are missing some
+              semicolon or bracket at some place by highlighting that area.
+            </li>
+            <li>
+              A lot of IDEs are available, such as DEVC++ or Code Blocks, but we
+              will prefer using VS Code for this tutorial series.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Installing VSCode</h4>
+          <ul>
+            <li>
+              Visit
+              <a
+                href="https://code.visualstudio.com/download
+                   "
+              >
+                VSCode
+              </a>
+            </li>
+            <li>Click on the download option as per your operating system.</li>
+            <li>
+              After the download is completed, open the setup and run it by
+              saving VS Code in the default location without changing any
+              settings.
+            </li>
+            <li>
+              You will need to click the next button again and again until the
+              installation process begins.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>What is a Compiler?</h4>
+          <ul>
+            <li>
+              A compiler is used to run the program of a certain language which
+              is generally high-level by converting the code into a language
+              that is low-level that our computer could understand.
+            </li>
+            <li>
+              There are a lot of compilers available, but we will proceed with
+              teaching you to use MinGW for this course because it will fulfill
+              all of our requirements, and also it is recommended by Microsoft
+              itself.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Setting up the compiler</h4>
+          <ul>
+            <li>
+              Visit
+              <a href="https://code.visualstudio.com/docs/languages/cpp"
+                >visualstudio</a
+              >
+            </li>
+            <li>Select C++ from the sidebar.</li>
+            <li>
+              Choose “GCC via Mingw-w64 on Windows” from the options shown
+              there.
+            </li>
+            <li>Select the install sourceforge option.</li>
+            <li>
+              After the downloading gets completed, run the setup and choose all
+              the default options as we did while installing VS Code.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Setting Path for Compiler</h4>
+          <ul>
+            <li>
+              Go to the C directory. Navigate into the Program Files. Then, open
+              MinGW-64. Open MinGW-32. And then the bin folder. After reaching
+              the bin, save the path or URL to the bin.
+            </li>
+            <li>Then go to the properties of ‘This PC’.</li>
+            <li>Select ‘Advance System Settings’.</li>
+            <li>Select the ‘Environment Variable’ option.</li>
+            <li>Add the copied path to the Environment Variable.</li>
+            <li>
+              And now, you can visit your IDE and run your C++ programs on it.
+              The configuration part is done.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Writing your first code in C++</h4>
+          <p>
+            Open VSCode. Here’s the simplest print statement we can start with.
+          </p>
+          <pre
+            class="language-c"
+          ><code class="language-c">#include &lt;iostream&gt;
+ 
+int main()
+{
+    std::cout &lt;&lt;"Hello World";
+    return 0;
+}</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-c"
+          ><code class="language-c">Hello World</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h1>Basic Structure &amp; Syntax</h1>
+        </div>
+        <div>
+          <p>
+            Programming in C++ involves following a basic structure throughout.
+            To understand that basic structure, the first program we learned
+            writing in C++ will be referred to.
+          </p>
+          <pre
+            class="language-c"
+          ><code class="languagge-c">#include &lt;iostream&gt;
+ 
+            int main()
+            {
+                std::cout &lt;&lt; "Hello World";
+                return 0;
+            }
+            </code></pre>
+          <p>Here’s what it can be broken down to.</p>
+        </div>
+        <div>
+          <h3 dir="ltr" role="presentation">
+            Pre-processor commands/ Header files
+          </h3>
+          <p dir="ltr">
+            It is common for C++ programs to include many built-in elements from
+            the standard C++ library, including classes, keywords, constants,
+            operators, etc. It is necessary to include an appropriate header
+            file in a program in order to use such pre-defined elements.
+            <br />
+            In the above program, #include &lt;iostream&gt; was the line put to
+            include the header file iostream.The iostream library helps us to
+            get input data and show output data. The iostream library also has
+            many more uses and error facilities; it is not only limited to input
+            and output.
+            <br />
+            Header file are both system defined and user defined. To know more
+            about header files, go to the documentary here,
+            <a href="https://en.cppreference.com/w/cpp/header"
+              >en.cppreference.com</a
+            >.
+          </p>
+        </div>
+        <div>
+          <h3 dir="ltr" role="presentation">Definition Section</h3>
+          <p dir="ltr">
+            Here, all the variables, or other user-defined data types are
+            declared. These variables are used throughout the program and all
+            the functions.
+          </p>
+        </div>
+        <div>
+          <h3 dir="ltr" role="presentation">Function Declaration</h3>
+          <ul>
+            <li dir="ltr" aria-level="1">
+              After the definition of all the other entities, here we declare
+              all the functions a program needs. These are generally
+              user-defined.
+            </li>
+            <li dir="ltr" aria-level="1">
+              Every program contains one main parent function which tells the
+              compiler where to start the execution of the program.
+            </li>
+          </ul>
+          <ul>
+            <li dir="ltr" aria-level="1">
+              All the statements that are to be executed are written in the main
+              function.
+            </li>
+            <li dir="ltr" aria-level="1">
+              Only the instructions enclosed in curly braces {} are considered
+              for execution by the compiler.
+            </li>
+            <li dir="ltr" aria-level="1">
+              After all instructions in the main function have been executed,
+              control leaves the main function and the program ends.
+            </li>
+          </ul>
+          <p dir="ltr">
+            A C++ program is made up of different tokens combined. These tokens
+            include:
+          </p>
+
+          <ul>
+            <li dir="ltr" aria-level="1">Keywords</li>
+            <li dir="ltr" aria-level="1">Identifiers</li>
+            <li dir="ltr" aria-level="1">Constants</li>
+            <li dir="ltr" aria-level="1">String Literal</li>
+            <li dir="ltr" aria-level="1">Symbols &amp; Operators</li>
+          </ul>
+          <ol>
+            <li dir="ltr" aria-level="1">
+              <h4 dir="ltr" role="presentation">Keywords</h4>
+            </li>
+          </ol>
+          <p dir="ltr">
+            Keywords are reserved words that can not be used elsewhere in the
+            program for naming a variable or a function. They have a specific
+            function or task and they are solely used for that. Their
+            functionalities are pre-defined. <br />
+            One such example of a keyword could be return which is used to build
+            return statements for functions. Other examples are auto, if,
+            default, etc.
+            <br />
+            There is a list of reserved keywords which cannot be reused by the
+            programmer or overloaded. One can find the list here,
+            <a href="https://en.cppreference.com/w/cpp/keyword"
+              >en.cppreference.com</a
+            >.
+          </p>
+
+          <ol start="2">
+            <li dir="ltr" aria-level="1">
+              <h4 dir="ltr" role="presentation">Identifiers</h4>
+            </li>
+          </ol>
+          <p dir="ltr">
+            Identifiers are names given to variables or functions to
+            differentiate them from one another. Their definitions are solely
+            based on our choice but there are a few rules that we have to follow
+            while naming identifiers. One such rule says that the name can not
+            contain special symbols such as @, -, *, &lt;, etc.
+            <br />
+            C++ is a case-sensitive language so an identifier containing a
+            capital letter and another one containing a small letter in the same
+            place will be different. For example, the three words: Code, code,
+            and cOde can be used as three different identifiers.
+          </p>
+          <ol start="3">
+            <li dir="ltr" aria-level="1">
+              <h4 dir="ltr" role="presentation">Constants</h4>
+            </li>
+          </ol>
+          <p dir="ltr">
+            Constants are very similar to a variable and they can also be of any
+            data type. The only difference between a constant and a variable is
+            that a constant’s value never changes. We will see constants in more
+            detail in the upcoming tutorials.
+          </p>
+          <ol start="4">
+            <li dir="ltr" aria-level="1">
+              <h4 dir="ltr" role="presentation">String Literal</h4>
+            </li>
+          </ol>
+          <p dir="ltr">
+            String literals or string constants are a sequence of characters
+            enclosed in double quotation marks. Escape sequences are also string
+            literals.
+          </p>
+          <ol start="5">
+            <li dir="ltr" aria-level="1">
+              <h4 dir="ltr" role="presentation">Symbols and Operators</h4>
+            </li>
+          </ol>
+          <p dir="ltr">
+            Symbols are special characters reserved to perform certain actions.
+            Using them lets the compiler know what specific tasks should be
+            performed on the given data. Several examples of symbols are
+            arithmetical operators such as +, *, or bitwise operators such as ^,
+            &amp;.
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>C++ Comments</h2>
+          <p>
+            A comment is a human-readable text in the source code, which is
+            ignored by the compiler. Comments can be used to insert any
+            informative piece which a programmer does not wish to be executed.
+            It could be either to explain a piece of code or to make it more
+            readable. In addition, it can be used to prevent the execution of
+            alternative code when the process of debugging is done.
+            <br />
+            Comments can be singled-lined or multi-lined.
+          </p>
+        </div>
+        <div>
+          <h4>Single Line Comments</h4>
+          <ul>
+            <li>Single-line comments start with two forward slashes (//).</li>
+            <li>
+              Any information after the slashes // lying on the same line would
+              be ignored (will not be executed) since they become unparsable.
+            </li>
+          </ul>
+          <p>An example of how we use a single-line comment</p>
+          <pre
+            class="language-c"
+          ><code class="language-c">#include &lt;iostream&gt;
+ 
+int main()
+{
+    // This is a single line comment
+    std::cout &lt;&lt; "Hello World";
+    return 0;
+}</code></pre>
+        </div>
+        <div>
+          <h4>Multi-line comments</h4>
+          <ul>
+            <li>A multi-line comment starts with /* and ends with */.</li>
+            <li>
+              Any information between /* and */ will be ignored by the compiler.
+            </li>
+          </ul>
+          <p>An example of how we use a multi-line comment</p>
+          <pre
+            class="language-c"
+          ><code class="language-c">#include &lt;iostream&gt;
+ 
+int main()
+{
+    /* This is a
+    multi-line
+    comment */
+    
+    std::cout &lt;&lt; "Hello World";
+    return 0;
+}</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>C++ Variables</h2>
+          <p>
+            Variables are containers for storing data values.
+            <br />
+            In C++, there are different types of variables.
+            <br />
+            Some of them are as follows:
+          </p>
+          <ul>
+            <li>
+              an integer variable defined with the keyword int stores integers
+              (whole numbers), without decimals, such as 63 or -1.
+            </li>
+            <li>
+              a floating point variable defined with keyword float stores
+              floating point numbers, with decimals, such as 79.97 or -13.26.
+            </li>
+            <li>
+              a character variable defined with the keyword char stores single
+              characters, such as 'A' or 'z'. Char values are bound to be
+              surrounded by single quotes.
+            </li>
+            <li>
+              a boolean variable defined with the keyword bool stores a single
+              value 0 or 1 for false and true respectively.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Declaration</h4>
+          <p>
+            We cannot declare a variable without specifying its data type. The
+            data type of a variable depends on what we want to store in the
+            variable and how much space we want it to hold. The syntax for
+            declaring a variable is simple:
+          </p>
+          <pre
+            class="language-c"
+          ><code class="language-c">data_type  variable_name;</code></pre>
+          <p><b>OR</b></p>
+          <pre
+            class="language-c"
+          ><code class="language-c">data_type  variable_name = value;</code></pre>
+          <p>
+            The tutorial will go over data types later on. They will be dealt
+            with in great detail.
+          </p>
+        </div>
+        <div>
+          <h4>Naming a Variable</h4>
+          <p>
+            There is no limit to what we can call a variable. Yet there are
+            specific rules we must follow while naming a variable:
+          </p>
+          <ul>
+            <li>
+              A variable name in C++ can have a length of range 1 to 255
+              characters
+            </li>
+            <li>
+              A variable name can only contain alphabets, digits, and
+              underscores(_).
+            </li>
+            <li>A variable cannot start with a digit.</li>
+            <li>A variable cannot include any white space in its name.</li>
+            <li>Variable names are case sensitive</li>
+            <li>
+              The name should not be a reserved keyword or any special
+              character.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Variable Scope</h4>
+          <p>
+            The scope of a variable is the region in a program where the
+            existence of that variable is valid. Based on its scope, variables
+            can be classified into two types:
+          </p>
+        </div>
+        <div>
+          <h5>Local variables:</h5>
+          <p>
+            Local variables are declared inside the braces of any function and
+            can be assessed only from that particular function.
+          </p>
+        </div>
+        <div>
+          <h5>Global variables:</h5>
+          <p>
+            Global variables are declared outside of any function and can be
+            accessed from anywhere.
+          </p>
+        </div>
+        <div>
+          <p>
+            An example that demonstrates the difference in applications of a
+            local and a global variable is given below.
+          </p>
+          <pre
+            class="language-c"
+          ><code class="language-c">#include &lt;iostream&gt;
+using namespace std;
+    
+int a = 5; //global variable
+    
+void func()
+{
+    cout &lt;&lt; a &lt;&lt; endl;
+}
+    
+int main()
+{
+    int a = 10; //local variable
+    cout &lt;&lt; a &lt;&lt; endl;
+    func();
+    return 0;
+}</code></pre>
+          <p><b>Output:</b></p>
+          <pre class="language-c"><code class="language-c">10
+5</code></pre>
+          <p>
+            Explanation: A local variable a was declared in the main function,
+            and when printed, gave 10. This is because, within the body of a
+            function, a local variable takes precedence over a global variable
+            with the same name. But since there was no variable declared in the
+            func function, it considered the global variable a for printing, and
+            hence the value 5.
+          </p>
+        </div>
+        <div>
+          <p>
+            A variable, as its name is defined, can be altered, or its value can
+            be changed, but the same is not true for its type. If a variable is
+            of integer type, it will only store an integer value through a
+            program. We cannot assign a character type value to an integer
+            variable. We can not even store a decimal value into an integer
+            variable.
+          </p>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2 disabled" type="button">
+          <a href="/">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/C++/C++DataTypesOperators&UserIO.html"
+            >Next &gt;&gt;</a
+          >
+        </button>
+      </div>
+    </main>
+
+    <footer class="flex footer bgcolor2 mt-4">
+      <div class="footerLogo flex">
+        <img src="/img/logo.jpg" alt="" />
+        <p>Vijay Bansal</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Vijay Bansal</p>
+      </div>
+      <div class="media flex">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/profile.php?id=100041095243541"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/itz_vijay_bansal/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/vijay-bansal-319048249/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="github"
+          href="https://github.com/VijayBansal2004"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <i class="fa-brands whatsapp fa-whatsapp"></i>
+        <span style="font-size: small">+91 94172-12422</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2ff3e7c924.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/prism/prism.js"></script>
+  </body>
+</html>

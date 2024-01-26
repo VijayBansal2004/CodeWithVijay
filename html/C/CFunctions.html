@@ -1,0 +1,1261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>C Functions | CodeWithVijay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/prism/prism.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bodyColor textColorWhite">
+    <header>
+      <nav class="navbar bgcolor2 fixed-top">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand lightPurpleColor fw-bolder fs-2"
+            href="/index.html"
+            >&lt;/&gt;CodeWithVijay</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            style="background-color: #d8b4fe"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bgcolor2 text-white"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title lightPurpleColor fw-bolder"
+                id="offcanvasNavbarLabel"
+              >
+                &lt;/&gt;CodeWithVijay
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="background-color: #d8b4fe"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HTML
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlBasicTags.html"
+                        >Html Basic Tags</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/Inline&BlockElements.html"
+                        >Inline & Block Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlLists.html"
+                        >Html Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlTables.html"
+                        >Html Tables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlForms.html"
+                        >Html Forms</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/HeadElements.html"
+                        >Head Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlMedia.html"
+                        >Html Media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/MiscellaneousTags.html"
+                        >Miscellaneous Tags</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CSS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/cssIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSProperties.html"
+                        >CSS Properties</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSDesigning.html"
+                        >CSS Designing</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSAdvanceTopics.html"
+                        >CSS Advance Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA SCRIPT
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/jsIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptVariables.html"
+                        >Javascript Variables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptBasics.html"
+                        >Javascript Basics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptObjects.html"
+                        >Javascript Objects</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/DOM&BOM.html"
+                        >DOM & BOM</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/jsOOPs.html"
+                        >OOPs</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/html/C/cIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CDataTypesOperators&UserIO.html"
+                        >C Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFunctions.html"
+                        >C Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CPointers.html"
+                        >C Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CMemoryManagement.html"
+                        >C Memory Management</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CStructures&Unions.html"
+                        >C Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFileHandling.html"
+                        >C File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C++ PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/c++Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++DataTypesOperators&UserIO.html"
+                        >C++ Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++ConditionalStatements.html"
+                        >C++ Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++IterationStatements.html"
+                        >C++ Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++BreakContinue.html"
+                        >C++ Break/Continue</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Arrays.html"
+                        >C++ Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Pointers.html"
+                        >C++ Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Strings.html"
+                        >C++ Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Structures&Unions.html"
+                        >C++ Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Functions.html"
+                        >C++ Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++OPPs.html"
+                        >C++ OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++FileHandling.html"
+                        >C++ File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Templates&STL.html"
+                        >C++ Templates & STL</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/VariablesOperators&UserIO.html"
+                        >Variables, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/JavaMethods.html"
+                        >Java Methods</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/JavaOOPs.html"
+                        >Java OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PYTHON
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDataTypes&Operators.html"
+                        >Python Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonStrings.html"
+                        >Python Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLists.html"
+                        >Python Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonTuples.html"
+                        >Python Tuples</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonSets.html"
+                        >Python Sets</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDictionaries.html"
+                        >Python Dictionaries</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLoops.html"
+                        >Python Loops</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonFunctions.html"
+                        >Python Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonModules.html"
+                        >Python Modules</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonOOPs.html"
+                        >Python OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PHP
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/DataTypes&Operators.html"
+                        >Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Conditional&IterationStatements.html"
+                        >Conditional & Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPFunctions.html"
+                        >PHP Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPArrays.html"
+                        >PHP Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPOOPs.html"
+                        >PHP OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPSuperglobals.html"
+                        >PHP Superglobals</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPMySQL.html"
+                        >PHP MySQL</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPAdvancedTopics.html"
+                        >PHP Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    REACT JS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactTutorial.html"
+                        >React Tutorial</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactHooks.html"
+                        >React Hooks</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5 width80 minHeight90vh m-auto">
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/C/Strings.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/C/CPointers.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+      <div class="main">
+        <div>
+          <h1>Function Basics</h1>
+        </div>
+        <div>
+          <h3>Functions:</h3>
+          <ul>
+            <li dir="ltr" role="presentation">
+              Functions are used to divide a large C program into smaller and
+              less complex pieces.
+            </li>
+            <li dir="ltr" role="presentation">
+              Function can be called multiple or several times to provide
+              reusability and modularity to the C program.
+            </li>
+            <li dir="ltr" role="presentation">
+              Functions are also called procedures or subroutines or methods.
+            </li>
+            <li dir="ltr" role="presentation">
+              A function is also a piece of code that performs a specific task.
+            </li>
+          </ul>
+          <p dir="ltr">
+            <strong
+              >A function is nothing but a group of code put together and given
+              a name and it can be called anytime without writing the whole code
+              again and again in a program.</strong
+            >
+            <br />
+            I know its syntax is a bit difficult to understand but don’t worry
+            after reading this whole information about Functions you will know
+            each and every term or thing related to Functions.
+          </p>
+        </div>
+        <div>
+          <h3 dir="ltr" role="presentation">Advantages of Functions</h3>
+          <ul>
+            <li dir="ltr" role="presentation">
+              The use of functions allows us to avoid re-writing the same logic
+              or code over and over again.
+            </li>
+            <li dir="ltr" role="presentation">
+              With the help of functions, we can divide the work among the
+              programmers.
+            </li>
+            <li dir="ltr" role="presentation">
+              We can easily debug or can find bugs in any program using
+              functions.
+            </li>
+            <li dir="ltr" role="presentation">
+              They make code readable and less complex.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h3 dir="ltr" role="presentation">Aspects of a function</h3>
+          <ol>
+            <li dir="ltr" aria-level="1">
+              <p dir="ltr" role="presentation">
+                <strong>Declaration:</strong>
+              </p>
+            </li>
+          </ol>
+          <p dir="ltr">
+            This is where a function is declared to tell the compiler about its
+            existence.
+          </p>
+          <ol start="2">
+            <li dir="ltr" aria-level="1">
+              <p dir="ltr" role="presentation"><strong>Definition:</strong></p>
+            </li>
+          </ol>
+          <p dir="ltr">
+            A function is defined to get some task executed. (It means when we
+            define a function, we write the whole code of that function and this
+            is where the actual implementation of the function is done.)
+          </p>
+          <ol start="3">
+            <li dir="ltr" aria-level="1">
+              <p dir="ltr" role="presentation"><strong>Call:</strong></p>
+            </li>
+          </ol>
+          <p dir="ltr">
+            This is where a function is called in order to be used.
+          </p>
+        </div>
+        <div>
+          <h3 dir="ltr" role="presentation">Types of functions</h3>
+          <ol>
+            <li dir="ltr" aria-level="1">
+              <p dir="ltr" role="presentation">
+                <strong>Library functions:</strong>
+              </p>
+            </li>
+          </ol>
+          <p dir="ltr">
+            Library functions are pre-defined functions in C Language. These are
+            the functions that are included in C header files prior to any other
+            part of the code in order to be used.
+            <br />
+            E.g. printf(), scanf(), etc.
+          </p>
+          <ol start="2">
+            <li dir="ltr" aria-level="1">
+              <p dir="ltr" role="presentation">
+                <strong>User-defined functions:</strong>
+              </p>
+            </li>
+          </ol>
+          <p dir="ltr">
+            User-defined functions are functions created by the programmer for
+            the reduction of the complexity of a program. Rather, these are
+            functions that the user creates as per the requirements of a
+            program.
+            <br />E.g. Any function created by the programmer.
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>Function Parameters</h2>
+          <p>
+            A parameter or an argument of a function is the information we wish
+            to pass to the function when it is called to be executed. Parameters
+            act as variables inside the function.
+            <br />
+            Parameters are specified after the function name, inside the
+            parentheses. You can add as many parameters as you want, just
+            separate them with a comma.
+          </p>
+          <p><b>Here’s the basic syntax of a function</b></p>
+          <pre
+            class="language-c"
+          ><code class="language-c">return_type functionName(parameter1, parameter2) {
+// body of the function
+}</code></pre>
+        </div>
+        <div>
+          <p><b>What is the return_type?</b></p>
+          <p>
+            Return type specifies the data type the function should return after
+            its execution. It could also be a void where the function is
+            required to return nothing.
+          </p>
+        </div>
+        <div>
+          <h4>Different ways to define a function</h4>
+          <ol>
+            <li>
+              <p>
+                Without arguments and without return value
+                <br />
+                In this function we don’t have to give any value to the function
+                (argument/parameters) and even don’t have to take any value from
+                it in return.
+                <br />
+                One example of such functions could be,
+              </p>
+              <pre
+                class="language-c"
+              ><code class="language-c">#include &lt;stdio.h&gt;
+ 
+void func()
+{
+    printf("This function doesn't return anything.");
+}
+    
+int main()
+{
+    func();
+}</code></pre>
+              <p><b>Output:</b></p>
+              <pre
+                class="language-c"
+              ><code class="language-c">This function doesn’t return anything.</code></pre>
+            </li>
+            <li>
+              <p>
+                Without arguments and with the return value.
+                <br />
+                In these types of functions, we don’t have to give any value or
+                argument to the function but in return, we get something from it
+                i.e. some value.
+                <br />
+                One example of such functions could be,
+              </p>
+              <pre
+                class="language-c"
+              ><code class="language-c">#include &lt;stdio.h&gt;
+ 
+int func()
+{
+    int a, b;
+    scanf("%d", &a);
+    scanf("%d", &b);
+    return a + b;
+}
+    
+int main()
+{
+    int ans = func();
+    printf("%d", ans);
+}</code></pre>
+              <p><b>Input:</b></p>
+              <pre class="language-c"><code class="language-c">5
+6</code></pre>
+              <p><b>Output:</b></p>
+              <pre class="language-c"><code class="language-c">11</code></pre>
+              <h4>
+                The function func when called, asks for two integer inputs and
+                returns the sum of them. The function’s return type is an
+                integer.
+              </h4>
+            </li>
+            <li>
+              <p>With arguments and without a return value.</p>
+              <p>
+                In this type of function, we give arguments or parameters to the
+                function but we don’t get any value from it in return.
+                <br />
+                One example of such functions could be,
+              </p>
+              <pre
+                class="language-c"
+              ><code class="language-c">#include &lt;stdio.h&gt;
+ 
+void func(int a, int b)
+{
+    printf("%d", a * b);
+}
+    
+int main()
+{
+    func(2, 3);
+}</code></pre>
+              <p>
+                <b>Output: </b>
+              </p>
+              <pre class="language-c"><code class="language-c">6</code></pre>
+              <p>
+                The function’s return type is void. And it takes two integers as
+                its parameters and prints the product of them while returning
+                nothing.
+              </p>
+            </li>
+            <li>
+              <p>With arguments and with the return value</p>
+              <p>
+                In these functions, we give arguments to a function and in
+                return, we also get some value from it.
+                <br />
+                One example of such functions could be,
+              </p>
+              <pre
+                class="language-c"
+              ><code class="language-c">#include &lt;stdio.h&gt;
+ 
+int func(int a, int b)
+{
+    return a + b;
+}
+    
+int main()
+{
+    int ans = func(2, 3);
+    printf("%d", ans);
+}</code></pre>
+              <p><b>Output:</b></p>
+              <pre class="language-c"><code class="language-c">5</code></pre>
+
+              <p>
+                The function func takes two integers as its parameters and
+                return an integer which is their sum.
+                <b>
+                  Make sure the return statement and the return_type of the
+                  functions are the same.
+                </b>
+              </p>
+            </li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>Functions Declaration</h2>
+          <p><b>A function consist of two parts:</b></p>
+          <ul>
+            <li>
+              Declaration, where we specify the function's name, its return
+              type, and required parameters (if any).
+            </li>
+            <li>
+              Definition, which is nothing but the body of the function (code to
+              be executed)
+            </li>
+          </ul>
+        </div>
+        <div>
+          <p><b> The basic structure of a function is, </b></p>
+          <pre
+            class="language-c"
+          ><code class="language-c">return_type functionName() { // declaration
+    // body of the function (definition)
+}</code></pre>
+          <p>
+            For code optimization and readability, it is often recommended to
+            separate the declaration and the definition of the function.
+            <br />
+            And this is the reason why you will often see C programs that have
+            function declarations above the main() function, and function
+            definitions below the main() function. This will make the code
+            better organized and easier to read.
+          </p>
+        </div>
+        <div>
+          <p>This is how it is done,</p>
+          <pre
+            class="language-c"
+          ><code class="language-c">#include &lt;stdio.h&gt;
+ 
+// Function declaration
+void func();
+    
+int main()
+{
+    func(); // calling the function
+    return 0;
+}
+    
+// Function definition
+void func()
+{
+    printf("This is the definition part.");
+}</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-c"
+          ><code class="language-c">This is the definition part.</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>Recursive Functions</h2>
+        </div>
+        <div>
+          <h4>What are recursive functions?</h4>
+          <p>
+            Recursive functions or recursion is a process when a function calls
+            a copy of itself to work on smaller problems.
+            <br />
+            Recursion is the process in which a function calls itself directly
+            or indirectly. And the corresponding function or function which
+            calls itself is called a recursive function.
+          </p>
+          <ul>
+            <li>
+              Any function which calls itself is called a recursive function.
+            </li>
+            <li>
+              This makes the life of a programmer easy by dividing a complex
+              problem into simple or easier problems.
+            </li>
+            <li>
+              A termination condition is imposed on such functions to stop them
+              from executing copies of themselves forever or infinitely. This is
+              also known as the base condition.
+            </li>
+            <li>
+              Any problem which can be solved recursively can also be solved
+              iteratively.
+            </li>
+            <li>
+              Recursions are used to solve tougher problems like Tower Of Hanoi,
+              Fibonacci Series, Factorial finding, etc., and many more, where
+              solving by intuition becomes tough.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>What is a base condition?</h4>
+          <p>
+            The case in which the function doesn’t recur is called the base
+            case.
+            <br />
+            For example, when we try to find the factorial of a number using
+            recursion, the case when our number becomes smaller than 1 is the
+            base case.
+          </p>
+        </div>
+        <div>
+          <h4>Recursive Case</h4>
+          <p>
+            The instances where the function keeps calling itself to perform a
+            subtask which is generally the same problem with the problem size
+            reduced to many smaller parts, is called the recursive case.
+          </p>
+          <p><b>Example of recursion,</b></p>
+          <pre
+            class="language-c"
+          ><code class="language-c">#include &lt;stdio.h&lt;
+ 
+int factorial(int num)
+{
+    if (num > 0)
+    {
+        return num * factorial(num - 1);
+    }
+    else
+    {
+        return 0;
+    }
+}
+    
+int main()
+{
+    int ans = factorial(10);
+    printf("%d", ans);
+    return 0;
+}</code></pre>
+          <p><b>Output:</b></p>
+          <pre class="language-c"><code class="language-c">3628800</code></pre>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/C/Strings.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/C/CPointers.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+    </main>
+
+    <footer class="flex footer bgcolor2 mt-4">
+      <div class="footerLogo flex">
+        <img src="/img/logo.jpg" alt="" />
+        <p>Vijay Bansal</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Vijay Bansal</p>
+      </div>
+      <div class="media flex">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/profile.php?id=100041095243541"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/itz_vijay_bansal/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/vijay-bansal-319048249/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="github"
+          href="https://github.com/VijayBansal2004"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <i class="fa-brands whatsapp fa-whatsapp"></i>
+        <span style="font-size: small">+91 94172-12422</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2ff3e7c924.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/prism/prism.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Iteration Statements | CodeWithVijay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/prism/prism.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bodyColor textColorWhite">
+    <header>
+      <nav class="navbar bgcolor2 fixed-top">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand lightPurpleColor fw-bolder fs-2"
+            href="/index.html"
+            >&lt;/&gt;CodeWithVijay</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            style="background-color: #d8b4fe"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bgcolor2 text-white"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title lightPurpleColor fw-bolder"
+                id="offcanvasNavbarLabel"
+              >
+                &lt;/&gt;CodeWithVijay
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="background-color: #d8b4fe"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HTML
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlBasicTags.html"
+                        >Html Basic Tags</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/Inline&BlockElements.html"
+                        >Inline & Block Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlLists.html"
+                        >Html Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlTables.html"
+                        >Html Tables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlForms.html"
+                        >Html Forms</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/HeadElements.html"
+                        >Head Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlMedia.html"
+                        >Html Media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/MiscellaneousTags.html"
+                        >Miscellaneous Tags</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CSS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/cssIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSProperties.html"
+                        >CSS Properties</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSDesigning.html"
+                        >CSS Designing</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSAdvanceTopics.html"
+                        >CSS Advance Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA SCRIPT
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/jsIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptVariables.html"
+                        >Javascript Variables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptBasics.html"
+                        >Javascript Basics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptObjects.html"
+                        >Javascript Objects</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/DOM&BOM.html"
+                        >DOM & BOM</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/jsOOPs.html"
+                        >OOPs</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/html/C/cIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CDataTypesOperators&UserIO.html"
+                        >C Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFunctions.html"
+                        >C Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CPointers.html"
+                        >C Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CMemoryManagement.html"
+                        >C Memory Management</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CStructures&Unions.html"
+                        >C Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFileHandling.html"
+                        >C File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C++ PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/c++Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++DataTypesOperators&UserIO.html"
+                        >C++ Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++ConditionalStatements.html"
+                        >C++ Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++IterationStatements.html"
+                        >C++ Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++BreakContinue.html"
+                        >C++ Break/Continue</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Arrays.html"
+                        >C++ Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Pointers.html"
+                        >C++ Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Strings.html"
+                        >C++ Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Structures&Unions.html"
+                        >C++ Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Functions.html"
+                        >C++ Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++OPPs.html"
+                        >C++ OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++FileHandling.html"
+                        >C++ File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Templates&STL.html"
+                        >C++ Templates & STL</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/VariablesOperators&UserIO.html"
+                        >Variables, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/JavaMethods.html"
+                        >Java Methods</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/JavaOOPs.html"
+                        >Java OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PYTHON
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDataTypes&Operators.html"
+                        >Python Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonStrings.html"
+                        >Python Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLists.html"
+                        >Python Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonTuples.html"
+                        >Python Tuples</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonSets.html"
+                        >Python Sets</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDictionaries.html"
+                        >Python Dictionaries</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLoops.html"
+                        >Python Loops</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonFunctions.html"
+                        >Python Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonModules.html"
+                        >Python Modules</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonOOPs.html"
+                        >Python OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PHP
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/DataTypes&Operators.html"
+                        >Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Conditional&IterationStatements.html"
+                        >Conditional & Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPFunctions.html"
+                        >PHP Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPArrays.html"
+                        >PHP Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPOOPs.html"
+                        >PHP OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPSuperglobals.html"
+                        >PHP Superglobals</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPMySQL.html"
+                        >PHP MySQL</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPAdvancedTopics.html"
+                        >PHP Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    REACT JS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactTutorial.html"
+                        >React Tutorial</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactHooks.html"
+                        >React Hooks</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5 width80 minHeight90vh m-auto">
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/C/ConditionalStatements.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/C/Arrays.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+      <div class="main">
+        <div>
+          <h1>C Loops</h1>
+        </div>
+        <div>
+          <p>
+            In programming, we often have to perform an action, again and again,
+            with little or no variations in the details each time they are
+            executed. This need is met by a mechanism known as a loop.
+            <br />
+            The versatility of the computer lies in its ability to perform the
+            set of instructions repeatedly. This involves repeating some code in
+            the program, either a specified number of times or until a
+            particular condition is satisfied. Loop-controlled instructions are
+            used to perform this repetitive operation efficiently ensuring the
+            program doesn’t look redundant at the same time due to the
+            repetitions.
+            <br />Following are the three types of loops in C programming.
+          </p>
+          <ul>
+            <li>For loop</li>
+            <li>While loop</li>
+            <li>do-while loop</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Types of Loops</h3>
+          <p>
+            <strong>Entry Controlled loops</strong><br />
+            In entry controlled loops, the test condition is evaluated before
+            entering the loop body. The for Loop and the while Loop are examples
+            of entry-controlled loops.
+            <br /><strong>Exit Controlled Loops</strong><br />
+            In exit-controlled loops, the test condition is tested at the end of
+            the loop. Regardless of whether the test condition is true or false,
+            the loop body will execute at least once. The do-while loop is an
+            example of an exit-controlled loop.
+          </p>
+        </div>
+        <div>
+          <h4>For Loop</h4>
+          <p>
+            A for loop is a repetition control structure that allows us to
+            efficiently write a loop that will execute a specific number of
+            times. The for loop working is as follows:
+          </p>
+          <ul>
+            <li>
+              The initialization statement is executed only once; in this
+              statement, we initialize a variable to some value.
+            </li>
+            <li>
+              In the second step, the test expression is evaluated. Suppose the
+              test expression is evaluated to be true. In that case, the for
+              loop keeps running, and the test expression is re-evaluated, but
+              if the test expression is evaluated to false, then the for loop
+              terminates.
+            </li>
+            <li>
+              The loop keeps executing until the test expression is false. When
+              the test expression is false, then the loop terminates.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>While loop</h4>
+          <p>
+            While loop is called a pre-tested loop. The while loop allows code
+            to be executed multiple times, depending upon a boolean condition
+            that is given as a test expression. While introducing for loops, we
+            saw that the number of iterations is known, whereas while loops are
+            used in situations where we do not know the exact number of
+            iterations of the loop. The while loop execution is terminated based
+            on the test condition which evaluates to either true or false.
+          </p>
+        </div>
+        <div>
+          <h4>do-while loop</h4>
+          <p>
+            In do-while loops, the execution is terminated based on the test
+            condition, very similar to how it is done in a while loop. The main
+            difference between the do-while loop and while loop is that, in the
+            do-while loop, the condition is tested at the end of the loop body,
+            whereas the other two loops are entry-controlled. In a do-while
+            loop, the loop body will execute at least once irrespective of the
+            test condition.
+            <br />
+            Sometimes, while executing a loop, it becomes necessary to jump out
+            of the loop. For this, we make use of the break statement and the
+            continue statement.
+          </p>
+        </div>
+        <div>
+          <h4>break statement</h4>
+          <p>
+            Whenever a break statement is encountered in a loop, the loop is
+            terminated regardless of what kind of loop we are in and the program
+            continues with the statement following the loop.
+          </p>
+        </div>
+        <div>
+          <h4>continue statement</h4>
+          <p>
+            Whenever a continue statement is encountered in a loop, it will
+            cause the control to go directly to the test condition which is
+            where the loop starts, ignoring any piece of code following the
+            continue statement.
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>while Loop</h2>
+          <p>
+            A While loop is also called a pre-tested loop. A while loop allows a
+            piece of code in a program to be executed multiple times, depending
+            upon a given test condition which evaluates to either true or false.
+            The while loop is mostly used in cases where the number of
+            iterations is not known. If the number of iterations is known, then
+            we could also use a for loop.
+
+            <br />
+            The syntax for using a while loop,
+          </p>
+          <pre class="language-c"><code class="language">while (condition test)
+{
+    // Set of statements
+}</code></pre>
+        </div>
+        <div>
+          <p>
+            The body of a while loop can contain a single statement or a block
+            of statements. The test condition may be any expression that should
+            evaluate as either true or false. The loop iterates while the test
+            condition evaluates to true.When the condition becomes false, the
+            program control passes to the line immediately following the loop,
+            which means, it terminates.
+
+            <br />
+
+            One such example to demonstrate how a while loop works is,
+          </p>
+          <pre
+            class="language-c"
+          ><code class="language-c">#include &lt;stdio.h&gt;
+ 
+int main()
+{
+    int i = 0;
+    while (i &lt;= 5)
+    {
+        printf("%d ", i);
+        i++;
+    }
+    return 0;
+}</code></pre>
+          <p><b>Output </b></p>
+          <pre
+            class="language-c"
+          ><code class="language-c">0 1 2 3 4 5</code></pre>
+        </div>
+        <div>
+          <h4>Properties of the while loop:</h4>
+          <p>Following are some of the properties of the while loop.</p>
+          <ul>
+            <li>
+              A conditional expression written in the brackets of while is used
+              to check the condition. The Set of statements defined inside the
+              while loop will execute until the given condition returns false.
+            </li>
+            <li>
+              The condition will return 0 if it is true. The condition will be
+              false if it returns any nonzero number.
+            </li>
+            <li>
+              In the while loop, we cannot execute the loop until we do not
+              specify the condition expression.
+            </li>
+            <li>
+              It is possible to execute a while loop without any statements.
+              This will give no error. We can have multiple conditional
+              expressions in a while loop.
+            </li>
+            <li>
+              Braces are optional if the loop body contains only one statement.
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h1>do-while Loop</h1>
+        </div>
+        <div>
+          <p>
+            A do-while loop is a little different from a normal while loop. A
+            do-while loop, unlike what happens in a while loop, executes the
+            statements inside the body of the loop before checking the test
+            condition.
+            <br />
+            So even if a condition is false in the first place, the do-while
+            loop would have already run once. A do-while loop is very much
+            similar to a while loop, except for the fact that it is guaranteed
+            to execute the body at least once.
+            <br />
+            Unlike for and while loops, which test the loop condition first,
+            then execute the code written inside the body of the loop, the
+            do-while loop checks its condition at the end of the loop.&nbsp;
+            <br />
+            <strong>Following is the syntax of the do-while loop.</strong>
+          </p>
+          <pre class="language-c"><code class="language-c">do
+{
+    statements;
+}
+while (test condition);</code></pre>
+          <p>
+            If the test condition returns true, the flow of control jumps back
+            up to the do part, and the set of statements in the loop executes
+            again. This process repeats until the given test condition becomes
+            false.
+          </p>
+        </div>
+        <div>
+          <h3>How does the do-while loop work?</h3>
+          <ul>
+            <li>
+              First, the body of the do-while loop is executed once. Only then,
+              the test condition is evaluated.
+            </li>
+            <li>
+              If the test condition returns true, the set of instructions inside
+              the body of the loop is executed again, and the test condition is
+              evaluated.
+            </li>
+            <li>
+              The same process goes on until the test condition becomes false.
+            </li>
+            <li>
+              If the test condition returns false, then the loop terminates.
+            </li>
+          </ul>
+          <p>One such example to demonstrate how a do-while loop works is</p>
+          <pre
+            class="language-c"
+          ><code class="language-c">#include &lt;stdio.h&gt;
+ 
+int main()
+{
+    int i = 5;
+    
+    do
+    {
+        printf("%d ", i);
+        i++;
+    } while (i &lt; 5);
+    
+    return 0;
+}</code></pre>
+          <p><strong>Output</strong></p>
+          <pre class="language-c"><code class="language-c">5</code></pre>
+
+          <p>
+            As it was already mentioned at the beginning of this tutorial, a
+            do-while loop runs for at least once even if the test condition
+            returns false, because the test condition is evaluated only after
+            the first execution of the instructions in the body of the loop.
+          </p>
+        </div>
+        <div>
+          <h3>Difference between a while and a do-while loop</h3>
+          <p>
+            A While loop is executed every time the given test condition returns
+            true, whereas, a do-while loop is executed for the first time
+            irrespective of the test condition being true or false because the
+            test condition is checked only after executing the loop for the
+            first time.
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h1>for Loop</h1>
+        </div>
+        <div>
+          <p>
+            The "For" loop is used to repeat a specific piece of code in a
+            program until a specific condition is satisfied. The for loop
+            statement is very specialized. We use a for loop when we already
+            know the number of iterations of that particular piece of code we
+            wish to execute. Although, when we do not know about the number of
+            iterations, we use a while loop.
+            <br />
+            <strong>Here is the syntax of a for loop in C programming.</strong>
+          </p>
+          <pre
+            class="language-c"
+          ><code class="language-c">for (initialise counter; test counter; increment / decrement counter)
+{
+    //set of statements
+}</code></pre>
+          <p><strong>Here,</strong></p>
+          <ul>
+            <li>
+              <strong>initialize counter: </strong>It will initialize the loop
+              counter value. It is usually i=0.
+            </li>
+            <li>
+              <strong>test counter: </strong>This is the test condition, which
+              if found true, the loop continues, otherwise terminates.
+            </li>
+            <li>
+              <strong>Increment/decrement counter:</strong> Incrementing or
+              decrementing the counter.
+            </li>
+            <li>
+              <strong>Set of statements: </strong>This is the body or the
+              executable part of the for loop or the set of statements that has
+              to repeat itself.
+            </li>
+          </ul>
+          <p>One such example to demonstrate how a for loop works is,</p>
+          <pre
+            class="language-c"
+          ><code class="language-c">#include &lt;stdio.h&gt;
+ 
+int main()
+{
+    int num = 10;
+    int i;
+    for (i = 0; i &lt; num; i++)
+    {
+        printf("%d ", i);
+    }
+    return 0;
+}</code></pre>
+          <p><strong>Output</strong></p>
+          <pre
+            class="language-markup"
+          ><code class="language-markup">0 1 2 3 4 5 6 7 8 9</code></pre>
+
+          <ul>
+            <li>
+              First, the initialization expression will initialize loop
+              variables. The expression i=0 executes once when the loop starts.
+              Then the condition i &lt; num is checked. If the condition is
+              true, then the statements inside the body of the loop are
+              executed. After the statements inside the body are executed, the
+              control of the program is transferred to the increment of the
+              variable i by 1. The expression i++ modifies the loop variables.
+              Iteratively, the condition i &lt; num is evaluated again.
+            </li>
+            <li>
+              If the condition is still evaluated true, the body of the loop
+              will execute once again. The for loop terminates when i finally
+              becomes less than num, therefore, making the condition i&lt;num
+              false.
+            </li>
+            <li>
+              Just as if statement, we can have a for loop inside another for
+              loop. This is known as a nested for loop. Similarly, while loop
+              and do while loop can also be nested.
+            </li>
+          </ul>
+        </div>
+        <div>
+          <h4>Why for loops if we already have while loops?</h4>
+          <p>
+            It is clear to a developer exactly how many times the loop will
+            execute. So, if the developer has to dry run the code, it will
+            become easier.
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>C Break/Continue</h2>
+        </div>
+        <div>
+          <h4>Break Statement</h4>
+          <ul>
+            <li>
+              Break statement is used to break the loop or switch case
+              statements execution and brings the control to the next block of
+              code after that particular loop or switch case it was used in.
+            </li>
+            <li>
+              Break statements are used to bring the program control out of the
+              loop it was encountered in.
+            </li>
+            <li>
+              The break statement is used inside loops or switch statements in C
+              Language.
+            </li>
+          </ul>
+          <p>One such example to demonstrate how a break statement works is,</p>
+          <pre
+            class="language-c"
+          ><code class="language-c">#include &lt;stdio.h&gt;
+ 
+int main()
+{
+    int i = 0;
+    while (1)
+    {
+        if (i &gt; 5)
+        {
+            break;
+        }
+        printf("%d ", i);
+        i++;
+    }
+    
+    return 0;
+}</code></pre>
+          <p><b>Output</b></p>
+          <pre
+            class="language-c"
+          ><code class="language-c">0 1 2 3 4 5</code></pre>
+          <p>
+            Here, when i became 6, the break statement got executed and the
+            program came out of the while loop.
+          </p>
+        </div>
+        <div>
+          <h4>Continue Statement</h4>
+          <ul>
+            <li>
+              The continue statement is used inside loops in C Language. When a
+              continue statement is encountered inside the loop, the control
+              jumps to the beginning of the loop for the next iteration,
+              skipping the execution of statements inside the body of the loop
+              after the continue statement.
+            </li>
+            <li>
+              It is used to bring the control to the next iteration of the loop.
+            </li>
+            <li>
+              Typically, the continue statement skips some code inside the loop
+              and lets the program move on with the next iteration.
+            </li>
+            <li>
+              It is mainly used for a condition so that we can skip some lines
+              of code for a particular condition.
+            </li>
+            <li>
+              It forces the next iteration to follow in the loop unlike a break
+              statement, which terminates the loop itself the moment it is
+              encountered.
+            </li>
+          </ul>
+          <p>
+            One such example to demonstrate how a continue statement works is
+          </p>
+          <pre
+            class="language-c"
+          ><code class="language-c">#include &lt;stdio.h&gt;
+ 
+int main()
+{
+    for (int i = 0; i &lt;= 10; i++)
+    {
+        if (i &lt; 6)
+        {
+            continue;
+        }
+        printf("%d ", i);
+    }
+    return 0;
+}</code></pre>
+          <p><b>Output</b></p>
+          <pre
+            class="language-c"
+          ><code class="language-c">6 7 8 9 10</code></pre>
+          <p>
+            Here, the continue statement was continuously executing while i
+            remained less than 5. For all the other values of i, we got the
+            print statement working.
+          </p>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/C/ConditionalStatements.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/C/Arrays.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+    </main>
+
+    <footer class="flex footer bgcolor2 mt-4">
+      <div class="footerLogo flex">
+        <img src="/img/logo.jpg" alt="" />
+        <p>Vijay Bansal</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Vijay Bansal</p>
+      </div>
+      <div class="media flex">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/profile.php?id=100041095243541"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/itz_vijay_bansal/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/vijay-bansal-319048249/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="github"
+          href="https://github.com/VijayBansal2004"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <i class="fa-brands whatsapp fa-whatsapp"></i>
+        <span style="font-size: small">+91 94172-12422</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2ff3e7c924.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/prism/prism.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1642 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Python Strings | CodeWithVijay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/prism/prism.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bodyColor textColorWhite">
+    <header>
+      <nav class="navbar bgcolor2 fixed-top">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand lightPurpleColor fw-bolder fs-2"
+            href="/index.html"
+            >&lt;/&gt;CodeWithVijay</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            style="background-color: #d8b4fe"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bgcolor2 text-white"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title lightPurpleColor fw-bolder"
+                id="offcanvasNavbarLabel"
+              >
+                &lt;/&gt;CodeWithVijay
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="background-color: #d8b4fe"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HTML
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlBasicTags.html"
+                        >Html Basic Tags</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/Inline&BlockElements.html"
+                        >Inline & Block Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlLists.html"
+                        >Html Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlTables.html"
+                        >Html Tables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlForms.html"
+                        >Html Forms</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/HeadElements.html"
+                        >Head Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlMedia.html"
+                        >Html Media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/MiscellaneousTags.html"
+                        >Miscellaneous Tags</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CSS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/cssIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSProperties.html"
+                        >CSS Properties</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSDesigning.html"
+                        >CSS Designing</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSAdvanceTopics.html"
+                        >CSS Advance Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA SCRIPT
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/jsIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptVariables.html"
+                        >Javascript Variables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptBasics.html"
+                        >Javascript Basics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptObjects.html"
+                        >Javascript Objects</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/DOM&BOM.html"
+                        >DOM & BOM</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/jsOOPs.html"
+                        >OOPs</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/html/C/cIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CDataTypesOperators&UserIO.html"
+                        >C Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFunctions.html"
+                        >C Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CPointers.html"
+                        >C Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CMemoryManagement.html"
+                        >C Memory Management</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CStructures&Unions.html"
+                        >C Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFileHandling.html"
+                        >C File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C++ PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/c++Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++DataTypesOperators&UserIO.html"
+                        >C++ Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++ConditionalStatements.html"
+                        >C++ Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++IterationStatements.html"
+                        >C++ Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++BreakContinue.html"
+                        >C++ Break/Continue</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Arrays.html"
+                        >C++ Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Pointers.html"
+                        >C++ Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Strings.html"
+                        >C++ Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Structures&Unions.html"
+                        >C++ Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Functions.html"
+                        >C++ Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++OPPs.html"
+                        >C++ OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++FileHandling.html"
+                        >C++ File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Templates&STL.html"
+                        >C++ Templates & STL</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/VariablesOperators&UserIO.html"
+                        >Variables, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/JavaMethods.html"
+                        >Java Methods</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/JavaOOPs.html"
+                        >Java OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PYTHON
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDataTypes&Operators.html"
+                        >Python Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonStrings.html"
+                        >Python Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLists.html"
+                        >Python Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonTuples.html"
+                        >Python Tuples</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonSets.html"
+                        >Python Sets</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDictionaries.html"
+                        >Python Dictionaries</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLoops.html"
+                        >Python Loops</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonFunctions.html"
+                        >Python Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonModules.html"
+                        >Python Modules</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonOOPs.html"
+                        >Python OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PHP
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/DataTypes&Operators.html"
+                        >Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Conditional&IterationStatements.html"
+                        >Conditional & Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPFunctions.html"
+                        >PHP Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPArrays.html"
+                        >PHP Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPOOPs.html"
+                        >PHP OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPSuperglobals.html"
+                        >PHP Superglobals</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPMySQL.html"
+                        >PHP MySQL</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPAdvancedTopics.html"
+                        >PHP Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    REACT JS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactTutorial.html"
+                        >React Tutorial</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactHooks.html"
+                        >React Hooks</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5 width80 minHeight90vh m-auto">
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/PYTHON/PythonDataTypes&Operators.html"
+            >&lt;&lt; Previous</a
+          >
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/PYTHON/PythonLists.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Python Strings</h2>
+        </div>
+        <div>
+          <h4>What are strings?</h4>
+          <p>
+            In python, anything that you enclose between single or double
+            quotation marks is considered a string. A string is essentially a
+            sequence or array of textual data.
+            <br />
+
+            Strings are used when working with Unicode characters.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">name = "Samuel"
+print("Hello, " + name)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">Hello, Samuel</code></pre>
+          <p>
+            Note: It does not matter whether you enclose your strings in single
+            or double quotes, the output remains the same.
+          </p>
+        </div>
+        <div>
+          <h4>What if you want to write multiline strings?</h4>
+          <p>
+            Sometimes the programmer might want to include a note, or a set of
+            instructions, or just might want to explain a piece of code.
+            Although this might be done using multiline comments, the programmer
+            may want to display this in the execution of programmer. This is
+            done using multiline strings.
+          </p>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">receipe = """
+1. Heat the pan and add oil
+2. Crack the egg
+3. Add salt in egg and mix well
+4. Pour the mixture in pan
+5. Fry on medium heat
+"""
+print(receipe)
+
+note = '''
+This is a multiline string
+It is used to display multiline message in the program
+'''
+print(note)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">1. Heat the pan and add oil
+2. Crack the egg
+3. Add salt in egg and mix well
+4. Pour the mixture in pan
+5. Fry on medium heat
+
+
+This is a multiline string
+It is used to display multiline message in the program</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>Operation on Strings</h2>
+        </div>
+        <div>
+          <h4>Length of a String:</h4>
+          <p>We can find the length of a string using len() function.</p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">fruit = "Mango"
+len1 = len(fruit)
+print("Mango is a", len1, "letter word.")</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">Mango is a 5 letter word.</code></pre>
+        </div>
+        <div>
+          <h4>String as an Array:</h4>
+          <p>
+            A string is essentially a sequence of characters also called an
+            array. Thus we can access the elements of this array.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">pie = "ApplePie"
+print(pie[:5])
+print(pie[6])	#returns character at specified index</code></pre>
+          <p><b>Output:</b></p>
+          <pre class="language-python"><code class="language-python">Apple
+i</code></pre>
+          <p>
+            Note: This method of specifying the start and end index to specify a
+            part of a string is called slicing.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">pie = "ApplePie"
+print(pie[:5])      #Slicing from Start
+print(pie[5:])      #Slicing till End
+print(pie[2:6])     #Slicing in between
+print(pie[-8:])     #Slicing using negative index</code></pre>
+          <p><b>Output:</b></p>
+          <pre class="language-python"><code class="language-python">Apple
+Pie
+pleP
+ApplePie</code></pre>
+        </div>
+        <div>
+          <h4>Loop through a String:</h4>
+          <p>
+            Strings are arrays and arrays are iterable. Thus we can loop through
+            strings.
+          </p>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">alphabets = "ABCDE"
+for i in alphabets:
+    print(i)</code></pre>
+          <p><b>Output:</b></p>
+          <pre class="language-python"><code class="language-python">A
+B
+C
+D
+E</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>String Methods</h2>
+          <p>
+            Python provides a set of built-in methods that we can use to alter
+            and modify the strings.
+          </p>
+        </div>
+        <div>
+          <h4>upper() : The upper() method converts a string to upper case.</h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "AbcDEfghIJ"
+print(str1.upper())</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">ABCDEFGHIJ</code></pre>
+        </div>
+        <div>
+          <h4>lower() : The lower() method converts a string to upper case.</h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "AbcDEfghIJ"
+print(str1.lower())</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">abcdefghij</code></pre>
+        </div>
+        <div>
+          <h4>
+            strip() : The strip() method removes any white spaces before and
+            after the string.
+          </h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str2 = " Silver Spoon "
+print(str2.strip)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">Silver Spoon</code></pre>
+        </div>
+        <div>
+          <h4>rstrip() : the rstrip() removes any trailing characters.</h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str3 = "Hello !!!"
+print(str3.rstrip("!"))</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">Hello</code></pre>
+        </div>
+        <div>
+          <h4>
+            replace() : the replace() method replaces a string with another
+            string.
+          </h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str2 = "Silver Spoon"
+print(str2.replace("Sp", "M"))</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">Silver Moon</code></pre>
+        </div>
+        <div>
+          <h4>
+            split() : The split() method splits the give string at the specified
+            instance and returns the separated strings as list items.
+          </h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str2 = "Silver Spoon"
+print(str2.split(" "))      #Splits the string at the whitespace " ".</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">['Silver', 'Spoon']</code></pre>
+          <p>
+            There are various other string methods that we can use to modify our
+            strings.
+          </p>
+        </div>
+        <div>
+          <h4>
+            capitalize() : The capitalize() method turns only the first
+            character of the string to uppercase and the rest other characters
+            of the string are turned to lowercase. The string has no effect if
+            the first character is already uppercase.
+          </h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "hello"
+capStr1 = str1.capitalize()
+print(capStr1)
+str2 = "hello WorlD"
+capStr2 = str2.capitalize()
+print(capStr2)</code></pre>
+          <p><b>Output:</b></p>
+          <pre class="language-python"><code class="language-python">Hello
+Hello world</code></pre>
+        </div>
+        <div>
+          <h4>
+            center() : The center() method aligns the string to the center as
+            per the parameters given by the user.
+          </h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "Welcome to the Console!!!"
+print(str1.center(50))</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">            Welcome to the Console!!!</code></pre>
+          <p>
+            We can also provide padding character. It will fill the rest of the
+            fill characters provided by the user.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "Welcome to the Console!!!"
+print(str1.center(50, "."))</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">............Welcome to the Console!!!.............</code></pre>
+        </div>
+        <div>
+          <h4>
+            count() : The count() method returns the number of times the given
+            value has occurred within the given string.
+          </h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str2 = "Abracadabra"
+countStr = str2.count("a")
+print(countStr)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">4</code></pre>
+        </div>
+        <div>
+          <h4>
+            endswith() : The endswith() method checks if the string ends with a
+            given value. If yes then return True, else return False.
+          </h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "Welcome to the Console !!!"
+print(str1.endswith("!!!"))</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">True</code></pre>
+          <p><b>Example 2:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "Welcome to the Console !!!"
+print(str1.endswith("Console"))</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">False</code></pre>
+          <p>
+            We can even also check for a value in-between the string by
+            providing start and end index positions.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "Welcome to the Console !!!"
+print(str1.endswith("to", 4, 10))</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">True</code></pre>
+        </div>
+        <div>
+          <h4>
+            find() : The find() method searches for the first occurrence of the
+            given value and returns the index where it is present. If given
+            value is absent from the string then return -1.
+          </h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "He's name is Dan. He is an honest man."
+print(str1.find("is"))</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">10</code></pre>
+          <p>
+            As we can see, this method is somewhat similar to the index()
+            method. The major difference being that index() raises an exception
+            if value is absent whereas find() does not.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "He's name is Dan. He is an honest man."
+print(str1.find("Daniel"))</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">-1</code></pre>
+        </div>
+        <div>
+          <h4>
+            index() : The index() method searches for the first occurrence of
+            the given value and returns the index where it is present. If given
+            value is absent from the string then raise an exception.
+          </h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "He's name is Dan. Dan is an honest man."
+print(str1.index("Dan"))</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">13</code></pre>
+          <p>
+            As we can see, this method is somewhat similar to the find() method.
+            The major difference being that index() raises an exception if value
+            is absent whereas find() does not.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "He's name is Dan. Dan is an honest man."
+print(str1.index("Daniel"))</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">ValueError: substring not found</code></pre>
+        </div>
+        <div>
+          <h4>
+            isalnum() : The isalnum() method returns True only if the entire
+            string only consists of A-Z, a-z, 0-9. If any other characters or
+            punctuations are present, then it returns False.
+          </h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "WelcomeToTheConsole"
+print(str1.isalnum())</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">True</code></pre>
+          <p><b>Example 2:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "Welcome To The Console"
+print(str1.isalnum())
+str2 = "Hurray!!!"
+print(str2.isalnum())</code></pre>
+          <p><b>Output:</b></p>
+          <pre class="language-python"><code class="language-python">False
+False</code></pre>
+        </div>
+        <div>
+          <h4>
+            isalpha() : The isalnum() method returns True only if the entire
+            string only consists of A-Z, a-z. If any other characters or
+            punctuations or numbers(0-9) are present, then it returns False.
+          </h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "Welcome"
+print(str1.isalpha())</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">True</code></pre>
+          <p><b>Example 2:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">tr1 = "I'm 18 years old"
+print(str1.isalpha())
+str2 = "Hurray!!!"
+print(str2.isalnum())</code></pre>
+          <p><b>Output:</b></p>
+          <pre class="language-python"><code class="language-python">False
+False</code></pre>
+        </div>
+        <div>
+          <h4>
+            islower() : The islower() method returns True if all the characters
+            in the string are lower case, else it returns False.
+          </h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "hello world"
+print(str1.islower())</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">True</code></pre>
+          <p><b>Example 2:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "welcome Mike"
+print(str1.islower())
+str2 = "Hurray!!!"
+print(str2.islower())</code></pre>
+          <p><b>Output:</b></p>
+          <pre class="language-python"><code class="language-python">False
+False</code></pre>
+        </div>
+        <div>
+          <h4>
+            isprintable() : The isprintable() method returns True if all the
+            values within the given string are printable, if not, then return
+            False.
+          </h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "We wish you a Merry Christmas"
+print(str1.isprintable())</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">True</code></pre>
+          <p><b>Example 2:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str2 = "Hello, \t\t.Mike"
+print(str2.isprintable())</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">False</code></pre>
+        </div>
+        <div>
+          <h4>
+            isspace() : The isspace() method returns True only and only if the
+            string contains white spaces, else returns False.
+          </h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "        "       #using Spacebar
+print(str1.isspace())
+str2 = "        "       #using Tab
+print(str2.isspace())</code></pre>
+          <p><b>Output:</b></p>
+          <pre class="language-python"><code class="language-python">True
+True</code></pre>
+          <p><b>Example 2:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "Hello World" 
+print(str1.isspace())</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">False</code></pre>
+        </div>
+        <div>
+          <h4>
+            istitle() : The istitile() returns True only if the first letter of
+            each word of the string is capitalized, else it returns False.
+          </h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "World Health Organization" 
+print(str1.istitle())</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">True</code></pre>
+          <p><b>Example 2:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str2 = "To kill a Mocking bird"
+print(str2.istitle())</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">False</code></pre>
+        </div>
+        <div>
+          <h4>
+            isupper() : The isupper() method returns True if all the characters
+            in the string are upper case, else it returns False.
+          </h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "WORLD HEALTH ORGANIZATION" 
+print(str1.isupper())</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">True</code></pre>
+          <p><b>Example 2:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str2 = "To kill a Mocking bird"
+print(str2.isupper())</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">False</code></pre>
+        </div>
+        <div>
+          <h4>
+            replace() : The replace() method can be used to replace a part of
+            the original string with another string.
+          </h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "Python is a Compiled Language." 
+print(str1.replace("Compiled", "Interpreted"))</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">Python is a Interpreted Language.</code></pre>
+        </div>
+        <div>
+          <h4>
+            startswith() : The endswith() method checks if the string starts
+            with a given value. If yes then return True, else return False.
+          </h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "Python is a Interpreted Language" 
+print(str1.startswith("Python"))</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">True</code></pre>
+          <p><b>Example 2:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "Python is a Interpreted Language" 
+print(str1.startswith("a"))</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">False</code></pre>
+          <p>
+            We can even also check for a value in-between the string by
+            providing start and end index positions.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "Python is a Interpreted Language" 
+print(str1.startswith("Inter", 12, 20))</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">True</code></pre>
+        </div>
+        <div>
+          <h4>
+            swapcase() : The swapcase() method changes the character casing of
+            the string. Upper case are converted to lower case and lower case to
+            upper case.
+          </h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "Python is a Interpreted Language" 
+print(str1.swapcase())</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">pYTHON IS A iNTERPRETED lANGUAGE</code></pre>
+        </div>
+        <div>
+          <h4>
+            title() : The title() method capitalizes each letter of the word
+            within the string.
+          </h4>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "He's name is Dan. Dan is an honest man."
+print(str1.title())</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">He'S Name Is Dan. Dan Is An Honest Man.</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>Format Strings</h2>
+        </div>
+        <div>
+          <h4>What if we want to join two separated strings?</h4>
+          <p>
+            We can perform concatenation to join two or more separate strings.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str4 = "Captain"
+str5 = "America"
+str6 = str4 + " " + str5
+print(str6)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">Captain America</code></pre>
+          <p>
+            In the above example, we saw how one can concatenate two strings.
+            But how can we concatenate a string and an integer?
+          </p>
+          <pre
+            class="language-python"
+          ><code class="language-python">name = "Guzman"
+age = 18
+print("My name is" + name + "and my age is" + age)</code></pre>
+
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">TypeError: can only concatenate str (not "int") to str</code></pre>
+        </div>
+        <div>
+          <h4>So what’s the solution?</h4>
+          <p>
+            We make the use of format() method. The format() methods places the
+            arguments within the string wherever the placeholders are specified.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">name = "Guzman"
+age = 18
+statement = "My name is {} and my age is {}."
+print(statement.format(name, age)) </code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">My name is Guzman and my age is 18.</code></pre>
+          <p>
+            We can also make the use of indexes to place the arguments in
+            specified order.
+          </p>
+          <pre
+            class="language-python"
+          ><code class="language-python">quantity = 2
+fruit = "Apples"
+cost = 120.0
+statement = "I want to buy {2} dozen {0} for {1}$"
+print(statement.format(fruit,cost,quantity))</code></pre>
+
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">I want to buy 2 dozen Apples for $120.0</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>Escape Characters</h2>
+          <p>
+            Escape Characters are very important in python. It allows us to
+            insert illegal characters into a string like a back slash, new line
+            or a tab.
+            <br />
+            Single/Double Quote: used to insert single/double quotes in the
+            string.
+          </p>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "He was \"Flabergasted\"."
+str2 = 'He was \'Flabergasted\'.'
+print(str1)
+print(str2)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">He was "Flabergasted".
+He was 'Flabergasted'.</code></pre>
+        </div>
+
+        <div>
+          <h4>New Line: inserts a new line wherever specified.</h4>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str1 = "I love doing Yoga. \nIt cleanses my mind and my body."
+print(str1)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">I love doing Yoga.
+It cleanses my mind and my body.</code></pre>
+        </div>
+        <div>
+          <h4>Tab: inserts a tab wherever specified.</h4>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str2 = "Hello \t\tWorld \t!!!"
+print(str2)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">Hello           World   !!!</code></pre>
+        </div>
+        <div>
+          <h4>
+            Backspace: erases the character before it wherever it is specified.
+          </h4>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str2 = "Hello  \bWorld !!!"
+print(str2)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">Hello World !!!</code></pre>
+        </div>
+        <div>
+          <h4>Backslash: used to insert a backslash into a string.</h4>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">str3 = "What will you eat? Apple\\Banana"
+print(str3)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">What will you eat? Apple\Banana</code></pre>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/PYTHON/PythonDataTypes&Operators.html"
+            >&lt;&lt; Previous</a
+          >
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/PYTHON/PythonLists.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+    </main>
+
+    <footer class="flex footer bgcolor2 mt-4">
+      <div class="footerLogo flex">
+        <img src="/img/logo.jpg" alt="" />
+        <p>Vijay Bansal</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Vijay Bansal</p>
+      </div>
+      <div class="media flex">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/profile.php?id=100041095243541"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/itz_vijay_bansal/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/vijay-bansal-319048249/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="github"
+          href="https://github.com/VijayBansal2004"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <i class="fa-brands whatsapp fa-whatsapp"></i>
+        <span style="font-size: small">+91 94172-12422</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2ff3e7c924.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/prism/prism.js"></script>
+  </body>
+</html>

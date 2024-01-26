@@ -1,0 +1,1179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Python Tuples | CodeWithVijay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/prism/prism.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bodyColor textColorWhite">
+    <header>
+      <nav class="navbar bgcolor2 fixed-top">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand lightPurpleColor fw-bolder fs-2"
+            href="/index.html"
+            >&lt;/&gt;CodeWithVijay</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            style="background-color: #d8b4fe"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bgcolor2 text-white"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title lightPurpleColor fw-bolder"
+                id="offcanvasNavbarLabel"
+              >
+                &lt;/&gt;CodeWithVijay
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="background-color: #d8b4fe"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HTML
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlBasicTags.html"
+                        >Html Basic Tags</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/Inline&BlockElements.html"
+                        >Inline & Block Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlLists.html"
+                        >Html Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlTables.html"
+                        >Html Tables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlForms.html"
+                        >Html Forms</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/HeadElements.html"
+                        >Head Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlMedia.html"
+                        >Html Media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/MiscellaneousTags.html"
+                        >Miscellaneous Tags</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CSS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/cssIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSProperties.html"
+                        >CSS Properties</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSDesigning.html"
+                        >CSS Designing</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSAdvanceTopics.html"
+                        >CSS Advance Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA SCRIPT
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/jsIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptVariables.html"
+                        >Javascript Variables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptBasics.html"
+                        >Javascript Basics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptObjects.html"
+                        >Javascript Objects</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/DOM&BOM.html"
+                        >DOM & BOM</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/jsOOPs.html"
+                        >OOPs</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/html/C/cIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CDataTypesOperators&UserIO.html"
+                        >C Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFunctions.html"
+                        >C Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CPointers.html"
+                        >C Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CMemoryManagement.html"
+                        >C Memory Management</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CStructures&Unions.html"
+                        >C Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFileHandling.html"
+                        >C File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C++ PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/c++Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++DataTypesOperators&UserIO.html"
+                        >C++ Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++ConditionalStatements.html"
+                        >C++ Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++IterationStatements.html"
+                        >C++ Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++BreakContinue.html"
+                        >C++ Break/Continue</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Arrays.html"
+                        >C++ Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Pointers.html"
+                        >C++ Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Strings.html"
+                        >C++ Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Structures&Unions.html"
+                        >C++ Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Functions.html"
+                        >C++ Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++OPPs.html"
+                        >C++ OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++FileHandling.html"
+                        >C++ File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Templates&STL.html"
+                        >C++ Templates & STL</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/VariablesOperators&UserIO.html"
+                        >Variables, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/JavaMethods.html"
+                        >Java Methods</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/JavaOOPs.html"
+                        >Java OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PYTHON
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDataTypes&Operators.html"
+                        >Python Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonStrings.html"
+                        >Python Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLists.html"
+                        >Python Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonTuples.html"
+                        >Python Tuples</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonSets.html"
+                        >Python Sets</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDictionaries.html"
+                        >Python Dictionaries</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLoops.html"
+                        >Python Loops</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonFunctions.html"
+                        >Python Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonModules.html"
+                        >Python Modules</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonOOPs.html"
+                        >Python OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PHP
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/DataTypes&Operators.html"
+                        >Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Conditional&IterationStatements.html"
+                        >Conditional & Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPFunctions.html"
+                        >PHP Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPArrays.html"
+                        >PHP Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPOOPs.html"
+                        >PHP OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPSuperglobals.html"
+                        >PHP Superglobals</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPMySQL.html"
+                        >PHP MySQL</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPAdvancedTopics.html"
+                        >PHP Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    REACT JS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactTutorial.html"
+                        >React Tutorial</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactHooks.html"
+                        >React Hooks</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5 width80 minHeight90vh m-auto">
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/PYTHON/PythonLists.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/PYTHON/PythonSets.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Python Tuples</h2>
+          <p>
+            Tuples are ordered collection of data items. They store multiple
+            items in a single variable. Tuple items are separated by commas and
+            enclosed within round brackets (). Tuples are unchangeable meaning
+            we can not alter them after creation.
+          </p>
+          <p><b>Example 1: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">tuple1 = (1,2,2,3,5,4,6)
+tuple2 = ("Red", "Green", "Blue")
+print(tuple1)
+print(tuple2)</code></pre>
+          <p><b>Output: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">(1, 2, 2, 3, 5, 4, 6)
+('Red', 'Green', 'Blue')</code></pre>
+          <p><b>Example 2: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">details = ("Abhijeet", 18, "FYBScIT", 9.8)
+print(details)</code></pre>
+          <p><b>Output: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">('Abhijeet', 18, 'FYBScIT', 9.8)</code></pre>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Tuple Indexes</h2>
+          <p>
+            Each item/element in a tuple has its own unique index. This index
+            can be used to access any particular item from the tuple. The first
+            item has index [0], second item has index [1], third item has index
+            [2] and so on.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">country = ("Spain", "Italy", "India", "England", "Germany")
+#            [0]      [1]      [2]       [3]        [4]</code></pre>
+        </div>
+        <div>
+          <h4>Accessing tuple items:</h4>
+        </div>
+        <div>
+          <h5>I. Positive Indexing:</h5>
+          <p>
+            As we have seen that tuple items have index, as such we can access
+            items using these indexes.
+          </p>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">country = ("Spain", "Italy", "India", "England", "Germany")
+#            [0]      [1]      [2]       [3]        [4]
+print(country[1])
+print(country[3])
+print(country[0])</code></pre>
+          <p><b>Output:: </b></p>
+          <pre class="language-python"><code class="language-python">Italy
+England
+Spain</code></pre>
+        </div>
+        <div>
+          <h5>II. Negative Indexing:</h5>
+          <p>
+            Similar to positive indexing, negative indexing is also used to
+            access items, but from the end of the tuple. The last item has index
+            [-1], second last item has index [-2], third last item has index
+            [-3] and so on.
+          </p>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">country = ("Spain", "Italy", "India", "England", "Germany")
+#            [0]      [1]      [2]       [3]        [4]
+print(country[-1])
+print(country[-3])
+print(country[-4])</code></pre>
+          <p><b>Output:: </b></p>
+          <pre class="language-python"><code class="language-python">Germany
+India
+Italy</code></pre>
+        </div>
+        <div>
+          <h5>III. Check for item:</h5>
+          <p>
+            We can check if a given item is present in the tuple. This is done
+            using the in keyword.
+          </p>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">country = ("Spain", "Italy", "India", "England", "Germany")
+if "Germany" in country:
+    print("Germany is present.")
+else:
+    print("Germany is absent.")</code></pre>
+          <p><b>Output:: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">Germany is present.</code></pre>
+          <p><b>Example 2: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">country = ("Spain", "Italy", "India", "England", "Germany")
+if "Russia" in country:
+    print("Russia is present.")
+else:
+    print("Russia is absent.")</code></pre>
+          <p><b>Output:: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">Russia is absent.</code></pre>
+        </div>
+        <div>
+          <h5>IV. Range of Index:</h5>
+          <p>
+            You can print a range of tuple items by specifying where do you want
+            to start, where do you want to end and if you want to skip elements
+            in between the range.
+          </p>
+          <p><b>Syntax:</b></p>
+          <p>
+            Tuple[start : end : jumpIndex]
+            <br />
+            Note: jump Index is optional. We will see this in given examples.
+          </p>
+          <p><b>Example: printing elements within a particular range:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">animals = ("cat", "dog", "bat", "mouse", "pig", "horse", "donkey", "goat", "cow")
+print(animals[3:7])     #using positive indexes
+print(animals[-7:-2])   #using negative indexes</code></pre>
+          <p><b>Output:: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">('mouse', 'pig', 'horse', 'donkey')
+('bat', 'mouse', 'pig', 'horse', 'donkey')</code></pre>
+          <p>
+            Here, we provide index of the element from where we want to start
+            and the index of the element till which we want to print the values.
+            <br />
+            Note: The element of the end index provided will not be included.
+          </p>
+          <p>
+            <b
+              >Example: printing all element from a given index till the end
+            </b>
+          </p>
+          <pre
+            class="language-python"
+          ><code class="language-python">animals = ("cat", "dog", "bat", "mouse", "pig", "horse", "donkey", "goat", "cow")
+print(animals[4:])      #using positive indexes
+print(animals[-4:])     #using negative indexes</code></pre>
+          <p><b>Output:: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">('pig', 'horse', 'donkey', 'goat', 'cow')
+('horse', 'donkey', 'goat', 'cow')</code></pre>
+          <p>
+            When no end index is provided, the interpreter prints all the values
+            till the end.
+          </p>
+          <p>
+            <b>Example: printing all elements from start to a given index </b>
+          </p>
+          <pre
+            class="language-python"
+          ><code class="language-python">animals = ("cat", "dog", "bat", "mouse", "pig", "horse", "donkey", "goat", "cow")
+print(animals[:6])      #using positive indexes
+print(animals[:-3])     #using negative indexes</code></pre>
+          <p><b>Output:: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">('cat', 'dog', 'bat', 'mouse', 'pig', 'horse')
+('cat', 'dog', 'bat', 'mouse', 'pig', 'horse')</code></pre>
+          <p>
+            When no start index is provided, the interpreter prints all the
+            values from start up to the end index provided.
+          </p>
+          <p>
+            <b>Example: print alternate values </b>
+          </p>
+          <pre
+            class="language-python"
+          ><code class="language-python">animals = ("cat", "dog", "bat", "mouse", "pig", "horse", "donkey", "goat", "cow")
+print(animals[::2])     #using positive indexes
+print(animals[-8:-1:2]) #using negative indexes</code></pre>
+          <p><b>Output:: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">('cat', 'bat', 'pig', 'donkey', 'cow')
+('dog', 'mouse', 'horse', 'goat')</code></pre>
+          <p>
+            Here, we have not provided start and index, which means all the
+            values will be considered. But as we have provided a jump index of 2
+            only alternate values will be printed.
+          </p>
+
+          <p>
+            <b>Example: printing every 3rd consecutive withing given range </b>
+          </p>
+          <pre
+            class="language-python"
+          ><code class="language-python">animals = ("cat", "dog", "bat", "mouse", "pig", "horse", "donkey", "goat", "cow")
+print(animals[1:8:3])</code></pre>
+          <p><b>Output:: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">('dog', 'pig', 'goat')</code></pre>
+          <p>
+            Here, jump index is 3. Hence it prints every 3rd element within
+            given index.
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>Manipulating Tuples</h2>
+          <p>
+            Tuples are immutable, hence if you want to add, remove or change
+            tuple items, then first you must convert the tuple to a list. Then
+            perform operation on that list and convert it back to tuple.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">countries = ("Spain", "Italy", "India", "England", "Germany")
+temp = list(countries)
+temp.append("Russia")       #add item 
+temp.pop(3)                 #remove item
+temp[2] = "Finland"         #change item
+countries = tuple(temp)
+print(countries)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">('Spain', 'Italy', 'Finland', 'Germany', 'Russia')</code></pre>
+          <p>
+            Thus, we convert the tuple to a list, manipulate items of the list
+            using list methods, then convert list back to a tuple.
+          </p>
+          <p>
+            However, we can directly concatenate two tuples instead of
+            converting them to list and back.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">countries = ("Pakistan", "Afghanistan", "Bangladesh", "ShriLanka")
+countries2 = ("Vietnam", "India", "China")
+southEastAsia = countries + countries2
+print(southEastAsia)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">('Pakistan', 'Afghanistan', 'Bangladesh', 'ShriLanka', 'Vietnam', 'India', 'China')</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>Unpack Tuples</h2>
+          <p>
+            Unpacking is the process of assigning the tuple items as values to
+            variables.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">info = ("Marcus", 20, "MIT")
+(name, age, university) = info
+print("Name:", name)
+print("Age:",age)
+print("Studies at:",university)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">Name: Marcus
+Age: 20
+Studies at: MIT</code></pre>
+          <p>
+            Here, the number of list items is equal to the number of variables.
+          </p>
+          <p>
+            <b>But what if we have more number of items then the variables? </b>
+          </p>
+          <p>
+            You can add an * to one of the variables and depending upon the
+            position of variable and number of items, python matches variables
+            to values and assigns it to the variables.
+          </p>
+          <p><b>Example 1:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">fauna = ("cat", "dog", "horse", "pig", "parrot", "salmon")
+(*animals, bird, fish) = fauna
+print("Animals:", animals)
+print("Bird:", bird)
+print("Fish:", fish)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">Animals: ['cat', 'dog', 'horse', 'pig']
+Bird: parrot
+Fish: salmon</code></pre>
+          <p><b>Example 2:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">fauna = ("parrot", "cat", "dog", "horse", "pig", "salmon")
+(bird, *animals, fish) = fauna
+print("Animals:", animals)
+print("Bird:", bird)
+print("Fish:", fish)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">Animals: ['cat', 'dog', 'horse', 'pig']
+Bird: parrot
+Fish: salmon</code></pre>
+          <p><b>Example 3:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">fauna = ("parrot", "salmon", "cat", "dog", "horse", "pig")
+  (bird, fish, *animals) = fauna
+  print("Animals:", animals)
+  print("Bird:", bird)
+print("Fish:", fish)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">Animals: ['cat', 'dog', 'horse', 'pig']
+Bird: parrot
+Fish: salmon</code></pre>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/PYTHON/PythonLists.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/PYTHON/PythonSets.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+    </main>
+
+    <footer class="flex footer bgcolor2 mt-4">
+      <div class="footerLogo flex">
+        <img src="/img/logo.jpg" alt="" />
+        <p>Vijay Bansal</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Vijay Bansal</p>
+      </div>
+      <div class="media flex">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/profile.php?id=100041095243541"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/itz_vijay_bansal/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/vijay-bansal-319048249/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="github"
+          href="https://github.com/VijayBansal2004"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <i class="fa-brands whatsapp fa-whatsapp"></i>
+        <span style="font-size: small">+91 94172-12422</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2ff3e7c924.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/prism/prism.js"></script>
+  </body>
+</html>

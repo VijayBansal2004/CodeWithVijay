@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Javascript Basics | CodeWithVijay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/prism/prism.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bodyColor textColorWhite">
+    <header>
+      <nav class="navbar bgcolor2 fixed-top">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand lightPurpleColor fw-bolder fs-2"
+            href="/index.html"
+            >&lt;/&gt;CodeWithVijay</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            style="background-color: #d8b4fe"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bgcolor2 text-white"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title lightPurpleColor fw-bolder"
+                id="offcanvasNavbarLabel"
+              >
+                &lt;/&gt;CodeWithVijay
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="background-color: #d8b4fe"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HTML
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlBasicTags.html"
+                        >Html Basic Tags</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/Inline&BlockElements.html"
+                        >Inline & Block Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlLists.html"
+                        >Html Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlTables.html"
+                        >Html Tables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlForms.html"
+                        >Html Forms</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/HeadElements.html"
+                        >Head Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlMedia.html"
+                        >Html Media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/MiscellaneousTags.html"
+                        >Miscellaneous Tags</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CSS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/cssIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSProperties.html"
+                        >CSS Properties</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSDesigning.html"
+                        >CSS Designing</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSAdvanceTopics.html"
+                        >CSS Advance Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA SCRIPT
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/jsIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptVariables.html"
+                        >Javascript Variables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptBasics.html"
+                        >Javascript Basics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptObjects.html"
+                        >Javascript Objects</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/DOM&BOM.html"
+                        >DOM & BOM</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/jsOOPs.html"
+                        >OOPs</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/html/C/cIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CDataTypesOperators&UserIO.html"
+                        >C Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFunctions.html"
+                        >C Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CPointers.html"
+                        >C Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CMemoryManagement.html"
+                        >C Memory Management</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CStructures&Unions.html"
+                        >C Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFileHandling.html"
+                        >C File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C++ PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/c++Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++DataTypesOperators&UserIO.html"
+                        >C++ Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++ConditionalStatements.html"
+                        >C++ Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++IterationStatements.html"
+                        >C++ Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++BreakContinue.html"
+                        >C++ Break/Continue</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Arrays.html"
+                        >C++ Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Pointers.html"
+                        >C++ Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Strings.html"
+                        >C++ Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Structures&Unions.html"
+                        >C++ Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Functions.html"
+                        >C++ Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++OPPs.html"
+                        >C++ OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++FileHandling.html"
+                        >C++ File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Templates&STL.html"
+                        >C++ Templates & STL</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/VariablesOperators&UserIO.html"
+                        >Variables, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/JavaMethods.html"
+                        >Java Methods</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/JavaOOPs.html"
+                        >Java OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PYTHON
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDataTypes&Operators.html"
+                        >Python Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonStrings.html"
+                        >Python Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLists.html"
+                        >Python Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonTuples.html"
+                        >Python Tuples</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonSets.html"
+                        >Python Sets</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDictionaries.html"
+                        >Python Dictionaries</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLoops.html"
+                        >Python Loops</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonFunctions.html"
+                        >Python Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonModules.html"
+                        >Python Modules</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonOOPs.html"
+                        >Python OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PHP
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/DataTypes&Operators.html"
+                        >Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Conditional&IterationStatements.html"
+                        >Conditional & Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPFunctions.html"
+                        >PHP Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPArrays.html"
+                        >PHP Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPOOPs.html"
+                        >PHP OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPSuperglobals.html"
+                        >PHP Superglobals</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPMySQL.html"
+                        >PHP MySQL</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPAdvancedTopics.html"
+                        >PHP Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    REACT JS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactTutorial.html"
+                        >React Tutorial</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactHooks.html"
+                        >React Hooks</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5 width80 minHeight90vh m-auto">
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/JS/JavascriptVariables.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/JS/JavascriptObjects.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+      <div class="main">
+        <div>
+          <h2>If else conditionals</h2>
+          <p>
+            The "if" statement in JavaScript is used to execute a block of code
+            if a certain condition is met. The "else" clause is used to execute
+            a block of code if the condition is not met. <br />
+
+            Here is the basic syntax for an "if" statement:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">if (condition) {
+        // code to be executed if condition is true
+}
+</code></pre>
+          <p>Here is the syntax for an "if" statement with an "else" clause:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">if (condition) {
+        // code to be executed if condition is true
+} else {
+        // code to be executed if condition is false
+}
+</code></pre>
+        </div>
+        <div>
+          <p>
+            The condition is a boolean expression that evaluates to either true
+            or false. If the condition is true, the code in the "if" block is
+            executed. If the condition is false, the code in the "else" block is
+            executed (if present).
+            <br />
+
+            For example:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">let x = 10;
+if (x > 5) {
+    console.log("x is greater than 5");
+} else {
+    console.log("x is not greater than 5");
+}
+    </code></pre>
+          <p>
+            In this example, the condition "x > 5" is true, so the code in the
+            "if" block is executed and the message "x is greater than 5" is
+            printed to the console
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>If else ladder</h2>
+          <p>
+            The "if-else ladder" is a control structure in JavaScript that
+            allows you to execute a different block of code depending on
+            multiple conditions. It is called a ladder because it consists of
+            multiple "if" and "else" statements arranged in a ladder-like
+            fashion. <br />
+
+            Here is the syntax for an "if-else ladder":
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">if (condition1) {
+            // code to be executed if condition1 is true
+        } else if (condition2) {
+            // code to be executed if condition1 is false and condition2 is true
+} else if (condition3) {
+    // code to be executed if condition1 and condition2 are false and condition3 is true
+} ...
+else {
+    // code to be executed if all conditions are false
+}
+</code></pre>
+        </div>
+        <div>
+          <p>
+            In this structure, each "if" statement is followed by an optional
+            "else" statement. If the first "if" condition is true, the code in
+            the corresponding block is executed and the rest of the ladder is
+            skipped. If the first "if" condition is false, the second "if"
+            condition is evaluated, and so on. If none of the conditions are
+            true, the code in the "else" block is executed. <br />
+
+            For example:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">let x = 10;
+if (x > 15) {
+    console.log("x is greater than 15");
+} else if (x > 10) {
+    console.log("x is greater than 10 but less than or equal to 15");
+} else if (x > 5) {
+    console.log("x is greater than 5 but less than or equal to 10");
+} else {
+    console.log("x is less than or equal to 5");
+}</code></pre>
+          <p>
+            In this example, the first "if" condition "x > 15" is false, so the
+            second "if" condition "x > 10" is evaluated. This condition is also
+            false, so the third "if" condition "x > 5" is evaluated. This
+            condition is true, so the code in the corresponding block is
+            executed and the message "x is greater than 5 but less than or equal
+            to 10" is printed to the console. <br />
+
+            The "if-else ladder" is a useful control structure for executing
+            different blocks of code based on multiple conditions. It can help
+            you write more concise and maintainable code in JavaScript.
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Switch case</h2>
+          <p>
+            The "switch" statement in JavaScript is another control structure
+            that allows you to execute a different block of code depending on a
+            specific value. It is often used as an alternative to the "if-else
+            ladder" when you have multiple conditions to check against a single
+            value. <br />
+
+            Here is the syntax for a "switch" statement:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">switch (expression) {
+case value1:
+    // code to be executed if expression == value1
+    break;
+case value2:
+    // code to be executed if expression == value2
+    break;
+...
+default:
+    // code to be executed if expression does not match any of the values
+}    
+</code></pre>
+        </div>
+        <div>
+          <p>
+            In this structure, the "expression" is evaluated and compared to
+            each of the "case" values. If the "expression" matches a "case"
+            value, the corresponding block of code is executed. The "break"
+            statement is used to exit the "switch" statement and prevent the
+            code in the following cases from being executed. The "default" case
+            is optional and is executed if the "expression" does not match any
+            of the "case" values. <br />
+
+            For example:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">let x = "apple";
+switch (x) {
+    case "apple":
+    console.log("x is an apple");
+    break;
+    case "banana":
+    console.log("x is a banana");
+    break;
+    case "orange":
+    console.log("x is an orange");
+    break;
+    default:
+    console.log("x is something else");
+}
+</code></pre>
+          <p>
+            In this example, the "expression" is the variable "x," which has the
+            value "apple." The "expression" is compared to each of the "case"
+            values, and when it matches the value "apple," the corresponding
+            block of code is executed and the message "x is an apple" is printed
+            to the console. <br />
+
+            The "switch" statement is a useful control structure for executing
+            different blocks of code based on a specific value. It can help you
+            write more concise and maintainable code in JavaScript.
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Ternary Operator</h2>
+          <p>
+            The ternary operator is a shorthand way to write an if-else
+            statement in JavaScript. It takes the form of condition ? value1 :
+            value2, where condition is a boolean expression, and value1 and
+            value2 are expressions of any type. If condition is true, the
+            ternary operator returns value1; if condition is false, it returns
+            value2. <br />
+
+            Here's an example of how you can use the ternary operator to assign
+            a value to a variable based on a condition:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">let x = 10;
+let y = 20;
+let max;
+
+max = (x > y) ? x : y;
+
+console.log(max); // Outputs: 20     
+</code></pre>
+          <p>
+            In this example, the ternary operator checks whether x is greater
+            than y. If it is, max is assigned the value of x; otherwise, it is
+            assigned the value of y. <br />
+
+            The ternary operator can be a useful and concise way to write simple
+            if-else statements, but it can become difficult to read and
+            understand when used for more complex statements or nested inside
+            other expressions. In these cases, it may be better to use a regular
+            if-else statement instead.
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>For Loops</h2>
+          <p>
+            For loops are a common control flow structure in programming that
+            allows you to repeat a block of code a specific number of times. In
+            JavaScript, there are three types of for loops: the standard for
+            loop, the for-in loop, and the for-of loop.
+          </p>
+        </div>
+        <div>
+          <h4>Standard for loop</h4>
+          <p>The standard for loop has the following syntax:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">for (initialization; condition; increment/decrement) {
+    // code to be executed
+}
+</code></pre>
+          <p>
+            The initialization the statement is executed before the loop starts
+            and is typically used to initialize a counter variable. The
+            condition is checked at the beginning of each iteration and if it is
+            true, the loop continues. If it is false, the loop exits. The
+            increment/decrement statement is executed at the end of each
+            iteration and is used to update the counter variable. <br />
+
+            Here's an example of a standard for loop that counts from 1 to 10:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">for (let i = 1; i <= 10; i++) {
+    console.log(i);
+}
+  </code></pre>
+          <p>This loop will print the numbers 1 through 10 to the console.</p>
+        </div>
+        <div>
+          <h4>For-in loop</h4>
+          <p>
+            The for-in loop is used to iterate over the properties of an object.
+            It has the following syntax:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">for (variable in object) {
+    // code to be executed
+}</code></pre>
+          <p>
+            The variable is assigned the name of each property in the object as
+            the loop iterates over them. <br />
+
+            Here's an example of a for-in loop that iterates over the properties
+            of an object:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">let person = {
+    name: "John",
+    age: 30,
+    job: "developer"
+};
+
+for (let key in person) {
+c   onsole.log(key + ": " + person[key]);
+}
+</code></pre>
+        </div>
+        <div>
+          <p>This loop will print the following to the console:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">name: John
+age: 30
+job: developer  
+</code></pre>
+        </div>
+        <div>
+          <h4>For-of loop</h4>
+          <p>
+            The for-of loop is used to iterate over the values of an iterable
+            object, such as an array or a string. It has the following syntax:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">for (variable of object) {
+    // code to be executed
+}    
+</code></pre>
+          <p>
+            The variable is assigned the value of each element in the object as
+            the loop iterates over them. <br />
+
+            Here's an example of a for-of loop that iterates over the elements
+            of an array:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">let numbers = [1, 2, 3, 4, 5];
+
+for (let number of numbers) {
+    console.log(number);
+}
+</code></pre>
+          <p>
+            This loop will print the numbers 1 through 5 to the console. <br />
+
+            For loops are a powerful tool in JavaScript and can be used to
+            perform a variety of tasks, such as iterating over arrays and
+            objects, repeating a block of code a specific number of times, and
+            more. With the three types of for loops available in JavaScript, you
+            can choose the one that best fits your needs and use it to write
+            more efficient and effective code.
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>While Loop</h2>
+          <p>
+            While loops are a control flow structure in programming that allow
+            you to repeat a block of code while a certain condition is true. In
+            JavaScript, the syntax for a while loop is:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">while (condition) {
+    // code to be executed
+}
+</code></pre>
+        </div>
+        <div>
+          <p>
+            The condition is checked at the beginning of each iteration and if
+            it is true, the code block is executed. If it is false, the loop
+            exits. Here's an example of a while loop that counts from 1 to 10:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">let i = 1;
+
+while (i <= 10) {
+    console.log(i);
+    i++;
+}
+</code></pre>
+        </div>
+        <div>
+          <p>
+            This loop will print the numbers 1 through 10 to the console. <br />
+
+            It's important to include a way to update the condition within the
+            loop, otherwise it will become an infinite loop and will run
+            forever. In the example above, the i++ statement increments the
+            value of i by 1 at the end of each iteration, which eventually
+            causes the condition to be false and the loop to exit. <br />
+
+            While loops can be useful when you don't know exactly how many times
+            you need to execute a block of code. For example, you might use a
+            while loop to keep prompting a user for input until they provide a
+            valid response.
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">let input = "";
+
+while (input !== "yes" && input !== "no") {
+    input = prompt("Please enter 'yes' or 'no':");
+}</code></pre>
+        </div>
+        <div>
+          <p>
+            This loop will keep prompting the user for input until they enter
+            either "yes" or "no". <br />
+
+            While loops can be a useful tool in JavaScript, but it's important
+            to use them with caution. If the condition is never met, the loop
+            will become an infinite loop and will run forever. Make sure to
+            include a way to update the condition and eventually exit the loop
+            to avoid this issue.
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>Functions</h2>
+          <p>
+            JavaScript functions are blocks of code that can be defined and
+            executed whenever needed. They are a crucial part of JavaScript
+            programming and are used to perform specific tasks or actions.
+            <br />
+
+            Functions are often referred to as "first-class citizens" in
+            JavaScript because they can be treated like any other value, such as
+            a number or a string. This means that they can be assigned to
+            variables, passed as arguments to other functions, and returned as
+            values from functions. <br />
+
+            Here's the basic syntax for defining a function in JavaScript:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">function functionName(parameters) {
+// code to be executed
+}</code></pre>
+        </div>
+        <div>
+          <p>
+            The functionName is a unique identifier for the function, and the
+            parameters are the variables that are passed to the function when it
+            is called. These parameters act as placeholders for the actual
+            values that are passed to the function when it is executed. <br />
+
+            Here's an example of a simple function that takes a single parameter
+            and returns the square of that number:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">function square(x) {
+    return x * x;
+}
+</code></pre>
+        </div>
+        <div>
+          <p>
+            To call this function, you would simply use the function name
+            followed by the arguments in parentheses:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">let result = square(5);  // returns 25
+</code></pre>
+        </div>
+        <div>
+          <p>Functions can also have multiple parameters, like this:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">function add(x, y) {
+    return x + y;
+}      
+</code></pre>
+        </div>
+        <div>
+          <p>
+            In this case, the add function takes two parameters, x and y, and
+            returns their sum. <br />
+
+            JavaScript also has a special type of function called an "arrow
+            function," which uses a shorter syntax. Here's the same square a
+            function defined using an arrow function:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">const square = (x) => {
+    return x * x;
+};     
+</code></pre>
+        </div>
+        <div>
+          <p>
+            Arrow functions are often used when you want to create a small,
+            one-line function that doesn't require a separate function keyword.
+            Functions can be defined inside other functions, which is known as
+            "nesting." This is useful for creating smaller, reusable blocks of
+            code that can be called from within the larger function.
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">function outerFunction(x) {
+    function innerFunction() {
+        // code to be executed
+    }
+    // more code
+}    
+</code></pre>
+          <p>
+            In this example, the innerFunction is defined inside the
+            outerFunction and can only be called from within that function.
+            <br />
+
+            In addition to these basic concepts, there are many other things you
+            can do with functions in JavaScript, such as passing functions as
+            arguments, creating anonymous functions, and using higher-order
+            functions. These advanced techniques can make your code more
+            efficient and flexible, and are essential tools for any JavaScript
+            developer.
+          </p>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/JS/JavascriptVariables.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/JS/JavascriptObjects.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+    </main>
+
+    <footer class="flex footer bgcolor2 mt-4">
+      <div class="footerLogo flex">
+        <img src="/img/logo.jpg" alt="" />
+        <p>Vijay Bansal</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Vijay Bansal</p>
+      </div>
+      <div class="media flex">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/profile.php?id=100041095243541"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/itz_vijay_bansal/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/vijay-bansal-319048249/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="github"
+          href="https://github.com/VijayBansal2004"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <i class="fa-brands whatsapp fa-whatsapp"></i>
+        <span style="font-size: small">+91 94172-12422</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2ff3e7c924.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/prism/prism.js"></script>
+  </body>
+</html>

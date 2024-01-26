@@ -1,0 +1,1302 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Python Sets | CodeWithVijay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/prism/prism.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bodyColor textColorWhite">
+    <header>
+      <nav class="navbar bgcolor2 fixed-top">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand lightPurpleColor fw-bolder fs-2"
+            href="/index.html"
+            >&lt;/&gt;CodeWithVijay</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            style="background-color: #d8b4fe"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bgcolor2 text-white"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title lightPurpleColor fw-bolder"
+                id="offcanvasNavbarLabel"
+              >
+                &lt;/&gt;CodeWithVijay
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="background-color: #d8b4fe"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HTML
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlBasicTags.html"
+                        >Html Basic Tags</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/Inline&BlockElements.html"
+                        >Inline & Block Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlLists.html"
+                        >Html Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlTables.html"
+                        >Html Tables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlForms.html"
+                        >Html Forms</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/HeadElements.html"
+                        >Head Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlMedia.html"
+                        >Html Media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/MiscellaneousTags.html"
+                        >Miscellaneous Tags</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CSS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/cssIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSProperties.html"
+                        >CSS Properties</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSDesigning.html"
+                        >CSS Designing</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSAdvanceTopics.html"
+                        >CSS Advance Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA SCRIPT
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/jsIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptVariables.html"
+                        >Javascript Variables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptBasics.html"
+                        >Javascript Basics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptObjects.html"
+                        >Javascript Objects</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/DOM&BOM.html"
+                        >DOM & BOM</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/jsOOPs.html"
+                        >OOPs</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/html/C/cIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CDataTypesOperators&UserIO.html"
+                        >C Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFunctions.html"
+                        >C Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CPointers.html"
+                        >C Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CMemoryManagement.html"
+                        >C Memory Management</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CStructures&Unions.html"
+                        >C Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFileHandling.html"
+                        >C File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C++ PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/c++Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++DataTypesOperators&UserIO.html"
+                        >C++ Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++ConditionalStatements.html"
+                        >C++ Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++IterationStatements.html"
+                        >C++ Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++BreakContinue.html"
+                        >C++ Break/Continue</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Arrays.html"
+                        >C++ Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Pointers.html"
+                        >C++ Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Strings.html"
+                        >C++ Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Structures&Unions.html"
+                        >C++ Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Functions.html"
+                        >C++ Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++OPPs.html"
+                        >C++ OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++FileHandling.html"
+                        >C++ File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Templates&STL.html"
+                        >C++ Templates & STL</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/VariablesOperators&UserIO.html"
+                        >Variables, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/JavaMethods.html"
+                        >Java Methods</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/JavaOOPs.html"
+                        >Java OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PYTHON
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDataTypes&Operators.html"
+                        >Python Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonStrings.html"
+                        >Python Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLists.html"
+                        >Python Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonTuples.html"
+                        >Python Tuples</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonSets.html"
+                        >Python Sets</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDictionaries.html"
+                        >Python Dictionaries</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLoops.html"
+                        >Python Loops</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonFunctions.html"
+                        >Python Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonModules.html"
+                        >Python Modules</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonOOPs.html"
+                        >Python OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PHP
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/DataTypes&Operators.html"
+                        >Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Conditional&IterationStatements.html"
+                        >Conditional & Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPFunctions.html"
+                        >PHP Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPArrays.html"
+                        >PHP Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPOOPs.html"
+                        >PHP OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPSuperglobals.html"
+                        >PHP Superglobals</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPMySQL.html"
+                        >PHP MySQL</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPAdvancedTopics.html"
+                        >PHP Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    REACT JS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactTutorial.html"
+                        >React Tutorial</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactHooks.html"
+                        >React Hooks</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5 width80 minHeight90vh m-auto">
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/PYTHON/PythonTuples.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/PYTHON/PythonDictionaries.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Python Sets</h2>
+          <p>
+            Sets are unordered collection of data items. They store multiple
+            items in a single variable. Sets items are separated by commas and
+            enclosed within curly brackets {}. Sets are unchangeable, meaning
+            you cannot change items of the set once created. Sets do not contain
+            duplicate items.
+          </p>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">info = {"Carla", 19, False, 5.9, 19}
+print(info)</code></pre>
+          <p><b>Output: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">{False, 19, 5.9, 'Carla'}</code></pre>
+          <p>
+            Here we see that the items of set occur in random order and hence
+            they cannot be accessed using index numbers. Also sets do not allow
+            duplicate values.
+          </p>
+        </div>
+        <div>
+          <h4>Accessing set items:</h4>
+          <h5>Using a For loop</h5>
+          <p>You can access items of set using a for loop.</p>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">info = {"Carla", 19, False, 5.9}
+                for item in info:
+                print(item)</code></pre>
+          <p><b>Output: </b></p>
+          <pre class="language-python"><code class="language-python">False
+Carla
+19
+5.9</code></pre>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Add/Remove Set Items</h2>
+        </div>
+        <div>
+          <h4>Add items to set:</h4>
+          <p>
+            If you want to add a single item to the set use the add() method.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities.add("Helsinki")
+print(cities)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">{'Tokyo', 'Helsinki', 'Madrid', 'Berlin', 'Delhi'}</code></pre>
+          <p>
+            If you want to add more than one item, simply create another set or
+            any other iterable object(list, tuple, dictionary), and use the
+            update() method to add it into the existing set.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities2 = {"Helsinki", "Warsaw", "Seoul"}
+cities.update(cities2)
+print(cities)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">{'Seoul', 'Berlin', 'Delhi', 'Tokyo', 'Warsaw', 'Helsinki', 'Madrid'}</code></pre>
+        </div>
+        <div>
+          <h4>Remove items from set:</h4>
+          <p>
+            We can use remove() and discard() methods to remove items form list.
+          </p>
+          <p><b>Example 1:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities.remove("Tokyo")
+print(cities)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">{'Delhi', 'Berlin', 'Madrid'}</code></pre>
+
+          <p><b>Example 2:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities.discard("Delhi")
+print(cities)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">{'Berlin', 'Tokyo', 'Madrid'}</code></pre>
+          <p>
+            The main difference between remove and discard is that, if we try to
+            delete an item which is not present in set, then remove() raises an
+            error, whereas discard() does not raise any error.
+          </p>
+          <p><b>Example 1:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities.remove("Seoul")
+print(cities)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">KeyError: 'Seoul'</code></pre>
+          <p><b>Example 2:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities.discard("Seoul")
+print(cities)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">{'Madrid', 'Delhi', 'Tokyo', 'Berlin'}</code></pre>
+        </div>
+        <div>
+          <h4>
+            There are various other methods to remove items from the set: pop(),
+            del(), clear().
+          </h4>
+        </div>
+        <div>
+          <h5>pop():</h5>
+          <p>
+            This method removes the last item of the set but the catch is that
+            we don’t know which item gets popped as sets are unordered. However,
+            you can access the popped item if you assign the pop() method to a
+            variable.
+          </p>
+          <p><b> Example: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+item = cities.pop()
+print(cities)
+print(item)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">{'Tokyo', 'Delhi', 'Berlin'}
+Madrid</code></pre>
+        </div>
+        <div>
+          <h5>del:</h5>
+          <p>
+            del is not a method, rather it is a keyword which deletes the set
+            entirely.
+          </p>
+          <p><b> Example: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+del cities
+print(cities)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">NameError: name 'cities' is not defined </code></pre>
+          <p>
+            We get an error because our entire set has been deleted and there is
+            no variable called cities which contains a set.
+          </p>
+          <p>
+            <b
+              >What if we don’t want to delete the entire set, we just want to
+              delete all items within that set?
+            </b>
+          </p>
+        </div>
+        <div>
+          <h5>clear():</h5>
+          <p>
+            This method clears all items in the set and prints an empty set.
+          </p>
+          <p><b> Example: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities.clear()
+print(cities)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">set()</code></pre>
+        </div>
+        <div>
+          <h5>Check if item exists</h5>
+          <p>You can also check if an item exists in the set or not.</p>
+          <p><b> Example 1: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">info = {"Carla", 19, False, 5.9}
+if "Carla" in info:
+    print("Carla is present.")
+else:
+    print("Carla is absent.")</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">Carla is present.</code></pre>
+          <p><b> Example 2: </b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">info = {"Carla", 19, False, 5.9}
+if "Carmen" in info:
+    print("Carmen is present.")
+else:
+    print("Carmen is absent.")</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">Carmen is absent.</code></pre>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Join Sets</h2>
+          <p>
+            Sets in python more or less work in the same way as sets in
+            mathematics. We can perform operations like union and intersection
+            on the sets just like in mathematics.
+          </p>
+        </div>
+        <div>
+          <h4>I. union() and update():</h4>
+          <p>
+            The union() and update() methods prints all items that are present
+            in the two sets. The union() method returns a new set whereas
+            update() method adds item into the existing set from another set.
+          </p>
+          <p><b>Example 1:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities2 = {"Tokyo", "Seoul", "Kabul", "Madrid"}
+cities3 = cities.union(cities2)
+print(cities3)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">{'Tokyo', 'Madrid', 'Kabul', 'Seoul', 'Berlin', 'Delhi'}</code></pre>
+          <p><b>Example 2:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities2 = {"Tokyo", "Seoul", "Kabul", "Madrid"}
+cities.update(cities2)
+print(cities)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">{'Berlin', 'Madrid', 'Tokyo', 'Delhi', 'Kabul', 'Seoul'} </code></pre>
+        </div>
+        <div>
+          <h4>II. intersection and intersection_update():</h4>
+          <p>
+            The intersection() and intersection_update() methods prints only
+            items that are similar to both the sets. The intersection() method
+            returns a new set whereas intersection_update() method updates into
+            the existing set from another set.
+          </p>
+          <p><b>Example 1:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities2 = {"Tokyo", "Seoul", "Kabul", "Madrid"}
+cities3 = cities.intersection(cities2)
+print(cities3)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">{'Madrid', 'Tokyo'}</code></pre>
+          <p><b>Example 2:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities2 = {"Tokyo", "Seoul", "Kabul", "Madrid"}
+cities.intersection_update(cities2)
+print(cities)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">{'Tokyo', 'Madrid'}</code></pre>
+        </div>
+        <div>
+          <h4>
+            III. symmetric_difference and symmetric_difference <br />_update():
+          </h4>
+          <p>
+            The symmetric_difference() and symmetric_difference_update() methods
+            prints only items that are not similar to both the sets. The
+            symmetric_difference() method returns a new set whereas
+            symmetric_difference_update() method updates into the existing set
+            from another set.
+          </p>
+          <p><b>Example 1:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities2 = {"Tokyo", "Seoul", "Kabul", "Madrid"}
+cities3 = cities.symmetric_difference(cities2)
+print(cities3)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">{'Seoul', 'Kabul', 'Berlin', 'Delhi'}</code></pre>
+          <p><b>Example 2:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities2 = {"Tokyo", "Seoul", "Kabul", "Madrid"}
+cities.symmetric_difference_update(cities2)
+print(cities)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">{'Kabul', 'Delhi', 'Berlin', 'Seoul'}</code></pre>
+        </div>
+        <div>
+          <h4>IV. difference() and difference_update():</h4>
+          <p>
+            The difference() and difference_update() methods prints only items
+            that are only present in the original set and not in both the sets.
+            The difference() method returns a new set whereas
+            difference_update() method updates into the existing set from
+            another set.
+          </p>
+          <p><b>Example 1:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities2 = {"Seoul", "Kabul", "Delhi"}
+cities3 = cities.difference(cities2)
+print(cities3)</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">{'Tokyo', 'Madrid', 'Berlin'}</code></pre>
+          <p><b>Example 2:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities2 = {"Seoul", "Kabul", "Delhi"}
+print(cities.difference(cities2))</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">{'Tokyo', 'Berlin', 'Madrid'}</code></pre>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Set Methods</h2>
+          <p>
+            Apart from the methods we discussed earlier in the chapter there are
+            some more methods that we can use to manipulate sets.
+          </p>
+          <p>
+            <b
+              >What if you want to check if items of a particular set are
+              present in another set?
+            </b>
+          </p>
+          <p>There are a few methods to check this.</p>
+        </div>
+        <div>
+          <h4>I. isdisjoint():</h4>
+          <p>
+            The isdisjoint() method checks if items of given set are present in
+            another set. This method returns False if items are present, else it
+            returns True.
+          </p>
+          <p><b>Example 1:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities2 = {"Tokyo", "Seoul", "Kabul", "Madrid"}
+print(cities.isdisjoint(cities2))</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">False</code></pre>
+          <p><b>Example 2:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities2 = {"Seoul", "Kabul"}
+print(cities.isdisjoint(cities2))</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">True</code></pre>
+        </div>
+        <div>
+          <h4>II. issuperset():</h4>
+          <p>
+            The issuperset() method checks if all the items of a particular set
+            are present in the original set. It returns True if all the items
+            are present, else it returns False.
+          </p>
+          <p><b>Example 1:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities2 = {"Seoul", "Kabul"}
+print(cities.issuperset(cities2))
+cities3 = {"Seoul", "Madrid","Kabul"}
+print(cities.issuperset(cities3))</code></pre>
+          <p><b>Output:</b></p>
+          <pre class="language-python"><code class="language-python">False
+False</code></pre>
+          <p><b>Example 2:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities2 = {"Delhi", "Madrid"}
+print(cities.issuperset(cities2))</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">True</code></pre>
+        </div>
+        <div>
+          <h4>III. issubset():</h4>
+          <p>
+            The issubset() method checks if all the items of the original set
+            are present in the particular set. It returns True if all the items
+            are present, else it returns False.
+          </p>
+          <p><b>Example 1:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities2 = {"Delhi", "Madrid"}
+print(cities2.issubset(cities))</code></pre>
+          <p><b>Output:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">True</code></pre>
+          <p><b>Example 2:</b></p>
+          <pre
+            class="language-python"
+          ><code class="language-python">cities = {"Tokyo", "Madrid", "Berlin", "Delhi"}
+cities2 = {"Seoul", "Kabul"}
+print(cities2.issubset(cities))
+cities3 = {"Seoul", "Madrid", "Kabul"}
+print(cities3.issubset(cities))</code></pre>
+          <p><b>Output:</b></p>
+          <pre class="language-python"><code class="language-python">False
+False</code></pre>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/PYTHON/PythonTuples.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/PYTHON/PythonDictionaries.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+    </main>
+
+    <footer class="flex footer bgcolor2 mt-4">
+      <div class="footerLogo flex">
+        <img src="/img/logo.jpg" alt="" />
+        <p>Vijay Bansal</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Vijay Bansal</p>
+      </div>
+      <div class="media flex">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/profile.php?id=100041095243541"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/itz_vijay_bansal/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/vijay-bansal-319048249/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="github"
+          href="https://github.com/VijayBansal2004"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <i class="fa-brands whatsapp fa-whatsapp"></i>
+        <span style="font-size: small">+91 94172-12422</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2ff3e7c924.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/prism/prism.js"></script>
+  </body>
+</html>

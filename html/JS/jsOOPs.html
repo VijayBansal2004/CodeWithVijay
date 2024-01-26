@@ -1,0 +1,1382 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Javascript OOPs | CodeWithVijay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/prism/prism.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bodyColor textColorWhite">
+    <header>
+      <nav class="navbar bgcolor2 fixed-top">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand lightPurpleColor fw-bolder fs-2"
+            href="/index.html"
+            >&lt;/&gt;CodeWithVijay</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            style="background-color: #d8b4fe"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bgcolor2 text-white"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title lightPurpleColor fw-bolder"
+                id="offcanvasNavbarLabel"
+              >
+                &lt;/&gt;CodeWithVijay
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="background-color: #d8b4fe"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HTML
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlBasicTags.html"
+                        >Html Basic Tags</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/Inline&BlockElements.html"
+                        >Inline & Block Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlLists.html"
+                        >Html Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlTables.html"
+                        >Html Tables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlForms.html"
+                        >Html Forms</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/HeadElements.html"
+                        >Head Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlMedia.html"
+                        >Html Media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/MiscellaneousTags.html"
+                        >Miscellaneous Tags</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CSS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/cssIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSProperties.html"
+                        >CSS Properties</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSDesigning.html"
+                        >CSS Designing</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSAdvanceTopics.html"
+                        >CSS Advance Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA SCRIPT
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/jsIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptVariables.html"
+                        >Javascript Variables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptBasics.html"
+                        >Javascript Basics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptObjects.html"
+                        >Javascript Objects</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/DOM&BOM.html"
+                        >DOM & BOM</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/jsOOPs.html"
+                        >OOPs</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/html/C/cIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CDataTypesOperators&UserIO.html"
+                        >C Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFunctions.html"
+                        >C Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CPointers.html"
+                        >C Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CMemoryManagement.html"
+                        >C Memory Management</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CStructures&Unions.html"
+                        >C Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFileHandling.html"
+                        >C File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C++ PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/c++Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++DataTypesOperators&UserIO.html"
+                        >C++ Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++ConditionalStatements.html"
+                        >C++ Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++IterationStatements.html"
+                        >C++ Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++BreakContinue.html"
+                        >C++ Break/Continue</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Arrays.html"
+                        >C++ Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Pointers.html"
+                        >C++ Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Strings.html"
+                        >C++ Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Structures&Unions.html"
+                        >C++ Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Functions.html"
+                        >C++ Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++OPPs.html"
+                        >C++ OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++FileHandling.html"
+                        >C++ File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Templates&STL.html"
+                        >C++ Templates & STL</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/VariablesOperators&UserIO.html"
+                        >Variables, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/JavaMethods.html"
+                        >Java Methods</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/JavaOOPs.html"
+                        >Java OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PYTHON
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDataTypes&Operators.html"
+                        >Python Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonStrings.html"
+                        >Python Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLists.html"
+                        >Python Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonTuples.html"
+                        >Python Tuples</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonSets.html"
+                        >Python Sets</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDictionaries.html"
+                        >Python Dictionaries</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLoops.html"
+                        >Python Loops</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonFunctions.html"
+                        >Python Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonModules.html"
+                        >Python Modules</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonOOPs.html"
+                        >Python OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PHP
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/DataTypes&Operators.html"
+                        >Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Conditional&IterationStatements.html"
+                        >Conditional & Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPFunctions.html"
+                        >PHP Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPArrays.html"
+                        >PHP Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPOOPs.html"
+                        >PHP OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPSuperglobals.html"
+                        >PHP Superglobals</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPMySQL.html"
+                        >PHP MySQL</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPAdvancedTopics.html"
+                        >PHP Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    REACT JS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactTutorial.html"
+                        >React Tutorial</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactHooks.html"
+                        >React Hooks</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5 width80 minHeight90vh m-auto">
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/JS/DOM&BOM.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary disabled" type="button">
+          <a href="/html/JS/jsOOPs.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Class</h2>
+          <p>
+            Object-oriented programming (OOP) is a programming paradigm that
+            uses objects and their interactions to design applications and
+            computer programs. One of the fundamental concepts of OOP is the
+            class. In JavaScript, classes are used to define the blueprint for
+            objects, allowing developers to create objects that share the same
+            properties and methods.
+          </p>
+
+          <p>
+            A class in JavaScript is defined using the class keyword, followed
+            by the class name. The class body is defined within curly braces {}
+            and contains the properties and methods of the class.
+          </p>
+          <p>
+            For example, consider the following class Person that defines a
+            person's name and age:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+}</code></pre>
+        </div>
+        <div>
+          <p>
+            The constructor method is a special method that is called when a new
+            object is created from the class. It is used to initialize the
+            properties of the object. In this example, the constructor takes in
+            two parameters name and age and assigns them to the object's
+            properties.
+          </p>
+          <p>
+            You can create a new object using the new keyword and passing in any
+            required arguments to the constructor. For example:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">let person1 = new Person("John", 30);
+let person2 = new Person("Jane", 25);</code></pre>
+        </div>
+        <div>
+          <p>
+            let person2 = new Person("Jane", 25); You can also add methods to a
+            class by defining them within the class body. For example, you could
+            add a method called greet() that returns a greeting message:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+
+    greet() {
+        return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+    }
+}</code></pre>
+        </div>
+        <div>
+          <p>
+            JavaScript classes also support inheritance and polymorphism which
+            are fundamental concepts of OOP, but beyond the scope of this blog.
+          </p>
+          <p>
+            In conclusion, classes in JavaScript are used to define the
+            blueprint for objects and provide a way to create objects that share
+            the same properties and methods. The class keyword is used to define
+            a class, and the constructor method is used to initialize the
+            properties of the object. Classes also provide a way to add methods
+            to the object, making it easy to create reusable code. Understanding
+            how to use classes in JavaScript is essential for creating robust
+            and maintainable code.
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>Objects</h2>
+          <p>
+            Object-oriented programming (OOP) is a programming paradigm that
+            uses objects and their interactions to design applications and
+            computer programs. In JavaScript, objects are a fundamental concept,
+            and they are used to represent real-world entities, such as a
+            person, a car, or a bank account.
+          </p>
+          <p>
+            JavaScript objects are created using the {} notation, also known as
+            object literal notation. For example, the following code creates an
+            object that represents a person:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">let person = {
+    name: "John",
+    age: 30,
+    greet: function() {
+        return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+    }
+};</code></pre>
+        </div>
+        <div>
+          <p>
+            You can access the properties of an object using the dot notation
+            (.) or the bracket notation ([]). For example, you can access the
+            name and age properties of the person object using:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">console.log(person.name); // "John"
+console.log(person["age"]); // 30</code></pre>
+        </div>
+        <div>
+          <p>
+            You can also add, update and delete properties to an object by using
+            the dot notation or the bracket notation.
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">person.address = "New York";
+person["phone"] = "123-456-7890";
+delete person.age;</code></pre>
+        </div>
+        <div>
+          <p>
+            JavaScript objects also have built-in methods such as
+            hasOwnProperty(), valueOf(), toString() etc. <br />
+
+            Objects in JavaScript can also be created using a constructor
+            function, which is a special kind of function that is used to create
+            and initialize new objects. For example, the following code defines
+            a constructor function Person that can be used to create new Person
+            objects:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">function Person(name, age) {
+    this.name = name;
+    this.age = age;
+    this.greet = function() {
+        return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+    }
+}
+
+let person1 = new Person("John", 30);
+let person2 = new Person("Jane", 25);</code></pre>
+        </div>
+        <div>
+          <p>
+            In addition, JavaScript also provides a Object() constructor
+            function that can be used to create an empty object with no
+            properties.
+          </p>
+          <p>
+            In conclusion, objects in JavaScript are a fundamental concept that
+            are used to represent real-world entities. They can be created using
+            object literal notation or constructor functions, and they have
+            properties and methods that can be accessed and manipulated.
+            Understanding how to work with objects in JavaScript is essential
+            for creating robust and maintainable code, and also it's the
+            foundation of OOP in JavaScript.
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>Constructor</h2>
+          <p>
+            The constructor is a special method that is used in object-oriented
+            programming (OOP) to create and initialize new objects. In
+            JavaScript, constructors are used to create objects that share the
+            same properties and methods, and they are defined using the
+            constructor keyword.
+          </p>
+          <p>
+            A constructor function is defined using the function keyword,
+            followed by the function name, which is typically the name of the
+            class. The constructor function takes in any required parameters and
+            assigns them to the object's properties.
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}</code></pre>
+        </div>
+        <div>
+          <p>
+            To create a new object using the constructor function, you use the
+            new keyword followed by the function name and any required
+            parameters:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">let person1 = new Person("John", 30);
+let person2 = new Person("Jane", 25);</code></pre>
+        </div>
+        <div>
+          <p>
+            The this keyword inside the constructor function refers to the
+            current object being created. The this keyword is used to assign the
+            properties passed in as arguments to the new object being created.
+          </p>
+          <p>
+            In addition to initializing properties, constructors can also define
+            methods for objects created from the constructor. For example, you
+            can add a method called greet() that returns a greeting message:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">function Person(name, age) {
+this.name = name;
+this.age = age;
+this.greet = function() {
+    return `Hello, my name is ${this.name} and I am ${this.age} years old.`;</code></pre>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Static Method</h2>
+          <p>
+            In object-oriented programming, a static method is a method that is
+            associated with a class, rather than an instance of the class. In
+            JavaScript, static methods are defined using the static keyword and
+            they can be accessed without creating an instance of the class.
+          </p>
+          <p>
+            For example, consider the following class MathHelper that defines a
+            static method called add() that takes in two numbers and returns
+            their sum:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">class MathHelper {
+    static add(a, b) {
+        return a + b;
+    }
+}</code></pre>
+        </div>
+        <div>
+          <p>
+            You can access the static method directly from the class, without
+            creating an instance of the class.
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">console.log(MathHelper.add(1, 2)); // 3</code></pre>
+        </div>
+        <div>
+          <p>
+            Static methods are useful when you want to add utility methods to a
+            class that don't depend on the state of an instance. For example,
+            you might use a static method to generate a unique ID for an object,
+            or to perform a calculation that doesn't depend on the state of an
+            instance.
+          </p>
+          <p>
+            It's important to note that static methods do not have access to the
+            this keyword, as they are not associated with an instance of the
+            class. Instead, they can only access the arguments passed in to the
+            method and any variables or functions defined within the class.
+          </p>
+          <p>
+            In conclusion, static methods in JavaScript are methods that are
+            associated with a class, rather than an instance of the class. They
+            are defined using the static keyword and can be accessed directly
+            from the class, without creating an instance of the class. Static
+            methods are useful when you want to add utility methods to a class
+            that don't depend on the state of an instance. However, it's
+            important to keep in mind that static methods do not have access to
+            the this keyword.
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Encapsulation</h2>
+          <p>
+            Encapsulation is a fundamental concept in object-oriented
+            programming (OOP) that refers to the practice of hiding the internal
+            details of an object from other objects and code. In JavaScript,
+            encapsulation is achieved by using closures and access modifiers,
+            such as the private and public keywords.
+          </p>
+          <p>
+            JavaScript uses closures to implement encapsulation, which allows
+            developers to create private variables and methods that cannot be
+            accessed from outside the object. For example, consider the
+            following code:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">function Person(name, age) {
+    let privateAge = age;
+    this.name = name;
+
+    this.getAge = function() {
+        return privateAge;
+    }
+}
+
+let person = new Person("John", 30);
+console.log(person.name); // "John"
+console.log(person.privateAge); // undefined
+console.log(person.getAge()); // 30</code></pre>
+        </div>
+        <div>
+          <p>
+            In this example, the privateAge variable is defined inside the
+            constructor function and can only be accessed using the getAge
+            method. This means that the internal state of the object is hidden
+            from other objects and code, providing a level of protection and
+            security.
+          </p>
+          <p>
+            Access modifiers such as private, public and protected are not
+            natively supported in javascript, but it can be implemented using
+            closures as well. In addition, other libraries and frameworks such
+            as TypeScript provide a way to use access modifiers.
+          </p>
+          <p>
+            In conclusion, encapsulation is a fundamental concept in OOP that
+            allows developers to hide the internal details of an object from
+            other objects and code. In JavaScript, encapsulation is achieved by
+            using closures and access modifiers, such as the private and public
+            keywords. This allows developers to protect the internal state of an
+            object and create more robust and maintainable code. Encapsulation
+            is not natively supported in javascript but it can be implemented
+            using closures and other libraries like TypeScript.
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Inheritance</h2>
+          <p>
+            Inheritance is a fundamental concept in object-oriented programming
+            (OOP) that allows developers to create a new class that inherits
+            properties and methods from an existing class. In JavaScript,
+            inheritance is achieved by using the prototype property and the
+            Object.create() method.
+          </p>
+          <p>
+            JavaScript uses a prototype-based inheritance model, which means
+            that objects can inherit properties and methods from other objects.
+            Each object has a prototype property that refers to another object,
+            and properties and methods are inherited by traversing the prototype
+            chain.
+          </p>
+          <p>For example, consider the following code:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+Person.prototype.greet = function() {
+    return `Hello, my name is ${this.name} and I am ${this.age} years old.`;
+}
+
+function Student(name, age, major) {
+    Person.call(this, name, age);
+    this.major = major;
+}
+
+Student.prototype = Object.create(Person.prototype);
+Student.prototype.constructor = Student;
+
+let student = new Student("John", 25, "Computer Science");
+console.log(student.greet()); // "Hello, my name is John and I am 25 years old."
+console.log(student.major); // "Computer Science"</code></pre>
+        </div>
+        <div>
+          <p>
+            In this example, the Student class inherits properties and methods
+            from the Person class. The Object.create() method is used to create
+            a new object that inherits from the Person.prototype object, and the
+            constructor property is reset to the Student class.
+          </p>
+          <p>
+            In JavaScript, the inheritance model is a bit different from other
+            languages like Java or C#, where classes inherit from other classes
+            and the subclass has access to the methods and properties of the
+            superclass. In javascript, it's based on the prototype chain, where
+            each object has a prototype property that refers to another object
+            and it inherits properties and methods by traversing the prototype
+            chain.
+          </p>
+          <p>
+            In conclusion, inheritance is a fundamental concept in OOP that
+            allows developers to create a new class that inherits properties and
+            methods from an existing class. In JavaScript, inheritance is
+            achieved by using the prototype property and the Object.create()
+            method. This allows developers to create reusable code and create a
+            more organized and maintainable codebase. Understanding the
+            prototype-based inheritance model in javascript is essential to be
+            able to use inheritance effectively in javascript.
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Polymorphism</h2>
+          <p>
+            Polymorphism is a fundamental concept in object-oriented programming
+            (OOP) that refers to the ability of different objects to respond to
+            the same method call in different ways. In JavaScript, polymorphism
+            is achieved by using function overloading and function overriding.
+          </p>
+          <p>
+            Function overloading refers to the ability of a function to have
+            multiple implementations based on the number and/or types of
+            arguments passed to it. JavaScript does not support function
+            overloading natively, however, you can achieve similar functionality
+            by using the arguments object and checking the number and/or types
+            of arguments passed to the function.
+          </p>
+          <p>
+            Function overriding refers to the ability of a subclass to provide a
+            different implementation of a method that is already provided by its
+            superclass. In JavaScript, this can be achieved by reassigning the
+            prototype of the subclass.
+          </p>
+          <p>For example, consider the following code:</p>
+
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">class Shape {
+    constructor(name) {
+        this.name = name;
+    }
+    draw() {
+        console.log(`Drawing a ${this.name}`);
+    }
+}
+
+class Circle extends Shape {
+    draw() {
+        console.log(`Drawing a Circle`);
+    }
+}
+
+class Square extends Shape {
+    draw() {
+        console.log(`Drawing a Square`);
+    }
+}
+
+let shape = new Shape("Shape");
+let circle = new Circle();
+let square = new Square();
+
+shape.draw(); //Drawing a Shape
+circle.draw(); //Drawing a Circle
+square.draw(); //Drawing a Square</code></pre>
+        </div>
+        <div>
+          <p>
+            In this example, the draw() method is overridden in the subclasses
+            Circle and Square, providing a different implementation of the
+            method that is already provided by the superclass Shape.
+          </p>
+          <p>
+            In conclusion, polymorphism is a fundamental concept in OOP that
+            refers to the ability of different objects to respond to the same
+            method call in different ways.
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>Abstraction</h2>
+          <p>
+            Abstraction is a fundamental concept in object-oriented programming
+            (OOP) that refers to the practice of hiding the implementation
+            details of an object and exposing only the essential features to the
+            user. In JavaScript, abstraction is achieved by using abstract
+            classes and interfaces.
+          </p>
+          <p>
+            An abstract class is a class that cannot be instantiated and is
+            meant to be used as a base class for other classes. Abstract classes
+            typically contain one or more abstract methods, which are methods
+            that have a signature but no implementation. These methods must be
+            implemented by the derived classes.
+          </p>
+          <p>
+            JavaScript does not support abstract classes natively, but you can
+            achieve similar functionality by using a combination of function
+            constructors and prototypes.
+          </p>
+          <p>For example, consider the following code:</p>
+
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">function Shape() {
+    if (this.constructor === Shape) {
+        throw new Error("Cannot instantiate abstract class Shape");
+    }
+    this.draw = function() {
+        throw new Error("Cannot call abstract method draw from Shape");
+    }
+}
+
+function Circle() {
+    Shape.call(this);
+    this.draw = function() {
+        console.log("Drawing a Circle");
+    }
+}
+Circle.prototype = Object.create(Shape.prototype);
+Circle.prototype.constructor = Circle;
+
+let circle = new Circle();
+circle.draw(); // "Drawing a Circle"
+let shape = new Shape(); // Error: Cannot instantiate abstract class Shape</code></pre>
+        </div>
+        <div>
+          <p>
+            In this example, the Shape class is an abstract class that cannot be
+            instantiated and contains an abstract method draw() which throws an
+            error when called. The Circle class inherits from the Shape class
+            and implements the draw() method providing a specific
+            implementation.
+          </p>
+          <p>
+            Interfaces are another way to achieve abstraction in JavaScript,
+            although it's not a native feature of javascript. Some libraries
+            like TypeScript provide interfaces. An interface defines a set of
+            methods that a class must implement but does not provide an
+            implementation for those methods. This allows developers to ensure
+            that a class has the required methods without specifying how those
+            methods should be implemented.
+          </p>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/JS/DOM&BOM.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary disabled" type="button">
+          <a href="/html/JS/jsOOPs.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+    </main>
+
+    <footer class="flex footer bgcolor2 mt-4">
+      <div class="footerLogo flex">
+        <img src="/img/logo.jpg" alt="" />
+        <p>Vijay Bansal</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Vijay Bansal</p>
+      </div>
+      <div class="media flex">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/profile.php?id=100041095243541"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/itz_vijay_bansal/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/vijay-bansal-319048249/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="github"
+          href="https://github.com/VijayBansal2004"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <i class="fa-brands whatsapp fa-whatsapp"></i>
+        <span style="font-size: small">+91 94172-12422</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2ff3e7c924.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/prism/prism.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1465 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>CSS Advance Topics | CodeWithVijay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/prism/prism.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bodyColor textColorWhite">
+    <header>
+      <nav class="navbar bgcolor2 fixed-top">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand lightPurpleColor fw-bolder fs-2"
+            href="/index.html"
+            >&lt;/&gt;CodeWithVijay</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            style="background-color: #d8b4fe"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bgcolor2 text-white"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title lightPurpleColor fw-bolder"
+                id="offcanvasNavbarLabel"
+              >
+                &lt;/&gt;CodeWithVijay
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="background-color: #d8b4fe"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HTML
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlBasicTags.html"
+                        >Html Basic Tags</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/Inline&BlockElements.html"
+                        >Inline & Block Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlLists.html"
+                        >Html Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlTables.html"
+                        >Html Tables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlForms.html"
+                        >Html Forms</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/HeadElements.html"
+                        >Head Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlMedia.html"
+                        >Html Media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/MiscellaneousTags.html"
+                        >Miscellaneous Tags</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CSS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/cssIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSProperties.html"
+                        >CSS Properties</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSDesigning.html"
+                        >CSS Designing</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSAdvanceTopics.html"
+                        >CSS Advance Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA SCRIPT
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/jsIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptVariables.html"
+                        >Javascript Variables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptBasics.html"
+                        >Javascript Basics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptObjects.html"
+                        >Javascript Objects</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/DOM&BOM.html"
+                        >DOM & BOM</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/jsOOPs.html"
+                        >OOPs</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/html/C/cIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CDataTypesOperators&UserIO.html"
+                        >C Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFunctions.html"
+                        >C Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CPointers.html"
+                        >C Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CMemoryManagement.html"
+                        >C Memory Management</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CStructures&Unions.html"
+                        >C Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFileHandling.html"
+                        >C File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C++ PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/c++Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++DataTypesOperators&UserIO.html"
+                        >C++ Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++ConditionalStatements.html"
+                        >C++ Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++IterationStatements.html"
+                        >C++ Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++BreakContinue.html"
+                        >C++ Break/Continue</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Arrays.html"
+                        >C++ Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Pointers.html"
+                        >C++ Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Strings.html"
+                        >C++ Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Structures&Unions.html"
+                        >C++ Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Functions.html"
+                        >C++ Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++OPPs.html"
+                        >C++ OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++FileHandling.html"
+                        >C++ File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Templates&STL.html"
+                        >C++ Templates & STL</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/VariablesOperators&UserIO.html"
+                        >Variables, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/JavaMethods.html"
+                        >Java Methods</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/JavaOOPs.html"
+                        >Java OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PYTHON
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDataTypes&Operators.html"
+                        >Python Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonStrings.html"
+                        >Python Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLists.html"
+                        >Python Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonTuples.html"
+                        >Python Tuples</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonSets.html"
+                        >Python Sets</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDictionaries.html"
+                        >Python Dictionaries</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLoops.html"
+                        >Python Loops</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonFunctions.html"
+                        >Python Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonModules.html"
+                        >Python Modules</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonOOPs.html"
+                        >Python OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PHP
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/DataTypes&Operators.html"
+                        >Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Conditional&IterationStatements.html"
+                        >Conditional & Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPFunctions.html"
+                        >PHP Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPArrays.html"
+                        >PHP Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPOOPs.html"
+                        >PHP OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPSuperglobals.html"
+                        >PHP Superglobals</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPMySQL.html"
+                        >PHP MySQL</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPAdvancedTopics.html"
+                        >PHP Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    REACT JS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactTutorial.html"
+                        >React Tutorial</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactHooks.html"
+                        >React Hooks</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5 width80 minHeight90vh m-auto">
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/css/CSSDesigning.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary disabled" type="button">
+          <a href="/">Next &gt;&gt;</a>
+        </button>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS 2D Transform</h2>
+          <p>
+            This property allows the content to be restructured in ways like
+            translate, rotate, scale or skew, etc.
+          </p>
+          <p>
+            As it is 2D, therefore the content is transformed into x and y
+            dimensions.
+          </p>
+        </div>
+        <div>
+          <h4>Translate</h4>
+          <p>
+            This property transforms the element’s position along x or y or both
+            x and y directions.
+          </p>
+          <pre
+            class="language-css"
+          ><code class="language-css">Syntax: transform: translate(x,y);</code></pre>
+          <p><b>Example:</b></p>
+          <img src="/img/assits-117.webp" alt="img" />
+
+          <p><b>Output:</b></p>
+          <img src="/img/assits-118.webp" alt="img" />
+        </div>
+        <div>
+          <h4>Rotate</h4>
+          <p>
+            This property rotates the content of the division either
+            anticlockwise or clockwise acc to the degree of rotation. The values
+            are taken in degree and on adding a negative sign the rotation
+            becomes anticlockwise.
+            <br />
+            Syntax: transform: rotate(value);
+          </p>
+          <pre
+            class="language-css"
+          ><code class="language-css">transform: rotate(-10deg);</code></pre>
+          <p><b>Example:</b></p>
+          <img src="/img/assits-119.webp" alt="img" />
+        </div>
+        <div>
+          <h4>Scale</h4>
+          <p>
+            This property rescales the width and height of the division in the
+            ratio to the original dimensions.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-css"
+          ><code class="language-css">transform: scale(1.4, 1.2);</code></pre>
+          <p>
+            This code will increase the width and height by 1.4 and 1.2 times
+            the original respectively.
+          </p>
+          <p><b>Output:</b></p>
+          <img src="/img/assits-120.webp" alt="img" />
+          <p>
+            Note: This property also changes the aspect ratio of the div, so has
+            to be used accordingly.
+          </p>
+        </div>
+        <div>
+          <h4>Skew</h4>
+          <p>
+            This property helps in adding a slant or skew to division. (Skew: A
+            pair of lines neither intersecting nor parallel)
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-css"
+          ><code class="language-css">transform: skew(10deg, 5deg);</code></pre>
+
+          <p><b>Output:</b></p>
+          <img src="/img/assits-121.webp" alt="img" />
+          <p>
+            You can also choose to give the values for skew in a particular axis
+            by adding a postfix with skew: skewX.
+
+            <br />
+
+            Note: The properties for 3D Transform are also identical; a new
+            dimension z is included into it.
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>CSS Transitions</h2>
+          <p>
+            Transitions control the ease of transformation from one style to
+            another when we hover over that element. Basically, you can control
+            the time take for any transformation to occur.
+          </p>
+          <p><b>Example:</b></p>
+          <img src="/img/assits-122.webp" alt="img" />
+          <p><b>Output:</b></p>
+          <img src="/img/assits-123.gif" alt="img" />
+          <p>
+            <b
+              >In this example, I have added the transition to all the
+              properties in hover. But you can choose to apply the effect on a
+              particular property too, like this:
+            </b>
+          </p>
+          <pre
+            class="language-css"
+          ><code class="language-css">transition: width 3s;</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>CSS Border Images</h2>
+          <p>
+            There are various ways to add a border to the text, or the element
+            in CSS. (Ref: CSS borders)
+            <br />
+            But one can also use custom images as the border in the text. This
+            will help you to use specially designed elements in the border of
+            elements.
+          </p>
+          <p>
+            <b
+              >For eg: Let’s try adding this image as a background around the
+              text.</b
+            >
+          </p>
+          <img src="/img/assits-124.webp" alt="img" />
+          <p>The code would look something like this:</p>
+          <img src="/img/assits-125.webp" alt="img" />
+          <p><b>Output:</b></p>
+          <img src="/img/assits-126.webp" alt="img" />
+          <p>
+            You can change the border width by tweaking the percentage values.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-css"
+          ><code class="language-css">border-image: url(border.webp) 50%;</code></pre>
+          <img src="/img/assits-127.webp" alt="img" />
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>CSS Gradients</h2>
+          <p>
+            CSS provides the styling of background colour with gradients. You
+            can blend as many colours to create gradients.
+          </p>
+        </div>
+        <div>
+          <h4>Linear Gradient</h4>
+          <p>
+            The gradient goes from top to bottom, and from left to right. To
+            implement this gradient you need at least two colour stops. (could
+            be more too)
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-css"
+          ><code class="language-css">background-image: linear-gradient(100deg, blue, orange, red);</code></pre>
+          <p><b>Output:</b></p>
+          <img src="/img/assits-128.webp" alt="img" />
+          <p>
+            The degree controls the angle of the gradient, and by using
+            comma-separated values you can add multiple colours for the
+            background.
+            <br />
+            Note: You can also use repeating-linear-gradient to keep repeating
+            the background for the whole screen.
+          </p>
+        </div>
+        <div>
+          <h4>Radial Gradient</h4>
+          <p>
+            The gradient here is added from the centre focal point. The colour
+            added first marks the centre of the gradient and keeps expanding
+            circularly.
+          </p>
+          <p><b>Example:</b></p>
+          <pre
+            class="language-css"
+          ><code class="language-css">background-image: radial-gradient(blue, orange, red);</code></pre>
+          <p><b>Output:</b></p>
+          <img src="/img/assits-129.webp" alt="img" />
+          <p>
+            This is the default output but you can regulate the amount of each
+            colour by adding a percentage with the colours, like
+            radial-gradient(blue 20%, orange, red);
+          </p>
+          <p>
+            The default shape of the gradient is an ellipse, but you can set it
+            to circle too. Just add a circle ahead of the colours, separated by
+            a comma.
+          </p>
+          <p><b>Output:</b></p>
+          <img src="/img/assits-130.webp" alt="img" />
+          <p>
+            To use different sizes of the gradient we use the following
+            properties:
+          </p>
+          <img src="/img/assits-131.webp" alt="img" />
+          <p><b>Output:</b></p>
+          <img src="/img/assits-132.webp" alt="img" />
+        </div>
+        <div>
+          <h4>Conic Gradient</h4>
+          <p>
+            The colour gradient rotates around a specific point in the form of a
+            cone. By default, the degree of the cone is taken as zero and starts
+            from the centre.
+          </p>
+          <p><b>Example: </b></p>
+          <pre
+            class="language-css"
+          ><code class="language-css">background-image: conic-gradient(blue, orange, red);</code></pre>
+          <p><b>Output: </b></p>
+          <img src="/img/assits-133.webp" alt="img" />
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Inherit</h2>
+          <p>
+            Inherit property allows the content values to be taken directly from
+            the parent element. This can be applied to all of the CSS properties
+            individually or using “all” at once.
+          </p>
+          <p><b>Example:</b></p>
+          <img src="/img/assits-134.webp" alt="img" />
+          <p><b>Output:</b></p>
+          <img src="/img/assits-135.webp" alt="img" />
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Shadows</h2>
+          <p>
+            When it comes to web design, CSS (Cascading Style Sheets) plays an
+            indispensable role in enhancing the visual aesthetics of a website.
+            Among its vast array of properties, the ones that help bring depth
+            and focus to an element are the shadow and outline properties. Let’s
+            delve into the magic of CSS shadows and outlines.
+          </p>
+        </div>
+        <div>
+          <h4>Box Shadows</h4>
+          <p>
+            box-shadow is a popular CSS property that enables designers to add
+            shadow effects around an element's frame. It can be used to give any
+            element, be it a div, image, or button, a 3D feel or to emphasize on
+            hover.
+          </p>
+          <pre
+            class="language-css"
+          ><code class="language-css">box-shadow: h-offset v-offset blur spread color inset;</code></pre>
+          <ul>
+            <li>
+              h-offset and v-offset: Determines the shadow's horizontal and
+              vertical position.
+            </li>
+            <li>blur: The larger the value, the blurrier the shadow.</li>
+            <li>spread: Expands or shrinks the shadow size.</li>
+            <li>color: Defines the shadow color.</li>
+            <li>inset: Makes the shadow inner.</li>
+          </ul>
+          <p><b>Here is an example: </b></p>
+          <pre
+            class="language-css"
+          ><code class="language-css">.div-element { box-shadow: 5px 5px 15px 5px #888888; }</code></pre>
+        </div>
+        <div>
+          <h4>Text Shadows</h4>
+          <p>
+            text-shadow is utilized to give shadows specifically to the text. It
+            can elevate the readability of the text or give it an elegant
+            appearance.
+          </p>
+          <p><b>The Syntax for Text-Shadows is as follows: </b></p>
+          <pre
+            class="language-css"
+          ><code class="language-css">text-shadow: h-offset v-offset blur color;</code></pre>
+          <p><b>Here is an example: </b></p>
+          <pre
+            class="language-css"
+          ><code class="language-css">.text-element { text-shadow: 2px 2px 4px #888888; }</code></pre>
+        </div>
+        <div>
+          <h4>Outlines</h4>
+          <p>
+            An outline is a line that is drawn around elements, outside the
+            borders, to make the element "stand out". It's commonly used for
+            accessibility purposes, like highlighting focused elements.
+          </p>
+          <p><b>The Syntax for Outlines is as follows: </b></p>
+          <pre
+            class="language-css"
+          ><code class="language-css">outline: width style color;</code></pre>
+          <ul>
+            <li>width: Sets the outline width.</li>
+            <li>
+              style: Determines the style of the outline such as solid, dotted,
+              or dashed.
+            </li>
+            <li>color: Sets the outline color.</li>
+          </ul>
+
+          <p><b>Here is an example:</b></p>
+          <pre
+            class="language-css"
+          ><code class="language-css">.button-element:focus { outline: 2px solid blue; }</code></pre>
+        </div>
+        <div>
+          <h4>Differences between Outlines and Borders:</h4>
+          <p>
+            While both can visually appear similar, outlines differ from borders
+            in a few ways:
+          </p>
+          <ol>
+            <li>
+              Position: Outlines don't take up space; they're drawn around the
+              element, outside of any border.
+            </li>
+            <li>
+              Offset: Using the outline-offset property, you can set the space
+              between an outline and the edge or border of an element.
+            </li>
+            <li>
+              Width: Borders can have varying widths on different sides,
+              outlines have a uniform width.
+            </li>
+            <li>
+              Rounded Corners: Borders can have rounded corners using
+              border-radius, while outlines generally cannot.
+            </li>
+          </ol>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS ToolTip Text</h2>
+          <p>
+            It is a special hover method to show extra text about the element
+            when moved over it. When the mouse is hovered over that element, a
+            tooltip dialogue box is displayed conveying the required
+            information.
+          </p>
+          <p><b>To implement tooltip let’s create some HTML text first.</b></p>
+          <img src="/img/assits-136.webp" alt="img" />
+          <p>
+            Here we have created to distinct classes to implement the CSS. Now
+            the CSS rules would be written as follows.
+          </p>
+          <img src="/img/assits-137.webp" alt="img" />
+          <p>
+            Until the mouse hovers, the display is kept “hidden” and the rules
+            of the tooltip text are written. The moment we hover the visibility
+            of the dialogue box is set to be true.
+          </p>
+          <p><b>Output:</b></p>
+          <img src="/img/assits-138.webp" alt="img" />
+          <p>
+            This way we can add a dialogue box on the elements to add
+            accessibility to our website.
+            <br />
+            You can also experiment with the tooltip animation by including: CSS
+            Transitions properties here.
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Masking</h2>
+          <p>
+            Masking is used to blend one layer over other either partially or
+            fully. There can be various methods of doing so like using an image
+            as a layer, using a linear gradient, radial gradient, conic
+            gradient, etc.
+          </p>
+          <p><b>Example:</b></p>
+          <img src="/img/assits-139.webp" alt="img" />
+          <p><b> Output: </b></p>
+
+          <img src="/img/assits-140.webp" alt="img" />
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Pagination</h2>
+          <p>
+            This isn’t an inbuilt CSS property but by using various inbuilt
+            properties you can add a foot-pager on the website.
+          </p>
+          <p><b>Example: </b></p>
+          <img src="/img/assits-141.webp" alt="img" />
+          <p>
+            We’ve created hyperlinks for each page here and now let’s add the
+            styling for our pages.
+          </p>
+          <img src="/img/assits-142.webp" alt="img" />
+          <p>
+            Note: not(.active) tells the website to not use the rule on the
+            active class.
+          </p>
+          <p><b>Output:</b></p>
+          <img src="/img/assits-143.webp" alt="img" />
+          <p>
+            The purple box indicates the active page, and the black indicates
+            the page on which the cursor has hovered.
+          </p>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>CSS Media Queries Advanced</h2>
+          <p>
+            We’ve discussed Media Queries briefly in this tutorial: CSS Media
+            queries. Let’s now try to understand them in detail.
+
+            <br />
+
+            Media queries are used when we want to customize our website's
+            presentation according to the user's screen size. With the help of
+            media queries, user can display different markups based upon the
+            device's general type(mobile, desktop, tablet).
+
+            <br />
+
+            It is a logical operation. Whenever a media query becomes true, then
+            the related CSS is applied to the target element.
+
+            <br />
+
+            Syntax: @media media-type and (media-feature)
+
+            <br />
+            @media signifies the start of a media query, the type property
+            defines the display screen on which the rules are to be applied like
+            phone, tablet, pc, etc.
+
+            <br />
+
+            Media-feature tells about the dimensions of the screen.
+          </p>
+          <p><b>Example:</b></p>
+          <img src="/img/assits-144.webp" alt="img" />
+          <p>
+            We’ve create here 4 boxes wrapped up in the span. Now let’s write
+            rules for the same.
+          </p>
+          <img src="/img/assits-145.webp" alt="img" />
+          <p>
+            We’ve created a flexbox with direction as a row, but as soon as the
+            width reaches 600px the direction of the flex changes to the column,
+            and the text gets aligned at the centre.
+          </p>
+          <p><b>Output:</b></p>
+          <img src="/img/assits-146.gif" alt="img" />
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>CSS Animations</h2>
+          <p>
+            CSS Animations help to animate elements from one frame to another.
+            Controlling various CSS properties helps in changing the animation
+            style and time without having the need to use JavaScript for the
+            same.
+
+            <br />
+
+            The most basic way to do so is by using “from” and “to”.
+          </p>
+          <p><b>Example:</b></p>
+          <pre class="language-css"><code class="language-css">@keyframes demo {
+    from {
+        background-color: red;
+    }
+    to {
+        background-color: blue;
+    }
+}</code></pre>
+          <p>
+            The animation here would start with the background colour as red and
+            will turn blue gradually. To use this animation we simply add it to
+            the div stylesheet rule.
+
+            <br />
+
+            This is the most basic way to do CSS animations, but now let’s look
+            into the properties for advanced animation styling.
+          </p>
+        </div>
+        <div>
+          <h4>1. Animation Name</h4>
+          <p>
+            To identify the animation we assign it with the name. In the above
+            example the name was demo. So, we will add the attribute animation
+            name in the div element.
+          </p>
+          <pre
+            class="language-css"
+          ><code class="language-css">Syntax: div{animation-name: demo;}</code></pre>
+        </div>
+        <div>
+          <h4>2. Key Frames</h4>
+          <p>
+            Keyframes define at what % of the animation, which stylesheet rules
+            should be used. The value of keyframes varies from 0% to 100%.
+
+            <br />
+            To add keyframes use the % operator with the value inside the
+            keyframes. More keyframes mean smoother animation.
+          </p>
+          <p><b>Example:</b></p>
+          <img src="/img/assits-147.webp" alt="img" />
+
+          <p><b>Output:</b></p>
+          <img src="/img/assits-148.gif" alt="img" />
+        </div>
+        <div>
+          <h4>3. Looping Animations</h4>
+          <p>
+            By default the animation runs only one time on the website but you
+            can choose to loop the animation by using the
+            “animation-iteration-count” property.
+          </p>
+          <pre
+            class="language-css"
+          ><code class="language-css">Syntax: {animation-iteration-count: value;}</code></pre>
+          <p>
+            Just assign the values to the property and the number of times the
+            animation will run.
+
+            <br />
+
+            To keep the animation running continuously we keep the value as
+            “infinite”.
+          </p>
+        </div>
+        <div>
+          <h4>4. Animation Durations</h4>
+          <p>
+            Animation Duration is the key property to start the animations. By
+            default, the animation duration is 0 sec, which means the animation
+            won’t start.
+
+            <br />
+
+            So, to start the animation we will assign the value to the animation
+            duration.
+          </p>
+          <pre
+            class="language-css"
+          ><code class="language-css">Syntax: animation-duration: value(in sec);</code></pre>
+        </div>
+        <div>
+          <h4>5. Other Properties</h4>
+          <h5>Animation Delay</h5>
+          <p>
+            Delays the start of animation on the website. Adding a negative
+            value to delay will make the animation run even before the website
+            is loaded.
+          </p>
+          <p><b>Example:</b></p>
+
+          <pre
+            class="language-css"
+          ><code class="language-css">{animation-delay: -2s;}</code></pre>
+        </div>
+        <div>
+          <h4>Animation Direction</h4>
+          <p>
+            This property defines the order of the animation. Whether it should
+            be played forward, reverse or alternatively. The values it takes is:
+          </p>
+          <ul>
+            <li>normal: the default state of forward animation.</li>
+            <li>reverse: plays the animation in the reverse direction.</li>
+            <li>alternate: forward animation and then backward.</li>
+            <li>alternate-reverse: reverse animation and then forward.</li>
+          </ul>
+          <pre
+            class="language-css"
+          ><code class="language-css">Syntax: {animation-direction: value;}</code></pre>
+        </div>
+        <div>
+          <h4>Animation Timing Function</h4>
+          <p>
+            It defines the speed curve for the animation. This property adds
+            ease to our animation and can have the following values: ease,
+            linear, ease-in, ease-out, and ease-in-out.
+            <br />
+            As the properties are self-explanatory, you can see the output
+            accordingly.
+          </p>
+          <pre
+            class="language-css"
+          ><code class="language-css">Syntax: animation-timing-function: value;</code></pre>
+        </div>
+        <div>
+          <h4>Animation Fill Mode</h4>
+          <p>
+            This property defines the style of the element when the animation is
+            either stopped or about to start. The value it takes is none(default
+            state), forwards(value set by the last keyframe), backwards(value of
+            the first keyframe) or both.
+          </p>
+          <pre
+            class="language-css"
+          ><code class="language-css">Syntax: animation-fill-mode: value;</code></pre>
+        </div>
+        <div>
+          <h4>Animation ShortHand</h4>
+          <p>
+            We’ve seen shorthand properties for other CSS properties and the
+            same can be applied to Animation too.
+          </p>
+          <pre
+            class="language-css"
+          ><code class="language-css">animation: demo 5s ease-in 1s infinite normal both;</code></pre>
+          <p><b>Output:</b></p>
+          <img src="/img/assits-149.gif" alt="img" />
+        </div>
+      </div>
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2" type="button">
+          <a href="/html/css/CSSDesigning.html">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary disabled" type="button">
+          <a href="/">Next &gt;&gt;</a>
+        </button>
+      </div>
+    </main>
+
+    <footer class="flex footer bgcolor2 mt-4">
+      <div class="footerLogo flex">
+        <img src="/img/logo.jpg" alt="" />
+        <p>Vijay Bansal</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Vijay Bansal</p>
+      </div>
+      <div class="media flex">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/profile.php?id=100041095243541"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/itz_vijay_bansal/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/vijay-bansal-319048249/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="github"
+          href="https://github.com/VijayBansal2004"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <i class="fa-brands whatsapp fa-whatsapp"></i>
+        <span style="font-size: small">+91 94172-12422</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2ff3e7c924.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/prism/prism.js"></script>
+  </body>
+</html>

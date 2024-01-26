@@ -1,0 +1,1923 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>React Tutorial | CodeWithVijay</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&family=Roboto+Condensed&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/prism/prism.css" />
+    <link rel="stylesheet" href="/css/utilities.css" />
+    <style>
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+    </style>
+  </head>
+  <body class="bodyColor textColorWhite">
+    <header>
+      <nav class="navbar bgcolor2 fixed-top">
+        <div class="container-fluid">
+          <a
+            class="navbar-brand lightPurpleColor fw-bolder fs-2"
+            href="/index.html"
+            >&lt;/&gt;CodeWithVijay</a
+          >
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="offcanvas"
+            data-bs-target="#offcanvasNavbar"
+            aria-controls="offcanvasNavbar"
+            aria-label="Toggle navigation"
+            style="background-color: #d8b4fe"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div
+            class="offcanvas offcanvas-end bgcolor2 text-white"
+            tabindex="-1"
+            id="offcanvasNavbar"
+            aria-labelledby="offcanvasNavbarLabel"
+          >
+            <div class="offcanvas-header">
+              <h5
+                class="offcanvas-title lightPurpleColor fw-bolder"
+                id="offcanvasNavbarLabel"
+              >
+                &lt;/&gt;CodeWithVijay
+              </h5>
+              <button
+                type="button"
+                class="btn-close"
+                data-bs-dismiss="offcanvas"
+                aria-label="Close"
+                style="background-color: #d8b4fe"
+              ></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    HTML
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/htmlBasicTags.html"
+                        >Html Basic Tags</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/Inline&BlockElements.html"
+                        >Inline & Block Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlLists.html"
+                        >Html Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlTables.html"
+                        >Html Tables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlForms.html"
+                        >Html Forms</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/HeadElements.html"
+                        >Head Elements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/HTML/HtmlMedia.html"
+                        >Html Media</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/HTML/MiscellaneousTags.html"
+                        >Miscellaneous Tags</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    CSS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/cssIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSProperties.html"
+                        >CSS Properties</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSDesigning.html"
+                        >CSS Designing</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/CSS/CSSAdvanceTopics.html"
+                        >CSS Advance Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA SCRIPT
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/jsIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptVariables.html"
+                        >Javascript Variables</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptBasics.html"
+                        >Javascript Basics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JS/JavascriptObjects.html"
+                        >Javascript Objects</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/DOM&BOM.html"
+                        >DOM & BOM</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JS/jsOOPs.html"
+                        >OOPs</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a class="dropdown-item" href="/html/C/cIntroduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CDataTypesOperators&UserIO.html"
+                        >C Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFunctions.html"
+                        >C Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CPointers.html"
+                        >C Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CMemoryManagement.html"
+                        >C Memory Management</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C/CStructures&Unions.html"
+                        >C Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C/CFileHandling.html"
+                        >C File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    C++ PROGRAMMING
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/c++Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++DataTypesOperators&UserIO.html"
+                        >C++ Data Types, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++ConditionalStatements.html"
+                        >C++ Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++IterationStatements.html"
+                        >C++ Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++BreakContinue.html"
+                        >C++ Break/Continue</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Arrays.html"
+                        >C++ Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Pointers.html"
+                        >C++ Pointers</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++Strings.html"
+                        >C++ Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Structures&Unions.html"
+                        >C++ Structures & Unions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Functions.html"
+                        >C++ Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/C++/C++OPPs.html"
+                        >C++ OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++FileHandling.html"
+                        >C++ File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/C++/C++Templates&STL.html"
+                        >C++ Templates & STL</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    JAVA
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/VariablesOperators&UserIO.html"
+                        >Variables, Operators & User I/O</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/IterationStatements.html"
+                        >Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Strings.html"
+                        >Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/Arrays.html"
+                        >Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/JavaMethods.html"
+                        >Java Methods</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/JAVA/JavaOOPs.html"
+                        >Java OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/JAVA/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PYTHON
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDataTypes&Operators.html"
+                        >Python Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonStrings.html"
+                        >Python Strings</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLists.html"
+                        >Python Lists</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonTuples.html"
+                        >Python Tuples</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonSets.html"
+                        >Python Sets</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonDictionaries.html"
+                        >Python Dictionaries</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/ConditionalStatements.html"
+                        >Conditional Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonLoops.html"
+                        >Python Loops</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonFunctions.html"
+                        >Python Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonModules.html"
+                        >Python Modules</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/PythonOOPs.html"
+                        >Python OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/AdvancedTopics.html"
+                        >Advanced Topics</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PYTHON/FileHandling.html"
+                        >File Handling</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    PHP
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Introduction.html"
+                        >Introduction</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/DataTypes&Operators.html"
+                        >Data Types & Operators</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/Conditional&IterationStatements.html"
+                        >Conditional & Iteration Statements</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPFunctions.html"
+                        >PHP Functions</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPArrays.html"
+                        >PHP Arrays</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPOOPs.html"
+                        >PHP OOPs</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPSuperglobals.html"
+                        >PHP Superglobals</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a class="dropdown-item" href="/html/PHP/PHPMySQL.html"
+                        >PHP MySQL</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/PHP/PHPAdvancedTopics.html"
+                        >PHP Advanced Topics</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle textColorWhite"
+                    href="#"
+                    role="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    REACT JS
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactTutorial.html"
+                        >React Tutorial</a
+                      >
+                    </li>
+                    <li><hr class="dropdown-divider" /></li>
+                    <li>
+                      <a
+                        class="dropdown-item"
+                        href="/html/REACT JS/ReactHooks.html"
+                        >React Hooks</a
+                      >
+                    </li>
+                  </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main class="mt-5 pt-5 width80 minHeight90vh m-auto">
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2 disabled" type="button">
+          <a href="/">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/REACT JS/ReactHooks.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+      <div class="main">
+        <div>
+          <h2>React Home</h2>
+        </div>
+        <div>
+          <h4>What is ReactJS?</h4>
+          <p>
+            ReactJS is a JavaScript library used to build User Interfaces(UI).
+            It significantly decreases the code with it's components, states
+            i.e. hooks, etc.
+          </p>
+        </div>
+        <div>
+          <h4>Creating react app</h4>
+          <p>
+            Open your terminal in the directory you would like to create your
+            application. Run this command to create a React application named
+            my-react-app:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">npx create-react-app my-react-app</code></pre>
+          <p>
+            OR, you can directly make your application without specifying a
+            name, like this:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">npx create-react-app .</code></pre>
+          <p>In this case, all files will be kept in the current directory.</p>
+          <p>
+            Note: When choosing folder name, make sure there are no spaces or
+            capital letters because of npm naming restrictions.
+          </p>
+          <p>
+            Once base application is created, if folder specified you just have
+            to enter the folder. You can use this command to enter:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">cd directory-name</code></pre>
+          <p>Then just start up the application with this command:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">npm start</code></pre>
+          <p>and you are good to go!</p>
+        </div>
+        <div>
+          <h4>Hello World</h4>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(&lt;h1&gt;Hello, world!&lt;/h1&gt;);</code></pre>
+          <p>
+            In this we are just putting &lt;h1&gt; tag in a div with id 'root'.
+            That's it! In div with id 'root' everything will be rendered. We can
+            also change it from 'root' to something else, as we are just getting
+            an element and putting HTML in it.
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>React Setup</h2>
+        </div>
+        <div>
+          <h4>Node.js</h4>
+          <p>
+            You can download it from:
+            <a style="color: rgb(0, 189, 210)" href="https://nodejs.org/en/"
+              >Node.js</a
+            >
+          </p>
+        </div>
+        <div>
+          <h4>Creating our first react app</h4>
+          <p>
+            Open your terminal in the directory you would like to create your
+            application. Run this command to create a React application named
+            my-react-app:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">npx create-react-app my-react-app</code></pre>
+          <p>
+            OR, you can directly make your application without specifying a
+            name, like this:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">npx create-react-app .</code></pre>
+          <p>In this case, all files will be kept in the current directory.</p>
+          <p>
+            Note: When choosing folder name, make sure there are no spaces or
+            capital letters because of npm naming restrictions. <br />
+
+            Once base application is created, if folder specified you just have
+            to enter the folder. You can use this command to enter:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">cd directory-name</code></pre>
+          <p>Then just start up the application with this command:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">npm start</code></pre>
+          <p>and you are good to go!</p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>React Getting Started</h2>
+        </div>
+        <div>
+          <h4>Run and Check</h4>
+          <p>Run the React Application with this command:</p>
+          <p>
+            A new browser window will pop up, if it does't then go on
+            <a style="color: rgb(0, 189, 210)" href="http://localhost:3000/"
+              >http://localhost:3000/</a
+            >
+            . Check if it is showing the same page:
+          </p>
+          <img src="/img/assits-31.png" alt="React App" />
+          <p>If it's the same page then you are good to go!</p>
+        </div>
+        <div>
+          <h4>Hello World</h4>
+          <p>
+            For this first you need to navigate to src/App.js, it will look
+            like:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import logo from './logo.svg';
+import './App.css';
+
+function App() {
+    return (
+    &lt;div className="App"&gt;
+        &lt;header className="App-header"&gt;
+        &lt;img src={logo} className="App-logo" alt="logo" /&gt;
+        &lt;p&gt;
+            Edit &lt;code&gt;src/App.js&lt;/code&gt; and save to reload.
+        &lt;/p&gt;
+        &lt;a
+            className="App-link"
+            href="https://reactjs.org"
+            target="_blank"
+            rel="noopener noreferrer"
+        &gt;
+            Learn React
+        &lt;/a&gt;
+        &lt;/header&gt;
+    &lt;/div&gt;
+    );
+}
+
+export default App;</code></pre>
+          <p>
+            Whatever you put in return will be rendered as HTML on the page, you
+            can change it like:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">function App() {
+return (
+    &lt;div className="App"&gt;
+    Hello World
+    &lt;/div&gt;
+);
+}</code></pre>
+          <p>
+            Note: Remember to wrap whole return value in an HTML element as you
+            can't return multiple elements but you can return multiple elements
+            in one element. <br />
+
+            Page would look like this:
+          </p>
+          <img src="/img/assits-32.png" alt="React Output" />
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>React ES6</h2>
+        </div>
+        <div>
+          <h4>What is ES6?</h4>
+          <p>
+            ES6 stands for ECMAScript 6. ECMAScript is a JavaScript standard
+            intended to ensure a common language across different browsers. ES6
+            is the 6th version of ECMAScript.
+          </p>
+        </div>
+        <div>
+          <h4>Why ES6? / Features of ES6 / Upgrades in ES6</h4>
+          <p>
+            React uses ES6 and all of these new features will make your coding
+            experience in react much much better. You will be able to do things
+            with much more ease and in very less lines! Features like:
+          </p>
+        </div>
+        <div>
+          <p><b>Arrow Functions: </b></p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">const hello = () => {
+return "Hello World!";
+}</code></pre>
+          <p>or</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">const hello = () => "Hello World!";</code></pre>
+        </div>
+        <div>
+          <p>
+            <b>.map()</b>: .map can be used for alot of things, one of it's use
+            case is, we can make any number of cards through loop and just put
+            it in jsx, like this:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">const data = ['title1', 'title2', 'title3'];
+let cards = data.map((item) => &lt;card&gt;{item}&lt;/card&gt;)</code></pre>
+        </div>
+        <div>
+          <p><b>Destructuring: </b>: <br />Old Way:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">const languages = ['JS', 'Python', 'Java'];
+const js = languages[0]
+const python = languages[1]
+const java = languages[2]</code></pre>
+          <p>New Way:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">const languages = ['JS', 'Python', 'Java'];
+const [ js, python, java ] = languages</code></pre>
+        </div>
+        <div>
+          <p>
+            <b>Ternary Operator</b>: With this, you can write if/else conditions
+            in one line. It's syntax is fairly simple like this:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">condition ? &lt;expression if true&gt; : &lt;expression if false&gt;</code></pre>
+          <p>Example:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">let loading = false;
+const data = loading ? &lt;div&gt;Loading...&lt;/div&gt; : &lt;div&gt;Data&lt;/div&gt;</code></pre>
+        </div>
+        <div>
+          <p>
+            <b>Spread Operator: </b>
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">const languages = ['JS', 'Python', 'Java'];
+const morelanguages = ['C', 'C++', 'C#']
+
+const allLanguages = [...languages, ...morelanguages]</code></pre>
+          <p>Output:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">["JS","Python","Java","C","C++","C#"]</code></pre>
+          <p>and many more like, classes, modules.</p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>React Render HTML</h2>
+          <p>
+            React renders HTML to the web page by using a function called
+            ReactDOM.render().
+          </p>
+        </div>
+        <div>
+          <h4>ReactDOM.render()</h4>
+          <p>
+            This function takes two arguments, HTML content which you want to
+            show on page and HTML element where you want to put the HTML
+            content(first argument). <br />
+
+            But where will it find that element? It will find it inside
+            "index.html" located in "public" folder. There you will notice a div
+            with id "root". That is where all this will be rendered!
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">ReactDOM.render(<p>Hello</p>, document.getElementById('root'));</code></pre>
+          <img src="/img/assits-33.png" alt="Output" />
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>React JSX</h2>
+        </div>
+        <div>
+          <h4>What is JSX?</h4>
+          <p>
+            JSX stands for JavaScript XML. It is similar in appearance to HTML,
+            hence provides a way to easily write HTML in react.
+          </p>
+        </div>
+        <div>
+          <h4>Coding in JSX</h4>
+          <p>
+            Earlier we had to make an HTML element or append it into existing
+            ones with methods like createElement() / appendChild()
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">const elem = React.createElement('h1', {}, 'Hello World!');</code></pre>
+          <p>Now we can just do it directly, like this:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">const elem = &lt;h1&gt;Hello World!&lt;/h1&gt;</code></pre>
+        </div>
+        <div>
+          <h4>Expressions in JSX</h4>
+          <p>
+            You can write the expression in {} <br />
+
+            You can write simple mathematical operations to variable to states
+            to complicated operations with ternary operators and it will return
+            the result, like:
+          </p>
+          <p><b>Mathematical Operations:</b></p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">const elem = &lt;h1&gt;React was released in {2010+3}&lt;/h1&gt;</code></pre>
+        </div>
+        <div>
+          <p><b>Variables/States:</b></p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">const name = "CWH"
+const elem = &lt;h1&gt;My name is {name}&lt;/h1&gt;</code></pre>
+        </div>
+        <div>
+          <p><b>Ternary Operators:</b></p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">const elem = &lt;h1&gt;Hello {name ? name : 'World'}&lt;/h1&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>React Components</h2>
+          <p>There are two types of components:</p>
+          <ol>
+            <li>Class Based Components</li>
+            <li>Function Based Components</li>
+          </ol>
+        </div>
+        <div>
+          <h4>Class Based Components</h4>
+          <p>
+            Before making class based component we need to inherit functions
+            from React.Component and this can be done with extends, like this:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">class Cat extends React.Component {
+    render() {
+        return &lt;h1&gt;Meow&lt;/h1&gt;;
+    }
+}</code></pre>
+          <p>it also requires a render method which returns HTML.</p>
+        </div>
+        <div>
+          <h4>Function Based Components</h4>
+          <p>
+            In function it's simpler, we just need to return the HTML, like
+            this:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">function Cat() {
+    return &lt;h1&gt;Meow&lt;/h1&gt;;
+}</code></pre>
+          <p>Note: Component's name must start with uppercase letter.</p>
+        </div>
+        <div>
+          <h4>Rendering a Component</h4>
+          <p>
+            We made a component, now we want to render/use it. Syntax for using
+            a component is:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">&lt;ComponentName /&gt;</code></pre>
+          <p>Note: Component's name must start with uppercase letter.</p>
+        </div>
+        <div>
+          <h4>Components in Files</h4>
+          <p>
+            To have less mess inside main file(with all the components in the
+            same file) and to resuse components on different pages, we have to
+            make them separately. So that we can just import them in any file
+            and use them!
+            <br />
+            For that we will just make a new file called Cat.js, make class or
+            function based component there and export default that
+            class/function! Like this:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">function Cat() {
+    return &lt;h1&gt;Meow&lt;/h1&gt;;
+}
+export default Cat;</code></pre>
+          <p>Note: File name must start with uppercase letter.</p>
+        </div>
+        <div>
+          <h4>Props</h4>
+          <p>
+            As mentioned earlier, we can import the same component in different
+            files and use it, but maybe in different files some changes in the
+            component is needed. For that, we can use props! Like this:
+          </p>
+          <p><b>Component:</b></p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">function Cat(props) {
+    return &lt;h1&gt;Meow's color is {props.color}&lt;/h1&gt;;
+}</code></pre>
+          <p><b>Main file: </b></p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">&lt;Cat color="purple" /&gt;</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>React Class</h2>
+        </div>
+        <div>
+          <h4>Class Based Components</h4>
+          <p>
+            Before making class based component we need to inherit functions
+            from React.Component and this can be done with extends, like this:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">class Cat extends React.Component {
+    render() {
+        return &lt;h1&gt;Meow&lt;/h1&gt;;
+    }
+}</code></pre>
+          <p>
+            it also requires a render method which returns HTML. <br />
+
+            Note: Component's name must start with uppercase letter.
+          </p>
+        </div>
+        <div>
+          <h4>Component Constructor</h4>
+          <p>
+            Constructor gets called when the component is initiated. This is
+            where you initiate the component's properties. In React we have
+            states which update on page without reload. Constructor properties
+            are kept in state. <br />
+
+            We also need to add super() statement, which executes the parent
+            component's constructor and component gets access to all the
+            functions of the parent component, like this:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">class Cat extends React.Component {
+    constructor() {
+        super();
+        this.state = { color: "orange" };
+    }
+    render() {
+        return &lt;h1&gt;Meow's color is {this.state.color}&lt;/h1&gt;;
+    }
+}</code></pre>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>React Props</h2>
+
+          <p>
+            Props are arguments passed to React components via HTML attributes.
+            Example:
+          </p>
+          <p><b>Component:</b></p>
+
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">function Cat(props) {
+    return &lt;h1&gt;Meow's color is {props.color}&lt;/h1&gt;;
+}</code></pre>
+          <p><b>Main file: </b></p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">&lt;Cat color="purple" /&gt;</code></pre>
+
+          <p>Output:</p>
+          <img src="/img/assits-34.png" alt="Output" />
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>React Events</h2>
+          <p>
+            If you have coded even a little bit in javascript, you know the
+            importance of events.
+          </p>
+        </div>
+        <div>
+          <h4>Events</h4>
+          <p>
+            Every HTML attribute in React is written in camelCase syntax. Event
+            is also an attribute. Hence, written in camelCase. <br />
+
+            As we learnt variables, states, javascript operations are written in
+            curly braces {}, same is true with React event handlers too! Like
+            this: onClick={show}
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">&lt;button onClick={show}&gt;Show&lt;/button&gt;</code></pre>
+        </div>
+        <div>
+          <h4>Arguments in events</h4>
+          <p>
+            We can't pass arguments just like that, it will give syntax error.
+            First, we need to put the whole function in arrow function, like
+            this:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">&lt;button onClick={ ()=>show('true') }&gt;Show&lt;/button&gt;</code></pre>
+        </div>
+        <div>
+          <h4>React Event Object</h4>
+          <p>Event handler can be provided to the function like this:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">&lt;button onClick={ (event)=>show('true', event) }&gt;Show&lt;/button&gt;</code></pre>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>React Conditional</h2>
+          <p>
+            One of the best thing in React is in React we can conditionally
+            render elements/components!
+          </p>
+        </div>
+        <div>
+          <h4>&& Operator</h4>
+          <p>This is one of the way to conditionally render:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">function App() {
+
+const loading = true;
+
+return (
+    &lt;div className="App"&gt;
+    {loading && &lt;LoadingGif /&gt;}
+    {!loading && &lt;Content /&gt;}
+    &lt;/div&gt;
+);
+}</code></pre>
+          <p>
+            Here we are saying if loading is true then show &lt;LoadingGif /&gt;
+            and in second line, we said !loading so that returns false in this
+            case so &lt;Content /&gt; will not load and first statement is true
+            so &lt;LoadingGif /&gt; will load!
+          </p>
+        </div>
+        <div>
+          <h4>Ternary Operator</h4>
+          <p>
+            What we were doing in previous example was basically just if
+            statement. We don't have else so we were using if as else too. Let's
+            learn how to do both(if/else)! <br />
+
+            Same thing can be done like this:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">function App() {
+
+    const loading = true;
+
+    return (
+        &lt;div className="App"&gt;
+        {loading ? &lt;LoadingGif /&gt; : &lt;Content /&gt;}
+        &lt;/div&gt;
+    );
+}</code></pre>
+          <p>
+            We are saying if loading is true then show &lt;LoadingGif /&gt;,
+            else show &lt;Content /&gt;, simple! <br />
+            Syntax:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">condition ? true : false</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>React Lists</h2>
+          <p>In React we render lists with loop</p>
+        </div>
+        <div>
+          <h4>map()</h4>
+          <p>An example of map:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">function App() {
+    const languages = ['JS', 'Python', 'Java', 'C', 'C++', 'C#'];
+
+    return (
+        &lt;div className="App"&gt;
+        {languages.map((language) =&gt; {
+            return &lt;div&gt;I love {language}&lt;/div&gt;
+        })}
+        &lt;/div&gt;
+    );
+}</code></pre>
+          <p><b>Output: </b></p>
+          <img src="/img/assits-35.png" alt="Output" />
+        </div>
+        <div>
+          <h4>Keys</h4>
+          <p>
+            With keys React keep record of elements. This ensures that if an
+            item is updated or removed, only that item will be re-rendered
+            instead of the entire list. <br />
+            Example:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">function App() {
+
+    const languagesDict = [
+        { id: 1, language: 'JS' },
+        { id: 2, language: 'Python' },
+        { id: 3, language: 'Java' },
+        { id: 4, language: 'C' },
+        { id: 5, language: 'C++' },
+        { id: 6, language: 'C#' }
+    ];
+
+    return (
+        &lt;div className="App"&gt;
+        {languagesDict.map((language) =&gt; {
+            return &lt;div key={language.id}&gt;
+            {language.id}. {language.language}
+            &lt;/div&gt;
+        })}
+        &lt;/div&gt;
+    );
+}</code></pre>
+          <p><b>Output: </b></p>
+          <img src="/img/assits-36.png" alt="Output" />
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <h2>React Forms</h2>
+          <p>
+            React Forms are mostly like normal HTML forms, except we use state
+            in this to handle inputs.
+          </p>
+        </div>
+        <div>
+          <h4>Handling Forms</h4>
+          <p>
+            In React all the data is handled by component and stored in
+            component state. We can change state with event handlers in the
+            onChange attribute, like this:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import { useState } from 'react';
+
+function Form() {
+    const [email, setEmail] = useState('');
+
+    return (
+    &lt;form&gt;
+        &lt;label&gt;
+        Enter your email: &lt;input type="email" value={email} onChange={(e) =&gt; setEmail(e.target.value)} /&gt;
+        &lt;/label&gt;
+    &lt;/form&gt;
+    )
+}
+
+export default Form;</code></pre>
+        </div>
+        <div>
+          <h4>Submitting Form</h4>
+          <p>We can submit form with onSubmit attribute for the &lt;form&gt;</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import { useState } from 'react';
+
+function Form() {
+    const [email, setEmail] = useState('');
+
+    const handleSubmit = (e) =&gt; {
+    e.preventDefault();
+    alert(`Your email is: ${email}`)
+    }
+
+    return (
+    &lt;form onSubmit={handleSubmit}&gt;
+        &lt;label&gt;
+        Enter your email: &lt;input type="email" value={email} onChange={(e) =&gt; setEmail(e.target.value)} /&gt;
+        &lt;/label&gt;
+        &lt;input type="submit" /&gt;
+    &lt;/form&gt;
+    )
+}
+
+export default Form;</code></pre>
+        </div>
+        <div>
+          <h4>Multiple Inputs</h4>
+          <p>
+            We don't have to make multiple states for multiple inputs, we can
+            save all values in one, like this:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import { useState } from 'react';
+
+function Form() {
+    const [data, setData] = useState({});
+
+    const handleChange = (e)=&gt;{
+    setData({...data, [e.target.name]: e.target.value})
+    }
+
+    const handleSubmit = (e) =&gt; {
+    e.preventDefault();
+    alert(`Your email is: ${data.email} and your name is: ${data.name}`)
+    }
+
+    return (
+    &lt;form onSubmit={handleSubmit}&gt;
+        &lt;label&gt;
+        Enter your email: &lt;input type="email" name='email' value={data.email} onChange={handleChange} /&gt;
+        &lt;/label&gt;
+        &lt;label&gt;
+        Enter your name: &lt;input type="text" name='name' value={data.name} onChange={handleChange} /&gt;
+        &lt;/label&gt;
+        &lt;input type="submit" /&gt;
+    &lt;/form&gt;
+    )
+}
+
+export default Form;</code></pre>
+          <p>
+            Here in handleChange we used Spread Operators. We are basically
+            saying keep whole data as it was, just change this name's value.
+            Then it is saved as an object so we are getting that by data.email
+            and data.name.
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>React Router</h2>
+          <p>
+            React router is used for page routing as React App doesn't include
+            it as default.
+          </p>
+        </div>
+        <div>
+          <h4>Add React Router</h4>
+          <p>To install React router, run this in your terminal:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">npm i -D react-router-dom</code></pre>
+        </div>
+        <div>
+          <h4>Creating Multiple Routes</h4>
+          <p>
+            To do this first we need to create multiple files and to keep code
+            clean, we will make a folder and make all the pages there, hence we
+            will create a folder named pages in src.
+          </p>
+        </div>
+        <div>
+          <h4>Folder Structure:</h4>
+          <p>src/pages/:</p>
+          <ul>
+            <li>Home.js</li>
+            <li>Blogs.js</li>
+            <li>Contact.js</li>
+            <li>Nopage.js</li>
+          </ul>
+        </div>
+        <div>
+          <h4>Usage</h4>
+          <p>Now we will make routes in src/index.js, like this:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import React from 'react';
+import ReactDOM from 'react-dom/client';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import reportWebVitals from './reportWebVitals';
+import Home from "./pages/Home";
+import Blogs from "./pages/Blogs";
+import Contact from "./pages/Contact";
+import NoPage from "./pages/NoPage";
+
+export default function App() {
+    return (
+    &lt;BrowserRouter&gt;
+        &lt;Routes&gt;
+        &lt;Route index element={&lt;Home /&gt;} /&gt;
+        &lt;Route path="/blogs" element={&lt;Blogs /&gt;} /&gt;
+        &lt;Route path="/contact" element={&lt;Contact /&gt;} /&gt;
+        &lt;Route path="*" element={&lt;NoPage /&gt;} /&gt;
+        &lt;/Routes&gt;
+    &lt;/BrowserRouter&gt;
+    );
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+    &lt;React.StrictMode&gt;
+    &lt;App /&gt;
+    &lt;/React.StrictMode&gt;
+);
+
+reportWebVitals();</code></pre>
+          <p>Home.js</p>
+        </div>
+        <div>
+          <p>
+            Make all the Navigation links using &lt;Link&gt; tag, like this:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import { Link } from "react-router-dom";
+
+const Home = () =&gt; {
+    return (
+        &lt;&gt;
+            &lt;nav&gt;
+                &lt;ul&gt;
+                    &lt;li&gt;
+                        &lt;Link to="/"&gt;Home&lt;/Link&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;Link to="/blogs"&gt;Blogs&lt;/Link&gt;
+                    &lt;/li&gt;
+                    &lt;li&gt;
+                        &lt;Link to="/contact"&gt;Contact&lt;/Link&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/nav&gt;
+        &lt;/&gt;
+    )
+};
+
+export default Home;</code></pre>
+        </div>
+        <div>
+          <p>Blogs.js</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">const Blogs = () =&gt; {
+    return &lt;h1&gt;Blogs&lt;/h1&gt;;
+};
+
+export default Blogs;</code></pre>
+        </div>
+        <div>
+          <p>Contact.js</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">const Contact = () =&gt; {
+    return &lt;h1&gt;Contact&lt;/h1&gt;;
+};
+
+export default Contact;</code></pre>
+        </div>
+        <div>
+          <p>NoPage.js</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">const NoPage = () =&gt; {
+    return &lt;h1&gt;404&lt;/h1&gt;;
+};
+
+export default NoPage;</code></pre>
+          <p>
+            This is made for any route that doesn't exist. To show 404 error
+            there!
+          </p>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>React Memo</h2>
+
+          <p>
+            By default React re-renders components again and again. Using memo
+            will stop that if props have not changed.
+          </p>
+        </div>
+        <div>
+          <h4>Problem</h4>
+          <p>
+            When we make components like Navbar, Footer, they re-render even if
+            there is no change in them. To test this you can make a Navbar
+            component and import it. Put a console.log, if it is logging, it
+            means navbar is re-rendering.
+          </p>
+        </div>
+        <div>
+          <h4>Solution</h4>
+          <p>
+            So what's the solution for this? Because this re-rendering is just
+            wastage of resources. <br />
+
+            memo is a simple solution for this! What memo does is, it just
+            monitors if props have changed, if they have it re-renders, if they
+            haven't it doesn't render again. <br />
+
+            props is an object and javascript is very fast in comparing objects
+            as it doesn't compare the whole object, it just checks the address!
+          </p>
+        </div>
+        <div>
+          <h4>Importing memo</h4>
+          <p>
+            To use it, first we need to import memo. It can be imported like
+            this:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import { memo } from "react";</code></pre>
+        </div>
+        <div>
+          <h4>Using memo</h4>
+          <p>
+            Everything remains the same, just when you are exporting the Navbar,
+            you have to wrap it in memo, like this:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">export default memo(Navbar);</code></pre>
+        </div>
+      </div>
+
+      <div class="main">
+        <div>
+          <h2>React CSS Styling</h2>
+          <p>There are three ways to style in React:</p>
+          <ol>
+            <li>Inline Styling</li>
+            <li>CSS Stylesheets</li>
+            <li>CSS Modules</li>
+          </ol>
+        </div>
+        <div>
+          <h4>Inline Styling</h4>
+          <p>
+            To inline style an element, we can make a Javascript Object, like
+            this:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">const App = () =&gt; {
+    return (
+        &lt;&gt;
+        &lt;h1 style={{ backgroundColor: "purple" }}&gt;CodeWithVijay&lt;/h1&gt;
+        &lt;/&gt;
+    );
+}</code></pre>
+        </div>
+        <div>
+          <p>
+            In this first curly brace is to write javascript and second is to
+            make a javascript object. We can also write it like:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">const App = () =&gt; {
+
+    const h1Style = {
+        backgroundColor: 'purple',
+        color: 'white'
+    }
+
+    return (
+        &lt;&gt;
+        &lt;h1 style={h1Style}&gt;CodeWithVijay&lt;/h1&gt;
+        &lt;/&gt;
+    );
+}</code></pre>
+          <p>
+            Note: CSS property name must be camelCase. background-color would be
+            backgroundColor
+          </p>
+        </div>
+        <div>
+          <h4>CSS Stylesheets</h4>
+          <p>
+            You can save the whole CSS in a separate file with file extension
+            .css and import it in your application. <br />
+
+            App.css
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">body {
+    background-color: 'purple';
+    color: 'white';
+}</code></pre>
+        </div>
+        <div>
+          <p>
+            Here we are writing CSS, so we don't need to make JS Object or do it
+            in camelCase. <br />
+
+            Index.js <br />
+
+            Just import it like this:
+          </p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import './App.css'</code></pre>
+        </div>
+        <div>
+          <h4>CSS Modules</h4>
+          <p>
+            In this you don't have to worry about name conflicts as it is
+            component specific. The CSS is available only for the file in which
+            it is imported. <br />
+
+            Make a file with extension .module.css, example: index.module.css
+            <br />
+
+            Make a new file index.module.css and insert some CSS into it, like
+            this:
+          </p>
+
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">.button {
+    background-color: 'purple';
+    color: 'white';
+}</code></pre>
+        </div>
+        <div>
+          <p>Import it in component like this:</p>
+          <pre
+            class="language-javascript"
+          ><code class="language-javascript">import styles from './index.module.css'; 
+
+const Home = () =&gt; {
+    return (
+        &lt;button className={styles.button}&gt;Click me!&lt;/button&gt;
+    )
+};
+
+export default Home;</code></pre>
+        </div>
+      </div>
+
+      <div class="d-grid gap-2 mt-4 d-md-flex justify-content-md-end">
+        <button class="btn btn-primary me-md-2 disabled" type="button">
+          <a href="/">&lt;&lt; Previous</a>
+        </button>
+        <button class="btn btn-primary" type="button">
+          <a href="/html/REACT JS/ReactHooks.html">Next &gt;&gt;</a>
+        </button>
+      </div>
+    </main>
+
+    <footer class="flex footer bgcolor2 mt-4">
+      <div class="footerLogo flex">
+        <img src="/img/logo.jpg" alt="" />
+        <p>Vijay Bansal</p>
+      </div>
+      <div class="copyright">
+        <p>Copyright &copy; 2023 Vijay Bansal</p>
+      </div>
+      <div class="media flex">
+        <a
+          class="facebook"
+          href="https://www.facebook.com/profile.php?id=100041095243541"
+          target="_blank"
+          ><i class="fa-brands fa-facebook-f"></i
+        ></a>
+        <a
+          class="instagram"
+          href="https://www.instagram.com/itz_vijay_bansal/"
+          target="_blank"
+          ><i class="fa-brands fa-instagram"></i
+        ></a>
+
+        <a
+          class="linkedin"
+          href="https://www.linkedin.com/in/vijay-bansal-319048249/"
+          target="_blank"
+          ><i class="fa-brands fa-linkedin"></i
+        ></a>
+        <a
+          class="github"
+          href="https://github.com/VijayBansal2004"
+          target="_blank"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+
+        <i class="fa-brands whatsapp fa-whatsapp"></i>
+        <span style="font-size: small">+91 94172-12422</span>
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/2ff3e7c924.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script src="/prism/prism.js"></script>
+  </body>
+</html>
